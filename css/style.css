@@ -3,3 +3,139 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.h4, .h5, .h6, h4, h5, h6{
+    margin: 0;
+}
+/*---estilos generico---*/
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+section{
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+/*---Fuentes
+@font-face {
+  font-family: "futura-bold";
+  src: url("fonts/fuente-extra/FuturaLTCondensedBold.ttf");
+}
+.futura-bold{
+    font-family: "futura-bold";
+}
+---*/
+/*Navegacion*/
+header{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+.logo-link{
+    width: 10%;
+    float: left;
+    position: absolute;
+    top: -7px;
+}
+.logo-link svg{
+    
+}
+.nav-principal{
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.redes-sociales{
+    float:left; 
+    width: 10%;
+    padding: 15px;
+}
+.nav-principal ul{
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+}
+.nav-principal li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    padding-top:25px; 
+    list-style-type: none;
+}
+.nav-principal li a{
+    color: white;
+    text-decoration: none;
+}
+.redes-sociales .fa-stack-1x {
+    color: black;
+}
+.redes-sociales .fa-circle{
+ color: white;
+}
+/*---seccion video----*/
+.video-inicio iframe{
+    width: 100%;
+}
+.video-inicio img{
+    width: 100%;
+}
+/*---Seccion producto----*/
+
+.producto-categ .slide-img{
+    background-image: url(../img/slide-producto.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.producto-categ h3{
+    padding: 20px 0px;
+    width: 354px; 
+    font-size: 2.2em;
+}
+.box-h3-producto{
+    width: 50%;
+    padding: 20px;
+    padding-top: 50px;
+}
+.linea-separador{
+    margin-top: -10px;
+    width: 354px;
+    display: table-caption;
+    border-bottom: 1px solid white;
+}
+.producto-categ p {
+    font-size: 1.2em;
+    width: 354px;
+}
+.contenido-producto figcaption{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contenido-producto{
+    padding: 50px 0px;
+}
+.contenido-producto figure{
+    width: 31.3%;
+    float: left;
+    margin: 1%
+}
+.contenido-producto figure img{
+    width: 100%;
+}
+.contenido-producto figcaption h4{
+    text-align: center;
+    padding: 23px;
+}
+.cachorro-bg figcaption{
+    background-color: #42B3DA;
+}
+.adulto-bg figcaption{
+    background-color: #DF3245;
+}
+.senior-bg figcaption{
+    background-color: #9A42DC;
+}
