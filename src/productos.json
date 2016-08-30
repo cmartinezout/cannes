@@ -1,0 +1,14 @@
+{
+  "productos": [{
+    "id": "1",
+    "Nombre": "TEST",
+    "Caracteristicas": "TESTTESTTESTTESTTESTTESTTEST",
+    "imagen": "src/img/1.jpg"
+    },
+  {
+    "id": "2",
+    "Nombre": "BETA",
+    "Caracteristicas": "BETABETABETABETABETABETA",
+    "imagen": "src/img/2.jpg"
+    }]
+}
