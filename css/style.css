@@ -19,6 +19,16 @@ section{
     width: 100%;
     height: auto;
 }
+/*tipografia*/
+.text-naranjo{
+    color: #EB7E2B;
+}
+.text-black{
+    color: black;
+}
+.detalle-sizemas{
+    font-size: 1.4em;
+}
 /*---Fuentes
 @font-face {
   font-family: "futura-bold";
@@ -35,7 +45,7 @@ header{
     position: fixed;
 }
 .logo-link{
-    width: 10%;
+    width: 12%;
     float: left;
     position: absolute;
     top: -7px;
@@ -45,14 +55,14 @@ header{
 }
 .nav-principal{
     float: left;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 5%;
+    width: 74%;
+    margin-left: 10%;
+    margin-right: 1%;
 }
 .redes-sociales{
     float:left; 
-    width: 10%;
-    padding: 15px;
+    width: 12%;
+    padding: 10px;
 }
 .nav-principal ul{
     width: 100%;
@@ -63,8 +73,8 @@ header{
     width: 20%;
     float: left;
     text-align: center;
-    padding: 20px;
-    padding-top:25px; 
+    padding: 10px;
+    padding-top:20px; 
     list-style-type: none;
 }
 .nav-principal li a{
@@ -85,13 +95,15 @@ header{
     width: 100%;
 }
 /*---Seccion producto----*/
-
-.producto-categ .slide-img{
+.producto{
+    margin-top: -25px;
+}
+.producto .slide-img{
     background-image: url(../img/slide-producto.jpg);
     background-position: top;
     background-repeat: no-repeat;
 }
-.producto-categ h3{
+.producto h3{
     padding: 20px 0px;
     width: 354px; 
     font-size: 2.2em;
@@ -107,26 +119,26 @@ header{
     display: table-caption;
     border-bottom: 1px solid white;
 }
-.producto-categ p {
+.producto p {
     font-size: 1.2em;
     width: 354px;
 }
-.contenido-producto figcaption{
+.producto-categ figcaption{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.contenido-producto{
+.producto-categ{
     padding: 50px 0px;
 }
-.contenido-producto figure{
+.producto-categ figure{
     width: 31.3%;
     float: left;
     margin: 1%
 }
-.contenido-producto figure img{
+.producto-categ figure img{
     width: 100%;
 }
-.contenido-producto figcaption h4{
+.producto-categ figcaption h4{
     text-align: center;
     padding: 23px;
 }
@@ -138,4 +150,21 @@ header{
 }
 .senior-bg figcaption{
     background-color: #9A42DC;
+}
+.left-nav-producto{
+    width: 30%;
+    float: left;
+}
+.right-contenido-producto{
+    width: 70%;
+    float: left;
+}
+.botton-tabla-producto{
+    width: 100%;
+}
+/*producto-contenido*/
+.detalle-producto h2{
+    border-bottom: 2px solid #EB7E2B;
+    width: 180px;
+    
 }
