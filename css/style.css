@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
     color: white;
- 
+
 }
 
 section{
@@ -75,7 +75,7 @@ header{
     top: -7px;
 }
 .logo-link svg{
-    
+
 }
 .nav-principal{
     float: left;
@@ -83,7 +83,7 @@ header{
     margin-left: 10%;
 }
 .redes-sociales{
-    float:left; 
+    float:left;
     width: 15%;
     padding: 15px;
 }
@@ -97,7 +97,7 @@ header{
     float: left;
     text-align: center;
     padding: 10px;
-    padding-top:20px; 
+    padding-top:20px;
     list-style-type: none;
     letter-spacing: 1px;
 }
@@ -113,7 +113,7 @@ header{
 }
 .redes-sociales a{
     font-size: 0.8em;
-    
+
 }
 /*---seccion video----*/
 .video-inicio iframe{
@@ -132,14 +132,35 @@ header{
 }
 .producto h3{
     padding: 20px 0px;
-    width: 340px; 
+    width: 340px;
     font-size: 2.2em;
     letter-spacing: 1px;
 }
+
+.ruta .slide-img{
+    background-image: url(../img/ruta-cannes.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ruta h3{
+    padding: 20px 0px;
+    width: 340px;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    color: black;
+}
+
 .box-h3-producto{
     width: 50%;
     padding: 20px;
     padding-top: 50px;
+}
+.box-h3-ruta{
+    width: 50%;
+    padding: 20px;
+    padding-top: 50px;
+    color: black;
 }
 .linea-separador{
     margin-top: -25px;
@@ -147,7 +168,19 @@ header{
     display: table-caption;
     border-bottom: 1px solid white;
 }
+
+.linea-separador-ruta{
+    margin-top: -25px;
+    width: 280px;
+    display: table-caption;
+    border-bottom: 1px solid black;
+}
 .box-h3-producto p {
+    font-size: 1.1em;
+    width: 280px;
+    margin-top: -15px;
+}
+.box-h3-ruta p {
     font-size: 1.1em;
     width: 280px;
     margin-top: -15px;
@@ -200,7 +233,7 @@ header{
 .detalle-producto h2{
     border-bottom: 2px solid #EB7E2B;
     width: 180px;
-    
+
 }
 
 .detalle-producto h4{
@@ -216,7 +249,7 @@ header{
 .ruta-cannes figcaption{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-   
+
 }
 .ruta-cannes{
     padding: 50px 0px;
@@ -237,7 +270,7 @@ header{
 .ruta-cannes figcaption h5{
     text-align: center;
     padding: 3px;
-  
+
 }
 .ruta-cannes figcaption p{
     text-align: center;
@@ -248,40 +281,34 @@ header{
 }
 .rutasauce-bg figcaption{
     background-color:#42B3DA ;
-     
+
 }
 .rutasauce-bg figcaption{
     background-color:#42B3DA;
-      
+
 }
 .rutaparbic-bg figcaption{
     background-color:#FFA900;
-      
+
 }
 .cafeteria-bg figcaption{
     background-color:#7474C3;
-       
+
 }
 .fuhu-bg figcaption{
     background-color:#803389;
-    
+
 }
 .sauce-bg figcaption{
     background-color:#479DC5;
-     
+
 }
 .papparazzo-bg figcaption{
     background-color:#3BB606;
-       
+
 }
 
 
 /*@media only screen and (min-width: 1024px){
 
 }*/
-
-
-
-
-
-
