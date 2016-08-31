@@ -29,15 +29,36 @@ section{
 .detalle-sizemas{
     font-size: 1.4em;
 }
-/*---Fuentes
+/*---Fuentes---*/
 @font-face {
   font-family: "futura-bold";
-  src: url("fonts/fuente-extra/FuturaLTCondensedBold.ttf");
+  src: url("../fonts/fuente-extra/FuturaLTCondensedBold.ttf");
 }
 .futura-bold{
     font-family: "futura-bold";
 }
----*/
+@font-face {
+  font-family: "frutiger-std-con";
+  src: url("../fonts/fuente-extra/FrutigerLTStd-Cn.otf");
+}
+.frutiger-std-con{
+    font-family: "frutiger-std-con";
+}
+@font-face {
+  font-family: "frutiger-bold-cond";
+  src: url("../fonts/fuente-extra/Frutiger-Bold-Condensed.ttf");
+}
+.frutiger-bold-cond{
+    font-family: "frutiger-bold-cond";
+}
+@font-face {
+  font-family: "frutiger-LT-57-cond";
+  src: url("../fonts/fuente-extra/Frutiger-LT-57-Condensed.ttf");
+}
+.frutiger-LT-57-cond{
+    font-family: "frutiger-LT-57-cond";
+}
+
 /*Navegacion*/
 header{
     width: 100%;
@@ -45,7 +66,7 @@ header{
     position: fixed;
 }
 .logo-link{
-    width: 12%;
+    width: 15%;
     float: left;
     position: absolute;
     top: -7px;
@@ -57,12 +78,11 @@ header{
     float: left;
     width: 74%;
     margin-left: 10%;
-    margin-right: 1%;
 }
 .redes-sociales{
     float:left; 
-    width: 12%;
-    padding: 10px;
+    width: 15%;
+    padding: 15px;
 }
 .nav-principal ul{
     width: 100%;
@@ -76,6 +96,7 @@ header{
     padding: 10px;
     padding-top:20px; 
     list-style-type: none;
+    letter-spacing: 1px;
 }
 .nav-principal li a{
     color: white;
@@ -87,6 +108,10 @@ header{
 .redes-sociales .fa-circle{
  color: white;
 }
+.redes-sociales a{
+    font-size: 0.8em;
+    
+}
 /*---seccion video----*/
 .video-inicio iframe{
     width: 100%;
@@ -95,18 +120,18 @@ header{
     width: 100%;
 }
 /*---Seccion producto----*/
-.producto{
-    margin-top: -25px;
-}
+
 .producto .slide-img{
     background-image: url(../img/slide-producto.jpg);
     background-position: top;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .producto h3{
     padding: 20px 0px;
-    width: 354px; 
+    width: 340px; 
     font-size: 2.2em;
+    letter-spacing: 1px;
 }
 .box-h3-producto{
     width: 50%;
@@ -114,14 +139,15 @@ header{
     padding-top: 50px;
 }
 .linea-separador{
-    margin-top: -10px;
-    width: 354px;
+    margin-top: -25px;
+    width: 280px;
     display: table-caption;
     border-bottom: 1px solid white;
 }
-.producto p {
-    font-size: 1.2em;
-    width: 354px;
+.box-h3-producto p {
+    font-size: 1.1em;
+    width: 280px;
+    margin-top: -15px;
 }
 .producto-categ figcaption{
     border-bottom-left-radius: 10px;
@@ -141,6 +167,7 @@ header{
 .producto-categ figcaption h4{
     text-align: center;
     padding: 23px;
+    letter-spacing: 1px;
 }
 .cachorro-bg figcaption{
     background-color: #42B3DA;
@@ -152,11 +179,15 @@ header{
     background-color: #9A42DC;
 }
 .left-nav-producto{
-    width: 30%;
+    width: 10%;
     float: left;
 }
+.center-carousel-producto{
+    width: 30%;
+    float:left;
+}
 .right-contenido-producto{
-    width: 70%;
+    width: 60%;
     float: left;
 }
 .botton-tabla-producto{
@@ -167,4 +198,8 @@ header{
     border-bottom: 2px solid #EB7E2B;
     width: 180px;
     
+}
+.detalle-producto h4{
+    font-size: 1em;
+    margin-top: -3px;
 }
