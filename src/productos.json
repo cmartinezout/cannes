@@ -1,0 +1,18 @@
+{
+  "productos": [{
+    "id": "1",
+    "Nombre": "TEST",
+    "CategoriaPerro": "1",
+    "CategoriaAlimento": "1-2",
+    "Ingredientes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit orci, pellentesque nec nibh sollicitudin, luctus efficitur elit. Sed ornare gravida eros, in vehicula ipsum scelerisque vitae. In scelerisque euismod risus, ac aliquam risus cursus sit amet.",
+    "imagen": "src/img/1.jpg"
+    },
+  {
+    "id": "2",
+    "Nombre": "BETA",
+    "CategoriaPerro": "1",
+    "CategoriaAlimento": "1-1",
+    "Ingredientes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit orci, pellentesque nec nibh sollicitudin, luctus efficitur elit. Sed ornare gravida eros, in vehicula ipsum scelerisque vitae. In scelerisque euismod risus, ac aliquam risus cursus sit amet.",
+    "imagen": "src/img/2.jpg"
+    }]
+}
