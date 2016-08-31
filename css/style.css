@@ -11,6 +11,7 @@ body{
     margin: 0;
     padding: 0;
     color: white;
+ 
 }
 
 section{
@@ -58,7 +59,9 @@ section{
 .frutiger-LT-57-cond{
     font-family: "frutiger-LT-57-cond";
 }
-
+.container-fluid{
+    z-index: 99;
+}
 /*Navegacion*/
 header{
     width: 100%;
@@ -199,7 +202,86 @@ header{
     width: 180px;
     
 }
+
 .detalle-producto h4{
     font-size: 1em;
     margin-top: -3px;
 }
+/* RUTA CANNES*/
+.ruta padding {
+    font-size: 1.3em;
+    width: 354px;
+    margin-top: 5px;
+}
+.ruta-cannes figcaption{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+}
+.ruta-cannes{
+    padding: 50px 0px;
+    margin-left: 105px;
+
+}
+.ruta-cannes figure{
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+    align: center;
+}
+.ruta-cannes figure img{
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+
+}
+.ruta-cannes figcaption h5{
+    text-align: center;
+    padding: 3px;
+  
+}
+.ruta-cannes figcaption p{
+    text-align: center;
+      padding:3px;
+}
+.rutav-bg figcaption{
+    background-color: #A40606 ;
+}
+.rutasauce-bg figcaption{
+    background-color:#42B3DA ;
+     
+}
+.rutasauce-bg figcaption{
+    background-color:#42B3DA;
+      
+}
+.rutaparbic-bg figcaption{
+    background-color:#FFA900;
+      
+}
+.cafeteria-bg figcaption{
+    background-color:#7474C3;
+       
+}
+.fuhu-bg figcaption{
+    background-color:#803389;
+    
+}
+.sauce-bg figcaption{
+    background-color:#479DC5;
+     
+}
+.papparazzo-bg figcaption{
+    background-color:#3BB606;
+       
+}
+
+
+/*@media only screen and (min-width: 1024px){
+
+}*/
+
+
+
+
+
+
