@@ -240,6 +240,10 @@ header{
     font-size: 1em;
     margin-top: -3px;
 }
+
+.producto-contenido{
+  margin-bottom: 3%;
+}
 /* RUTA CANNES*/
 .ruta padding {
     font-size: 1.3em;
