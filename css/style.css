@@ -208,20 +208,41 @@ header{
     margin-top: -3px;
 }
 /* RUTA CANNES*/
-.ruta padding {
-    font-size: 1.3em;
-    width: 354px;
-    margin-top: 5px;
+.rutacannes .slide-img{
+    background-image: url(../img/slide-img-ruta.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.box-h3-rutacannes{
+    width: 50%;
+    padding: 20px;
+    padding-top: 50px;
+}
+.box-h3-rutacannes h3{
+    width: 340px; 
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+.box-h3-rutacannes p {
+    font-size: 1.1em;
+    width: 280px;
+    margin-top: -15px;
+
+}
+.linea-separador-rutacannes{
+    margin-top: -10px;
+    width: 130px;
+    display: table-caption;
+    border-bottom: 1px solid white;
+}
+
 .ruta-cannes figcaption{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-   
 }
 .ruta-cannes{
     padding: 50px 0px;
-    margin-left: 105px;
-
 }
 .ruta-cannes figure{
     width: 31.3%;
@@ -232,16 +253,18 @@ header{
 .ruta-cannes figure img{
     width: 100%;
     border-radius: 6px 6px 0px 0px;
-
 }
-.ruta-cannes figcaption h5{
+.ruta-cannes figcaption{
     text-align: center;
-    padding: 3px;
-  
+}
+.ruta-cannes figcaption h4{
+    text-align: center;
+    padding: 10px 0px 0px 5px;
 }
 .ruta-cannes figcaption p{
     text-align: center;
-      padding:3px;
+      padding: 0px 0px 5px 10px;
+      
 }
 .rutav-bg figcaption{
     background-color: #A40606 ;
@@ -271,15 +294,60 @@ header{
      
 }
 .papparazzo-bg figcaption{
-    background-color:#3BB606;
-       
+    background-color:#3BB606;    
+}
+/*MUNDO CACHORRO*/
+.mundocachorro .slide-img{
+    background-image: url(../img/shutterstock_80773975.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-h3-mundocachorro{
+    width: 60%;
+    padding: 20px;
+    padding-top: 50px;
+  
+}
+.linea-separador-mundocachorro{
+    margin-top: -8px;
+    width: 180px;
+    display: table-caption;
+    border-bottom: 1px solid white;
+}
+.mundo-cachorro figcaption{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.mundo-cachorro{
+    padding: 50px 0px;
+}
+.mundo-cachorro figure{
+    width: 31.3%;
+    float: left;
+    margin: 1%
+}
+.mundo-cachorro figure img{
+    width: 100%;
+}
+.mundo-cachorro figcaption h4{
+    text-align: center;
+    padding: 23px 2px;
+    letter-spacing: 1px;
+}
+.mundocachorro figcaption{
+    background-color: #EB7E2B;
 }
 
-
-/*@media only screen and (min-width: 1024px){
-
-}*/
-
+.slide-img{
+    position: relative;
+    height: 250px;
+}
+.slide-img div{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
 
 
 
