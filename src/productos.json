@@ -23,14 +23,14 @@
           "id": "1",
           "Nombre": "TEST 2",
           "Ingredientes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit orci, pellentesque nec nibh sollicitudin, luctus efficitur elit. Sed ornare gravida eros, in vehicula ipsum scelerisque vitae. In scelerisque euismod risus, ac aliquam risus cursus sit amet.",
-          "imagen": "img/producto1.png",
+          "imagen": "img/productos/producto1.png",
           "Caracteristicas": "<li class='text-black'>Mejor <span class='detalle-sizemas'>digestión &#8226;</span> <span class='text-naranjo'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black'>Más absorción <span class='detalle-sizemas'>de calcio &#8226;</span> <span class='text-naranjo'>Para huesos y dientes más robustos.</span></li><li class='text-black'>Pelaje más <span class='detalle-sizemas'>brillate &#8226;</span> <span class='text-naranjo'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black'>Heces más <span class='detalle-sizemas'>consistentes &#8226;</span> <span class='text-naranjo'>Menos volumen y olor.</span></li><li class='text-black'>Defensas <span class='detalle-sizemas'>naturales &#8226;</span> <span class='text-naranjo'>Fortalecidas, más salud.</span></li>"
           },
           {
             "id": "2",
             "Nombre": "TEST 2.1",
             "Ingredientes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit orci, pellentesque nec nibh sollicitudin, luctus efficitur elit. Sed ornare gravida eros, in vehicula ipsum scelerisque vitae. In scelerisque euismod risus, ac aliquam risus cursus sit amet.",
-            "imagen": "img/producto2.png",
+            "imagen": "img/productos/producto2.png",
             "Caracteristicas": "<li class='text-black'>Más absorción <span class='detalle-sizemas'>de calcio &#8226;</span> <span class='text-naranjo'>Para huesos y dientes más robustos.</span></li><li class='text-black'>Pelaje más <span class='detalle-sizemas'>brillate &#8226;</span> <span class='text-naranjo'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black'>Heces más <span class='detalle-sizemas'>consistentes &#8226;</span> <span class='text-naranjo'>Menos volumen y olor.</span></li><li class='text-black'>Defensas <span class='detalle-sizemas'>naturales &#8226;</span> <span class='text-naranjo'>Fortalecidas, más salud.</span></li>"
             }]
         }]
