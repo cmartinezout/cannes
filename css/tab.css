@@ -1,0 +1,133 @@
+.nav-tabs {
+    border-bottom: 1px solid #E46A44;
+   
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    border: none;
+}
+
+.tab-content {
+    border-bottom: 1px solid #E46A44;
+    border-right: 1px solid #E46A44;
+    border-left: 1px solid #E46A44;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    border-bottom-color: transparent;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: none;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: #fbfbfb;
+}
+
+.nav-tabs>li>a {
+    color: #E46A44;
+    margin-right: 0px;
+    border: none;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    color: #E46A44;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover{
+    border: none;
+}
+.tab-pane {
+    height: 200px;
+}
+
+.tab-pane:nth-child(3) img {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.tab-pane:nth-child(3) p {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    font-size: 0.8em;
+}
+.tab-pane:nth-child(2) p{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+    line-height: 1.8;
+}
+.nav-tabs>li{
+    width: 25%;
+    text-align: center;
+    font-size: 0.9em;
+}
+.padig-a{
+    padding: 20px !important;
+}
+.nav-tabs>li{
+    border-top: 1px solid #E46A44;
+    border-right: 1px solid #E46A44;
+    border-left: 1px solid #E46A44;
+}
+.tab-content{
+    color:black;
+}
+.nav-tabs>li.active>a:hover{
+    
+}
+.tab-pane:nth-child(4) figure{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.tab-pane:nth-child(4) figure:nth-child(1) img{
+    width: 80px;
+    padding: 10px;
+    padding-top: 50px;
+}
+.tab-pane:nth-child(4) figure:nth-child(2) img{
+    width: 85px;
+    padding: 10px;
+    padding-top: 40px;
+}
+.tab-pane:nth-child(4) figure:nth-child(3) img{
+    width: 90px;
+    padding: 10px;
+    padding-top: 30px;
+}
+.tab-pane:nth-child(4) figure:nth-child(4) img{
+    width: 95px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.tab-pane:nth-child(4) figure:nth-child(5) img{
+    width: 100px;
+    padding: 10px;
+}
+.tab-pane:nth-child(4) .tamanos-produc{
+    width: 80%;
+    margin: auto;
+}
+.tab-pane:nth-child(4) figure h3{
+    margin: 5px;
+    font-size: 1em;
+}
+.tabla-nutri{
+    width: 65%;
+    float: right;
+    margin-top: 50px;
+}
