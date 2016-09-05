@@ -87,7 +87,6 @@ header{
     z-index: 99;
 }
 
-
 .logo-h1{
     position: absolute;
     top: -7px;
@@ -257,7 +256,6 @@ slide-img{
 .producto-contenido{
   margin-bottom: 3%;
 }
-<<<<<<< HEAD
 /* RUTA CANNES*/
 .rutacannes .slide-img{
     background-image: url(../img/slide-img-ruta.jpg);
@@ -400,6 +398,122 @@ slide-img{
     color: black;
     text-align: center;
 }
+.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):hover{
+    background-color: #42B3DA;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(3):hover{
+    background-color: #DF3245;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(5):hover{
+    background-color: #9A42DC;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7):hover{
+    background-color: #FFA900;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1){
+    border: 1px solid #42B3DA;
+    color: #42B3DA;
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(3){
+    border: 1px solid #DF3245;
+    color: #DF3245;
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(5){
+    border: 1px solid #9A42DC;
+    color: #9A42DC;
+
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7){
+    border: 1px solid #FFA900;
+    color: #FFA900;
+
+}
+.left-nav-producto .nav-producto .seco-cachorro, .left-nav-producto .nav-producto .snack-cachorro {
+    color: #42B3DA;
+}
+.left-nav-producto .nav-producto .seco-adulto, .left-nav-producto .nav-producto .snack-adulto {
+    color: #DF3245;
+}
+.left-nav-producto .nav-producto .seco-senior, .left-nav-producto .nav-producto .snack-senior {
+    color:  #9A42DC;
+}
+.left-nav-producto .nav-producto .seco-pequenas, .left-nav-producto .nav-producto .snack-pequenas{
+    color: #FFA900;
+}
+.left-nav-producto .nav-producto ul{
+    text-align: center;
+}
+.left-nav-producto .nav-producto ul li{
+    list-style-type: none;
+    padding: 4px;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    cursor: pointer;
+}
+.left-nav-producto .nav-producto .seco-cachorro:hover:before, .left-nav-producto .nav-producto .snack-cachorro:hover:before{
+    content: url(../img/iconos/icon-hueso-cachorro.png);
+    zoom:40%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 4px;
+}
+.left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
+      -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 1000ms ease;
+}
+.left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before{
+    content: url(../img/iconos/icon-hueso-adulto.png);
+    zoom:40%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 4px;
+}
+.left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .snack-senior:hover:before{
+    content: url(../img/iconos/icon-hueso-senior.png);
+    zoom:40%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 4px;
+}
+.left-nav-producto .nav-producto .seco-pequenas:hover:before, .left-nav-producto .nav-producto .snack-pequenas:hover:before{
+    content: url(../img/iconos/icon-hueso-pequenas.png);
+    zoom:40%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 4px;
+}
+
+/*Fin*/
 /*MUNDO CACHORRO*/
 .mundocachorro .slide-img{
     background-image: url(../img/shutterstock_80773975.jpg);
@@ -453,10 +567,7 @@ slide-img{
     left: 10px;
 }
 
-.left-nav-producto .nav-producto ul .item_principal-nav-producto{
-=======
 .left-nav-producto .nav-producto  .item_principal-nav-producto{
->>>>>>> issue-11
     border: 1px solid black;
     width: 150px;
     margin: 5px;
