@@ -353,62 +353,40 @@ slide-img{
 /*@media only screen and (min-width: 1024px){
 
 }*/
-=======
->>>>>>> issue-11
 .detalle-producto li{
     display: table;
     margin-top: 10px;
     font-size: 1.2em;
 }
-<<<<<<< HEAD
 .detalle-producto .digestion::before {
-=======
-.detalle-producto .digestion {
->>>>>>> issue-11
     content: url(../img/iconos/icon-1-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-<<<<<<< HEAD
 .detalle-producto .calcio::before {
-=======
-.detalle-producto  .calcio {
->>>>>>> issue-11
     content: url(../img/iconos/icon-2-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-<<<<<<< HEAD
 .detalle-producto .brillante::before {
-=======
-.detalle-producto .brillante {
->>>>>>> issue-11
     content: url(../img/iconos/icon-3-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-<<<<<<< HEAD
 .detalle-producto .consistentes::before {
-=======
-.detalle-producto .consistentes {
->>>>>>> issue-11
     content: url(../img/iconos/icon-4-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-<<<<<<< HEAD
 .detalle-producto .naturales::before {
-=======
-.detalle-producto .naturales{
->>>>>>> issue-11
     content: url(../img/iconos/icon-5-lista-producto.png);
     display: inline-block;
     zoom:70%;
@@ -422,7 +400,6 @@ slide-img{
     color: black;
     text-align: center;
 }
-<<<<<<< HEAD
 /*MUNDO CACHORRO*/
 .mundocachorro .slide-img{
     background-image: url(../img/shutterstock_80773975.jpg);
@@ -545,16 +522,16 @@ slide-img{
 }
 .left-nav-producto .nav-producto .seco-cachorro, .left-nav-producto .nav-producto .snack-cachorro {
     color: #42B3DA;
-} 
+}
 .left-nav-producto .nav-producto .seco-adulto, .left-nav-producto .nav-producto .snack-adulto {
     color: #DF3245;
-} 
-.left-nav-producto .nav-producto .seco-senior, .left-nav-producto .nav-producto .snack-senior { 
+}
+.left-nav-producto .nav-producto .seco-senior, .left-nav-producto .nav-producto .snack-senior {
     color:  #9A42DC;
-} 
+}
 .left-nav-producto .nav-producto .seco-pequenas, .left-nav-producto .nav-producto .snack-pequenas{
     color: #FFA900;
-} 
+}
 .left-nav-producto .nav-producto ul{
     text-align: center;
 }
@@ -773,7 +750,7 @@ slide-img{
     width: 60%;
     padding: 20px;
     padding-top: 50px;
-  
+
 }
 .linea-separador-mundocachorro{
     margin-top: -8px;
@@ -804,7 +781,3 @@ slide-img{
 .mundocachorro figcaption{
     background-color: #EB7E2B;
 }
-
-
-
-
