@@ -32,7 +32,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
             $('.carousel-indicators').append('<li data-target="#carousel-example-generic" data-slide-to='+j+'></li>');
           }
         }
-        $('.container-fluid').css('display', 'block');
+        $('.container-producto').css('display', 'block');
       }
     }
   });

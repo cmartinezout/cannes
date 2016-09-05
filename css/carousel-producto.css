@@ -23,14 +23,14 @@
 
 .carousel-inner{
     position: relative;
-  width: 100%;
+  width: 70%;
     margin: auto;
   overflow: hidden;
     margin-bottom: 20px;
 }
 
 .carousel-indicators{
-    bottom: -15px;
+    bottom: 0px;
 }
 .carousel-indicators li{
       border: 1px solid #479DC5;

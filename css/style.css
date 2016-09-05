@@ -79,7 +79,7 @@ section{
     font-family: "frutiger-67-bold-cond";
 }
 
-/*----NAVEGACION----*/
+/*---------------NAVEGACION------------*/
 header{
     width: 100%;
     background-color: black;
@@ -139,14 +139,14 @@ header{
     font-size: 0.8em;
 
 }
-/*---seccion VIDEO----*/
+/*-------------SECCION VIDEO-------------*/
 .video-inicio iframe{
     width: 100%;
 }
 .video-inicio img{
     width: 100%;
 }
-/*------SECCION PRODUCTO------*/
+/*-------------SECCION PRODUCTO------------*/
 
 /*Img-Background*/
 .producto .slide-img{
@@ -155,61 +155,32 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.producto h3{
-    padding: 20px 0px;
-    width: 340px;
-    font-size: 2.2em;
-    letter-spacing: 1px;
-}
-
-.ruta .slide-img{
-    background-image: url(../img/ruta-cannes.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.ruta h3{
-    padding: 20px 0px;
-    width: 340px;
-    font-size: 2.2em;
-    letter-spacing: 1px;
-    color: black;
+slide-img{
+    height: 330px;
 }
 
 .box-h3-producto{
-    padding: 20px;
-    padding-top: 50px;
+    height: 330px;
 }
-.box-h3-ruta{
-    width: 50%;
-    padding: 20px;
-    padding-top: 50px;
-    color: black;
+.producto h3{
+    padding: 20px 0px;
+    width: 450px;
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-top: 8%;
+}
+.box-h3-producto p {
+    font-size: 1.4em;
+    width: 430px;
+    margin-top: -15px;
 }
 .linea-separador{
     margin-top: -25px;
-    width: 280px;
+    width: 400px;
     display: table-caption;
     border-bottom: 1px solid white;
 }
 
-.linea-separador-ruta{
-    margin-top: -25px;
-    width: 280px;
-    display: table-caption;
-    border-bottom: 1px solid black;
-}
-.box-h3-producto p {
-    font-size: 1.1em;
-    width: 280px;
-    margin-top: -15px;
-}
-
-.box-h3-ruta p {
-    font-size: 1.1em;
-    width: 280px;
-    margin-top: -15px;
-}
 
 /*-Fin-*/
 
@@ -222,7 +193,7 @@ header{
     padding: 50px 0px;
 }
 .producto-categ figure{
-    width: 31.3%;
+    width: 23%;
     float: left;
     margin: 1%
 }
@@ -243,6 +214,9 @@ header{
 }
 .senior-bg figcaption{
     background-color: #9A42DC;
+}
+.r-pequena-bg figcaption{
+    background-color: #FFA900;
 }
 /*-Fin-*/
 
@@ -271,8 +245,8 @@ header{
     width: 100%;
     height: 300px;
 }
-/*-Fin-*/
 
+/*fin*/
 /*-detalle de contenido de producto-*/
 .detalle-producto h2{
     border-bottom: 2px solid #EB7E2B;
@@ -283,135 +257,40 @@ header{
 .producto-contenido{
   margin-bottom: 3%;
 }
-/* RUTA CANNES*/
-.rutacannes .slide-img{
-    background-image: url(../img/slide-img-ruta.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.box-h3-rutacannes{
-    width: 50%;
-    padding: 20px;
-    padding-top: 50px;
-}
-.box-h3-rutacannes h3{
-    width: 340px; 
-    font-size: 2.2em;
-    letter-spacing: 1px;
-}
-.box-h3-rutacannes p {
-    font-size: 1.1em;
-    width: 280px;
-    margin-top: -15px;
-
-}
-.linea-separador-rutacannes{
-    margin-top: -10px;
-    width: 130px;
-    display: table-caption;
-    border-bottom: 1px solid white;
-}
-
-.ruta-cannes figcaption{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.ruta-cannes{
-    padding: 50px 0px;
-}
-.ruta-cannes figure{
-    width: 31.3%;
-    float: left;
-    margin: 1%;
-    align: center;
-}
-.ruta-cannes figure img{
-    width: 100%;
-    border-radius: 6px 6px 0px 0px;
-}
-.ruta-cannes figcaption{
-    text-align: center;
-    padding: 3px;
-}
-.ruta-cannes figcaption h4{
-    text-align: center;
-    padding: 10px 0px 0px 5px;
-}
-.ruta-cannes figcaption p{
-    text-align: center;
-      padding: 0px 0px 5px 10px;
-      
-}
-.rutav-bg figcaption{
-    background-color: #A40606 ;
-}
-.rutasauce-bg figcaption{
-    background-color:#42B3DA ;
-
-}
-.rutasauce-bg figcaption{
-    background-color:#42B3DA;
-
-}
-.rutaparbic-bg figcaption{
-    background-color:#FFA900;
-
-}
-.cafeteria-bg figcaption{
-    background-color:#7474C3;
-
-}
-.fuhu-bg figcaption{
-    background-color:#803389;
-
-}
-.sauce-bg figcaption{
-    background-color:#479DC5;
-
-}
-.papparazzo-bg figcaption{
-    background-color:#3BB606;
-}
-
-
-/*@media only screen and (min-width: 1024px){
-
-}*/
 .detalle-producto li{
     display: table;
     margin-top: 10px;
     font-size: 1.2em;
 }
-.detalle-producto li:nth-child(1):before {
+.detalle-producto .digestion {
     content: url(../img/iconos/icon-1-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-.detalle-producto li:nth-child(2):before {
+.detalle-producto  .calcio {
     content: url(../img/iconos/icon-2-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-.detalle-producto li:nth-child(3):before {
+.detalle-producto .brillante {
     content: url(../img/iconos/icon-3-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-.detalle-producto li:nth-child(4):before {
+.detalle-producto .consistentes {
     content: url(../img/iconos/icon-4-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-.detalle-producto li:nth-child(5):before {
+.detalle-producto .naturales{
     content: url(../img/iconos/icon-5-lista-producto.png);
     display: inline-block;
     zoom:70%;
@@ -419,14 +298,296 @@ header{
     vertical-align: middle;
 }
 /*-Fin-*/
-
 /*-navegacion de producto-*/
-.left-nav-producto .nav-producto ul{
+.left-nav-producto .nav-producto div{
     list-style:none;
     color: black;
     text-align: center; 
 }
-/*MUNDO CACHORRO*/
+.left-nav-producto .nav-producto  .item_principal-nav-producto{
+    border: 1px solid black;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):hover{
+    background-color: #42B3DA;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(3):hover{
+    background-color: #DF3245;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(5):hover{
+    background-color: #9A42DC;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7):hover{
+    background-color: #FFA900;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1){
+    border: 1px solid #42B3DA;
+    color: #42B3DA;
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(3){
+    border: 1px solid #DF3245;
+    color: #DF3245;
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(5){
+    border: 1px solid #9A42DC;
+    color: #9A42DC;
+
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7){
+    border: 1px solid #FFA900;
+    color: #FFA900;
+
+}
+.left-nav-producto .nav-producto .seco-cachorro, .left-nav-producto .nav-producto .snack-cachorro {
+    color: #42B3DA;
+} 
+.left-nav-producto .nav-producto .seco-adulto, .left-nav-producto .nav-producto .snack-adulto {
+    color: #DF3245;
+} 
+.left-nav-producto .nav-producto .seco-senior, .left-nav-producto .nav-producto .snack-senior { 
+    color:  #9A42DC;
+} 
+.left-nav-producto .nav-producto .seco-pequenas, .left-nav-producto .nav-producto .snack-pequenas{
+    color: #FFA900;
+} 
+.left-nav-producto .nav-producto ul{
+    text-align: center;
+}
+.left-nav-producto .nav-producto ul li{
+    list-style-type: none;
+    padding: 4px;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    cursor: pointer;
+}
+.left-nav-producto .nav-producto .seco-cachorro:hover:before, .left-nav-producto .nav-producto .snack-cachorro:hover:before{
+    content: url(../img/iconos/icon-hueso-cachorro.png);
+    zoom:40%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 4px;
+}
+.left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
+      -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 1000ms ease;
+}
+.left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before{
+    content: url(../img/iconos/icon-hueso-adulto.png);
+    zoom:40%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 4px;
+}
+.left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .snack-senior:hover:before{
+    content: url(../img/iconos/icon-hueso-senior.png);
+    zoom:40%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 4px;
+}
+.left-nav-producto .nav-producto .seco-pequenas:hover:before, .left-nav-producto .nav-producto .snack-pequenas:hover:before{
+    content: url(../img/iconos/icon-hueso-pequenas.png);
+    zoom:40%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 4px;
+}
+
+/*Fin*/
+/*bottom tabla*/
+.box-tabla-certificado{
+   background-image: url(../img/img-background/perrito-tabla.png);
+   background-repeat: no-repeat;
+   background-size: 30%;
+   background-position: left bottom;
+}
+.img-dog-tabla{
+    background-image: url(../img/img-background/perrito-tabla.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 80%;
+    float: left;
+    width: 35%;
+    height: 500px;
+}
+.box-tabla-certificado{
+    float: left;
+    width: 100%;
+}
+.certificado-img .galleta{
+    width: 60%;
+}
+.certificado-img{
+    width: 65%;
+    float: right;
+}
+.certificado-img .favet{
+    display: block;
+    width: 10%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.botton-tabla-producto table{
+    width: 50%;
+    float: left;
+    margin-left: 20px;
+}
+.margin-top-table{
+    padding-top: 30px;
+    height: auto;
+    overflow: hidden;
+}
+.icon-tabla-nutri{
+    padding: 20px;
+    width: 45%;
+    float: left;
+}
+.icon-tabla-nutri span{
+    font-size: 2.5em;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.icon-tabla-nutri .fa-stack-1x {
+    color: black;
+}
+.icon-tabla-nutri .fa-circle{
+ color: white;
+}
+.botton-tabla-producto{
+    width: 100%;
+    height: 300px;
+}
+/*-Fin-*/
+/*----------------SECCION RUTA CANNES----------------*/
+/*Img-Background*/
+.ruta .slide-img{
+    background-image: url(../img/img-background/slide-img-ruta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-h3-ruta h3{
+    padding: 20px 0px;
+    width: 340px;
+    font-size: 3.1em;
+    letter-spacing: 1px;
+    margin-top: 10%;
+}
+
+.box-h3-ruta{
+    color: black;
+    height: 330px;
+}
+
+.linea-separador-ruta{
+    margin-top: -25px;
+    width: 280px;
+    display: table-caption;
+    border-bottom: 1px solid black;
+}
+
+.box-h3-ruta p {
+    font-size: 1.4em;
+    width: 290px;
+    margin-top: -15px;
+}
+/*-Fin-*/
+
+/*Figure-Categoria rutas*/
+.ruta-cannes-categ figcaption{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.ruta-cannes-categ{
+    padding: 50px 0px;
+}
+
+.ruta-cannes-categ figure{
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+    text-align: center;
+}
+.ruta-cannes-categ figure img{
+    width: 100%;
+}
+.ruta-cannes-categ figcaption{
+    padding: 10px;
+}
+.ruta-cannes-categ figcaption h4{
+    font-size: 1.4em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-family: "frutiger-LT-57-cond";
+}
+.ruta-cannes-categ figcaption p{
+}
+.ruta-cannes-categ figure:nth-child(1) figcaption{
+    background-color: #A40606 ;
+}
+.ruta-cannes-categ figure:nth-child(2) figcaption{
+    background-color:#FFA900 ;
+
+}
+.ruta-cannes-categ figure:nth-child(3) figcaption{
+    background-color:#7474C3;
+
+}
+.ruta-cannes-categ figure:nth-child(4) figcaption{
+    background-color:#FFA900;
+
+}
+.ruta-cannes-categ figure:nth-child(5) figcaption{
+    background-color:#479DC5;
+
+}
+.ruta-cannes-categ figure:nth-child(6) figcaption{
+    background-color:#3BB606;
+
+}
+
+/*-Fin-*/
+
+
+
+/*--------------MUNDO CACHORRO---------------*/
 .mundocachorro .slide-img{
     background-image: url(../img/shutterstock_80773975.jpg);
     background-position: top;
@@ -469,127 +630,6 @@ header{
     background-color: #EB7E2B;
 }
 
-.slide-img{
-    position: relative;
-    height: 250px;
-}
-.slide-img div{
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-}
 
-.left-nav-producto .nav-producto ul .item_principal-nav-producto{
-    border: 1px solid black;
-    width: 150px;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: "frutiger-LT-57-cond";
-    font-size: 1.2em;
-}
-.left-nav-producto .nav-producto ul .item_principal-nav-producto:nth-child(1):hover{
-    background-color: #42B3DA;
-    color: white;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-.left-nav-producto .nav-producto ul .item_principal-nav-producto:nth-child(2):hover{
-    background-color: #DF3245;
-    color: white;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-.left-nav-producto .nav-producto ul .item_principal-nav-producto:nth-child(3):hover{
-    background-color: #9A42DC;
-    color: white;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-.left-nav-producto .nav-producto ul .item_principal-nav-producto:nth-child(1){
-    border: 1px solid #42B3DA;
-    color: #42B3DA;
-}
-.left-nav-producto .nav-producto ul .item_principal-nav-producto:nth-child(2){
-    border: 1px solid #DF3245;
-    color: #DF3245;
-}
-.left-nav-producto .nav-producto ul .item_principal-nav-producto:nth-child(3){
-    border: 1px solid #9A42DC;
-    color: #9A42DC;
 
-}
-/*Fin*/
-/*tabla nutricional*/
-.img-dog-tabla{
-    background-image: url(../img/img-background/perrito-tabla.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 80%;
-    float: left;
-    width: 35%;
-    height: 500px;
-}
-.box-tabla-certificado{
-    float: left;
-    width: 100%;
-}
-.certificado-img .galleta{
-    width: 60%;
-}
-.certificado-img{
-    width: 65%;
-    float: right;
-}
-.certificado-img .favet{
-    display: block;
-    width: 10%;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-.botton-tabla-producto table{
-    width: 50%; 
-    float: left;
-    margin-left: 20px;
-}
-.margin-top-table{
-    padding-top: 30px;
-    height: auto;
-    overflow: hidden;
-}
-.icon-tabla-nutri{
-    padding: 20px;
-    width: 45%;
-    float: left;
-}
-.icon-tabla-nutri span{
-    font-size: 2.5em;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-.icon-tabla-nutri .fa-stack-1x {
-    color: black;
-}
-.icon-tabla-nutri .fa-circle{
- color: white;
-}
-.botton-tabla-producto{
-    width: 100%;
-    height: 300px;
-}
-.box-tabla-certificado{
-    background-image: url(../img/img-background/perrito-tabla.png);
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: left bottom;
-}
+
