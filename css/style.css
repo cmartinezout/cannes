@@ -297,7 +297,7 @@ slide-img{
     width: 31.3%;
     float: left;
     margin: 1%;
-    align: center;
+    text-align: center;
 }
 .ruta-cannes figure img{
     width: 100%;
@@ -557,15 +557,6 @@ slide-img{
     background-color: #EB7E2B;
 }
 
-.slide-img{
-    position: relative;
-    height: 250px;
-}
-.slide-img div{
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-}
 
 .left-nav-producto .nav-producto  .item_principal-nav-producto{
     border: 1px solid black;
