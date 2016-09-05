@@ -71,7 +71,6 @@ $(function(){
                   $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
                   $('.frutiger-LT-57-cond').empty();
                   $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
-                  console.log(data.tipoPerro[i].productos[i].Porciones);
                   for (var k = 0; k < data.tipoPerro[i].productos[i].Porciones.length; k++) {
                     $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
                   }
