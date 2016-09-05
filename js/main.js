@@ -16,6 +16,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
+  $('#formato').find('.tamanos-produc').empty();
   id = $(this).attr('data-tipo-perro');
   $.getJSON('src/productos.json', function(){ //GET THE JSON AND data IS THE DATA FROM THE JSON
   }).done(function(data){
@@ -33,6 +34,9 @@ $(document).on('click', '.figure-pruducto', function(ev){
             $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
             $('.carousel-indicators').append('')
+            for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
+              $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+            }
           }else{
             $('.carousel-inner').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('.carousel-indicators').append('<li data-target="#carousel-example-generic" data-slide-to='+j+'></li>');
@@ -52,6 +56,7 @@ $(function(){
       var id_tipo_perro = $(this).find('div.active').attr('data-tipo-perro');
       var id_tipo_producto = $(this).find('div.active').attr('data-tipo-producto');
       var id_producto = $(this).find('div.active').attr('data-id');
+      $('#formato').find('.tamanos-produc').empty();
       $.getJSON('src/productos.json', function(){
       }).done(function(data){
         for (var i = 0; i < data.tipoPerro.length; i++) {
@@ -66,6 +71,10 @@ $(function(){
                   $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
                   $('.frutiger-LT-57-cond').empty();
                   $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
+                  console.log(data.tipoPerro[i].productos[i].Porciones);
+                  for (var k = 0; k < data.tipoPerro[i].productos[i].Porciones.length; k++) {
+                    $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                  }
                 }
               }
           }
