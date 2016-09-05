@@ -125,7 +125,7 @@ header{
     display: block;
 }
 .redes-sociales{
-    float:left; 
+    float:left;
     width: 12%;
     padding: 15px 0px;
 }
@@ -296,7 +296,7 @@ header{
     padding-top: 50px;
 }
 .box-h3-rutacannes h3{
-    width: 340px; 
+    width: 340px;
     font-size: 2.2em;
     letter-spacing: 1px;
 }
@@ -341,7 +341,7 @@ header{
 .ruta-cannes figcaption p{
     text-align: center;
       padding: 0px 0px 5px 10px;
-      
+
 }
 .rutav-bg figcaption{
     background-color: #A40606 ;
@@ -383,35 +383,35 @@ header{
     margin-top: 10px;
     font-size: 1.2em;
 }
-.detalle-producto li:nth-child(1):before {
+.detalle-producto .digestion::before {
     content: url(../img/iconos/icon-1-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-.detalle-producto li:nth-child(2):before {
+.detalle-producto .calcio::before {
     content: url(../img/iconos/icon-2-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-.detalle-producto li:nth-child(3):before {
+.detalle-producto .brillante::before {
     content: url(../img/iconos/icon-3-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-.detalle-producto li:nth-child(4):before {
+.detalle-producto .consistentes::before {
     content: url(../img/iconos/icon-4-lista-producto.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-.detalle-producto li:nth-child(5):before {
+.detalle-producto .naturales::before {
     content: url(../img/iconos/icon-5-lista-producto.png);
     display: inline-block;
     zoom:70%;
@@ -424,7 +424,7 @@ header{
 .left-nav-producto .nav-producto ul{
     list-style:none;
     color: black;
-    text-align: center; 
+    text-align: center;
 }
 /*MUNDO CACHORRO*/
 .mundocachorro .slide-img{
@@ -437,7 +437,7 @@ header{
     width: 60%;
     padding: 20px;
     padding-top: 50px;
-  
+
 }
 .linea-separador-mundocachorro{
     margin-top: -8px;
@@ -558,7 +558,7 @@ header{
     margin-top: 10px;
 }
 .botton-tabla-producto table{
-    width: 50%; 
+    width: 50%;
     float: left;
     margin-left: 20px;
 }
