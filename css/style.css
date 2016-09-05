@@ -658,7 +658,6 @@ slide-img{
 }
 .left-nav-producto .nav-producto .seco-cachorro:hover:before, .left-nav-producto .nav-producto .snack-cachorro:hover:before{
     content: url(../img/iconos/icon-hueso-cachorro.png);
-    zoom:40%;
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
@@ -672,21 +671,18 @@ slide-img{
 }
 .left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before{
     content: url(../img/iconos/icon-hueso-adulto.png);
-    zoom:40%;
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
 }
 .left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .snack-senior:hover:before{
     content: url(../img/iconos/icon-hueso-senior.png);
-    zoom:40%;
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
 }
 .left-nav-producto .nav-producto .seco-pequenas:hover:before, .left-nav-producto .nav-producto .snack-pequenas:hover:before{
     content: url(../img/iconos/icon-hueso-pequenas.png);
-    zoom:40%;
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
