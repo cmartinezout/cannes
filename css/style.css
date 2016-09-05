@@ -138,6 +138,8 @@ header{
     font-size: 0.8em;
 
 }
+/*---------------FIN NAVEGACION------------*/
+
 /*-------------SECCION VIDEO-------------*/
 .video-inicio iframe{
     width: 100%;
@@ -145,6 +147,8 @@ header{
 .video-inicio img{
     width: 100%;
 }
+/*---------------FINNAVEGACION------------*/
+
 /*-------------SECCION PRODUCTO------------*/
 
 /*Img-Background*/
@@ -179,8 +183,6 @@ slide-img{
     display: table-caption;
     border-bottom: 1px solid white;
 }
-
-
 /*-Fin-*/
 
 /*Figure- Categoria productos*/
@@ -256,105 +258,11 @@ slide-img{
 .producto-contenido{
   margin-bottom: 3%;
 }
-/* RUTA CANNES*/
-.rutacannes .slide-img{
-    background-image: url(../img/slide-img-ruta.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.box-h3-rutacannes{
-    width: 50%;
-    padding: 20px;
-    padding-top: 50px;
-}
-.box-h3-rutacannes h3{
-    width: 340px;
-    font-size: 2.2em;
-    letter-spacing: 1px;
-}
-.box-h3-rutacannes p {
-    font-size: 1.1em;
-    width: 280px;
-    margin-top: -15px;
 
-}
-.linea-separador-rutacannes{
-    margin-top: -10px;
-    width: 130px;
-    display: table-caption;
-    border-bottom: 1px solid white;
-}
-
-.ruta-cannes figcaption{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.ruta-cannes{
-    padding: 50px 0px;
-}
-.ruta-cannes figure{
-    width: 31.3%;
-    float: left;
-    margin: 1%;
-    text-align: center;
-}
-.ruta-cannes figure img{
-    width: 100%;
-    border-radius: 6px 6px 0px 0px;
-}
-.ruta-cannes figcaption{
-    text-align: center;
-    padding: 3px;
-}
-.ruta-cannes figcaption h4{
-    text-align: center;
-    padding: 10px 0px 0px 5px;
-}
-.ruta-cannes figcaption p{
-    text-align: center;
-      padding: 0px 0px 5px 10px;
-
-}
-.rutav-bg figcaption{
-    background-color: #A40606 ;
-}
-.rutasauce-bg figcaption{
-    background-color:#42B3DA ;
-
-}
-.rutasauce-bg figcaption{
-    background-color:#42B3DA;
-
-}
-.rutaparbic-bg figcaption{
-    background-color:#FFA900;
-
-}
-.cafeteria-bg figcaption{
-    background-color:#7474C3;
-
-}
-.fuhu-bg figcaption{
-    background-color:#803389;
-
-}
-.sauce-bg figcaption{
-    background-color:#479DC5;
-
-}
-.papparazzo-bg figcaption{
-    background-color:#3BB606;
-}
-
-
-/*@media only screen and (min-width: 1024px){
-
-}*/
 .detalle-producto li{
     display: table;
     margin-top: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .detalle-producto .digestion::before {
     content: url(../img/iconos/icon-1-lista-producto.png);
@@ -513,51 +421,6 @@ slide-img{
     padding: 4px;
 }
 
-/*Fin*/
-/*MUNDO CACHORRO*/
-.mundocachorro .slide-img{
-    background-image: url(../img/shutterstock_80773975.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.box-h3-mundocachorro{
-    width: 60%;
-    padding: 20px;
-    padding-top: 50px;
-
-}
-.linea-separador-mundocachorro{
-    margin-top: -8px;
-    width: 180px;
-    display: table-caption;
-    border-bottom: 1px solid white;
-}
-.mundo-cachorro figcaption{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.mundo-cachorro{
-    padding: 50px 0px;
-}
-.mundo-cachorro figure{
-    width: 31.3%;
-    float: left;
-    margin: 1%
-}
-.mundo-cachorro figure img{
-    width: 100%;
-}
-.mundo-cachorro figcaption h4{
-    text-align: center;
-    padding: 23px 2px;
-    letter-spacing: 1px;
-}
-.mundocachorro figcaption{
-    background-color: #EB7E2B;
-}
-
-
 .left-nav-producto .nav-producto  .item_principal-nav-producto{
     border: 1px solid black;
     width: 150px;
@@ -576,6 +439,10 @@ slide-img{
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
+}
+left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):active{
+    background-color: #42B3DA;
+    color: white;
 }
 .left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(3):hover{
     background-color: #DF3245;
@@ -728,22 +595,18 @@ slide-img{
     width: 45%;
     float: left;
 }
-.icon-tabla-nutri span{
-    font-size: 2.5em;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-.icon-tabla-nutri .fa-stack-1x {
-    color: black;
-}
-.icon-tabla-nutri .fa-circle{
- color: white;
+.icon-tabla-nutri img{
+    width: 23%;
+    float: left;
+    margin: 0.5%;
 }
 .botton-tabla-producto{
     width: 100%;
     height: 300px;
 }
 /*-Fin-*/
+/*---------------FIN SECCION PRODUCTO------------*/
+
 /*----------------SECCION RUTA CANNES----------------*/
 /*Img-Background*/
 .ruta .slide-img{
@@ -799,15 +662,18 @@ slide-img{
 }
 .ruta-cannes-categ figcaption{
     padding: 10px;
+    height: 90px;
 }
 .ruta-cannes-categ figcaption h4{
     font-size: 1.4em;
     font-weight: 100;
     letter-spacing: 1px;
-    padding: 5px;
+    padding-top: 5px;
+    margin-bottom: 8px;
     font-family: "frutiger-LT-57-cond";
 }
 .ruta-cannes-categ figcaption p{
+    font-size: 0.9em;
 }
 .ruta-cannes-categ figure:nth-child(1) figcaption{
     background-color: #A40606 ;
@@ -834,10 +700,53 @@ slide-img{
 }
 
 /*-Fin-*/
-
+/*----------------FIN SECCION RUTA CANNES----------------*/
 
 
 /*--------------MUNDO CACHORRO---------------*/
+.mundocachorro .slide-img{
+    background-image: url(../img/shutterstock_80773975.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-h3-mundocachorro{
+    width: 60%;
+    padding: 20px;
+    padding-top: 50px;
+
+}
+.linea-separador-mundocachorro{
+    margin-top: -8px;
+    width: 180px;
+    display: table-caption;
+    border-bottom: 1px solid white;
+}
+.mundo-cachorro figcaption{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.mundo-cachorro{
+    padding: 50px 0px;
+}
+.mundo-cachorro figure{
+    width: 31.3%;
+    float: left;
+    margin: 1%
+}
+.mundo-cachorro figure img{
+    width: 100%;
+}
+.mundo-cachorro figcaption h4{
+    text-align: center;
+    padding: 23px 2px;
+    letter-spacing: 1px;
+}
+.mundocachorro figcaption{
+    background-color: #EB7E2B;
+}
+/*---*/
+/*MUNDO CACHORRO*/
 .mundocachorro .slide-img{
     background-image: url(../img/shutterstock_80773975.jpg);
     background-position: top;

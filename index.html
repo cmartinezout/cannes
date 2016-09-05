@@ -126,26 +126,26 @@
            <div class="container">
                <div class="left-nav-producto">
                 <nav class="nav-producto">
-                        <div class="item_principal-nav-producto">CACHORRO</div>
-                         <ul class="link_subcategoria-prodcuto">
+                        <div class="item_principal-nav-producto" id="cachorro-item">CACHORRO</div>
+                         <ul class="link_subcategoria-prodcuto" id="link-sub-cachorro"  style="display:none;">
                                 <li class="seco-cachorro">Seco</li>
                                 <li class="snack-cachorro">Snack</li>
                         </ul>
-                        <div class="item_principal-nav-producto">ADULTO</div>
+                        <div class="item_principal-nav-producto" id="adulto-item">ADULTO</div>
 
-                            <ul class="link_subcategoria-prodcuto">
+                            <ul class="link_subcategoria-prodcuto" id="link-sub-adulto" style="display:none;">
                                 <li class="seco-adulto">Seco</li>
                                 <li class="snack-adulto">Snack</li>
                             </ul>
-                        <div class="item_principal-nav-producto">SENIOR</div>
+                        <div class="item_principal-nav-producto" id="senior-item">SENIOR</div>
 
-                            <ul class="link_subcategoria-prodcuto">
+                            <ul class="link_subcategoria-prodcuto" id="link-sub-senior" style="display:none;">
                                 <li class="seco-senior">Seco</li>
                                 <li class="snack-senior">Snack</li>
                             </ul>
-                        <div class="item_principal-nav-producto">RAZAS PEQUEÑAS</div>
+                        <div class="item_principal-nav-producto" id="pequena-item">RAZAS PEQUEÑAS</div>
 
-                            <ul class="link_subcategoria-prodcuto">
+                            <ul class="link_subcategoria-prodcuto" id="link-sub-pequena" style="display:none;">
                                 <li class="seco-pequenas">Seco</li>
                                 <li class="snack-pequenas">Snack</li>
                             </ul>
@@ -188,10 +188,10 @@
                 </div>
                 <div class="tabla-nutri">
                     <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#tabla-nutri" aria-controls="home" role="tab" data-toggle="tab" >TABLA <br>NUTRICIONAL</a></li>
-                <li role="presentation"><a href="#ingredientes" aria-controls="profile" role="tab" data-toggle="tab" class="padig-a">INGREDIENTES</a></li>
-                <li role="presentation"><a href="#raciones" aria-controls="settings" role="tab" data-toggle="tab">RACIONES <br> REMOENDADAS</a></li>
-                <li role="presentation"><a href="#formato" aria-controls="settings" role="tab" data-toggle="tab" class="padig-a">FORMATO</a></li>
+                <li role="presentation" class="active"><a href="#tabla-nutri" aria-controls="home" role="tab" data-toggle="tab" class="bo-right">TABLA <br>NUTRICIONAL</a></li>
+                <li role="presentation"><a href="#ingredientes" aria-controls="profile" role="tab" data-toggle="tab" class="padig-a bo-right bo-left">INGREDIENTES</a></li>
+                <li role="presentation"><a href="#raciones" aria-controls="settings" role="tab" data-toggle="tab" class="bo-right bo-left">RACIONES <br> REMOENDADAS</a></li>
+                <li role="presentation"><a href="#formato" aria-controls="settings" role="tab" data-toggle="tab" class="padig-a bo-right-no bo-left">FORMATO</a></li>
             </ul>
 
             <!-- Tab panes TABLA NUTRICIONAL -->
@@ -199,23 +199,15 @@
               <!-- TABLA NUTRICIONAL -->
                 <div role="tabpanel" class="tab-pane fade in active" id="tabla-nutri">
                    <div class="margin-top-table">
-                       <table class="table table-striped">
+                       <table class="table">
                         <tbody class="info-nutricional">
                         </tbody>
                     </table>
                     <div class="icon-tabla-nutri">
-                        <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
+                        <img src="img/iconos/icon1-nutri.png" alt="">
+                     <img src="img/iconos/icon2-nutri.png" alt="">
+                     <img src="img/iconos/icon3-nutri.png" alt="">
+                      <img src="img/iconos/icon4-nutri.png" alt="">
                     </div>
                    </div>
 
@@ -273,43 +265,43 @@
           <figure>
               <img src="img/ruta-rojo-fig.png" alt="ruta playa">
               <figcaption>
-                 <h4>RUTA PLAYA V REGION</h4>
-                 <p>Breve descriptor de lo que trata la ruta</p>
+                 <h4>DESCANSA JUNTO A TU PERRO</h4>
+                 <p>Para que ninguno de la familia se quede en casa estas vacaciones.</p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-amarillo-fig.png"  alt="perro adulto">
               <figcaption>
-                  <h4>RUTA PARQUE BICENTENARIO</h4>
-                  <p>Breve descriptor de lo que trata la ruta</p>
+                  <h4>¡UN DULCE PASEO! </h4>
+                  <p>Para que disfruten lo mejor de Cafetería Daniels.</p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-lila-fig.png"  alt="perro senior">
               <figcaption>
-                  <h4>RUTA CAFETERIA DANIEL 'S</h4>
-                     <p>Breve descriptor de lo que trata la ruta</p>
+                  <h4>CANNES A TODO TERRENO</h4>
+                     <p>Vive una aventura canina en Camping el Sauce.</p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-morado-fig.png" >
               <figcaption>
-                     <h4>RUTA RESTAURANT FUHU</h4>
-                     <p>Breve descriptor de lo que trata la ruta</p>
+                     <h4>UNA NOCHE CANINA</h4>
+                     <p>Vive una linda velada en el restaurante Papparazzo. </p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-celeste-fig.png" alt="perro adulto">
               <figcaption>
-                  <h4>RUTA CAMPING EL SAUCE</h4>
-                     <p>Breve descriptor de lo que trata la ruta</p>
+                  <h4>TU PERRO TAMBIÉN ENTRENA</h4>
+                     <p>Disfruta de una tarde deportiva en Parque Bicentenario.</p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-verde-fig.png" alt="perro senior">
               <figcaption>
-                  <h4>RUTA RESTORANT PAPPARZZO</h4>
-                     <p>Breve descriptor de lo que trata la ruta</p>
+                  <h4>A LA LUZ DE LAS VELAS</h4>
+                     <p>Una linda noche en Roberta Restobar.</p>
               </figcaption>
           </figure>
       </div>
@@ -356,6 +348,21 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    </script>
+    <script>
+        
+        $('#cachorro-item').click( function(){
+            $("#link-sub-cachorro").slideToggle();
+        });
+        $('#adulto-item').click( function(){
+            $("#link-sub-adulto").slideToggle();
+        });
+        $('#senior-item').click( function(){
+            $("#link-sub-senior").slideToggle();
+        });
+        $('#pequena-item').click( function(){
+            $("#link-sub-pequena").slideToggle();
+        });
     </script>
 </body>
 
