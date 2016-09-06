@@ -127,25 +127,25 @@
                <div class="left-nav-producto">
                 <nav class="nav-producto">
 
-                        <div class="comida item_principal-nav-producto" data-tipo-perro="1">CACHORRO</div>
-                         <ul class="link_subcategoria-prodcuto">
+                        <div id="cachorro-item" class="comida item_principal-nav-producto" data-tipo-perro="1">CACHORRO</div>
+                         <ul class="link_subcategoria-prodcuto" id="link-sub-cachorro" style="display: none;">
                                 <li class="comida seco-cachorro" data-tipo-perro="1">Seco</li>
                                 <li class="snack snack-cachorro" data-custom="1">Snack</li>
                         </ul>
-                        <div class="comida item_principal-nav-producto" data-tipo-perro="2">ADULTO</div>
+                        <div id="adulto-item" class="comida item_principal-nav-producto" data-tipo-perro="2">ADULTO</div>
 
-                            <ul class="link_subcategoria-prodcuto">
+                            <ul class="link_subcategoria-prodcuto" id="link-sub-adulto" style="display: none;">
                                 <li class="comida seco-adulto" data-tipo-perro="2">Seco</li>
                                 <li class="snack snack-adulto" data-custom="1">Snack</li>
                             </ul>
-                        <div class="comida item_principal-nav-producto" data-tipo-perro="3">SENIOR</div>
+                        <div id="senior-item" class="comida item_principal-nav-producto" data-tipo-perro="3">SENIOR</div>
 
-                            <ul class="link_subcategoria-prodcuto">
+                            <ul  class="link_subcategoria-prodcuto" id="link-sub-senior" style="display: none;">
                                 <li class="comida seco-senior" data-tipo-perro="3">Seco</li>
                                 <li class="snack snack-senior" data-custom="1">Snack</li>
                             </ul>
-                        <div class="comida item_principal-nav-producto 4" data-tipo-perro="4">RAZAS PEQUEÑAS</div>
-                            <ul class="link_subcategoria-prodcuto">
+                        <div id="pequenas-item" class="comida item_principal-nav-producto 4" data-tipo-perro="4">RAZAS PEQUEÑAS</div>
+                            <ul class="link_subcategoria-prodcuto" id="link-sub-pequenas" style="display: none;">
                                 <li class="comida seco-pequenas" data-tipo-perro="4">Seco</li>
                                 <li class="snack snack-pequenas" data-custom="1">Snack</li>
                             </ul>
@@ -368,7 +368,7 @@
     <script type="text/javascript">
     </script>
     <script>
-        
+
         $('#cachorro-item').click( function(){
             $("#link-sub-cachorro").slideToggle();
         });
@@ -378,8 +378,8 @@
         $('#senior-item').click( function(){
             $("#link-sub-senior").slideToggle();
         });
-        $('#pequena-item').click( function(){
-            $("#link-sub-pequena").slideToggle();
+        $('#pequenas-item').click( function(){
+            $("#link-sub-pequenas").slideToggle();
         });
     </script>
 </body>

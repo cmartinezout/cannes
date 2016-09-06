@@ -7,7 +7,8 @@ $(document).on('click', '.figure-pruducto', function(ev){
   $('.info-nutricional').empty();
   $('#formato').find('.tamanos-produc').empty();
   id = $(this).attr('data-tipo-perro');
-  $("div[data-tipo-perro='"+id+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
+  $('#link-sub-'+perros[parseInt(id)-1]).slideToggle();
+  $("ul[data-tipo-perro='"+id+"']").removeClass("seco-"+perros[parseInt(id)-1]).addClass("seco-"+perros[parseInt(id)-1]+"-activo");
   $.getJSON('src/productos.json', function(){ //GET THE JSON AND data IS THE DATA FROM THE JSON
   }).done(function(data){
     for (var i = 0; i < data.tipoPerro.length; i++) { //LOOK FOR ALL THE DATA ON THE JSON

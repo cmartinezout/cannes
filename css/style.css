@@ -153,7 +153,7 @@ header{
     transition: all 300ms ease;
 }
 .nav-principal li a:hover{
-  
+
 }
 .redes-sociales{
     float:left;
@@ -168,7 +168,7 @@ header{
 }
 .redes-sociales a{
     font-size: 0.8em;
-    
+
 
 }
 .redes-sociales .fa-stack{
@@ -190,7 +190,7 @@ transform: scale(1.4);
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
-    
+
 }
 .redes-sociales .fa-stack-1x:hover{
     padding-top: 0px;
@@ -604,6 +604,7 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
+    zoom: 40%;
 }
 .left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
       -webkit-transition: all 300ms ease;
@@ -617,18 +618,21 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
+    zoom: 40%;
 }
 .left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .snack-senior:hover:before{
     content: url(../img/iconos/icon-hueso-senior.png);
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
+    zoom: 40%;
 }
 .left-nav-producto .nav-producto .seco-pequenas:hover:before, .left-nav-producto .nav-producto .snack-pequenas:hover:before{
     content: url(../img/iconos/icon-hueso-pequenas.png);
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
+    zoom: 40%;
 }
 
 /*Fin*/
