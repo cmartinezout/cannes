@@ -1,0 +1,41 @@
+{
+  "tiposnaks":[{
+    "id": "1",
+    "Nombre": "GALLETAS",
+    "Nombre_2": "GALLETAS CARNE Y LECHE",
+    "Ingredientes": "<b>Ingredientes Carne</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado desodorizado (Fuente de ácidos grasos omega 3), Cloruro de sodio, Colorante caramelo, Saborizante, Bicarbonato de amonio, bicarbonato de sodio.</br> <b>Ingredientes Leche</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado estabilizado y desodorizado (fuente de ácidos grasos omega 3), Cloruro de sodio, Saborizante, Bicarbonato de amonio, Bicarbonato de sodio.",
+    "imagen": "img/productos/producto2.png",
+    "Caracteristicas": "<li class='text-black digestion'>Mejor <span class='detalle-sizemas'>digestión &#8226;</span> <span class='text-naranjo'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción <span class='detalle-sizemas'>de calcio &#8226;</span> <span class='text-naranjo'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más <span class='detalle-sizemas'>brillante &#8226;</span> <span class='text-naranjo'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más <span class='detalle-sizemas'>consistentes &#8226;</span> <span class='text-naranjo'>Menos volumen y olor.</span></li><li class='text-black naturales'>Defensas <span class='detalle-sizemas'>naturales &#8226;</span> <span class='text-naranjo'>Fortalecidas, más salud.</span></li>",
+    "Nutricion": " <tr><td>Proteinas:</td><td>Mínimo</td><td>17%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>10%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>4%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>10%</td></tr>"
+    },
+    {
+      "id": "2",
+      "Nombre_2": "SALSAS",
+      "Nombre": "SALSA CACERAS ASADO DE TIRA Y TOCINO",
+      "Ingredientes": "<b>Ingredientes Sabor Asado de Tira</b></br> Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante asado de tira, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes <b>Ingredientes Sabor Tocino</b></br>Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante tocino, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes.",
+      "imagen": "img/productos/producto1.png",
+      "Caracteristicas": "<li class='text-black digestion'>Mejor <span class='detalle-sizemas'>digestión &#8226;</span> <span class='text-naranjo'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción <span class='detalle-sizemas'>de calcio &#8226;</span> <span class='text-naranjo'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más <span class='detalle-sizemas'>brillante &#8226;</span> <span class='text-naranjo'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más <span class='detalle-sizemas'>consistentes &#8226;</span> <span class='text-naranjo'>Menos volumen y olor.</span></li><li class='text-black naturales'>Defensas <span class='detalle-sizemas'>naturales &#8226;</span> <span class='text-naranjo'>Fortalecidas, más salud.</span></li>",
+      "Nutricion": " <tr><td>Proteinas:</td><td>Mínimo</td><td>2,0%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>3,0%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>0,5%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>80%</td></tr>"
+      },
+      {
+        "id": "3",
+        "Nombre": "SNACKS",
+        "Nombre_2": "FILETITOS Y COSTILLAS",
+        "Ingredientes": "Almidón de maíz, gluten de trigo, azucares, propilenglicol, grasa vegetal, huevo en polvo, sal, hígado en polvo, emulsionantes autorizados, sorbato de potasio, antioxidantes (BHA, propilgalato), saborizantes y colorantes autorizados.",
+        "imagen": "img/productos/producto3.png",
+        "Caracteristicas": "<li class='text-black digestion'>Mejor <span class='detalle-sizemas'>digestión &#8226;</span> <span class='text-naranjo'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción <span class='detalle-sizemas'>de calcio &#8226;</span> <span class='text-naranjo'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más <span class='detalle-sizemas'>brillante &#8226;</span> <span class='text-naranjo'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más <span class='detalle-sizemas'>consistentes &#8226;</span> <span class='text-naranjo'>Menos volumen y olor.</span></li><li class='text-black naturales'>Defensas <span class='detalle-sizemas'>naturales &#8226;</span> <span class='text-naranjo'>Fortalecidas, más salud.</span></li>",
+        "Nutricion": " <tr><td>Proteinas:</td><td>Mínimo</td><td>18%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>7%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>1%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>15%</td></tr>",
+        "Porciones": ["Doypack de 65g"]
+        },
+        {
+          "id": "4",
+          "Nombre": "BARRITAS",
+          "Nombre_2": "ASADO DE TIRA Y CARNE MECHADA",
+          "Ingredientes": "<b>Ingredientes Carne Mechada</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes.</br><b>Ingredientes Asado deTira</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes autorizados.",
+          "imagen": "img/productos/producto3.png",
+          "Caracteristicas": "<li class='text-black digestion'>Mejor <span class='detalle-sizemas'>digestión &#8226;</span> <span class='text-naranjo'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción <span class='detalle-sizemas'>de calcio &#8226;</span> <span class='text-naranjo'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más <span class='detalle-sizemas'>brillante &#8226;</span> <span class='text-naranjo'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más <span class='detalle-sizemas'>consistentes &#8226;</span> <span class='text-naranjo'>Menos volumen y olor.</span></li><li class='text-black naturales'>Defensas <span class='detalle-sizemas'>naturales &#8226;</span> <span class='text-naranjo'>Fortalecidas, más salud.</span></li>",
+          "Nutricion": " <tr><td>Proteinas:</td><td>Mínimo</td><td>13%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>6%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>7%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>15%</td></tr>",
+          "Porciones": ["1,5 KG", "3 KG", "10 KG", "15 KG", "18 KG"]
+        }]
+
+}

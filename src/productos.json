@@ -59,6 +59,6 @@
             "Nutricion": " <tr><td>Proteinas:</td><td>Mínimo</td><td>20%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>08%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>04 %</td></tr><tr><td>Humedad</td><td>Máximo</td><td>12%</td></tr>",
             "Porciones": ["1,5 KG", "3 KG", "10 KG", "15 KG", "18 KG"]
             }]
-          }]
+        }]
 
 }

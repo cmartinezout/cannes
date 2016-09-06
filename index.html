@@ -94,7 +94,7 @@
             </div>
         </div>
         <div class="producto-categ">
-            <div class="container">
+            <div class="container" >
                 <figure class="cachorro-bg figure-pruducto" data-tipo-perro="1">
                     <img src="img/producto-cachorro-fig.jpg" alt="perro cachorro">
                     <figcaption>
@@ -122,32 +122,31 @@
             </div>
         </div>
     </section>
-    <section class="producto-contenido container-producto" style="display: none">
+    <section class="producto-contenido container-producto" style="display:none">
            <div class="container">
                <div class="left-nav-producto">
                 <nav class="nav-producto">
-                        <div class="item_principal-nav-producto">CACHORRO</div>
+                        <div class="comida item_principal-nav-producto" data-tipo-perro="1">CACHORRO</div>
                          <ul class="link_subcategoria-prodcuto">
-                                <li class="seco-cachorro">Seco</li>
-                                <li class="snack-cachorro">Snack</li>
+                                <li class="comida seco-cachorro" data-tipo-perro="1">Seco</li>
+                                <li class="snack snack-cachorro" data-custom="1">Snack</li>
                         </ul>
-                        <div class="item_principal-nav-producto">ADULTO</div>
+                        <div class="comida item_principal-nav-producto" data-tipo-perro="2">ADULTO</div>
 
                             <ul class="link_subcategoria-prodcuto">
-                                <li class="seco-adulto">Seco</li>
-                                <li class="snack-adulto">Snack</li>
+                                <li class="comida seco-adulto" data-tipo-perro="2">Seco</li>
+                                <li class="snack snack-adulto" data-custom="1">Snack</li>
                             </ul>
-                        <div class="item_principal-nav-producto">SENIOR</div>
+                        <div class="comida item_principal-nav-producto" data-tipo-perro="3">SENIOR</div>
 
                             <ul class="link_subcategoria-prodcuto">
-                                <li class="seco-senior">Seco</li>
-                                <li class="snack-senior">Snack</li>
+                                <li class="comida seco-senior" data-tipo-perro="3">Seco</li>
+                                <li class="snack snack-senior" data-custom="1">Snack</li>
                             </ul>
-                        <div class="item_principal-nav-producto">RAZAS PEQUEÑAS</div>
-
+                        <div class="comida item_principal-nav-producto" data-tipo-perro="4">RAZAS PEQUEÑAS</div>
                             <ul class="link_subcategoria-prodcuto">
-                                <li class="seco-pequenas">Seco</li>
-                                <li class="snack-pequenas">Snack</li>
+                                <li class="comida seco-pequenas" data-tipo-perro="4">Seco</li>
+                                <li class="snack snack-pequenas" data-custom="1">Snack</li>
                             </ul>
                 </nav>
             </div>
@@ -165,6 +164,23 @@
               <span class="sr-only">Previous</span>
           </a>
           <a class="right carousel-control" href="#carousel-productos" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div id="carousel-snacks" style="display: none;" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-snacks" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left fa fa-angle-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-snacks" role="button" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
           </a>
