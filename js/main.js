@@ -1,15 +1,4 @@
-$(document).on('click', '.items-producto', function(ev){
-  ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
-  id = $(this).attr('data-tipo-perro');
-  $.getJSON('src/productos.json', function(data){ //GET THE JSON AND data IS THE DATA FROM THE JSON
-    for (var i = 0; i < data.tipoPerro.length; i++) { //LOOK FOR ALL THE DATA ON THE JSON
-      if(id == data.tipoPerro[i].id){ //IF THE OPTION SELECTED EQUAL TO ID FROM THE ELEMENT
-        alert(data.tipoPerro[i].productos[0].Nombre)
-      }
-    }
-  });
-});
-
+var perros = ["cachorro", "adulto", "senior", "pequenas"];
 $(document).on('click', '.figure-pruducto', function(ev){
   ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
   $('.carousel-inner').empty();
@@ -18,6 +7,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
   $('.info-nutricional').empty();
   $('#formato').find('.tamanos-produc').empty();
   id = $(this).attr('data-tipo-perro');
+  $("div[data-tipo-perro='"+id+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
   $.getJSON('src/productos.json', function(){ //GET THE JSON AND data IS THE DATA FROM THE JSON
   }).done(function(data){
     for (var i = 0; i < data.tipoPerro.length; i++) { //LOOK FOR ALL THE DATA ON THE JSON
