@@ -44,10 +44,10 @@
             <!--NAV-->
             <nav class="nav-principal">
                 <ul>
-                    <li class="padding-center-link"><a href="">PRODUCTOS</a></li>
+                    <li class="padding-center-link"><a href="#producto-sec">PRODUCTOS</a></li>
                     <li class="padding-center-link"><a href="">RUTAS CANNES</a></li>
                     <li><a href="">LO RICO DE SER PERRO</a></li>
-                    <li class="padding-center-link"><a href="">MUNDO CACHORRO</a></li>
+                    <li class="padding-center-link padding-top-hover"><a href="">MUNDO CACHORRO</a></li>
                     <li class="padding-center-link"><a href="">CONTÁCTANOS</a></li>
                 </ul>
             </nav>
@@ -77,13 +77,13 @@
         </div>
         <!-- FIN NAVEGACION PRINICPAL-->
     </header>
-    <section class="video-inicio">
+    <section class="video-inicio" id="home">
         <img src="img/img-background/video-img.jpg" alt="">
         <!-- PRUE VIDEO
       <iframe width="1800" height="1013" src="https://www.youtube.com/embed/6lAeDYbkRJ4?autoplay=1&loop=1&playlist=6lAeDYbkRJ4&rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       -->
     </section>
-    <section class="producto">
+    <section class="producto" id="producto-sec">
         <div class="slide-img">
             <div class="box-h3-producto container">
                 <h3 class="futura-bold">
@@ -114,7 +114,7 @@
                     </figcaption>
                 </figure>
                 <figure class="r-pequena-bg figure-pruducto" data-tipo-perro="4">
-                    <img src="img/producto-senior-fig.jpg" alt="perro pequeño">
+                    <img src="img/producto-pequenas-fig.jpg" alt="perro pequeño">
                     <figcaption>
                         <h4 class="frutiger-std-con">RAZAS PEQUEÑAS</h4>
                     </figcaption>
@@ -126,28 +126,28 @@
            <div class="container">
                <div class="left-nav-producto">
                 <nav class="nav-producto">
-                        <div class="item_principal-nav-producto" id="cachorro-item">CACHORRO</div>
+                        <div class="item_principal-nav-producto" id="cachorro-item">Cachorro</div>
                          <ul class="link_subcategoria-prodcuto" id="link-sub-cachorro"  style="display:none;">
-                                <li class="seco-cachorro">Seco</li>
-                                <li class="snack-cachorro">Snack</li>
+                                <li class="seco-cachorro seco-cachorro-activo">Seco</li>
+                                <li class="snack-cachorro snack-cachorro-activo">Snack</li>
                         </ul>
-                        <div class="item_principal-nav-producto" id="adulto-item">ADULTO</div>
+                        <div class="item_principal-nav-producto" id="adulto-item">Adulto</div>
 
                             <ul class="link_subcategoria-prodcuto" id="link-sub-adulto" style="display:none;">
-                                <li class="seco-adulto">Seco</li>
-                                <li class="snack-adulto">Snack</li>
+                                <li class="seco-adulto  seco-adulto-activo">Seco</li>
+                                <li class="snack-adulto  snack-adulto-activo">Snack</li>
                             </ul>
-                        <div class="item_principal-nav-producto" id="senior-item">SENIOR</div>
+                        <div class="item_principal-nav-producto" id="senior-item">Senior</div>
 
                             <ul class="link_subcategoria-prodcuto" id="link-sub-senior" style="display:none;">
-                                <li class="seco-senior">Seco</li>
-                                <li class="snack-senior">Snack</li>
+                                <li class="seco-senior  seco-senior-activo">Seco</li>
+                                <li class="snack-senior  snack-senior-activo">Snack</li>
                             </ul>
-                        <div class="item_principal-nav-producto" id="pequena-item">RAZAS PEQUEÑAS</div>
+                        <div class="item_principal-nav-producto" id="pequena-item">Razas Pequeñas</div>
 
                             <ul class="link_subcategoria-prodcuto" id="link-sub-pequena" style="display:none;">
-                                <li class="seco-pequenas">Seco</li>
-                                <li class="snack-pequenas">Snack</li>
+                                <li class="seco-pequenas  seco-pequenas-activo">Seco</li>
+                                <li class="snack-pequenas  snack-pequenas-activo">Snack</li>
                             </ul>
                 </nav>
             </div>
@@ -172,7 +172,9 @@
         </div>
         <div class="right-contenido-producto text-naranjo">
             <div class="detalle-producto">
-                <h2 class="frutiger-bold-cond">CACHORRO</h2><h4 class="frutiger-LT-57-cond">CARNE Y LECHE</h4>
+                <h2 class="frutiger-bold-cond">CACHORRO</h2>
+                <hr class="hr-cachorro">
+                <h4 class="frutiger-LT-57-cond">CARNE Y LECHE</h4>
                 <h3 class="frutiger-std-con">Alimento completo para tu perro cachorro con Prebióticos, Omega 3 y 6.</h3>
                 <div class="text-grande">
                 </div>
@@ -189,9 +191,9 @@
                 <div class="tabla-nutri">
                     <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#tabla-nutri" aria-controls="home" role="tab" data-toggle="tab" class="bo-right">TABLA <br>NUTRICIONAL</a></li>
-                <li role="presentation"><a href="#ingredientes" aria-controls="profile" role="tab" data-toggle="tab" class="padig-a bo-right bo-left">INGREDIENTES</a></li>
-                <li role="presentation"><a href="#raciones" aria-controls="settings" role="tab" data-toggle="tab" class="bo-right bo-left">RACIONES <br> REMOENDADAS</a></li>
-                <li role="presentation"><a href="#formato" aria-controls="settings" role="tab" data-toggle="tab" class="padig-a bo-right-no bo-left">FORMATO</a></li>
+                <li role="presentation"><a href="#ingredientes" aria-controls="profile" role="tab" data-toggle="tab" class="padig-a bo-right">INGREDIENTES</a></li>
+                <li role="presentation"><a href="#raciones" aria-controls="settings" role="tab" data-toggle="tab" class="bo-right ">RACIONES <br> RECOMENDADAS</a></li>
+                <li role="presentation"><a href="#formato" aria-controls="settings" role="tab" data-toggle="tab" class="padig-a bo-right-no bor-right-nono">FORMATO</a></li>
             </ul>
 
             <!-- Tab panes TABLA NUTRICIONAL -->
