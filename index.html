@@ -44,10 +44,10 @@
             <!--NAV-->
             <nav class="nav-principal">
                 <ul>
-                    <li class="padding-center-link"><a href="">PRODUCTOS</a></li>
+                    <li class="padding-center-link"><a href="#producto-sec">PRODUCTOS</a></li>
                     <li class="padding-center-link"><a href="">RUTAS CANNES</a></li>
                     <li><a href="">LO RICO DE SER PERRO</a></li>
-                    <li class="padding-center-link"><a href="">MUNDO CACHORRO</a></li>
+                    <li class="padding-center-link padding-top-hover"><a href="">MUNDO CACHORRO</a></li>
                     <li class="padding-center-link"><a href="">CONTÁCTANOS</a></li>
                 </ul>
             </nav>
@@ -77,13 +77,13 @@
         </div>
         <!-- FIN NAVEGACION PRINICPAL-->
     </header>
-    <section class="video-inicio">
+    <section class="video-inicio" id="home">
         <img src="img/img-background/video-img.jpg" alt="">
         <!-- PRUE VIDEO
       <iframe width="1800" height="1013" src="https://www.youtube.com/embed/6lAeDYbkRJ4?autoplay=1&loop=1&playlist=6lAeDYbkRJ4&rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       -->
     </section>
-    <section class="producto">
+    <section class="producto" id="producto-sec">
         <div class="slide-img">
             <div class="box-h3-producto container">
                 <h3 class="futura-bold">
@@ -114,7 +114,7 @@
                     </figcaption>
                 </figure>
                 <figure class="r-pequena-bg figure-pruducto" data-tipo-perro="4">
-                    <img src="img/producto-senior-fig.jpg" alt="perro pequeño">
+                    <img src="img/producto-pequenas-fig.jpg" alt="perro pequeño">
                     <figcaption>
                         <h4 class="frutiger-std-con">RAZAS PEQUEÑAS</h4>
                     </figcaption>
@@ -126,6 +126,7 @@
            <div class="container">
                <div class="left-nav-producto">
                 <nav class="nav-producto">
+
                         <div class="comida item_principal-nav-producto" data-tipo-perro="1">CACHORRO</div>
                          <ul class="link_subcategoria-prodcuto">
                                 <li class="comida seco-cachorro" data-tipo-perro="1">Seco</li>
@@ -188,7 +189,9 @@
         </div>
         <div class="right-contenido-producto text-naranjo">
             <div class="detalle-producto">
-                <h2 class="frutiger-bold-cond">CACHORRO</h2><h4 class="frutiger-LT-57-cond">CARNE Y LECHE</h4>
+                <h2 class="frutiger-bold-cond">CACHORRO</h2>
+                <hr class="hr-cachorro">
+                <h4 class="frutiger-LT-57-cond">CARNE Y LECHE</h4>
                 <h3 class="frutiger-std-con">Alimento completo para tu perro cachorro con Prebióticos, Omega 3 y 6.</h3>
                 <div class="text-grande">
                 </div>
@@ -204,10 +207,10 @@
                 </div>
                 <div class="tabla-nutri">
                     <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#tabla-nutri" aria-controls="home" role="tab" data-toggle="tab" >TABLA <br>NUTRICIONAL</a></li>
-                <li role="presentation"><a href="#ingredientes" aria-controls="profile" role="tab" data-toggle="tab" class="padig-a">INGREDIENTES</a></li>
-                <li role="presentation"><a href="#raciones" aria-controls="settings" role="tab" data-toggle="tab">RACIONES <br> REMOENDADAS</a></li>
-                <li role="presentation"><a href="#formato" aria-controls="settings" role="tab" data-toggle="tab" class="padig-a">FORMATO</a></li>
+                <li role="presentation" class="active"><a href="#tabla-nutri" aria-controls="home" role="tab" data-toggle="tab" class="bo-right">TABLA <br>NUTRICIONAL</a></li>
+                <li role="presentation"><a href="#ingredientes" aria-controls="profile" role="tab" data-toggle="tab" class="padig-a bo-right">INGREDIENTES</a></li>
+                <li role="presentation"><a href="#raciones" aria-controls="settings" role="tab" data-toggle="tab" class="bo-right ">RACIONES <br> RECOMENDADAS</a></li>
+                <li role="presentation"><a href="#formato" aria-controls="settings" role="tab" data-toggle="tab" class="padig-a bo-right-no bor-right-nono">FORMATO</a></li>
             </ul>
 
             <!-- Tab panes TABLA NUTRICIONAL -->
@@ -215,23 +218,15 @@
               <!-- TABLA NUTRICIONAL -->
                 <div role="tabpanel" class="tab-pane fade in active" id="tabla-nutri">
                    <div class="margin-top-table">
-                       <table class="table table-striped">
+                       <table class="table">
                         <tbody class="info-nutricional">
                         </tbody>
                     </table>
                     <div class="icon-tabla-nutri">
-                        <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
+                        <img src="img/iconos/icon1-nutri.png" alt="">
+                     <img src="img/iconos/icon2-nutri.png" alt="">
+                     <img src="img/iconos/icon3-nutri.png" alt="">
+                      <img src="img/iconos/icon4-nutri.png" alt="">
                     </div>
                    </div>
 
@@ -289,43 +284,43 @@
           <figure>
               <img src="img/ruta-rojo-fig.png" alt="ruta playa">
               <figcaption>
-                 <h4>RUTA PLAYA V REGION</h4>
-                 <p>Breve descriptor de lo que trata la ruta</p>
+                 <h4>DESCANSA JUNTO A TU PERRO</h4>
+                 <p>Para que ninguno de la familia se quede en casa estas vacaciones.</p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-amarillo-fig.png"  alt="perro adulto">
               <figcaption>
-                  <h4>RUTA PARQUE BICENTENARIO</h4>
-                  <p>Breve descriptor de lo que trata la ruta</p>
+                  <h4>¡UN DULCE PASEO! </h4>
+                  <p>Para que disfruten lo mejor de Cafetería Daniels.</p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-lila-fig.png"  alt="perro senior">
               <figcaption>
-                  <h4>RUTA CAFETERIA DANIEL 'S</h4>
-                     <p>Breve descriptor de lo que trata la ruta</p>
+                  <h4>CANNES A TODO TERRENO</h4>
+                     <p>Vive una aventura canina en Camping el Sauce.</p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-morado-fig.png" >
               <figcaption>
-                     <h4>RUTA RESTAURANT FUHU</h4>
-                     <p>Breve descriptor de lo que trata la ruta</p>
+                     <h4>UNA NOCHE CANINA</h4>
+                     <p>Vive una linda velada en el restaurante Papparazzo. </p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-celeste-fig.png" alt="perro adulto">
               <figcaption>
-                  <h4>RUTA CAMPING EL SAUCE</h4>
-                     <p>Breve descriptor de lo que trata la ruta</p>
+                  <h4>TU PERRO TAMBIÉN ENTRENA</h4>
+                     <p>Disfruta de una tarde deportiva en Parque Bicentenario.</p>
               </figcaption>
           </figure>
           <figure>
               <img src="img/ruta-verde-fig.png" alt="perro senior">
               <figcaption>
-                  <h4>RUTA RESTORANT PAPPARZZO</h4>
-                     <p>Breve descriptor de lo que trata la ruta</p>
+                  <h4>A LA LUZ DE LAS VELAS</h4>
+                     <p>Una linda noche en Roberta Restobar.</p>
               </figcaption>
           </figure>
       </div>
@@ -371,6 +366,21 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    </script>
+    <script>
+        
+        $('#cachorro-item').click( function(){
+            $("#link-sub-cachorro").slideToggle();
+        });
+        $('#adulto-item').click( function(){
+            $("#link-sub-adulto").slideToggle();
+        });
+        $('#senior-item').click( function(){
+            $("#link-sub-senior").slideToggle();
+        });
+        $('#pequena-item').click( function(){
+            $("#link-sub-pequena").slideToggle();
+        });
     </script>
 </body>
 

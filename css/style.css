@@ -11,6 +11,7 @@
 ol, ul{
     margin: 0;
 }
+
 /*---estilos generico---*/
 body{
     margin: 0;
@@ -89,20 +90,22 @@ header{
 
 .logo-h1{
     position: absolute;
-    top: -7px;
+    top: -8px;
 }
 .logo-h1 img{
-    width: 150px
+    width: 160px
 }
 .nav-principal{
     float: left;
-    width: 74%;
-    margin-left: 14%;
+    width: 70%;
+    margin-left: 16%;
 }
 .nav-principal ul{
     width: 100%;
     height: auto;
     overflow:hidden;
+    margin: 0;
+    padding: 0;
 }
 .nav-principal li{
     width: 20%;
@@ -110,23 +113,52 @@ header{
     text-align: center;
     list-style-type: none;
     letter-spacing: 1px;
-    height: 70px;
     font-family: "futura-bold";
 }
-.padding-center-l{
-    padding-top: 8px;
-}
+
 .nav-principal li a{
     color: white;
+    font-size: 1em;
     text-decoration: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 26px;
     display: block;
+    padding-right: 1px;
+     -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 300ms ease;
+    height: 71px;
+}
+.nav-principal li a:hover{
+    background-color: #E46A44;
+    color: white;
+     -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 300ms ease;
+}
+.nav-principal li a:hover:before{
+    content: url(../img/iconos/icon-hueso-blanco.png);
+    vertical-align: middle;
+    display: inline-block;
+    zoom: 50%;
+    padding-right: 8px;
+     -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 300ms ease;
+}
+.nav-principal li a:hover{
+  
 }
 .redes-sociales{
     float:left;
     width: 12%;
-    padding: 15px 0px;
+    padding: 20px 0px;
 }
 .redes-sociales .fa-stack-1x {
     color: black;
@@ -136,8 +168,36 @@ header{
 }
 .redes-sociales a{
     font-size: 0.8em;
+    
 
 }
+.redes-sociales .fa-stack{
+     -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    padding-left: 5px;
+}
+.redes-sociales .fa-stack:hover {
+-moz-transform: scale(1.4);
+-webkit-transform: scale(1.4);
+-o-transform: scale(1.4);
+-ms-transform: scale(1.4);
+transform: scale(1.4);
+     -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    
+}
+.redes-sociales .fa-stack-1x:hover{
+    padding-top: 0px;
+}
+
+/*---------------FIN NAVEGACION------------*/
+
 /*-------------SECCION VIDEO-------------*/
 .video-inicio iframe{
     width: 100%;
@@ -145,6 +205,8 @@ header{
 .video-inicio img{
     width: 100%;
 }
+/*---------------FINNAVEGACION------------*/
+
 /*-------------SECCION PRODUCTO------------*/
 
 /*Img-Background*/
@@ -166,27 +228,30 @@ slide-img{
     width: 450px;
     font-size: 3em;
     letter-spacing: 1px;
-    margin-top: 8%;
+    margin-top: 7%;
 }
 .box-h3-producto p {
-    font-size: 1.4em;
-    width: 430px;
+    font-size: 1.3em;
+    width: 400px;
     margin-top: -15px;
 }
 .linea-separador{
     margin-top: -25px;
-    width: 400px;
+    width: 395px;
     display: table-caption;
     border-bottom: 1px solid white;
 }
-
-
 /*-Fin-*/
 
 /*Figure- Categoria productos*/
 .producto-categ figcaption{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+     -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
 }
 .producto-categ{
     padding: 50px 0px;
@@ -194,7 +259,8 @@ slide-img{
 .producto-categ figure{
     width: 23%;
     float: left;
-    margin: 1%
+    margin: 1%;
+    cursor: pointer;
 }
 .producto-categ figure img{
     width: 100%;
@@ -204,6 +270,15 @@ slide-img{
     padding: 23px;
     letter-spacing: 1px;
     font-size: 1.5em;
+}
+.producto-categ figcaption:hover{
+    -webkit-box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
+box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
 }
 .cachorro-bg figcaption{
     background-color: #42B3DA;
@@ -248,113 +323,30 @@ slide-img{
 /*fin*/
 /*-detalle de contenido de producto-*/
 .detalle-producto h2{
-    border-bottom: 2px solid #EB7E2B;
-    width: 180px;
+    width: 280px;
     font-size: 2.5em;
+    font-family: "frutiger-LT-57-cond";
 }
-
+.detalle-producto .hr-cachorro{
+    border-bottom: 2px solid #EB7E2B;
+    color: #EB7E2B;
+     margin-top: -10px;
+    border-top: none;
+    margin-bottom: 10px;
+    width: 250px;
+}
+.detalle-producto h4{
+    font-family: "frutiger-LT-57-cond";
+    font-weight: 100;
+}
 .producto-contenido{
   margin-bottom: 3%;
 }
-/* RUTA CANNES*/
-.rutacannes .slide-img{
-    background-image: url(../img/slide-img-ruta.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.box-h3-rutacannes{
-    width: 50%;
-    padding: 20px;
-    padding-top: 50px;
-}
-.box-h3-rutacannes h3{
-    width: 340px;
-    font-size: 2.2em;
-    letter-spacing: 1px;
-}
-.box-h3-rutacannes p {
-    font-size: 1.1em;
-    width: 280px;
-    margin-top: -15px;
 
-}
-.linea-separador-rutacannes{
-    margin-top: -10px;
-    width: 130px;
-    display: table-caption;
-    border-bottom: 1px solid white;
-}
-
-.ruta-cannes figcaption{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.ruta-cannes{
-    padding: 50px 0px;
-}
-.ruta-cannes figure{
-    width: 31.3%;
-    float: left;
-    margin: 1%;
-    text-align: center;
-}
-.ruta-cannes figure img{
-    width: 100%;
-    border-radius: 6px 6px 0px 0px;
-}
-.ruta-cannes figcaption{
-    text-align: center;
-    padding: 3px;
-}
-.ruta-cannes figcaption h4{
-    text-align: center;
-    padding: 10px 0px 0px 5px;
-}
-.ruta-cannes figcaption p{
-    text-align: center;
-      padding: 0px 0px 5px 10px;
-
-}
-.rutav-bg figcaption{
-    background-color: #A40606 ;
-}
-.rutasauce-bg figcaption{
-    background-color:#42B3DA ;
-
-}
-.rutasauce-bg figcaption{
-    background-color:#42B3DA;
-
-}
-.rutaparbic-bg figcaption{
-    background-color:#FFA900;
-
-}
-.cafeteria-bg figcaption{
-    background-color:#7474C3;
-
-}
-.fuhu-bg figcaption{
-    background-color:#803389;
-
-}
-.sauce-bg figcaption{
-    background-color:#479DC5;
-
-}
-.papparazzo-bg figcaption{
-    background-color:#3BB606;
-}
-
-
-/*@media only screen and (min-width: 1024px){
-
-}*/
 .detalle-producto li{
     display: table;
     margin-top: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .detalle-producto .digestion::before {
     content: url(../img/iconos/icon-1-lista-producto.png);
@@ -477,13 +469,7 @@ slide-img{
     transition: all 600ms ease;
     cursor: pointer;
 }
-.left-nav-producto .nav-producto .seco-cachorro:hover:before, .left-nav-producto .nav-producto .snack-cachorro:hover:before{
-    content: url(../img/iconos/icon-hueso-cachorro.png);
-    zoom:40%;
-    vertical-align: middle;
-    display: inline-block;
-    padding: 4px;
-}
+
 .left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
       -webkit-transition: all 800ms ease;
     -moz-transition: all 800ms ease;
@@ -491,72 +477,34 @@ slide-img{
     -o-transition: all 800ms ease;
     transition: all 1000ms ease;
 }
-.left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before{
+.seco-cachorro-activo::before, .snack-cachorro-activo::before{
+    content: url(../img/iconos/icon-hueso-cachorro.png);
+    zoom:40%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 4px;
+}
+.seco-adulto-activo::before, .snack-adulto-activo::before{
     content: url(../img/iconos/icon-hueso-adulto.png);
     zoom:40%;
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
 }
-.left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .snack-senior:hover:before{
+.seco-senior-activo::before, .snack-senior-activo::before{
     content: url(../img/iconos/icon-hueso-senior.png);
     zoom:40%;
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
 }
-.left-nav-producto .nav-producto .seco-pequenas:hover:before, .left-nav-producto .nav-producto .snack-pequenas:hover:before{
+.seco-pequenas-activo::before, .snack-pequenas-activo::before{
     content: url(../img/iconos/icon-hueso-pequenas.png);
     zoom:40%;
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
 }
-
-/*Fin*/
-/*MUNDO CACHORRO*/
-.mundocachorro .slide-img{
-    background-image: url(../img/shutterstock_80773975.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.box-h3-mundocachorro{
-    width: 60%;
-    padding: 20px;
-    padding-top: 50px;
-
-}
-.linea-separador-mundocachorro{
-    margin-top: -8px;
-    width: 180px;
-    display: table-caption;
-    border-bottom: 1px solid white;
-}
-.mundo-cachorro figcaption{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.mundo-cachorro{
-    padding: 50px 0px;
-}
-.mundo-cachorro figure{
-    width: 31.3%;
-    float: left;
-    margin: 1%
-}
-.mundo-cachorro figure img{
-    width: 100%;
-}
-.mundo-cachorro figcaption h4{
-    text-align: center;
-    padding: 23px 2px;
-    letter-spacing: 1px;
-}
-.mundocachorro figcaption{
-    background-color: #EB7E2B;
-}
-
 
 .left-nav-producto .nav-producto  .item_principal-nav-producto{
     border: 1px solid black;
@@ -576,6 +524,10 @@ slide-img{
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
+}
+left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):active{
+    background-color: #42B3DA;
+    color: white;
 }
 .left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(3):hover{
     background-color: #DF3245;
@@ -654,11 +606,11 @@ slide-img{
     padding: 4px;
 }
 .left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
-      -webkit-transition: all 800ms ease;
-    -moz-transition: all 800ms ease;
-    -ms-transition: all 800ms ease;
-    -o-transition: all 800ms ease;
-    transition: all 1000ms ease;
+      -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all  300ms ease;
 }
 .left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before{
     content: url(../img/iconos/icon-hueso-adulto.png);
@@ -728,22 +680,18 @@ slide-img{
     width: 45%;
     float: left;
 }
-.icon-tabla-nutri span{
-    font-size: 2.5em;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-.icon-tabla-nutri .fa-stack-1x {
-    color: black;
-}
-.icon-tabla-nutri .fa-circle{
- color: white;
+.icon-tabla-nutri img{
+    width: 23%;
+    float: left;
+    margin: 1%
 }
 .botton-tabla-producto{
     width: 100%;
     height: 300px;
 }
 /*-Fin-*/
+/*---------------FIN SECCION PRODUCTO------------*/
+
 /*----------------SECCION RUTA CANNES----------------*/
 /*Img-Background*/
 .ruta .slide-img{
@@ -769,7 +717,7 @@ slide-img{
     margin-top: -25px;
     width: 280px;
     display: table-caption;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
 }
 
 .box-h3-ruta p {
@@ -793,21 +741,25 @@ slide-img{
     float: left;
     margin: 1%;
     text-align: center;
+    cursor: pointer;
 }
 .ruta-cannes-categ figure img{
     width: 100%;
 }
 .ruta-cannes-categ figcaption{
     padding: 10px;
+    height: 90px;
 }
 .ruta-cannes-categ figcaption h4{
     font-size: 1.4em;
     font-weight: 100;
     letter-spacing: 1px;
-    padding: 5px;
+    padding-top: 5px;
+    margin-bottom: 8px;
     font-family: "frutiger-LT-57-cond";
 }
 .ruta-cannes-categ figcaption p{
+    font-size: 0.9em;
 }
 .ruta-cannes-categ figure:nth-child(1) figcaption{
     background-color: #A40606 ;
@@ -834,7 +786,7 @@ slide-img{
 }
 
 /*-Fin-*/
-
+/*----------------FIN SECCION RUTA CANNES----------------*/
 
 
 /*--------------MUNDO CACHORRO---------------*/
@@ -878,4 +830,72 @@ slide-img{
 }
 .mundocachorro figcaption{
     background-color: #EB7E2B;
+}
+/*---*/
+/*MUNDO CACHORRO*/
+.mundocachorro .slide-img{
+    background-image: url(../img/shutterstock_80773975.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-h3-mundocachorro{
+    width: 60%;
+    padding: 20px;
+    padding-top: 50px;
+
+}
+.linea-separador-mundocachorro{
+    margin-top: -8px;
+    width: 180px;
+    display: table-caption;
+    border-bottom: 1px solid white;
+}
+.mundo-cachorro figcaption{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.mundo-cachorro{
+    padding: 50px 0px;
+}
+.mundo-cachorro figure{
+    width: 31.3%;
+    float: left;
+    margin: 1%
+}
+.mundo-cachorro figure img{
+    width: 100%;
+}
+.mundo-cachorro figcaption h4{
+    text-align: center;
+    padding: 23px 2px;
+    letter-spacing: 1px;
+}
+.mundocachorro figcaption{
+    background-color: #EB7E2B;
+}
+/*-------------MEDIAS QUERY-----------*/
+@media  (max-width: 1024px) {
+    .nav-principal li a {
+        height: 85px;
+    }
+    .padding-center-link a{
+        padding-top: 30px!important;
+    }
+    .padding-top-hover a:hover{
+        padding-top: 25px!important;
+    }
+    .redes-sociales{
+    padding: 25px 0px;
+    }
+    .producto h3{
+    font-size: 2.5em;
+    }
+    .box-h3-producto p {
+    font-size: 1.3em;
+    width: 330px;
+    }
+    .linea-separador{
+    width: 320px;
+}
 }

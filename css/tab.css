@@ -1,4 +1,5 @@
-.nav-tabs {
+
+/*.nav-tabs {
     border-bottom: 1px solid #E46A44;
 
 }
@@ -21,8 +22,8 @@
     border-bottom-color: transparent;
 }
 
-.nav-tabs>li>a:hover {
-    border-color: none;
+.nav>li>a:focus, .nav>li>a:hover {
+    border-color: #f9f9f9;
 }
 
 .nav>li>a:focus,
@@ -46,10 +47,76 @@
 .nav-tabs>li.active>a:hover{
     border: none;
 }
+
+
+
+.nav-tabs>li{
+    border-top: 1px solid #E46A44;
+    border-right: 1px solid #E46A44;
+    border-left: 1px solid #E46A44;
+}
+*/
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #f9f9f9;
+}
+.tab-content {
+    border-bottom: 1px solid #E46A44;
+    border-right: 1px solid #E46A44;
+    border-left: 1px solid #E46A44;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    color: #E46A44;
+    font-weight: bold;
+}
+.nav-tabs>li>a:hover{
+    border-color: #E46A44 #E46A44 #ddd #ddd  
+}
+.nav-tabs>li.active>.bo-right, .nav-tabs>li.active>.bo-right:focus, .nav-tabs>li.active>.bo-right:hover{
+    border-right: 1px solid #E46A44;
+    border-top: 1px solid #E46A44;
+}
+.nav-tabs>li.active>.bo-right-no, .nav-tabs>li.active>.bo-right-no:focus, .nav-tabs>li.active>.bo-right-no:hover{
+    border-top: 1px solid #E46A44;
+}
+/*
+.nav-tabs>li.active>.bo-left, .nav-tabs>li.active>.bo-left:focus, .nav-tabs>li.active>.bo-left:hover{
+    border-left: 1px solid #E46A44;
+}*/
+.nav-tabs>li>a{
+    border-top: 1px solid #E46A44;
+    border-right: 1px solid #E46A44;
+    color: #E46A44;
+    font-family: "frutiger-LT-57-cond";
+}
+.bor-right-nono{
+    border-right: none!important;
+}
+.nav-tabs {
+    border-bottom: 1px solid #E46A44;
+    border-right: 1px solid #E46A44;
+    border-left: 1px solid #E46A44;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.nav-tabs>li>a{
+    margin-right: 0px;
+}
+.padig-a{
+    padding: 21.5px !important;
+}
+.nav-tabs>li{
+    width: 25%;
+    text-align: center;
+    font-size: 1.2em;
+}
 .tab-pane {
     height: 200px;
 }
-
+.tab-content{
+    color:black;
+}
 .tab-pane:nth-child(3) img {
     width: 100%;
     padding: 20px;
@@ -70,25 +137,7 @@
     line-height: 1.8;
     font-size: 0.9em;
 }
-.nav-tabs>li{
-    width: 25%;
-    text-align: center;
-    font-size: 0.9em;
-}
-.padig-a{
-    padding: 20px !important;
-}
-.nav-tabs>li{
-    border-top: 1px solid #E46A44;
-    border-right: 1px solid #E46A44;
-    border-left: 1px solid #E46A44;
-}
-.tab-content{
-    color:black;
-}
-.nav-tabs>li.active>a:hover{
 
-}
 .tab-pane:nth-child(4) figure{
     width: 20%;
     float: left;
