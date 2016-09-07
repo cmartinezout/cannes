@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/carousel-producto.css">
     <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/modales.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -269,7 +270,7 @@
     </div>
            </div>
     </section>
-    <!-- <section class="ruta">
+     <section class="ruta">
       <div class="slide-img">
           <div class="box-h3-ruta container">
               <h3 class="futura-bold">
@@ -281,42 +282,42 @@
       </div>
       <div class="ruta-cannes-categ">
         <div class="container">
-          <figure>
+          <figure data-toggle="modal" data-target=".bd-modal-rojo">
               <img src="img/ruta-rojo-fig.png" alt="ruta playa">
               <figcaption>
                  <h4>DESCANSA JUNTO A TU PERRO</h4>
                  <p>Para que ninguno de la familia se quede en casa estas vacaciones.</p>
               </figcaption>
           </figure>
-          <figure>
+          <figure data-toggle="modal" data-target=".bd-modal-amarilo">
               <img src="img/ruta-amarillo-fig.png"  alt="perro adulto">
               <figcaption>
                   <h4>¡UN DULCE PASEO! </h4>
                   <p>Para que disfruten lo mejor de Cafetería Daniels.</p>
               </figcaption>
           </figure>
-          <figure>
+          <figure data-toggle="modal" data-target=".bd-modal-lila">
               <img src="img/ruta-lila-fig.png"  alt="perro senior">
               <figcaption>
                   <h4>CANNES A TODO TERRENO</h4>
                      <p>Vive una aventura canina en Camping el Sauce.</p>
               </figcaption>
           </figure>
-          <figure>
+          <figure data-toggle="modal" data-target=".bd-modal-morado">
               <img src="img/ruta-morado-fig.png" >
               <figcaption>
                      <h4>UNA NOCHE CANINA</h4>
                      <p>Vive una linda velada en el restaurante Papparazzo. </p>
               </figcaption>
           </figure>
-          <figure>
+          <figure data-toggle="modal" data-target=".bd-modal-celeste">
               <img src="img/ruta-celeste-fig.png" alt="perro adulto">
               <figcaption>
                   <h4>TU PERRO TAMBIÉN ENTRENA</h4>
                      <p>Disfruta de una tarde deportiva en Parque Bicentenario.</p>
               </figcaption>
           </figure>
-          <figure>
+          <figure data-toggle="modal" data-target=".bd-modal-verde">
               <img src="img/ruta-verde-fig.png" alt="perro senior">
               <figcaption>
                   <h4>A LA LUZ DE LAS VELAS</h4>
@@ -324,6 +325,70 @@
               </figcaption>
           </figure>
       </div>
+    </div>
+    <div class="modales">
+        <!-- Large modal -->
+        
+        
+        <div class="modal fade bd-modal-rojo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                <div class="img-bg-modal"></div>
+                <div class="contenido-modal">
+                    <h3>DESCANSA JUNTO A TU PERRO</h3>
+                    <img src="img/img-background/img-cont-modal.png" alt="">
+                    <div class="contenido-text">
+                        <p>Hay veces en que no sabemos con quién dejar a nuestras mascotas al momento de salir de vacaciones, pero ¿no sería fantástico que pudiéramos ir con ellas?.
+</p>
+                    <p>De eso se preocupó Cabañas Choshuenco en Panguipulli, región de los Ríos.</p>
+                    <p>Inserta  en el tranquilo pueblo de Choshuenco, a 1 Km del balneario y a 15 Km del Salto Huilo Huilo, es una de las pocas cabañas que aceptan la estadía de mascotas.</p>
+                    <p>Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.</p>
+                    </div>
+                    <div class="btn-modal-leer-mas">LEER MÁS <i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-modal-amarillo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              ...
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-modal-lila" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              ...
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-modal-morado" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              ...
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-modal-celeste" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              ...
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-modal-verde" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              ...
+            </div>
+          </div>
+        </div>
     </div>
 </section>
 
@@ -360,7 +425,7 @@
                 </figure>
         </div>
  </div>
-</section> -->
+</section> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -749,6 +749,8 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
 }
 .ruta-cannes-categ figure img{
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .ruta-cannes-categ figcaption{
     padding: 10px;

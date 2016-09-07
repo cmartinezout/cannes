@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "frutiger-LT-57-cond";
+  src: url("../fonts/fuente-extra/Frutiger-LT-57-Condensed.ttf");
+}
+.frutiger-LT-57-cond{
+    font-family: "frutiger-LT-57-cond";
+}
+
+.h1, .h2, .h3, h1, h2, h3{
+    margin-top: 0;
+}
+
+.bd-modal-rojo .img-bg-modal{
+    background-image: url(../img/img-background/modal-rojo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 608px;
+    width: 30%;
+    float: left;
+    background-position: center;
+    border-right: 8px solid #A40606;
+     border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.modal-content{
+    height: 610px;
+}
+.modal-header .close{
+    padding:  12px 19px 14px 19px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #A40606;
+}
+.close{
+    line-height: none;
+    text-shadow: none;
+    opacity: 1;
+    color: white;
+}
+.modal-header{
+    border: none;
+    float: right;
+    width: 10%;
+    margin: -25px;
+    padding: 0;
+}
+.close:focus, .close:hover{
+    color: white;
+    opacity: .7;
+}
+.contenido-modal{
+    padding: 20px;
+    width: 70%;
+    float: left;
+}
+.contenido-modal h3{
+    background-color: #A40606;
+    padding: 7px 5px;
+    text-align: center;
+    font-family: "frutiger-LT-57-cond";
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+}
+.contenido-modal img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+   
+}
+.contenido-modal {
+    color: black;
+}
+.contenido-modal p{
+    line-height: 1.3;
+}
+.contenido-modal .contenido-text{
+    height: 180px;
+}
+.contenido-modal .btn-modal-leer-mas{
+    background-color: #A40606;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.contenido-modal .btn-modal-leer-mas:hover{
+    background-color: #770202;
+}
+@media (min-width: 768px){
+    .modal-dialog{
+        margin: 150px auto;
+    }
+}
