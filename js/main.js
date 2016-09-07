@@ -7,6 +7,12 @@ $(document).on('click', '.figure-pruducto', function(ev){
   $('.info-nutricional').empty();
   $('#formato').find('.tamanos-produc').empty();
   id = $(this).attr('data-tipo-perro');
+  $("li[data-tipo-perro='"+id+"']").removeClass('seco-'+perros[id-1]).addClass('seco-'+perros[id-1]+'-activo');
+  $('.link_subcategoria-prodcuto').each(function(index, item){
+    if (!$(this).is(':hidden')){
+      $(this).slideToggle();
+    }
+  });
   $('#link-sub-'+perros[parseInt(id)-1]).slideToggle();
   $("ul[data-tipo-perro='"+id+"']").removeClass("seco-"+perros[parseInt(id)-1]).addClass("seco-"+perros[parseInt(id)-1]+"-activo");
   $.getJSON('src/productos.json', function(){ //GET THE JSON AND data IS THE DATA FROM THE JSON
@@ -98,6 +104,9 @@ $(document).on('click', '.snack', function(ev){
   $('#carousel-productos').css('display', 'none');
   $('#carousel-snacks').css('display', 'block');
   ev.preventDefault();
+  var id = parseInt($(this).attr('data-perro'));
+  $("li[data-tipo-perro='"+id+"']").removeClass('seco-'+perros[id-1]+'-activo').addClass('seco-'+perros[id-1]);
+  $("li[data-perro='"+id+"']").removeClass('seco-'+perros[id-1]).addClass('seco-'+perros[id-1]+'-activo');
   $('.frutiger-bold-cond').text('SNACKS')
   $('#indregientes').find('p').empty();
   $('.carousel-inner').empty();
@@ -128,6 +137,9 @@ $(document).on('click', '.snack', function(ev){
 
 $(document).on('click', '.comida', function(ev){
   ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
+  id_perro = parseInt($(this).attr('data-tipo-perro'));
+  $("li[data-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]+'-activo').addClass('seco-'+perros[id_perro-1]);
+  $("li[data-tipo-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]).addClass('seco-'+perros[id_perro-1]+'-activo');
   $('#carousel-snacks').css('display', 'none');
   $('#carousel-productos').css('display', 'block');
   $('.carousel-inner').empty();
