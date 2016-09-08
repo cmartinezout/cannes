@@ -114,12 +114,12 @@
                         <h4 class="frutiger-std-con">SENIOR</h4>
                     </figcaption>
                 </figure>
-                <figure class="r-pequena-bg figure-pruducto" data-tipo-perro="4">
+                <!-- <figure class="r-pequena-bg figure-pruducto" data-tipo-perro="4">
                     <img src="img/producto-pequenas-fig.jpg" alt="perro pequeño">
                     <figcaption>
                         <h4 class="frutiger-std-con">RAZAS PEQUEÑAS</h4>
                     </figcaption>
-                </figure>
+                </figure> -->
             </div>
         </div>
     </section>
@@ -132,24 +132,27 @@
                          <ul class="link_subcategoria-prodcuto" id="link-sub-cachorro" style="display: none;">
                                 <li class="seco seco-cachorro" data-tipo-perro="1">Seco</li>
                                 <li class="snack snack-cachorro" data-perro="1" data-custom="1">Snack</li>
+                                <li class="humedo humedo-cachorro" perro="1">Húmedo</li>
                         </ul>
                         <div id="adulto-item" class="comida item_principal-nav-producto" data-tipo-perro="2">ADULTO</div>
 
                             <ul class="link_subcategoria-prodcuto" id="link-sub-adulto" style="display: none;">
                                 <li class="seco seco-adulto" data-tipo-perro="2">Seco</li>
                                 <li class="snack snack-adulto" data-perro="2" data-custom="1">Snack</li>
+                                <li class="humedo humedo-adulto" perro="2">Húmedo</li>
                             </ul>
                         <div id="senior-item" class="comida item_principal-nav-producto" data-tipo-perro="3">SENIOR</div>
 
                             <ul  class="link_subcategoria-prodcuto" id="link-sub-senior" style="display: none;">
                                 <li class="seco seco-senior" data-tipo-perro="3">Seco</li>
                                 <li class="snack snack-senior" data-perro="3" data-custom="1">Snack</li>
+                                <li class="humedo humedo-senior" perro="3">Húmedo</li>
                             </ul>
-                        <div id="pequenas-item" class="comida item_principal-nav-producto 4" data-tipo-perro="4">RAZAS PEQUEÑAS</div>
+                        <!-- <div id="pequenas-item" class="comida item_principal-nav-producto 4" data-tipo-perro="4">RAZAS PEQUEÑAS</div>
                             <ul class="link_subcategoria-prodcuto" id="link-sub-pequenas" style="display: none;">
                                 <li class="seco seco-pequenas" data-tipo-perro="4">Seco</li>
                                 <li class="snack snack-pequenas" data-perro="4" data-custom="1">Snack</li>
-                            </ul>
+                            </ul> -->
                 </nav>
             </div>
         <div class="center-carousel-producto">
@@ -171,6 +174,23 @@
           </a>
         </div>
         <div id="carousel-snacks" style="display: none;" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-snacks" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left fa fa-angle-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-snacks" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div id="carousel-humedo" style="display: none;" class="carousel slide" data-ride="carousel" data-interval="false">
           <!-- Indicators -->
           <ol class="carousel-indicators">
           </ol>
@@ -328,8 +348,8 @@
     </div>
     <div class="modales">
         <!-- Large modal -->
-        
-        
+
+
         <div class="modal fade bd-modal-rojo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -425,7 +445,7 @@
                 </figure>
         </div>
  </div>
-</section> 
+</section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -7,14 +7,6 @@
     "Caracteristicas": "<li class='text-black brillante'>Mejora el estado de la piel y el pelaje, manteniéndolo firme y brillante</li><li class='text-black digestion'>Favorece el funcionamiento del sistema inmune.</li><li class='text-black calcio'>Favorece el funcionamiento del corazón y sistema circulatorio</li><li class='text-black naturales'>Ayudan al normal funcionamiento del cerebro y la retina.</li><li class='text-black naturales'>Aptas para todo tipo de perros: adultos y cachorros.</li>",
     "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>17%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>10%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>4%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>10%</td></tr>"
     },
-    {
-      "id": "2",
-      "Nombre": "SALSA CASERAS ASADO DE TIRA Y TOCINO",
-      "Ingredientes": "<b>Ingredientes Variedad Variedad Sabor Asado de Tira</b></br> Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante asado de tira, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes <b>Ingredientes Variedad Sabor Tocino</b></br>Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante tocino, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes.",
-      "imagen": "img/productos/producto7.png",
-      "Caracteristicas": "<li class='text-black digestion'>Con cosetas para una mejor digestión</li><li class='text-black calcio'>Bajo en grasas y calorías (6.5 kcal por porción)</li><li class='text-black brillante'>Con Omega 3 y 6 que mejoran su pelaje y ayudan a su sistema inmune.</li><li class='text-black calcio'>Con ingredientes naturales</li><li class='text-black naturales'>Aptas para todo tipo de perros: adultos y cachorros.</li>",
-      "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>2,0%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>3,0%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>0,5%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>80%</td></tr>"
-      },
       {
         "id": "3",
         "Nombre": "FILETITOS Y COSTILLITAS",

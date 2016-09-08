@@ -28,11 +28,19 @@
           "id": "2",
           "Nombre": "CARNES Y VEGETALES",
           "Ingredientes": "Maíz, harina de carne y hueso bovina, subproductos de trigo (salvado de trigo, harina de trigo), salvado de arroz, harina de subprodctos de ave, grasa animal estabilizada, hidrolizado de hígado, arroz, carbonato de calcio, semilla de linaza, pulpa de remolacha, levadura de cerveza, cloruro de sodio, vitaminas y minerales, zanahoria deshidratada, espinaca deshidratada, colorante natural caramelo, prebióticos, dióxido de titanio, aceite de lino, óxido de hierro amarillo, extracto de yucca shidigera, extracto de quillay, colorante verde, amarillo tartrazina, antioxidante",
-
           "imagen": "img/productos/producto1.png",
           "Caracteristicas": "<li class='text-black digestion'>Mejor <span class='detalle-sizemas'>digestión &#8226; </span> <span class='text-naranjo'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción <span class='detalle-sizemas'>de calcio &#8226; </span> <span class='text-naranjo'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más <span class='detalle-sizemas'>brillante &#8226; </span> <span class='text-naranjo'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más <span class='detalle-sizemas'>consistentes &#8226; </span> <span class='text-naranjo'>Menos volumen y olor.</span></li><li class='text-black naturales'>Defensas <span class='detalle-sizemas'>naturales &#8226; </span> <span class='text-naranjo'>Fortalecidas, más salud.</span></li>",
           "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>19%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>7%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>3%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>12%</td></tr>",
           "Porciones": ["1,5 KG", "3 KG", "8 KG", "15 KG", "18 KG"]
+          },
+        {
+            "id": "3",
+            "Nombre": "RAZAS PEQUEÑAS",
+            "Ingredientes": "Maíz y/o trigo, arroz, Harina de carne y hueso bovino, harina de subproductos de ave, subproductos de cereales, subproductos de leguminosas, hidrolizado de hígado, pulpa de remolacha, aceite de ave estabilizado, levadura de cerveza, semilla de lino, cloruro de sodio, zeolita, aceite de pescado desodorizado (fuente de ácidos grasos omega 3 y 6), extracto de Yuca shidigera, extracto de Quillay, colorantes, antioxidantes y antifúngicos autorizados.",
+            "imagen": "img/productos/producto4.png",
+            "Caracteristicas": "<li class='text-black digestion'>Mejor <span class='detalle-sizemas'>digestión &#8226; </span> <span class='text-naranjo'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción <span class='detalle-sizemas'>de calcio &#8226; </span> <span class='text-naranjo'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más <span class='detalle-sizemas'>brillante &#8226; </span> <span class='text-naranjo'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más <span class='detalle-sizemas'>consistentes &#8226; </span> <span class='text-naranjo'>Menos volumen y olor.</span></li><li class='text-black naturales'>Defensas <span class='detalle-sizemas'>naturales &#8226; </span> <span class='text-naranjo'>Fortalecidas, más salud.</span></li>",
+            "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>20%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>8%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>4%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>12%</td></tr>",
+            "Porciones": ["1,5 KG", "3 KG", "9 KG", "18 KG"]
 
           }]
       },
@@ -48,21 +56,5 @@
           "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>19%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>7%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>3%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>12%</td></tr>",
           "Porciones": ["3 KG", "9 KG"]
           }]
-        },
-        {
-          "id": "4",
-          "Nombre": "RAZAS PEQUEÑAS",
-          "productos": [{
-            "id": "1",
-            "Nombre": "RAZAS PEQUEÑAS",
-            "Ingredientes": "Maíz y/o trigo, arroz, Harina de carne y hueso bovino, harina de subproductos de ave, subproductos de cereales, subproductos de leguminosas, hidrolizado de hígado, pulpa de remolacha, aceite de ave estabilizado, levadura de cerveza, semilla de lino, cloruro de sodio, zeolita, aceite de pescado desodorizado (fuente de ácidos grasos omega 3 y 6), extracto de Yuca shidigera, extracto de Quillay, colorantes, antioxidantes y antifúngicos autorizados.",
-
-            "imagen": "img/productos/producto4.png",
-            "Caracteristicas": "<li class='text-black digestion'>Mejor <span class='detalle-sizemas'>digestión &#8226; </span> <span class='text-naranjo'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción <span class='detalle-sizemas'>de calcio &#8226; </span> <span class='text-naranjo'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más <span class='detalle-sizemas'>brillante &#8226; </span> <span class='text-naranjo'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más <span class='detalle-sizemas'>consistentes &#8226; </span> <span class='text-naranjo'>Menos volumen y olor.</span></li><li class='text-black naturales'>Defensas <span class='detalle-sizemas'>naturales &#8226; </span> <span class='text-naranjo'>Fortalecidas, más salud.</span></li>",
-            "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>20%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>8%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>4%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>12%</td></tr>",
-            "Porciones": ["1,5 KG", "3 KG", "9 KG", "18 KG"]
-
-            }]
         }]
-
 }
