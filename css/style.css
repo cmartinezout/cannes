@@ -434,6 +434,82 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     border: 1px solid #DF3245;
     color: #DF3245;
 }
+.left-nav-producto .nav-producto  .item_principal-nav-producto-activo:nth-child(1){
+    background-color: #42B3DA;
+    border: #42B3DA;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto-activo:nth-child(3){
+    background-color: #DF3245;
+    border: #DF3245;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto-activo:nth-child(5){
+    background-color: #9A42DC;
+    border: #9A42DC;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto-activo:nth-child(7){
+    background-color: #FFA900;
+    border: #FFA900;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1){
+    border: 1px solid #42B3DA;
+    color: #42B3DA;
+}
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(3){
+    border: 1px solid #DF3245;
+    color: #DF3245;
+}
 .left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(5){
     border: 1px solid #9A42DC;
     color: #9A42DC;
@@ -483,6 +559,19 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     vertical-align: middle;
     display: inline-block;
     padding: 4px;
+
+}
+.seco-cachorro-activo{
+  color: #42B3DA;
+}
+.seco-adulto-activo{
+  color: #DF3245;
+}
+.seco-senior-activo{
+  color: #9A42DC;
+}
+.seco-pequenas-activo{
+  color: #FFA900;
 }
 .seco-adulto-activo::before, .snack-adulto-activo::before{
     content: url(../img/iconos/icon-hueso-adulto.png);
@@ -574,7 +663,7 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     color: #FFA900;
 
 }
-.left-nav-producto .nav-producto .seco-cachorro, .left-nav-producto .nav-producto .snack-cachorro {
+.left-nav-producto .nav-producto .seco-cachorro, .left-nav-producto .nav-producto .snack-cachorro{
     color: #42B3DA;
 }
 .left-nav-producto .nav-producto .seco-adulto, .left-nav-producto .nav-producto .snack-adulto {

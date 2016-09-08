@@ -2,26 +2,26 @@
   "tiposnaks":[{
     "id": "1",
     "Nombre": "GALLETAS CARNE Y LECHE",
-    "Ingredientes": "<b>Ingredientes Carne</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado desodorizado (Fuente de ácidos grasos omega 3), Cloruro de sodio, Colorante caramelo, Saborizante, Bicarbonato de amonio, bicarbonato de sodio.</br> <b>Ingredientes Leche</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado estabilizado y desodorizado (fuente de ácidos grasos omega 3), Cloruro de sodio, Saborizante, Bicarbonato de amonio, Bicarbonato de sodio.",
+    "Ingredientes": "<b>Ingredientes Variedad Carne</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado desodorizado (Fuente de ácidos grasos omega 3), Cloruro de sodio, Colorante caramelo, Saborizante, Bicarbonato de amonio, bicarbonato de sodio.</br> <b>Ingredientes Variedad Leche</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado estabilizado y desodorizado (fuente de ácidos grasos omega 3), Cloruro de sodio, Saborizante, Bicarbonato de amonio, Bicarbonato de sodio.",
     "imagen": "img/productos/producto6.png",
-    "Caracteristicas": "<li class='text-black brillante'>Mejora el estado de la piel y el pelaje, manteniéndolo firme y brillante</li><li class='text-black digestion'>Favorece el funcionamiento del sistema inmune.</li><li class='text-black calcio'>Favorece el funcionamiento del corazón y sistema circulatorio</li><li class='text-black naturales'>Ayudan al normal funcionamiento del cerebro y la retina.</li>",
-    "Nutricion": " <tr><td>Proteinas:</td><td>Mínimo</td><td>17%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>10%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>4%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>10%</td></tr>"
+    "Caracteristicas": "<li class='text-black brillante'>Mejora el estado de la piel y el pelaje, manteniéndolo firme y brillante</li><li class='text-black digestion'>Favorece el funcionamiento del sistema inmune.</li><li class='text-black calcio'>Favorece el funcionamiento del corazón y sistema circulatorio</li><li class='text-black naturales'>Ayudan al normal funcionamiento del cerebro y la retina.</li><li class='text-black naturales'>Aptas para todo tipo de perros: adultos y cachorros.</li>",
+    "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>17%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>10%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>4%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>10%</td></tr>"
     },
     {
       "id": "2",
       "Nombre": "SALSA CASERAS ASADO DE TIRA Y TOCINO",
-      "Ingredientes": "<b>Ingredientes Sabor Asado de Tira</b></br> Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante asado de tira, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes <b>Ingredientes Sabor Tocino</b></br>Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante tocino, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes.",
+      "Ingredientes": "<b>Ingredientes Variedad Variedad Sabor Asado de Tira</b></br> Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante asado de tira, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes <b>Ingredientes Variedad Sabor Tocino</b></br>Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante tocino, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes.",
       "imagen": "img/productos/producto7.png",
-      "Caracteristicas": "<li class='text-black digestion'>Con cosetas para una mejor digestión</li><li class='text-black calcio'>Bajo en grasas y calorías (6.5 kcal por porción)</li><li class='text-black brillante'>Con Omega 3 y 6 que mejoran su pelaje y ayudan a su sistema inmune.</li><li class='text-black calcio'>Con ingredientes naturales</li><li class='text-black naturales'>Para perro adulto y cachorro.</li>",
-      "Nutricion": " <tr><td>Proteinas:</td><td>Mínimo</td><td>2,0%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>3,0%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>0,5%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>80%</td></tr>"
+      "Caracteristicas": "<li class='text-black digestion'>Con cosetas para una mejor digestión</li><li class='text-black calcio'>Bajo en grasas y calorías (6.5 kcal por porción)</li><li class='text-black brillante'>Con Omega 3 y 6 que mejoran su pelaje y ayudan a su sistema inmune.</li><li class='text-black calcio'>Con ingredientes naturales</li><li class='text-black naturales'>Aptas para todo tipo de perros: adultos y cachorros.</li>",
+      "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>2,0%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>3,0%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>0,5%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>80%</td></tr>"
       },
       {
         "id": "3",
-        "Nombre": "FILETITOS Y COSTILLAS",
+        "Nombre": "FILETITOS Y COSTILLITAS",
         "Ingredientes": "Almidón de maíz, gluten de trigo, azucares, propilenglicol, grasa vegetal, huevo en polvo, sal, hígado en polvo, emulsionantes autorizados, sorbato de potasio, antioxidantes (BHA, propilgalato), saborizantes y colorantes autorizados.",
         "imagen": "img/productos/producto5.png",
         "Caracteristicas": "<li class='text-black naturales'>Apto para todo tipo de perros: adultos y cachorros</li><li class='text-black calcio'>Perfecto premio para tu mascota</li>",
-        "Nutricion": " <tr><td>Proteinas:</td><td>Mínimo</td><td>18%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>7%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>1%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>15%</td></tr>",
+        "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>18%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>7%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>1%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>15%</td></tr>",
         "Porciones": ["Doypack de 65g"]
         },
         {
@@ -30,7 +30,7 @@
           "Ingredientes": "<b>Ingredientes Carne Mechada</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes.</br><b>Ingredientes Asado deTira</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes autorizados.",
           "imagen": "img/productos/producto8.png",
           "Caracteristicas": "",
-          "Nutricion": " <tr><td>Proteinas:</td><td>Mínimo</td><td>13%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>6%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>7%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>15%</td></tr>",
+          "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>13%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>6%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>7%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>15%</td></tr>",
           "Porciones": ["1,5 KG", "3 KG", "10 KG", "15 KG", "18 KG"]
         }]
 

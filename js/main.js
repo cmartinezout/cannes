@@ -1,13 +1,40 @@
 var perros = ["cachorro", "adulto", "senior", "pequenas"];
+
+//move slow to the section
+$(document).ready(function(){
+  $(document).on('click', '.item-nav', function(ev){
+    ev.preventDefault();
+    $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+      var target = this.hash;
+      var $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+        window.location.hash = target;
+      });
+    });
+  });
+  })
 $(document).on('click', '.figure-pruducto', function(ev){
   ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
+  $('.galleta').css('display', 'block');
+  id = $(this).attr('data-tipo-perro');
+  $('nav').find('.item_principal-nav-producto-activo').removeClass('item_principal-nav-producto-activo').addClass('item_principal-nav-producto');
   $('.carousel-inner').empty();
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
   $('#formato').find('.tamanos-produc').empty();
-  id = $(this).attr('data-tipo-perro');
+  $("div[data-tipo-perro='"+id+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
+  $("li[data-tipo-perro='"+id+"']").removeClass('seco-'+perros[id-1]).addClass('seco-'+perros[id-1]+'-activo');
+  $('.link_subcategoria-prodcuto').each(function(index, item){
+    if (!$(this).is(':hidden')){
+      $(this).slideToggle();
+    }
+  });
   $('#link-sub-'+perros[parseInt(id)-1]).slideToggle();
+  $("li[data-perro='"+id+"']").removeClass("seco-"+perros[parseInt(id)-1]+'-activo');
   $("ul[data-tipo-perro='"+id+"']").removeClass("seco-"+perros[parseInt(id)-1]).addClass("seco-"+perros[parseInt(id)-1]+"-activo");
   $.getJSON('src/productos.json', function(){ //GET THE JSON AND data IS THE DATA FROM THE JSON
   }).done(function(data){
@@ -34,6 +61,10 @@ $(document).on('click', '.figure-pruducto', function(ev){
           }
         }
         $('.container-producto').css('display', 'block');
+        $('html, body').stop().animate({
+          'scrollTop': $('.container-producto').offset().top
+        }, 900, 'swing', function () {
+        });
       }
     }
   });
@@ -97,7 +128,14 @@ $(function(){
 $(document).on('click', '.snack', function(ev){
   $('#carousel-productos').css('display', 'none');
   $('#carousel-snacks').css('display', 'block');
+  $('.galleta').css('display', 'none');
   ev.preventDefault();
+  var id = parseInt($(this).attr('data-perro'));
+  if($(this).hasClass('seco-'+perros[id-1]+'-activo')){
+    return;
+  }
+  $("li[data-tipo-perro='"+id+"']").removeClass('seco-'+perros[id-1]+'-activo').addClass('seco-'+perros[id-1]);
+  $("li[data-perro='"+id+"']").removeClass('seco-'+perros[id-1]).addClass('seco-'+perros[id-1]+'-activo');
   $('.frutiger-bold-cond').text('SNACKS')
   $('#indregientes').find('p').empty();
   $('.carousel-inner').empty();
@@ -128,6 +166,59 @@ $(document).on('click', '.snack', function(ev){
 
 $(document).on('click', '.comida', function(ev){
   ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
+  $('.galleta').css('display', 'block');
+  var id_perro = parseInt($(this).attr('data-tipo-perro'));
+  $('.item_principal-nav-producto-activo').next().slideToggle();
+  $('nav').find('.item_principal-nav-producto-activo').removeClass('item_principal-nav-producto-activo').addClass('item_principal-nav-producto');
+  $("div[data-tipo-perro='"+id_perro+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
+  $("li[data-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]+'-activo').addClass('seco-'+perros[id_perro-1]);
+  $("li[data-tipo-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]).addClass('seco-'+perros[id_perro-1]+'-activo');
+  $('#carousel-snacks').css('display', 'none');
+  $('#carousel-productos').css('display', 'block');
+  $('.carousel-inner').empty();
+  $('.carousel-indicators').empty();
+  $('.frutiger-LT-57-cond').empty();
+  $('.info-nutricional').empty();
+  $('#formato').find('.tamanos-produc').empty();
+  id = $(this).attr('data-tipo-perro');
+  $.getJSON('src/productos.json', function(){ //GET THE JSON AND data IS THE DATA FROM THE JSON
+  }).done(function(data){
+    for (var i = 0; i < data.tipoPerro.length; i++) { //LOOK FOR ALL THE DATA ON THE JSON
+      if(id == data.tipoPerro[i].id){ //IF THE OPTION SELECTED EQUAL TO ID FROM THE ELEMENT
+        $('.frutiger-bold-cond').text(data.tipoPerro[i].Nombre);
+        for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
+          if (j==0){
+            $('.carousel-inner').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
+            $('#indregientes').find('p').empty();
+            $('#ingredientes').find('p').text(data.tipoPerro[i].productos[j].Ingredientes);
+            $('.text-grande').empty();
+            $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
+            $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+' class="active"></li>');
+            $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
+            $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
+            $('.carousel-indicators').append('')
+            for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
+              $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+            }
+          }else{
+            $('.carousel-inner').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
+            $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+'></li>');
+          }
+        }
+        $('.container-producto').css('display', 'block');
+      }
+    }
+  });
+});
+
+$(document).on('click', '.seco', function(ev){
+  ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
+  $('.galleta').css('display', 'bock');
+  var id_perro = parseInt($(this).attr('data-tipo-perro'));
+  $('nav').find('.item_principal-nav-producto-activo').removeClass('item_principal-nav-producto-activo').addClass('item_principal-nav-producto');
+  $("div[data-tipo-perro='"+id_perro+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
+  $("li[data-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]+'-activo').addClass('seco-'+perros[id_perro-1]);
+  $("li[data-tipo-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]).addClass('seco-'+perros[id_perro-1]+'-activo');
   $('#carousel-snacks').css('display', 'none');
   $('#carousel-productos').css('display', 'block');
   $('.carousel-inner').empty();
