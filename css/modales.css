@@ -49,6 +49,7 @@
 }
 .contenido-modal .contenido-text{
     height: 180px;
+    width: 100%;
 }
 
 /*modal-rojo*/
@@ -320,6 +321,16 @@
 .bd-modal-verde .contenido-modal .btn-modal-leer-mas:hover{
     background-color:#3BB606;
 }
+
+.leermas {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+
+
 /*----*/
 @media (min-width: 768px){
     .modal-dialog{
