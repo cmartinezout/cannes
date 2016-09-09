@@ -2,6 +2,7 @@
   "tiposnaks":[{
     "id": "1",
     "Nombre": "GALLETAS CARNE Y LECHE",
+    "Desc": "Rico alimento con Omega 3 que entrega los siguientes beneficios:",
     "Ingredientes": "<b>Ingredientes Variedad Carne</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado desodorizado (Fuente de ácidos grasos omega 3), Cloruro de sodio, Colorante caramelo, Saborizante, Bicarbonato de amonio, bicarbonato de sodio.</br> <b>Ingredientes Variedad Leche</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado estabilizado y desodorizado (fuente de ácidos grasos omega 3), Cloruro de sodio, Saborizante, Bicarbonato de amonio, Bicarbonato de sodio.",
     "imagen": "img/productos/producto6.png",
     "Caracteristicas": "<li class='text-black brillante'>Mejora el estado de la piel y el pelaje, manteniéndolo firme y brillante</li><li class='text-black digestion'>Favorece el funcionamiento del sistema inmune.</li><li class='text-black calcio'>Favorece el funcionamiento del corazón y sistema circulatorio</li><li class='text-black naturales'>Ayudan al normal funcionamiento del cerebro y la retina.</li><li class='text-black naturales'>Aptas para todo tipo de perros: adultos y cachorros.</li>",
@@ -10,6 +11,7 @@
       {
         "id": "3",
         "Nombre": "FILETITOS Y COSTILLITAS",
+        "Desc": "Premia a tu mascota con las exquisitas costillitas Cannes, que complementan su alimento diario y entregan los siguientes beneficios:",
         "Ingredientes": "Almidón de maíz, gluten de trigo, azucares, propilenglicol, grasa vegetal, huevo en polvo, sal, hígado en polvo, emulsionantes autorizados, sorbato de potasio, antioxidantes (BHA, propilgalato), saborizantes y colorantes autorizados.",
         "imagen": "img/productos/producto5.png",
         "Caracteristicas": "<li class='text-black naturales'>Apto para todo tipo de perros: adultos y cachorros</li><li class='text-black calcio'>Perfecto premio para tu mascota</li>",
@@ -19,6 +21,7 @@
         {
           "id": "4",
           "Nombre": "BARRITAS ASADO DE TIRA Y CARNE MECHADA",
+          "Desc": "Premia a tu mascota con las exquisitas barritas que ayudan a prevenir el sarro y que además entregan los siguientes beneficios:",
           "Ingredientes": "<b>Ingredientes Carne Mechada</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes.</br><b>Ingredientes Asado deTira</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes autorizados.",
           "imagen": "img/productos/producto8.png",
           "Caracteristicas": "",

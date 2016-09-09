@@ -45,6 +45,8 @@ $(document).on('click', '.figure-pruducto', function(ev){
           if (j==0){
             $('.carousel-inner').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('#indregientes').find('p').empty();
+            $('.desc').empty();
+            $('.desc').text(data.tipoPerro[i].productos[j].Desc);
             $('#ingredientes').find('p').text(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
             $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
@@ -86,6 +88,8 @@ $(function(){
               for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
                 if(id_producto == data.tipoPerro[i].productos[j].id){
                   $('#indregientes').find('p').empty();
+                  $('.desc').empty();
+                  $('.desc').text(data.tipoPerro[i].productos[j].Desc);
                   $('#ingredientes').find('p').text(data.tipoPerro[i].productos[j].Ingredientes);
                   $('.info-nutricional').empty();
                   $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
@@ -113,6 +117,8 @@ $(function(){
         for (var i = 0; i < data.tiposnaks.length; i++) {
           if(id_producto == data.tiposnaks[i].id){
             $('#ingredientes').find('p').empty();
+            $('.desc').empty();
+            $('.desc').text(data.tiposnaks[i].Desc);
             $('#ingredientes').find('p').append(data.tiposnaks[i].Ingredientes);
             $('.info-nutricional').empty();
             $('.info-nutricional').append(data.tiposnaks[i].Nutricion);
@@ -153,6 +159,8 @@ $(document).on('click', '.snack', function(ev){
         $('#ingredientes').find('p').append(data.tiposnaks[i].Ingredientes);
         $('.info-nutricional').append(data.tiposnaks[i].Nutricion);
         $('.text-grande').empty();
+        $('.desc').empty();
+        $('.desc').text(data.tiposnaks[i].Desc);
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+' class="active"></li>');
         $('.text-grande').append(data.tiposnaks[i].Caracteristicas);
         $('.frutiger-LT-57-cond').text(data.tiposnaks[i].Nombre);
@@ -193,6 +201,8 @@ $(document).on('click', '.humedo', function(ev){
         $('#ingredientes').find('p').append(data.humedos[i].Ingredientes);
         $('.info-nutricional').append(data.humedos[i].Nutricion);
         $('.text-grande').empty();
+        $('.desc').empty();
+        $('.desc').text(data.humedos[i].Desc);
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+' class="active"></li>');
         $('.text-grande').append(data.humedos[i].Caracteristicas);
         $('.frutiger-LT-57-cond').text(data.humedos[i].Nombre);
@@ -233,6 +243,8 @@ $(document).on('click', '.comida', function(ev){
             $('#indregientes').find('p').empty();
             $('#ingredientes').find('p').text(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
+            $('.desc').empty();
+            $('.desc').text(data.tipoPerro[i].productos[j].Desc);
             $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+' class="active"></li>');
             $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
@@ -280,6 +292,8 @@ $(document).on('click', '.seco', function(ev){
             $('#indregientes').find('p').empty();
             $('#ingredientes').find('p').text(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
+            $('.desc').empty();
+            $('.desc').text(data.tipoPerro[i].productos[j].Desc);
             $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+' class="active"></li>');
             $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
