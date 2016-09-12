@@ -44,13 +44,9 @@ $(document).on('click', '.figure-pruducto', function(ev){
         for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
           if (j==0){
             $('.carousel-inner').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
-
-          
             $('.desc').empty();
             $('.desc').text(data.tipoPerro[i].productos[j].Desc);
-
             $('#ingredientes').find('p').empty();
-
             $('#ingredientes').find('p').append(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
             $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
@@ -130,6 +126,9 @@ $(function(){
             $('.text-grande').append(data.tiposnaks[i].Caracteristicas);
             $('.frutiger-LT-57-cond').empty();
             $('.frutiger-LT-57-cond').text(data.tiposnaks[i].Nombre);
+            for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
+              $('#formato').find('.tamanos-produc').append('<img style="width: 20%;" src='+data.tiposnaks[i].imagen+' alt=""><h3>'+data.tiposnaks[i].Porciones[k]+'</h3>');
+            }
           }
         }
       });
@@ -168,7 +167,10 @@ $(document).on('click', '.snack', function(ev){
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+' class="active"></li>');
         $('.text-grande').append(data.tiposnaks[i].Caracteristicas);
         $('.frutiger-LT-57-cond').text(data.tiposnaks[i].Nombre);
-        $('.carousel-indicators').append('')
+        $('.carousel-indicators').append('');
+        for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
+          $('#formato').find('.tamanos-produc').append('<img style="width: 20%;" src='+data.tiposnaks[i].imagen+' alt=""><h3>'+data.tiposnaks[i].Porciones[k]+'</h3>');
+        }
       }else{
         $('.carousel-inner').append('<div data-id='+data.tiposnaks[i].id+' class="item"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+'></li>');
@@ -210,7 +212,10 @@ $(document).on('click', '.humedo', function(ev){
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+' class="active"></li>');
         $('.text-grande').append(data.humedos[i].Caracteristicas);
         $('.frutiger-LT-57-cond').text(data.humedos[i].Nombre);
-        $('.carousel-indicators').append('')
+        $('.carousel-indicators').append('');
+        for (var k = 0; k < data.humedos[i].Porciones.length; k++) {
+          $('#formato').find('.tamanos-produc').append('<img style="width: 20%;" src='+data.humedos[i].imagen+' alt=""><h3>'+data.humedos[i].Porciones[k]+'</h3>');
+        }
       }else{
         $('.carousel-inner').append('<div data-id='+data.humedos[i].id+' class="item"><img src='+data.humedos[i].imagen+' alt="..."></div>');
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+'></li>');
