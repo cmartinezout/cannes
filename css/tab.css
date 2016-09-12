@@ -122,14 +122,7 @@
     padding: 20px;
     padding-bottom: 30px;
 }
-.tab-pane:nth-child(3) p {
-    width: 90%;
-    padding: 5px;
-    border: 1px solid black;
-    text-align: center;
-    margin: auto;
-    font-size: 0.8em;
-}
+
 .tab-pane:nth-child(2) p{
     width: 90%;
     margin: auto;
@@ -184,4 +177,75 @@
     width: 65%;
     float: right;
     margin-top: 50px;
+}
+.raciones-produc .primer-fig{
+    width: 15%;
+    float: left;
+    margin-top: 10px;
+}
+.raciones-produc .col-1{
+    width: 40%;
+    float: left;
+}
+.raciones-produc {
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.raciones-produc figure{
+    width: 50%;
+     float: left;
+    text-align: center;
+    margin-top: 10px;
+}
+.tab-pane:nth-child(3) .date {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    font-size: 0.8em;
+    overflow: hidden;
+    height: auto;
+    margin-top: 10px;
+}
+.raciones-produc figure h3{
+    font-size: 1em;
+    color: #E46A44;
+    font-weight: 600;
+}
+.raciones-produc figure p{
+    font-size: 0.8em;
+ 
+}
+.tab-pane:nth-child(3) figure:nth-child(1) img{
+    width: 60px;
+    padding: 10px;
+    
+}
+.tab-pane:nth-child(3) figure:nth-child(2) img{
+    width: 55px;
+    padding: 10px;
+    
+}
+.tab-pane:nth-child(3) figure:nth-child(3) img{
+    width: 65px;
+    padding: 10px;
+}
+.tab-pane:nth-child(3) figure:nth-child(4) img{
+    width: 70px;
+    padding: 10px;
+}
+
+.tab-pane:nth-child(3) figure:nth-child(5) img{
+    width: 75px;
+    padding: 10px;
+    
+}.tab-pane:nth-child(3) figure:nth-child(5) img{
+    width: 80px;
+    padding: 10px;
+    
+}.tab-pane:nth-child(3) figure:nth-child(5) img{
+    width: 85px;
+    padding: 10px;
 }

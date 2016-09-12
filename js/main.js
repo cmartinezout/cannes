@@ -55,8 +55,8 @@ $(document).on('click', '.figure-pruducto', function(ev){
             $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
             $('.carousel-indicators').append('');
-            $('#raciones').find('p').empty();
-            $('#raciones').find('p').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
+            $('#raciones').find('.date').empty();
+            $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
               $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
             }
@@ -99,8 +99,8 @@ $(function(){
                   $('.text-grande').empty();
                   $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
                   $('.frutiger-LT-57-cond').empty();
-                  $('#raciones').find('p').empty();
-                  $('#raciones').find('p').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
+                  $('#raciones').find('.date').empty();
+                  $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
                   $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
                   for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
                     $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
@@ -269,8 +269,8 @@ $(document).on('click', '.comida', function(ev){
             $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
             $('.carousel-indicators').append('');
-            $('#raciones').find('p').empty();
-            $('#raciones').find('p').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
+            $('#raciones').find('.date').empty();
+            $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
               $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
             }
@@ -320,8 +320,8 @@ $(document).on('click', '.seco', function(ev){
             $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
             $('.carousel-indicators').append('');
-            $('#raciones').find('p').empty();
-            $('#raciones').find('p').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
+            $('#raciones').find('.date').empty();
+            $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
               $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
             }
