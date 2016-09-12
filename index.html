@@ -24,6 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/youtube.js"></script>
     <style>
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
@@ -46,7 +47,7 @@
             <nav class="nav-principal">
                 <ul>
                     <li class="item-nav padding-center-link"><a href="#producto-sec">PRODUCTOS</a></li>
-                    <li class=" item-navpadding-center-link"><a href="">RUTAS CANNES</a></li>
+                    <li class=" item-nav padding-center-link"><a href="#ruta-cannes-sec">RUTAS CANNES</a></li>
                     <li class="item-nav"><a href="">LO RICO DE SER PERRO</a></li>
                     <li class="item-nav padding-center-link padding-top-hover"><a href="">MUNDO CACHORRO</a></li>
                     <li class="item-nav padding-center-link"><a href="">CONTÁCTANOS</a></li>
@@ -61,6 +62,7 @@
                       <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
+                <!----
                 <a href="">
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-circle fa-stack-2x"></i>
@@ -73,6 +75,7 @@
                       <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
+                ---->
             </div>
             <!--Fin redes sociales-->
         </div>
@@ -83,6 +86,8 @@
         <!-- PRUE VIDEO
       <iframe width="1800" height="1013" src="https://www.youtube.com/embed/6lAeDYbkRJ4?autoplay=1&loop=1&playlist=6lAeDYbkRJ4&rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       -->
+      <div id="P1" class="player" style="display:block; margin: auto; background: rgba(0,0,0,0.5)" data-property="{videoURL:'6lAeDYbkRJ4',containment:'.VideoCannes',showControls:false, autoPlay:true, loop:true, mute:true, startAt:12, stopAt:22, opacity:1, addRaster:false, quality:'default'}"></div> 
+
     </section>
     <section class="producto" id="producto-sec">
         <div class="slide-img">
@@ -100,18 +105,21 @@
                     <img src="img/producto-cachorro-fig.jpg" alt="perro cachorro">
                     <figcaption>
                         <h4 class="frutiger-std-con">CACHORRO</h4>
+                        <div class="triangulo_celeste"></div>
                     </figcaption>
                 </figure>
                 <figure class="adulto-bg figure-pruducto" data-tipo-perro="2">
                     <img src="img/producto-adulto-fig.jpg" alt="perro adulto">
                     <figcaption>
                         <h4 class="frutiger-std-con">ADULTO</h4>
+                        <div class="triangulo_rojo"></div>
                     </figcaption>
                 </figure>
                 <figure class="senior-bg figure-pruducto" data-tipo-perro="3">
                     <img src="img/producto-senior-fig.jpg" alt="perro senior">
                     <figcaption>
                         <h4 class="frutiger-std-con">SENIOR</h4>
+                        <div class="triangulo_morado"></div>
                     </figcaption>
                 </figure>
                 <!-- <figure class="r-pequena-bg figure-pruducto" data-tipo-perro="4">
@@ -124,7 +132,7 @@
         </div>
     </section>
     <section class="producto-contenido container-producto" style="display:none">
-           <div class="container">
+           <div class="container margin-top-productos">
                <div class="left-nav-producto">
                 <nav class="nav-producto">
 
@@ -225,6 +233,7 @@
                 <div class="certificado-img">
                    <img src="img/iconos/galleta-frase.png" alt="" class="galleta">
                    <img src="img/iconos/favet.png" alt="" class="favet">
+                   <img src="img/iconos/icon-cerfiticacion.png" alt="" class="certi">
                 </div>
                 <div class="tabla-nutri">
                     <ul class="nav nav-tabs" role="tablist">
@@ -290,15 +299,15 @@
     </div>
 
     </section>
-
-     <section class="ruta">
+     <section class="ruta" id="ruta-cannes-sec">
       <div class="slide-img">
           <div class="box-h3-ruta container">
               <h3 class="futura-bold">
                   RUTA CANNES
               </h3>
               <hr class="linea-separador-ruta">
-              <p class="frutiger-std-con">Breve descriptor de lo que se trata Ruta Cannes.</p>
+              <p class="frutiger-std-con">Descubre el mejor panorama para ti y tu amigo perruno. 
+</p>
           </div>
       </div>
       <div class="ruta-cannes-categ">
@@ -365,14 +374,29 @@
                     <img src="img/img-background/img-cont-modal.png" alt="">
                     <div class="contenido-text" style="overflow-y: hidden;">
 
-                        <p>Hay veces en que no sabemos con quién dejar a nuestras mascotas al momento de salir de vacaciones, pero ¿no sería fantástico que pudiéramos ir con ellas?.
+                       
+                        <p>Hay veces en que no sabemos con quién dejar a nuestras mascotas al momento de salir de
+
+vacaciones, pero ¿no sería fantástico que pudiéramos ir con ellas?
+
+De eso se preocupó Cabañas Choshuenco en Panguipulli, región de los Ríos. Inserta en el tranquilo
+
+pueblo de Choshuenco, a 1 Km del balneario y a 15 Km del Salto Huilo Huilo, es una de las pocas
+
+cabañas que aceptan la estadía de mascotas. Son cabañas equipadas con capacidad para 2, 4 ó 5
+
+personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.
 </p>
-                    <p>De eso se preocupó Cabañas Choshuenco en Panguipulli, región de los Ríos.</p>
-                    <p>Inserta  en el tranquilo pueblo de Choshuenco, a 1 Km del balneario y a 15 Km del Salto Huilo Huilo, es una de las pocas cabañas que aceptan la estadía de mascotas.</p>
-                    <p>Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.</p>
+                    <p>Un lugar único donde podrás relajarte en familia junto a tu mascota y realizar distintas actividades
 
+como la pesca con Mosca, Rafting, Trekking, Canopy, Ascenso al Volcán Choshuenco, Mountain
 
+Bike y mucho más...</p>
+                    <p>Para más información contáctate al +5622584 0133 o en www.cabañaschoshuenco.com</p>
                     <p>Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.</p>
+                   
+                
+                    <p>¿Qué esperan para disfrutar de sus próximas vacaciones con sus mascotas?</p>                         
                     </div>
                     <div class="btn-modal-leer-mas">LEER MÁS <i class="fa fa-plus" aria-hidden="true"></i></div>
                 </div>
@@ -392,15 +416,21 @@
                  <div class="img-bg-modal"></div>
                   <div class="contenido-modal">
                     <h3>¡UN DULCE PASEO!</h3>
-                    <img src="img/img-background/img-cont-modal.png" alt="">
+                    <img src="img/img-background/img-cont-modal-amarillo.png" alt="">
                     <div class="contenido-text">
-                        <p>Hay veces en que no sabemos con quién dejar a nuestras mascotas al momento de salir de vacaciones, pero ¿no sería fantástico que pudiéramos ir con ellas?.
+                        <p>Nada como una tarde de paseo y terminar con un delicioso café, en Cafetería Daniel`s puedes
+
+hacerlo junto a tu mascota, este lugar ubicado en Ñuñoa es 100% amante de los perros y nos
+
+espera con ricos capuccinos espumosos o deliciosos chocolates calientes con marshmallows
+
+mientras tu compañero peludo disfruta de unas ricas galletitas.
 </p>
-                    <p>De eso se preocupó Cabañas Choshuenco en Panguipulli, región de los Ríos.</p>
-                    <p>Inserta  en el tranquilo pueblo de Choshuenco, a 1 Km del balneario y a 15 Km del Salto Huilo Huilo, es una de las pocas cabañas que aceptan la estadía de mascotas.</p>
-                    <p class="leermas">Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.</p>
+                    <p>Juntos podrán disfrutar de música en vivo y una exquisita terraza #ConMascota.</p>
+                    <p>Ubicado en Celerino Pereira 1530, Ñuñoa. Región Metropolitana.
+
+Contáctate al +5622226 5679 o en daniels.cl</p>
                     </div>
-                    <div class="btn-modal-leer-mas">LEER MÁS<i class="fa fa-plus" aria-hidden="true"></i></div>
                 </div>
             </div>
           </div>
@@ -419,13 +449,24 @@
                  <div class="img-bg-modal"></div>
                   <div class="contenido-modal">
                     <h3>CANNES A TODO TERRENO</h3>
-                    <img src="img/img-background/img-cont-modal.png" alt="">
+                    <img src="img/img-background/img-cont-modal-lila.png" alt="">
                     <div class="contenido-text">
-                        <p>Hay veces en que no sabemos con quién dejar a nuestras mascotas al momento de salir de vacaciones, pero ¿no sería fantástico que pudiéramos ir con ellas?.
+                        <p>Empieza a mejorar el clima, se acerca el verano y las ganas de salir de la ciudad.
 </p>
-                    <p>De eso se preocupó Cabañas Choshuenco en Panguipulli, región de los Ríos.</p>
-                    <p>Inserta  en el tranquilo pueblo de Choshuenco, a 1 Km del balneario y a 15 Km del Salto Huilo Huilo, es una de las pocas cabañas que aceptan la estadía de mascotas.</p>
-                    <p class="leermas">Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.</p>
+                    <p>Planea un entretenido camping junto a toda tu familia y ¡sin que se quede nadie en casa! Camping
+
+el Sauce, ubicado en San José de Maipo, recibe mascotas en sus dependencias para que la familia
+
+entera pueda disfrutar de un entretenido fin de semana..</p>
+                    <p>Podrás realizar diferentes y divertidas actividades, siempre con la responsabilidad y atención que
+
+tu perro necesita.</p>
+                    <p>Correr, pasear, bañarse, explorar y disfrutar de hermosos paisajes está dentro de este panorama
+
+natural y a todo terreno.</p>
+                   <p>Encuentra este entretenido panorama en San José de Maipo, Santiago Metropolitana Región
+
++5698348781 / www.campingelsauce.cl</p>
                     </div>
                     <div class="btn-modal-leer-mas">LEER MÁS <i class="fa fa-plus" aria-hidden="true"></i></div>
                 </div>
@@ -444,15 +485,18 @@
                  <div class="img-bg-modal"></div>
                   <div class="contenido-modal">
                     <h3>UNA NOCHE CANINA</h3>
-                    <img src="img/img-background/img-cont-modal.png" alt="">
+                    <img src="img/img-background/img-cont-modal-morado.png" alt="">
                     <div class="contenido-text">
-                        <p style="text-overflow: ellipsis;">Hay veces en que no sabemos con quién dejar a nuestras mascotas al momento de salir de vacaciones, pero ¿no sería fantástico que pudiéramos ir con ellas?.
+                        <p style="text-overflow: ellipsis;">Disfruta de una velada perfecta y muy bien acompañado, en Roberta Restobar podrás hacerlo
+
+junto a tus amigos y tu mascota. Disfruta de una extensa carta y happy hour en la terraza
+
+#ConMascota de este local ubicado en pleno Barrio Italia.
 </p>
-                    <p>De eso se preocupó Cabañas Choshuenco en Panguipulli, región de los Ríos.</p>
-                    <p>Inserta  en el tranquilo pueblo de Choshuenco, a 1 Km del balneario y a 15 Km del Salto Huilo Huilo, es una de las pocas cabañas que aceptan la estadía de mascotas.</p>
-                    <p class="leermas">Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.</p>
-                    </div>
-                    <div class="btn-modal-leer-mas">LEER MÁS <i class="fa fa-plus" aria-hidden="true"></i></div>
+                    <p>Roberta Restobar los espera con los mejores espectáculos de Stand Up Comedy y los mejores
+
+tragos en Condell 1315, Providencia. Región Metropolitana. Contáctate al +56991916303</p>
+                    </div></div>
                 </div>
             </div>
           </div>
@@ -471,13 +515,23 @@
                  <div class="img-bg-modal"></div>
                   <div class="contenido-modal">
                     <h3>TU PERRO TAMBIÉN ENTRENA</h3>
-                    <img src="img/img-background/img-cont-modal.png" alt="">
+                    <img src="img/img-background/img-cont-modal-celeste.png" alt="">
                     <div class="contenido-text">
-                        <p>Hay veces en que no sabemos con quién dejar a nuestras mascotas al momento de salir de vacaciones, pero ¿no sería fantástico que pudiéramos ir con ellas?.
+                        <p>Es muy necesario el entrenamiento y buen estado físico en los perros, en algunas razas más que
+
+otras, además de ser un buen y entretenido pasatiempo que pueden realizar juntos.
 </p>
-                    <p>De eso se preocupó Cabañas Choshuenco en Panguipulli, región de los Ríos.</p>
-                    <p>Inserta  en el tranquilo pueblo de Choshuenco, a 1 Km del balneario y a 15 Km del Salto Huilo Huilo, es una de las pocas cabañas que aceptan la estadía de mascotas.</p>
-                    <p class="leermas">Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.</p>
+                    <p>El Parque Bicentenario inauguró un parque recreativo canino para que puedas realizar distintas
+
+actividades junto a tu mascota. Ubicado en Vitacura, este lugar de 920 m2 cuenta con juegos
+
+“Agility” como plataforma de adiestramiento, muro, ruedas para saltos y un túnel de
+
+desplazamiento.</p>
+                    <p>Este parque canino cuenta también con una zona de adopción canina una vez a la semana, para
+
+que vecinos del sector puedan darle un hogar a perritos desaparecidos.</p>
+                    <p >No esperes más tener una divertida y sana tarde con tu mascota..</p>
                     </div>
                     <div class="btn-modal-leer-mas">LEER MÁS<i class="fa fa-plus" aria-hidden="true"></i></div>
                 </div>
@@ -499,15 +553,20 @@
                  <div class="img-bg-modal"></div>
                   <div class="contenido-modal">
                     <h3>A LA LUZ DE LAS VELAS</h3>
-                    <img src="img/img-background/img-cont-modal.png" alt="">
+                    <img src="img/img-background/img-cont-modal-verde.png" alt="">
                     <div class="contenido-text">
-                        <p>Hay veces en que no sabemos con quién dejar a nuestras mascotas al momento de salir de vacaciones, pero ¿no sería fantástico que pudiéramos ir con ellas?.
+                        <p>Restaurante Papparazzo tiene una hermosa noche especialmente para los que disfrutan salir junto
+
+a sus amiguitos canes. Si te gusta la comida mediterránea, este es tu lugar..
 </p>
-                    <p>De eso se preocupó Cabañas Choshuenco en Panguipulli, región de los Ríos.</p>
-                    <p>Inserta  en el tranquilo pueblo de Choshuenco, a 1 Km del balneario y a 15 Km del Salto Huilo Huilo, es una de las pocas cabañas que aceptan la estadía de mascotas.</p>
-                    <p class="leermas">Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.</p>
-                    </div>
-                    <div class="btn-modal-leer-mas">LEER MÁS <i class="fa fa-plus" aria-hidden="true"></i></div>
+                    <p>Cuenta con terraza exterior y una extensa carta para que te deleites mientras tu perro disfruta de
+
+una rica comida en salsa y tachos.</p>
+                    <p>Este acogedor lugar también te permite llevar tu propio alimento para perro si así lo deseas.</p>
+                    <p>Encuéntralo en Papudo 424, Valparaíso. Región de Valparaíso y contáctate al
+
++56322327 9197 o en su página web www.ilpaparazzo.cl</p>
+                    </div></div>
                 </div>
             </div>
           </div>
@@ -515,6 +574,7 @@
     </div>
 </section>
 
+<!---MUNDO CACHORRO
 <section class="mundocachorro">
  <div class="slide-img">
            <div class="box-h3-mundocachorro">
@@ -549,6 +609,7 @@
         </div>
  </div>
 </section>
+   --->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -595,11 +656,10 @@
 
 
     });
-
-
+      
   });
-
-
+    
+    
 
 
 

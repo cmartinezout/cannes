@@ -2,11 +2,14 @@
   "humedos": [
     {
       "id": "1",
-      "Nombre": "SALSA CASERAS ASADO DE TIRA Y TOCINO",
+
       "Desc": "Deliciosas Salsas Caseras con Omega 3 y 6 encargadas de proporcionar los siguientes beneficios:",
+
+      "Nombre": "CASERAS ASADO DE TIRA Y TOCINO",
+
       "Ingredientes": "<b>Ingredientes Variedad Variedad Sabor Asado de Tira</b></br> Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante asado de tira, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes <b>Ingredientes Variedad Sabor Tocino</b></br>Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante tocino, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes.",
       "imagen": "img/productos/producto7.png",
-      "Caracteristicas": "<li class='text-black digestion'>Con cosetas para una mejor digestión</li><li class='text-black calcio'>Bajo en grasas y calorías (6.5 kcal por porción)</li><li class='text-black brillante'>Con Omega 3 y 6 que mejoran su pelaje y ayudan a su sistema inmune.</li><li class='text-black calcio'>Con ingredientes naturales</li><li class='text-black naturales'>Aptas para todo tipo de perros: adultos y cachorros.</li>",
+      "Caracteristicas": "<li class='text-black brillante'>Con Omega 3 y 6 <span class='text-naranjo'> que mejora su pelaje y ayudan a</span><span class='detalle-sizemas'> su sistema inmune. </span></li><li class='text-black grasas'>Bajo en grasas<span class='text-naranjo'>y calorias</span> <span class='detalle-sizemas'> (6.5 kcal por porcion))</span></li><li class='text-black manzana'><span class='text-naranjo'>Con  </span>ingredientes<span class='detalle-sizemas'>naturales.</span></li><li class='text-black perros-tamanos'>Aptas <span class='text-naranjo'>para todo tipo de perros: </span> <span class='detalle-sizemas'> adultos y cachorros.</span></li>",
       "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>2,0%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>3,0%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>0,5%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>80%</td></tr>"
     }]
 }

@@ -44,9 +44,13 @@ $(document).on('click', '.figure-pruducto', function(ev){
         for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
           if (j==0){
             $('.carousel-inner').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
-            $('#indregientes').find('p').empty();
+
+          
             $('.desc').empty();
             $('.desc').text(data.tipoPerro[i].productos[j].Desc);
+
+            $('#ingredientes').find('p').empty();
+
             $('#ingredientes').find('p').append(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
             $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
@@ -87,10 +91,10 @@ $(function(){
           if(id_tipo_perro == data.tipoPerro[i].id){
               for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
                 if(id_producto == data.tipoPerro[i].productos[j].id){
-                  $('#indregientes').find('p').empty();
                   $('.desc').empty();
                   $('.desc').text(data.tipoPerro[i].productos[j].Desc);
-                  $('#ingredientes').find('p').text(data.tipoPerro[i].productos[j].Ingredientes);
+                  $('#ingredientes').find('p').empty();
+                  $('#ingredientes').find('p').append(data.tipoPerro[i].productos[j].Ingredientes);
                   $('.info-nutricional').empty();
                   $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
                   $('.text-grande').empty();
@@ -144,7 +148,7 @@ $(document).on('click', '.snack', function(ev){
   $("li[data-tipo-perro='"+id+"']").removeClass('seco-'+perros[id-1]+'-activo').addClass('seco-'+perros[id-1]);
   $("li[data-perro='"+id+"']").removeClass('seco-'+perros[id-1]).addClass('seco-'+perros[id-1]+'-activo');
   $('.frutiger-bold-cond').text('SNACKS')
-  $('#indregientes').find('p').empty();
+  $('#ingredientes').find('p').empty();
   $('.carousel-inner').empty();
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
@@ -186,7 +190,7 @@ $(document).on('click', '.humedo', function(ev){
   $("li[data-tipo-perro='"+id+"']").removeClass('seco-'+perros[id-1]+'-activo').addClass('seco-'+perros[id-1]);
   $("li[data-perro='"+id+"']").removeClass('seco-'+perros[id-1]+'-activo').addClass('seco-'+perros[id-1]);
   $('.frutiger-bold-cond').text('SALSA')
-  $('#indregientes').find('p').empty();
+  $('#ingredientes').find('p').empty();
   $('.carousel-inner').empty();
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
@@ -240,8 +244,8 @@ $(document).on('click', '.comida', function(ev){
         for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
           if (j==0){
             $('.carousel-inner').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
-            $('#indregientes').find('p').empty();
-            $('#ingredientes').find('p').text(data.tipoPerro[i].productos[j].Ingredientes);
+            $('#ingredientes').find('p').empty();
+            $('#ingredientes').find('p').append(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
             $('.desc').empty();
             $('.desc').text(data.tipoPerro[i].productos[j].Desc);
@@ -289,8 +293,8 @@ $(document).on('click', '.seco', function(ev){
         for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
           if (j==0){
             $('.carousel-inner').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
-            $('#indregientes').find('p').empty();
-            $('#ingredientes').find('p').text(data.tipoPerro[i].productos[j].Ingredientes);
+            $('#ingredientes').find('p').empty();
+            $('#ingredientes').find('p').append(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
             $('.desc').empty();
             $('.desc').text(data.tipoPerro[i].productos[j].Desc);

@@ -93,11 +93,11 @@ header{
     top: -8px;
 }
 .logo-h1 img{
-    width: 160px
+    width: 190px;
 }
 .nav-principal{
     float: left;
-    width: 70%;
+    width: 74%;
     margin-left: 16%;
 }
 .nav-principal ul{
@@ -157,8 +157,9 @@ header{
 }
 .redes-sociales{
     float:left;
-    width: 12%;
+    width: 8%;
     padding: 20px 0px;
+    text-align: center;
 }
 .redes-sociales .fa-stack-1x {
     color: black;
@@ -168,7 +169,6 @@ header{
 }
 .redes-sociales a{
     font-size: 0.8em;
-
 
 }
 .redes-sociales .fa-stack{
@@ -211,7 +211,7 @@ transform: scale(1.4);
 
 /*Img-Background*/
 .producto .slide-img{
-    background-image: url(../img/img-background/slide-producto.jpg);
+    background-image: url(../img/img-background/slide-producto2.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,6 +271,7 @@ slide-img{
     letter-spacing: 1px;
     font-size: 1.5em;
 }
+/*---hover-
 .producto-categ figcaption:hover{
     -webkit-box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
@@ -280,6 +281,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
 }
+--*/
 .cachorro-bg figcaption{
     background-color: #42B3DA;
 }
@@ -291,6 +293,46 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 }
 .r-pequena-bg figcaption{
     background-color: #FFA900;
+}
+.producto-categ figcaption {
+    position: relative;
+}
+.triangulo_celeste {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 80px solid #42B3DA;
+    position: absolute;
+    top: -70px;
+    zoom: 30%;
+    z-index: 999;
+    left: 45%;
+    
+}
+.triangulo_rojo {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 80px solid #DF3245;
+    position: absolute;
+    top: -70px;
+    zoom: 30%;
+    z-index: 999;
+    left: 45%;
+}
+.triangulo_morado {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 80px solid #9A42DC;
+    position: absolute;
+    top: -70px;
+    zoom: 30%;
+    z-index: 999;
+    left: 45%;
 }
 /*-Fin-*/
 
@@ -338,46 +380,107 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .detalle-producto h4{
     font-family: "frutiger-LT-57-cond";
     font-weight: 100;
+    font-size: 1.1em;
 }
 .producto-contenido{
   margin-bottom: 3%;
 }
-
+.detalle-producto h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .detalle-producto li{
     display: table;
     margin-top: 10px;
     font-size: 1em;
 }
+
 .detalle-producto .digestion::before {
-    content: url(../img/iconos/icon-1-lista-producto.png);
+    content: url(../img/iconos/icon-lista-digestion.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
 .detalle-producto .calcio::before {
-    content: url(../img/iconos/icon-2-lista-producto.png);
+    content: url(../img/iconos/icon-lista-hueso.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
 .detalle-producto .brillante::before {
-    content: url(../img/iconos/icon-3-lista-producto.png);
+    content: url(../img/iconos/icon-lista-brillante.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
 .detalle-producto .consistentes::before {
-    content: url(../img/iconos/icon-4-lista-producto.png);
+    content: url(../img/iconos/icon-lista-heces.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
     vertical-align: middle;
 }
-.detalle-producto .naturales::before {
-    content: url(../img/iconos/icon-5-lista-producto.png);
+.detalle-producto .corazon::before {
+    content: url(../img/iconos/icon-lista-corazon.png);
+    display: inline-block;
+    zoom:70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto .ojo::before {
+    content: url(../img/iconos/icon-lista-ojo.png);
+    display: inline-block;
+    zoom:70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto .perros-tamanos::before {
+    content: url(../img/iconos/icon-lista-perros-tamanos.png);
+    display: inline-block;
+    zoom:70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto .proteinas::before {
+    content: url(../img/iconos/icon-lista-proteina.png);
+    display: inline-block;
+    zoom:70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto .fibra::before {
+    content: url(../img/iconos/icon-lista-fibra.png);
+    display: inline-block;
+    zoom:70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto .defensas::before {
+    content: url(../img/iconos/icon-lista-defensas.png);
+    display: inline-block;
+    zoom:70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto .manzana::before {
+    content: url(../img/iconos/icon-lista-manzana.png);
+    display: inline-block;
+    zoom:70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto .grasas::before {
+    content: url(../img/iconos/icon-lista-grasa.png);
+    display: inline-block;
+    zoom:70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto .carbohidratos::before {
+    content: url(../img/iconos/icon-lista-carbohidratos.png);
     display: inline-block;
     zoom:70%;
     padding-right: 10px;
@@ -560,11 +663,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     transition: all 1000ms ease;
 }
 .seco-cachorro-activo::before, .snack-cachorro-activo::before{
-    content: url(../img/iconos/icon-hueso-cachorro.png);
-    zoom:40%;
+    content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
-    padding: 4px;
+    padding-right: 2px;
 
 }
 .seco-cachorro-activo{
@@ -578,25 +680,22 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 }
 
 .seco-adulto-activo::before, .snack-adulto-activo::before{
-    content: url(../img/iconos/icon-hueso-adulto.png);
-    zoom:40%;
+    content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
-    padding: 4px;
+    padding-right: 2px;
 }
 .seco-senior-activo::before, .snack-senior-activo::before{
-    content: url(../img/iconos/icon-hueso-senior.png);
-    zoom:40%;
+    content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
-    padding: 4px;
+    padding-right: 2px;
 }
 .humedo-cachorro-activo::before, .snack-cachorro-activo::before{
-    content: url(../img/iconos/icon-hueso-cachorro.png);
-    zoom:40%;
+    content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
-    padding: 4px;
+    padding-right: 2px;
 
 }
 
@@ -611,26 +710,18 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 }
 
 .humedo-adulto-activo::before, .snack-adulto-activo::before{
-    content: url(../img/iconos/icon-hueso-adulto.png);
-    zoom:40%;
+    content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
-    padding: 4px;
+    padding-right: 2px;
 }
 .humedo-senior-activo::before, .snack-senior-activo::before{
-    content: url(../img/iconos/icon-hueso-senior.png);
-    zoom:40%;
+    content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
-    padding: 4px;
+    padding-right: 2px;
 }
-.humedo-pequenas-activo::before, .snack-pequenas-activo::before{
-    content: url(../img/iconos/icon-hueso-pequenas.png);
-    zoom:40%;
-    vertical-align: middle;
-    display: inline-block;
-    padding: 4px;
-}
+
 
 .left-nav-producto .nav-producto  .item_principal-nav-producto{
     border: 1px solid black;
@@ -729,7 +820,7 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
-    padding: 1px;
+    padding-right: 2px;
 }
 .left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
       -webkit-transition: all 300ms ease;
@@ -739,23 +830,18 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     transition: all  300ms ease;
 }
 .left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before{
-    content: url(../img/iconos/icon-hueso-adulto.png);
+    content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
-    padding: 1px;
+    padding-right: 2px;
 }
 .left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .snack-senior:hover:before{
-    content: url(../img/iconos/icon-hueso-senior.png);
+    content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
-    padding: 1px;
+    padding-right: 2px;
 }
-.left-nav-producto .nav-producto .seco-pequenas:hover:before, .left-nav-producto .nav-producto .snack-pequenas:hover:before{
-    content: url(../img/iconos/icon-hueso-pequenas.png);
-    vertical-align: middle;
-    display: inline-block;
-    padding: 1px;
-}
+
 
 /*Fin*/
 /*bottom tabla*/
@@ -786,10 +872,12 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     float: right;
 }
 .certificado-img .favet{
-    display: block;
-    width: 10%;
+    width: 70px;
     margin-left: 30px;
-    margin-top: 10px;
+}
+.certificado-img .certi{
+    width: 260px;
+    margin: 10px 15px;
 }
 .botton-tabla-producto table{
     width: 50%;
@@ -815,6 +903,7 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     width: 100%;
     height: 300px;
 }
+
 /*-Fin-*/
 /*---------------FIN SECCION PRODUCTO------------*/
 
@@ -841,14 +930,14 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
 
 .linea-separador-ruta{
     margin-top: -25px;
-    width: 280px;
+    width: 250px;
     display: table-caption;
     border: 1px solid black;
 }
 
 .box-h3-ruta p {
     font-size: 1.4em;
-    width: 290px;
+    width: 350px;
     margin-top: -15px;
 }
 /*-Fin-*/
@@ -1002,6 +1091,9 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
 .mundocachorro figcaption{
     background-color: #EB7E2B;
 }
+body{
+    padding: 0px!important;
+}
 /*-------------MEDIAS QUERY-----------*/
 @media  (max-width: 1024px) {
     .nav-principal li a {
@@ -1025,5 +1117,10 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     }
     .linea-separador{
     width: 320px;
-}
+    }
+    .logo-h1{
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    }
 }
