@@ -1,6 +1,7 @@
 {
   "tiposnaks":[{
     "id": "1",
+    "Tipo": "GALLETAS",
     "Desc": "Rico alimento con Omega 3 que entrega los siguientes beneficios:",
     "Nombre": "CARNE Y LECHE",
     "Ingredientes": "<b>Ingredientes Variedad Carne</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado desodorizado (Fuente de ácidos grasos omega 3), Cloruro de sodio, Colorante caramelo, Saborizante, Bicarbonato de amonio, bicarbonato de sodio.</br> <b>Ingredientes Variedad Leche</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado estabilizado y desodorizado (fuente de ácidos grasos omega 3), Cloruro de sodio, Saborizante, Bicarbonato de amonio, Bicarbonato de sodio.",
@@ -10,7 +11,8 @@
     "Porciones": ["200 gr", "450 gr"]
     },
       {
-        "id": "3",
+        "id": "2",
+        "Tipo": "SNACKS",
         "Nombre": "FILETITOS Y COSTILLITAS",
         "Desc": "Premia a tu mascota con las exquisitas costillitas Cannes, que complementan su alimento diario y entregan los siguientes beneficios:",
         "Ingredientes": "Almidón de maíz, gluten de trigo, azucares, propilenglicol, grasa vegetal, huevo en polvo, sal, hígado en polvo, emulsionantes autorizados, sorbato de potasio, antioxidantes (BHA, propilgalato), saborizantes y colorantes autorizados.",
@@ -20,7 +22,8 @@
         "Porciones": ["Doypack de 65g"]
         },
         {
-          "id": "4",
+          "id": "3",
+          "Tipo": "BARRITAS",
           "Desc": "Premia a tu mascota con las exquisitas barritas que ayudan a prevenir el sarro y que además entregan los siguientes beneficios:",
           "Nombre": "ASADO DE TIRA Y CARNE MECHADA",
           "Ingredientes": "<b>Ingredientes Carne Mechada</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes.</br><b>Ingredientes Asado deTira</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes autorizados.",

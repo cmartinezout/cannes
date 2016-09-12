@@ -642,26 +642,14 @@ una rica comida en salsa y tachos.</p>
       //$('.contenido-text').css('overflow', 'visible');
         $('.contenido-text').find('p').eq(3).removeClass('leermas');
         $('.contenido-text').find('p').eq(4).css('visibility','visible');
-
-
     });
-
-
+    $('.contenido-text').css('overflow', 'hidden');
     $('.close').on('click', function(ev){
          ev.preventDefault();
-         $('.contenido-text').css('overflow', 'hidden');
          $('.btn-modal-leer-mas').css('display', 'block');
          $('.contenido-text').find('p').eq(3).addClass('leermas');
          $('.contenido-text').find('p').eq(4).css('visibility','hidden');
-
-
     });
-
   });
-
-
-
-
-
     </script>
 </html>

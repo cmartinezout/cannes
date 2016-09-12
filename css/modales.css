@@ -39,7 +39,7 @@
     width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
-   
+
 }
 .contenido-modal {
     color: black;
@@ -67,7 +67,7 @@
     border-right: 8px solid #A40606;
      border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-} 
+}
 
 .bd-modal-rojo .modal-header .close{
     padding:  12px 19px 14px 19px;
@@ -112,7 +112,7 @@
     border-right: 8px solid #FFA900;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-} 
+}
 
 .bd-modal-amarillo .modal-header .close{
     padding:  12px 19px 14px 19px;
@@ -157,7 +157,7 @@
     border-right: 8px solid #7474C3;
      border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-} 
+}
 
 .bd-modal-lila .modal-header .close{
     padding:  12px 19px 14px 19px;
@@ -192,7 +192,7 @@
 
 /*modal-morado*/
 .bd-modal-morado .img-bg-modal{
-    background-image: url(../img/img-background/modal-lila.jpg);
+    background-image: url(../img/img-background/modal-morado.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 608px;
@@ -202,7 +202,7 @@
     border-right: 8px solid #9A42DC;
      border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-} 
+}
 
 .bd-modal-morado .modal-header .close{
     padding:  12px 19px 14px 19px;
@@ -247,7 +247,7 @@
     border-right: 8px solid #479DC5;
      border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-} 
+}
 
 .bd-modal-celeste .modal-header .close{
     padding:  12px 19px 14px 19px;
@@ -292,7 +292,7 @@
     border-right: 8px solid #3BB606;
      border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-} 
+}
 
 .bd-modal-verde .modal-header .close{
     padding:  12px 19px 14px 19px;

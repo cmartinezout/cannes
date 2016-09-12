@@ -15,7 +15,8 @@ $(document).ready(function(){
       });
     });
   });
-  })
+});
+
 $(document).on('click', '.figure-pruducto', function(ev){
   ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
   $('.galleta').css('display', 'block');
@@ -53,7 +54,9 @@ $(document).on('click', '.figure-pruducto', function(ev){
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+' class="active"></li>');
             $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
-            $('.carousel-indicators').append('')
+            $('.carousel-indicators').append('');
+            $('#raciones').find('p').empty();
+            $('#raciones').find('p').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
               $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
             }
@@ -96,6 +99,8 @@ $(function(){
                   $('.text-grande').empty();
                   $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
                   $('.frutiger-LT-57-cond').empty();
+                  $('#raciones').find('p').empty();
+                  $('#raciones').find('p').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
                   $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
                   for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
                     $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
@@ -118,6 +123,8 @@ $(function(){
           if(id_producto == data.tiposnaks[i].id){
             $('#ingredientes').find('p').empty();
             $('.desc').empty();
+            $(".frutiger-bold-cond").empty();
+            $(".frutiger-bold-cond").text(data.tiposnaks[i].Tipo);
             $('.desc').text(data.tiposnaks[i].Desc);
             $('#ingredientes').find('p').append(data.tiposnaks[i].Ingredientes);
             $('.info-nutricional').empty();
@@ -152,12 +159,14 @@ $(document).on('click', '.snack', function(ev){
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
+  $(".frutiger-bold-cond").empty();
   $('#ingredientes').find('p').empty();
   $('#formato').find('.tamanos-produc').empty();
   $.getJSON('src/snaks.json', function(){
   }).always(function(data){
     for (var i = 0; i < data.tiposnaks.length; i++) {
       if(i == 0){
+        $(".frutiger-bold-cond").text(data.tiposnaks[i].Tipo);
         $('.carousel-inner').append('<div data-id='+data.tiposnaks[i].id+' class="item active"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
         $('#ingredientes').find('p').append(data.tiposnaks[i].Ingredientes);
         $('.info-nutricional').append(data.tiposnaks[i].Nutricion);
@@ -223,6 +232,7 @@ $(document).on('click', '.humedo', function(ev){
     }
   });
 });
+
 $(document).on('click', '.comida', function(ev){
   ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
   $('.galleta').css('display', 'block');
@@ -258,7 +268,9 @@ $(document).on('click', '.comida', function(ev){
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+' class="active"></li>');
             $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
-            $('.carousel-indicators').append('')
+            $('.carousel-indicators').append('');
+            $('#raciones').find('p').empty();
+            $('#raciones').find('p').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
               $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
             }
@@ -307,7 +319,9 @@ $(document).on('click', '.seco', function(ev){
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+' class="active"></li>');
             $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
-            $('.carousel-indicators').append('')
+            $('.carousel-indicators').append('');
+            $('#raciones').find('p').empty();
+            $('#raciones').find('p').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
               $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
             }
