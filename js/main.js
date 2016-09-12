@@ -9,7 +9,7 @@ $(document).ready(function(){
       var target = this.hash;
       var $target = $(target);
       $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
+        'scrollTop': $target.offset().top-71
       }, 900, 'swing', function () {
         window.location.hash = target;
       });
@@ -47,7 +47,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
             $('#indregientes').find('p').empty();
             $('.desc').empty();
             $('.desc').text(data.tipoPerro[i].productos[j].Desc);
-            $('#ingredientes').find('p').text(data.tipoPerro[i].productos[j].Ingredientes);
+            $('#ingredientes').find('p').append(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
             $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+' class="active"></li>');
@@ -64,7 +64,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
         }
         $('.container-producto').css('display', 'block');
         $('html, body').stop().animate({
-          'scrollTop': $('.container-producto').offset().top
+          'scrollTop': $('.container-producto').offset().top-100
         }, 900, 'swing', function () {
         });
       }
