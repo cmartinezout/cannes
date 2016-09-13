@@ -307,7 +307,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     top: -70px;
     zoom: 30%;
     left: 45%;
-    
+
 }
 .triangulo_rojo {
     width: 0;
@@ -813,7 +813,7 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     transition: all 600ms ease;
     cursor: pointer;
 }
-.left-nav-producto .nav-producto .seco-cachorro:hover:before, .left-nav-producto .nav-producto .snack-cachorro:hover:before{
+.left-nav-producto .nav-producto .seco-cachorro:hover:before, .left-nav-producto .nav-producto .humedo-cachorro:hover:before,.left-nav-producto .nav-producto .snack-cachorro:hover:before{
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
@@ -826,13 +826,13 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     -o-transition: all 300ms ease;
     transition: all  300ms ease;
 }
-.left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before{
+.left-nav-producto .nav-producto .seco-adulto:hover:before,.left-nav-producto .nav-producto .humedo-adulto:hover:before , .left-nav-producto .nav-producto .snack-adulto:hover:before{
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .snack-senior:hover:before{
+.left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .humedo-senior:hover:before,.left-nav-producto .nav-producto .snack-senior:hover:before{
     content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
@@ -1092,7 +1092,7 @@ body{
     padding: 0px!important;
 }
 .video-inicio iframe{
-    
+
 }
 
 
