@@ -3,12 +3,33 @@
     "id": "1",
     "Tipo": "GALLETAS",
     "Desc": "Rico alimento con Omega 3 que entrega los siguientes beneficios:",
-    "Nombre": "CARNE Y LECHE",
+    "Nombre": "VRIEDADES: CARNE Y LECHE",
     "Ingredientes": "<b>Ingredientes Variedad Carne</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado desodorizado (Fuente de ácidos grasos omega 3), Cloruro de sodio, Colorante caramelo, Saborizante, Bicarbonato de amonio, bicarbonato de sodio.</br> <b>Ingredientes Variedad Leche</b></br> Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado estabilizado y desodorizado (fuente de ácidos grasos omega 3), Cloruro de sodio, Saborizante, Bicarbonato de amonio, Bicarbonato de sodio.",
     "imagen": "img/productos/producto6.png",
-    "Caracteristicas": "<li class='text-black brillante'>Mejora el estado de <span class='detalle-sizemas'>la piel y el pelaje, </span><span class='text-naranjo'> manteniéndolo firme y brillante</li><li class='text-black defensas'>Favorece <span class='text-naranjo'>el funcionamiento del</span> <span class='detalle-sizemas'> sistema inmune.</span></li><li class='text-black corazon'>Favorece <span class='text-naranjo'>el funcionamiento del </span><span class='detalle-sizemas'>corazón y sistema circulatorio</span></li><li class='text-black ojo'>Ayudan <span class='text-naranjo'>al normal funcionamiento del</span> <span class='detalle-sizemas'> cerebro y la retina.</span></li><li class='text-black perros-tamanos'>Aptas <span class='text-naranjo'>para todo tipo de perros:</span> <span class='detalle-sizemas'> adultos y cachorros.</span></li>",
+    "Caracteristicas": "<li class='text-black brillante'>Mejora el estado de la piel y el pelaje <span class='text-naranjo detalle-sizemas'> manteniéndolo firme y brillante</span></li><li class='text-black defensas'>Favorece el funcionamiento del <span class='text-naranjo detalle-sizemas'>sistema inmune.</span></li><li class='text-black corazon'>Favorece el funcionamiento del <span class='text-naranjo detalle-sizemas'>corazón y sistema circulatorio</span></li><li class='text-black ojo'>Ayudan al normal funcionamiento <span class='text-naranjo detalle-sizemas'>del cerebro y la retina.</span></li><li class='text-black perros-tamanos'>Aptas para todo tipo de perros:<span class='text-naranjo detalle-sizemas'> adultos y cachorros.</span></li>",
     "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>17%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>10%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>4%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>10%</td></tr>",
-    "Porciones": ["200 gr", "450 gr"]
+    "Porciones": ["200 y 450 gr"],
+    "Img_porcion": "img/productos/producto6.png",
+    "Raciones": [{
+      "kilo": "Hasta 5 kilos",
+      "gramos": "1-2 unidades"
+      },
+      {
+        "kilo": "De 6 a 10 Kilos",
+        "gramos": "2-3 unidades"
+        },
+      {
+        "kilo": "De 11 a 20 Kilos",
+        "gramos": "3-4 unidades"
+        },
+      {
+        "kilo": "21 kilos o más",
+        "gramos": "4-5 unidades"
+        },
+      {
+        "kilo": "21 kilos o más",
+        "gramos": "515 gramos"
+        }]
     },
       {
         "id": "2",
@@ -17,9 +38,22 @@
         "Desc": "Premia a tu mascota con las exquisitas costillitas Cannes, que complementan su alimento diario y entregan los siguientes beneficios:",
         "Ingredientes": "Almidón de maíz, gluten de trigo, azucares, propilenglicol, grasa vegetal, huevo en polvo, sal, hígado en polvo, emulsionantes autorizados, sorbato de potasio, antioxidantes (BHA, propilgalato), saborizantes y colorantes autorizados.",
         "imagen": "img/productos/producto5.png",
-        "Caracteristicas": "<li class='text-black proteinas'><span class='detalle-sizemas'>Fuente de proteína.</span></li><li class='text-black perros-tamanos'>Aptos <span class='text-naranjo'>para todo tipo de perros:</span> <span class='detalle-sizemas'> adultos y cachorros.</span></li> ",
+        "Caracteristicas": "<li class='text-black proteinas'><span class='detalle-sizemas'>Fuente de proteína.</span></li><li class='text-black perros-tamanos'>Aptas para todo tipo de perros:<span class='text-naranjo detalle-sizemas'> adultos y cachorros.</span></li>",
         "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>18%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>7%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>1%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>15%</td></tr>",
-        "Porciones": ["Doypack de 65g"]
+        "Porciones": ["Doypack de 65g"],
+        "Img_porcion": "img/productos/producto5.png",
+        "Raciones": [{
+          "kilo": "Pequeño",
+          "gramos": "2-3 unidades"
+          },
+          {
+            "kilo": "Mediano",
+            "gramos": "3-4 unidades"
+            },
+          {
+            "kilo": "Grande",
+            "gramos": "4-5 unidades"
+            }]
         },
         {
           "id": "3",
@@ -27,10 +61,12 @@
           "Desc": "Premia a tu mascota con las exquisitas barritas que ayudan a prevenir el sarro y que además entregan los siguientes beneficios:",
           "Nombre": "ASADO DE TIRA Y CARNE MECHADA",
           "Ingredientes": "<b>Ingredientes Carne Mechada</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes.</br><b>Ingredientes Asado deTira</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes autorizados.",
-          "imagen": "img/productos/producto8.png",
-          "Caracteristicas": "<li class='text-black proteinas'><span class='detalle-sizemas'>Fuente de proteína.</span></li><li class='text-black fibra'><span class='detalle-sizemas'>Fuente de fibra prebiótica. </span></li><li class='text-black carbohidratos'><span class='detalle-sizemas'>Fuente de carbohidratos.</span></li><li class='text-black perros-tamanos'>Aptos <span class='text-naranjo'>para todo tipo de perros:</span> <span class='detalle-sizemas'> adultos y cachorros.</span></li>",
+          "imagen": "img/productos/producto13.png",
+          "Img_porcion": "img/productos/producto8.png",
+          "Caracteristicas": "<li class='text-black proteinas'><span class='detalle-sizemas'>Fuente de proteína.</span></li><li class='text-black fibra'><span class='detalle-sizemas'>Fuente de fibra prebiótica. </span></li><li class='text-black carbohidratos'><span class='detalle-sizemas'>Fuente de carbohidratos.</span></li><li class='text-black perros-tamanos'>Aptas para todo tipo de perros:<span class='text-naranjo detalle-sizemas'> adultos y cachorros.</span></li>",
           "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>13%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>6%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>7%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>15%</td></tr>",
-          "Porciones": ["90 gr"]
+          "Porciones": ["18 gr cada barrita (5 unidades por caja)"],
+          "Raciones": []
         }]
 
 }

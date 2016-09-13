@@ -2,17 +2,14 @@ var perros = ["cachorro", "adulto", "senior"];
 
 //move slow to the section
 $(document).ready(function(){
-  $(document).on('click', '.item-nav', function(ev){
-    ev.preventDefault();
-    $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
-      var target = this.hash;
-      var $target = $(target);
-      $('html, body').stop().animate({
-        'scrollTop': $target.offset().top-71
-      }, 900, 'swing', function () {
-        window.location.hash = target;
-      });
+  $('.link[href^="#"]').on('click',function (e) {
+    e.preventDefault();
+    var target = this.hash;
+    var $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top-71
+    }, 900, 'swing', function () {
+      window.location.hash = target;
     });
   });
 });
@@ -26,6 +23,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
+  $('#raciones').find('.date').css('display', 'block');
   $('#formato').find('.tamanos-produc').empty();
   $("div[data-tipo-perro='"+id+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
   $("li[data-tipo-perro='"+id+"']").removeClass('seco-'+perros[id-1]).addClass('seco-'+perros[id-1]+'-activo');
@@ -56,15 +54,34 @@ $(document).on('click', '.figure-pruducto', function(ev){
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
             $('.carousel-indicators').append('');
             $('#raciones').find('.date').empty();
+            $('.raciones-produc').empty();
+            $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
             $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
               $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
             }
+            for (var x = 0; x < data.tipoPerro[i].productos[j].Raciones.length; x++) {
+              if (x==0){
+                $('.primer-fig').append('<h3>'+data.tipoPerro[i].productos[j].Raciones[0].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[0].gramos+'</p>');
+              }
+              else if(x==1 || x<5){
+                if(x==1){
+                  $('.raciones-produc').append('<div class="col-1"></div>');
+                }
+                  $('.col-1').append('<figure><h3>'+data.tipoPerro[i].productos[j].Raciones[x].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[x].gramos+'</p></figure>');
+              }else if (x>=5){
+                if(x==5){
+                  $('.raciones-produc').append('<div class="col-1 2"></div>');
+                }
+                  $('.2').append('<figure><h3>'+data.tipoPerro[i].productos[j].Raciones[x].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[x].gramos+'</p></figure>');
+                }
+              }
           }else{
             $('.carousel-inner').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+'></li>');
           }
         }
+        $("a[href='#tabla-nutri']").click();
         $('.container-producto').css('display', 'block');
         $('html, body').stop().animate({
           'scrollTop': $('.container-producto').offset().top-100
@@ -100,8 +117,27 @@ $(function(){
                   $('.text-grande').append(data.tipoPerro[i].productos[j].Caracteristicas);
                   $('.frutiger-LT-57-cond').empty();
                   $('#raciones').find('.date').empty();
+                  $('.raciones-produc').empty();
+                  $("a[href='#tabla-nutri']").click();
                   $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
                   $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
+                  for (var x = 0; x < data.tipoPerro[i].productos[j].Raciones.length; x++) {
+                    if (x==0){
+                      $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+                      $('.primer-fig').append('<h3>'+data.tipoPerro[i].productos[j].Raciones[0].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[0].gramos+'</p>');
+                    }
+                    else if(x==1 || x<5){
+                      if(x==1){
+                        $('.raciones-produc').append('<div class="col-1"></div>');
+                      }
+                        $('.col-1').append('<figure><h3>'+data.tipoPerro[i].productos[j].Raciones[x].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[x].gramos+'</p></figure>');
+                    }else if (x>=5){
+                      if(x==5){
+                        $('.raciones-produc').append('<div class="col-1 2"></div>');
+                      }
+                        $('.2').append('<figure><h3>'+data.tipoPerro[i].productos[j].Raciones[x].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[x].gramos+'</p></figure>');
+                      }
+                    }
                   for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
                     $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
                   }
@@ -132,10 +168,31 @@ $(function(){
             $('.text-grande').empty();
             $('.text-grande').append(data.tiposnaks[i].Caracteristicas);
             $('.frutiger-LT-57-cond').empty();
+            $("a[href='#tabla-nutri']").click();
+            $('.raciones-produc').empty();
+            if (data.tiposnaks[i].Raciones.length > 0){
+              $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+            }
             $('.frutiger-LT-57-cond').text(data.tiposnaks[i].Nombre);
             for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
-              $('#formato').find('.tamanos-produc').append('<img style="width: 20%;" src='+data.tiposnaks[i].imagen+' alt=""><h3>'+data.tiposnaks[i].Porciones[k]+'</h3>');
+              $('#formato').find('.tamanos-produc').append('<img style="width: 20%; float: left; margin-left: 20%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
             }
+            for (var x = 0; x < data.tiposnaks[i].Raciones.length; x++) {
+              if (x==0){
+                $('.primer-fig').append('<h3>'+data.tiposnaks[i].Raciones[0].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[0].gramos+'</p>');
+              }
+              else if(x==1 || x<5){
+                if(x==1){
+                  $('.raciones-produc').append('<div class="col-1"></div>');
+                }
+                  $('.col-1').append('<figure><h3>'+data.tiposnaks[i].Raciones[x].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[x].gramos+'</p></figure>');
+              }else if (x>=5){
+                if(x==5){
+                  $('.raciones-produc').append('<div class="col-1 2"></div>');
+                }
+                  $('.2').append('<figure><h3>'+data.tiposnaks[i].Raciones[x].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[x].gramos+'</p></figure>');
+                }
+              }
           }
         }
       });
@@ -145,6 +202,7 @@ $(document).on('click', '.snack', function(ev){
   $('#carousel-productos').css('display', 'none');
   $('#carousel-snacks').css('display', 'block');
   $('.galleta').css('display', 'none');
+  $('#raciones').find('.date').css('display', 'none');
   ev.preventDefault();
   var id = parseInt($(this).attr('data-perro'));
   if($(this).hasClass('seco-'+perros[id-1]+'-activo')){
@@ -162,6 +220,7 @@ $(document).on('click', '.snack', function(ev){
   $(".frutiger-bold-cond").empty();
   $('#ingredientes').find('p').empty();
   $('#formato').find('.tamanos-produc').empty();
+  $("a[href='#tabla-nutri']").click();
   $.getJSON('src/snaks.json', function(){
   }).always(function(data){
     for (var i = 0; i < data.tiposnaks.length; i++) {
@@ -177,8 +236,26 @@ $(document).on('click', '.snack', function(ev){
         $('.text-grande').append(data.tiposnaks[i].Caracteristicas);
         $('.frutiger-LT-57-cond').text(data.tiposnaks[i].Nombre);
         $('.carousel-indicators').append('');
+        $('.raciones-produc').empty();
+        for (var x = 0; x < data.tiposnaks[i].Raciones.length; x++) {
+          if (x==0){
+            $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+            $('.primer-fig').append('<h3>'+data.tiposnaks[i].Raciones[0].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[0].gramos+'</p>');
+          }
+          else if(x==1 || x<5){
+            if(x==1){
+              $('.raciones-produc').append('<div class="col-1"></div>');
+            }
+              $('.col-1').append('<figure><h3>'+data.tiposnaks[i].Raciones[x].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[x].gramos+'</p></figure>');
+          }else if (x>=5){
+            if(x==5){
+              $('.raciones-produc').append('<div class="col-1 2"></div>');
+            }
+              $('.2').append('<figure><h3>'+data.tiposnaks[i].Raciones[x].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[x].gramos+'</p></figure>');
+            }
+          }
         for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
-          $('#formato').find('.tamanos-produc').append('<img style="width: 20%;" src='+data.tiposnaks[i].imagen+' alt=""><h3>'+data.tiposnaks[i].Porciones[k]+'</h3>');
+          $('#formato').find('.tamanos-produc').append('<img style="width: 20%; float: left; margin-left: 20%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
         }
       }else{
         $('.carousel-inner').append('<div data-id='+data.tiposnaks[i].id+' class="item"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
@@ -192,6 +269,8 @@ $(document).on('click', '.humedo', function(ev){
   $('#carousel-productos').css('display', 'none');
   $('#carousel-snacks').css('display', 'block');
   $('.galleta').css('display', 'none');
+  $('#raciones').find('.date').css('display', 'block');
+  $('#raciones').find('.date').empty();
   ev.preventDefault();
   var id = parseInt($(this).attr('perro'));
   if($(this).hasClass('seco-'+perros[id-1]+'-activo')){
@@ -208,6 +287,7 @@ $(document).on('click', '.humedo', function(ev){
   $('.info-nutricional').empty();
   $('#ingredientes').find('p').empty();
   $('#formato').find('.tamanos-produc').empty();
+  $("a[href='#tabla-nutri']").click();
   $.getJSON('src/humedo.json', function(){
   }).always(function(data){
     for (var i = 0; i < data.humedos.length; i++) {
@@ -218,12 +298,31 @@ $(document).on('click', '.humedo', function(ev){
         $('.text-grande').empty();
         $('.desc').empty();
         $('.desc').text(data.humedos[i].Desc);
+        $('.raciones-produc').empty();
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+' class="active"></li>');
         $('.text-grande').append(data.humedos[i].Caracteristicas);
         $('.frutiger-LT-57-cond').text(data.humedos[i].Nombre);
         $('.carousel-indicators').append('');
+        $('#raciones').find('.date').text('PORCIÓN: 1 CUCHARADA (9 ML)');
+        for (var x = 0; x < data.humedos[i].Raciones.length; x++) {
+          if (x==0){
+            $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+            $('.primer-fig').append('<h3>'+data.humedos[i].Raciones[0].kilo+'</h3><p>'+data.humedos[i].Raciones[0].gramos+'</p>');
+          }
+          else if(x==1 || x<5){
+            if(x==1){
+              $('.raciones-produc').append('<div class="col-1"></div>');
+            }
+              $('.col-1').append('<figure><h3>'+data.humedos[i].Raciones[x].kilo+'</h3><p>'+data.humedos[i].Raciones[x].gramos+'</p></figure>');
+          }else if (x>=5){
+            if(x==5){
+              $('.raciones-produc').append('<div class="col-1 2"></div>');
+            }
+              $('.2').append('<figure><h3>'+data.humedos[i].Raciones[x].kilo+'</h3><p>'+data.humedos[i].Raciones[x].gramos+'</p></figure>');
+            }
+          }
         for (var k = 0; k < data.humedos[i].Porciones.length; k++) {
-          $('#formato').find('.tamanos-produc').append('<img style="width: 20%;" src='+data.humedos[i].imagen+' alt=""><h3>'+data.humedos[i].Porciones[k]+'</h3>');
+          $('#formato').find('.tamanos-produc').append('<img style="width: 20%; float: left; margin-left: 20%;" src='+data.humedos[i].imagen+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.humedos[i].Porciones[k]+'</h4>');
         }
       }else{
         $('.carousel-inner').append('<div data-id='+data.humedos[i].id+' class="item"><img src='+data.humedos[i].imagen+' alt="..."></div>');
@@ -236,11 +335,12 @@ $(document).on('click', '.humedo', function(ev){
 $(document).on('click', '.comida', function(ev){
   ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
   $('.galleta').css('display', 'block');
+  $('#raciones').find('.date').css('display', 'block');
   var id_perro = parseInt($(this).attr('data-tipo-perro'));
   $('.item_principal-nav-producto-activo').next().slideToggle();
   $('nav').find('.item_principal-nav-producto-activo').removeClass('item_principal-nav-producto-activo').addClass('item_principal-nav-producto');
   $("div[data-tipo-perro='"+id_perro+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
-  $("li[perro='"+id+"']").removeClass('humedo-'+perros[id-1]+'-activo').addClass('humedo-'+perros[id-1]);
+  $("li[perro='"+id_perro+"']").removeClass('humedo-'+perros[id_perro-1]+'-activo').addClass('humedo-'+perros[id_perro-1]);
   $("li[data-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]+'-activo').addClass('seco-'+perros[id_perro-1]);
   $("li[data-tipo-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]).addClass('seco-'+perros[id_perro-1]+'-activo');
   $('#carousel-snacks').css('display', 'none');
@@ -250,6 +350,7 @@ $(document).on('click', '.comida', function(ev){
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
   $('#formato').find('.tamanos-produc').empty();
+  $("a[href='#tabla-nutri']").click();
   id = $(this).attr('data-tipo-perro');
   $.getJSON('src/productos.json', function(){ //GET THE JSON AND data IS THE DATA FROM THE JSON
   }).done(function(data){
@@ -270,10 +371,28 @@ $(document).on('click', '.comida', function(ev){
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
             $('.carousel-indicators').append('');
             $('#raciones').find('.date').empty();
+            $('.raciones-produc').empty();
             $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
               $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
             }
+            for (var x = 0; x < data.tipoPerro[i].productos[j].Raciones.length; x++) {
+              if (x==0){
+                $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+                $('.primer-fig').append('<h3>'+data.tipoPerro[i].productos[j].Raciones[0].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[0].gramos+'</p>');
+              }
+              else if(x==1 || x<5){
+                if(x==1){
+                  $('.raciones-produc').append('<div class="col-1"></div>');
+                }
+                  $('.col-1').append('<figure><h3>'+data.tipoPerro[i].productos[j].Raciones[x].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[x].gramos+'</p></figure>');
+              }else if (x>=5){
+                if(x==5){
+                  $('.raciones-produc').append('<div class="col-1 2"></div>');
+                }
+                  $('.2').append('<figure><h3>'+data.tipoPerro[i].productos[j].Raciones[x].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[x].gramos+'</p></figure>');
+                }
+              }
           }else{
             $('.carousel-inner').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+'></li>');
@@ -288,11 +407,12 @@ $(document).on('click', '.comida', function(ev){
 $(document).on('click', '.seco', function(ev){
   ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
   $('.galleta').css('display', 'block');
+  $('#raciones').find('.date').css('display', 'block');
   var id_perro = parseInt($(this).attr('data-tipo-perro'));
   $('nav').find('.item_principal-nav-producto-activo').removeClass('item_principal-nav-producto-activo').addClass('item_principal-nav-producto');
   $("div[data-tipo-perro='"+id_perro+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
   $("li[data-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]+'-activo').addClass('seco-'+perros[id_perro-1]);
-  $("li[perro='"+id+"']").removeClass('humedo-'+perros[id-1]+'-activo').addClass('humedo-'+perros[id-1]);
+  $("li[perro='"+id_perro+"']").removeClass('humedo-'+perros[id_perro-1]+'-activo').addClass('humedo-'+perros[id_perro-1]);
   $("li[data-tipo-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]).addClass('seco-'+perros[id_perro-1]+'-activo');
   $('#carousel-snacks').css('display', 'none');
   $('#carousel-productos').css('display', 'block');
@@ -301,6 +421,7 @@ $(document).on('click', '.seco', function(ev){
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
   $('#formato').find('.tamanos-produc').empty();
+  $("a[href='#tabla-nutri']").click();
   id = $(this).attr('data-tipo-perro');
   $.getJSON('src/productos.json', function(){ //GET THE JSON AND data IS THE DATA FROM THE JSON
   }).done(function(data){
@@ -321,10 +442,28 @@ $(document).on('click', '.seco', function(ev){
             $('.info-nutricional').append(data.tipoPerro[i].productos[j].Nutricion);
             $('.carousel-indicators').append('');
             $('#raciones').find('.date').empty();
+            $('.raciones-produc').empty();
             $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
               $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
             }
+            for (var x = 0; x < data.tipoPerro[i].productos[j].Raciones.length; x++) {
+              if (x==0){
+                $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+                $('.primer-fig').append('<h3>'+data.tipoPerro[i].productos[j].Raciones[0].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[0].gramos+'</p>');
+              }
+              else if(x==1 || x<5){
+                if(x==1){
+                  $('.raciones-produc').append('<div class="col-1"></div>');
+                }
+                  $('.col-1').append('<figure><h3>'+data.tipoPerro[i].productos[j].Raciones[x].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[x].gramos+'</p></figure>');
+              }else if (x>=5){
+                if(x==5){
+                  $('.raciones-produc').append('<div class="col-1 2"></div>');
+                }
+                  $('.2').append('<figure><h3>'+data.tipoPerro[i].productos[j].Raciones[x].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[x].gramos+'</p></figure>');
+                }
+              }
           }else{
             $('.carousel-inner').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+'></li>');

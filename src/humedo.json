@@ -2,12 +2,16 @@
   "humedos": [
     {
       "id": "1",
-      "Desc": "Deliciosas Salsas Caseras con Omega 3 y 6 encargadas de proporcionar los siguientes beneficios:",
-      "Nombre": "CASERAS ASADO DE TIRA Y TOCINO",
-      "Ingredientes": "<b>Ingredientes Variedad Variedad Sabor Asado de Tira</b></br> Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante asado de tira, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes <b>Ingredientes Variedad Sabor Tocino</b></br>Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante tocino, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes.",
+      "Desc": "Deliciosa Salsa Casera con Omega 3 y 6 encargada de proporcionar los siguientes beneficios:",
+      "Nombre": "VARIEDADES: TOCINO Y ASADO DE TIRA",
+      "Ingredientes": "<b>Ingredientes Variedad Sabor Asado de Tira</b></br> Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante asado de tira, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes </br><b>Ingredientes Variedad Sabor Tocino</b></br>Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante tocino, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes.",
       "imagen": "img/productos/producto7.png",
-      "Caracteristicas": "<li class='text-black brillante'>Con Omega 3 y 6 <span class='text-naranjo'> que mejora su pelaje y ayudan a</span><span class='detalle-sizemas'> su sistema inmune. </span></li><li class='text-black grasas'>Bajo en grasas<span class='text-naranjo'>y calorias</span> <span class='detalle-sizemas'> (6.5 kcal por porcion))</span></li><li class='text-black manzana'><span class='text-naranjo'>Con  </span>ingredientes<span class='detalle-sizemas'>naturales.</span></li><li class='text-black perros-tamanos'>Aptas <span class='text-naranjo'>para todo tipo de perros: </span> <span class='detalle-sizemas'> adultos y cachorros.</span></li>",
+      "Caracteristicas": "<li class='text-black brillante'>Con Omega 3 y 6 • <span class='text-naranjo'>que mejora su pelaje y ayudan a su sistema inmune.</span></li><li class='text-black grasas'>Bajo en grasas y calorias • <span class='text-naranjo'>6.5 kcal por porcion</span></li><li class='text-black manzana'>Con los mejores ingredientes •</span><span class='text-naranjo'> naturales</span></li><li class='text-black perros-tamanos'>Aptas  para todo tipo de perro • <span class='text-naranjo'>adultos y cachorros </span></li>",
       "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>2,0%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>3,0%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>0,5%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>80%</td></tr>",
-      "Porciones": ["350 ml"]
+      "Porciones": ["350 ml"],
+      "Raciones": [{
+        "kilo": "1 cucharada de salsa por 100 g",
+        "gramos": "(1 taza de Pellet)"
+        }]
     }]
 }
