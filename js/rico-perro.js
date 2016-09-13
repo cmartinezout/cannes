@@ -10,7 +10,6 @@ $(document).on('click','.figure-rico' ,function(e){
   if(id_tipo == 1) {
     $.getJSON('src/razas.json', function(){
     }).done(function(data){
-      console.log(data);
     });
   }
 });
@@ -27,7 +26,6 @@ $(document).on('click', '.perro' ,function(e){
   if(id_tipo == 1) {
     $.getJSON('src/razas.json', function(){
     }).done(function(data){
-      console.log(data);
     });
   }
 });
