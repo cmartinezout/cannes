@@ -869,7 +869,7 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     float: right;
 }
 .certificado-img .favet{
-    width: 70px;
+    width: 95px;
     margin-left: 30px;
 }
 .certificado-img .certi{
@@ -933,7 +933,7 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
 }
 
 .box-h3-ruta p {
-    font-size: 1.4em;
+    font-size: 1.3em;
     width: 260px;
     margin-top: -15px;
 }
@@ -1091,8 +1091,9 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
 body{
     padding: 0px!important;
 }
-.video-inicio iframe{
-
+.video-inicio{
+  margin-bottom: -6px;
+  margin-top: -120px;
 }
 
 

@@ -27,6 +27,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
   $('#formato').find('.tamanos-produc').empty();
   $("div[data-tipo-perro='"+id+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
   $("li[data-tipo-perro='"+id+"']").removeClass('seco-'+perros[id-1]).addClass('seco-'+perros[id-1]+'-activo');
+  $("li[perro='"+id+"']").removeClass('humedo-'+perros[id-1]+'-activo').addClass('humedo-'+perros[id-1]);
   $('.link_subcategoria-prodcuto').each(function(index, item){
     if (!$(this).is(':hidden')){
       $(this).slideToggle();
