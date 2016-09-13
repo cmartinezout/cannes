@@ -24,6 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/rico-perro.js"></script>
     <script src="js/youtube.js"></script>
     <style>
         .carousel-inner > .item > img,
@@ -48,7 +49,7 @@
                 <ul>
                     <li class="item-nav padding-center-link"><a href="#producto-sec">PRODUCTOS</a></li>
                     <li class=" item-nav padding-center-link"><a href="#ruta-cannes-sec">RUTAS CANNES</a></li>
-                    <li class="item-nav"><a href="">LO RICO DE SER PERRO</a></li>
+                    <li class="item-nav"><a href="#rico-ser-perro-sec">LO RICO DE SER PERRO</a></li>
                     <li class="item-nav padding-center-link padding-top-hover"><a href="">MUNDO CACHORRO</a></li>
                     <li class="item-nav padding-center-link"><a href="">CONTÁCTANOS</a></li>
                 </ul>
@@ -85,7 +86,7 @@
 
   <!-- PRUE VIDEO
         <iframe width="1800" height="1013" src="https://www.youtube.com/embed/6lAeDYbkRJ4?autoplay=1&loop=1&playlist=6lAeDYbkRJ4&rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-      
+
       <img src="img/img-background/video-img.jpg" alt="">
        <div id="P1" class="player" style="display:block; margin: auto; background: rgba(0,0,0,0.5)" data-property="{videoURL:'6lAeDYbkRJ4',containment:'.VideoCannes',showControls:false, autoPlay:true, loop:true, mute:true, startAt:12, stopAt:22, opacity:1, addRaster:false, quality:'default'}"></div>
       <div class="VideoCannes heightmed Box-Head"  id="VideoCannes">
@@ -94,7 +95,7 @@
 
     </section>
     <!---FIN VIDEO---->
-    
+
      <!---PRIMERA SECCION PRODUCTOS FIGURAS---->
     <section class="producto" id="producto-sec">
         <div class="slide-img">
@@ -139,7 +140,7 @@
         </div>
     </section>
     <!---FIN PRIMERA SECCION PRODUCTO FIGURAS---->
-    
+
      <!---SEGUNDA SECCION PRODUCTOS DETALLE---->
     <section class="producto-contenido container-producto" style="display:none">
         <div class="container margin-top-productos">
@@ -356,7 +357,7 @@
 
     </section>
     <!---FIN SEGUNDA SECCION PRODUCTOS DETALLE---->
-    
+
      <!---RUTA CANNES---->
     <section class="ruta" id="ruta-cannes-sec">
         <div class="slide-img">
@@ -583,7 +584,7 @@
         </div>
     </section>
     <!---FIN RUTA CANNES---->
-    
+
      <!---RICO SER PERRO---->
      <section class="rico-ser-perro" id="rico-ser-perro-sec">
         <div class="slide-img">
@@ -597,21 +598,21 @@
         </div>
         <div class="producto-categ">
             <div class="container">
-                <figure class="cachorro-bg figure-pruducto" data-tipo-perro="1">
+                <figure class="cachorro-bg figure-rico" data-tipo-seccion="1">
                     <img src="img/img-background/seccion-ricoserperro-consejos-fig.jpg" alt="perro cachorro">
                     <figcaption>
                         <h4 class="frutiger-std-con">CONSEJOS</h4>
                         <div class="triangulo_celeste"></div>
                     </figcaption>
                 </figure>
-                <figure class="adulto-bg figure-pruducto" data-tipo-perro="2">
+                <figure class="adulto-bg figure-rico" data-tipo-seccion="2">
                     <img src="img/img-background/seccion-ricoserperro-nomnbre-fig.jpg" alt="perro adulto">
                     <figcaption>
                         <h4 class="frutiger-std-con">NOMBRES</h4>
                         <div class="triangulo_rojo"></div>
                     </figcaption>
                 </figure>
-                <figure class="senior-bg figure-pruducto" data-tipo-perro="3">
+                <figure class="senior-bg figure-rico" data-tipo-seccion="3">
                     <img src="img/img-background/seccion-ricoserperro-raza-fig.jpg" alt="perro senior">
                     <figcaption>
                         <h4 class="frutiger-std-con">RAZAS</h4>
@@ -621,7 +622,7 @@
             </div>
         </div>
     </section>
-    <section class="consejos">
+    <section class="consejos section-rico-perro" tipo="1" style="display: none;">
         <div class="container margin-bottom-ricoperro">
             <div class="left-title-nav">
                 <div class="box-raza">
@@ -631,22 +632,22 @@
                     <hr class="linea-separador-raza">
                     <p class="frutiger-std-con">Enamórate de todos y descubre la raza perfecta para ti. </p>
                 </div>
-                
+
                     <nav class="nav-razas">
-                    <div id="consejos-item" class= item_principal-nav-razas>CONSEJOS</div>
+                    <div id="consejos-item" data-tipo-seccion="1" class="perro item_principal-nav-razas">CONSEJOS</div>
                     <ul class="link_subcategoria-razas" id="link-sub-consejos" style="display: none;">
                         <li class="seco seco-cachorro">Seco</li>
                         <li class="snack snack-cachorro">Snack</li>
                         <li class="humedo humedo-cachorro">Húmedo</li>
                     </ul>
-                    <div id="nombres-item" class="comida item_principal-nav-razas">NOMBRES</div>
+                    <div id="nombres-item" data-tipo-seccion="2" class="perro item_principal-nav-razas">NOMBRES</div>
 
                     <ul class="link_subcategoria-razas" id="link-sub-nombres" style="display: none;">
                         <li class="seco seco-adulto">Seco</li>
                         <li class="snack snack-adulto">Snack</li>
                         <li class="humedo humedo-adulto">Húmedo</li>
                     </ul>
-                    <div id="razas-item" class="comida item_principal-nav-razas">RAZAS</div>
+                    <div id="razas-item" data-tipo-seccion="2" class="perro item_principal-nav-razas">RAZAS</div>
 
                     <ul class="link_subcategoria-razas" id="link-sub-razas" style="display: none;">
                         <li class="seco seco-senior">Seco</li>
@@ -654,14 +655,14 @@
                         <li class="humedo humedo-senior">Húmedo</li>
                     </ul>
                 </nav>
-                
+
             </div>
             <div class="center-razas-vistaprevia">
                    <div class="filtro-razas">
-                    <select name="" id=""> 
+                    <select name="" id="">
                         <option value="">RAZA GRANDE</option>
                     </select>
-                    <select name="" id="" > 
+                    <select name="" id="" >
                         <option value="">PELO LARGO</option>
                     </select>
                 </div>
@@ -692,7 +693,7 @@ más concretamente de la región de las Ardenas.</p>
             </div>
         </div>
     </section>
-    <section>
+    <section tipo="2" style="display: none;" class="section-rico-perro">
         <div class="container margin-bottom-ricoperro">
             <div class="left-title-nav">
                 <div class="box-consejos">
@@ -702,7 +703,7 @@ más concretamente de la región de las Ardenas.</p>
                     <hr class="linea-separador-consejos">
                     <p class="frutiger-std-con">Los mejores tips para el bienestar de tu perro. </p>
                 </div>
-                
+
                     <nav class="nav-razas">
                     <div id="consejos-item" class= item_principal-nav-razas>CONSEJOS</div>
                     <ul class="link_subcategoria-razas" id="link-sub-consejos" style="display: none;">
@@ -725,7 +726,7 @@ más concretamente de la región de las Ardenas.</p>
                         <li class="humedo humedo-senior">Húmedo</li>
                     </ul>
                 </nav>
-                
+
             </div>
             <div class="center-consejos">
                     <div class="biensano">
