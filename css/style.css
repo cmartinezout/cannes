@@ -252,6 +252,7 @@ slide-img{
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
+    margin-top: -1px;
 }
 .producto-categ{
     padding: 50px 0px;
@@ -261,6 +262,7 @@ slide-img{
     float: left;
     margin: 1%;
     cursor: pointer;
+     
 }
 .producto-categ figure img{
     width: 100%;
@@ -484,12 +486,46 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     vertical-align: middle;
 }
 /*-Fin-*/
-/*-navegacion de producto-*/
+/*-----navegacion de producto-----*/
+/*-genericos--*/
 .left-nav-producto .nav-producto div{
     list-style:none;
     color: black;
     text-align: center;
 }
+.left-nav-producto .nav-producto ul{
+    text-align: center;
+}
+.left-nav-producto .nav-producto ul li{
+    list-style-type: none;
+    padding: 4px;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    cursor: pointer;
+}
+.left-nav-producto .nav-producto  .item_principal-nav-producto{
+    border: 1px solid black;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+
+.left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
+      -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 1000ms ease;
+}
+/*-hover de la categoria -ul--*/
+
 .left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):hover{
     background-color: #42B3DA;
     color: white;
@@ -526,14 +562,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
 }
-.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1){
-    border: 1px solid #42B3DA;
-    color: #42B3DA;
-}
-.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(3){
-    border: 1px solid #DF3245;
-    color: #DF3245;
-}
+
+/*-categoria activa -ul- -*/
 .left-nav-producto .nav-producto  .item_principal-nav-producto-activo:nth-child(1){
     background-color: #42B3DA;
     border: #42B3DA;
@@ -602,6 +632,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
+/*-border de la categoria -ul- -*/
+
 .left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1){
     border: 1px solid #42B3DA;
     color: #42B3DA;
@@ -618,8 +650,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7){
     border: 1px solid #FFA900;
     color: #FFA900;
-
 }
+
+
+/*-color letra sub categoria -li- -*/
 .left-nav-producto .nav-producto .seco-cachorro, .left-nav-producto .nav-producto .snack-cachorro {
     color: #42B3DA;
 }
@@ -638,34 +672,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .left-nav-producto .nav-producto .humedo-senior, .left-nav-producto .nav-producto .snack-senior {
     color:  #9A42DC;
 }
-.left-nav-producto .nav-producto ul{
-    text-align: center;
-}
-.left-nav-producto .nav-producto ul li{
-    list-style-type: none;
-    padding: 4px;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-    cursor: pointer;
-}
 
-.left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
-      -webkit-transition: all 800ms ease;
-    -moz-transition: all 800ms ease;
-    -ms-transition: all 800ms ease;
-    -o-transition: all 800ms ease;
-    transition: all 1000ms ease;
-}
-.seco-cachorro-activo::before, .snack-cachorro-activo::before{
-    content: url(../img/iconos/icon-hueso-celeste.png);
-    vertical-align: middle;
-    display: inline-block;
-    padding-right: 2px;
 
-}
 .seco-cachorro-activo{
   color: #42B3DA;
 }
@@ -675,7 +683,16 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .seco-senior-activo{
   color: #9A42DC;
 }
-
+.humedo-cachorro-activo{
+  color: #42B3DA;
+}
+.humedo-adulto-activo{
+  color: #DF3245;
+}
+.humedo-senior-activo{
+  color: #9A42DC;
+}
+/*-ACTIVACION del huesito en sub categorias -li- SNACK Y SECO -*/
 .seco-adulto-activo::before, .snack-adulto-activo::before{
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
@@ -688,24 +705,15 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     display: inline-block;
     padding-right: 2px;
 }
-.humedo-cachorro-activo::before, .snack-cachorro-activo::before{
+
+.seco-cachorro-activo::before, .snack-cachorro-activo::before{
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
-
 }
 
-.humedo-cachorro-activo{
-  color: #42B3DA;
-}
-.humedo-adulto-activo{
-  color: #DF3245;
-}
-.humedo-senior-activo{
-  color: #9A42DC;
-}
-
+/*-ACTIVACION del huesito de las sub categorias -li- HUMEDO Y SNACK -*/
 .humedo-adulto-activo::before, .snack-adulto-activo::before{
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
@@ -718,128 +726,33 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     display: inline-block;
     padding-right: 2px;
 }
-
-
-.left-nav-producto .nav-producto  .item_principal-nav-producto{
-    border: 1px solid black;
-    width: 150px;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: "frutiger-LT-57-cond";
-    font-size: 1.2em;
-}
-.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):hover{
-    background-color: #42B3DA;
-    color: white;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):active{
-    background-color: #42B3DA;
-    color: white;
-}
-.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(3):hover{
-    background-color: #DF3245;
-    color: white;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(5):hover{
-    background-color: #9A42DC;
-    color: white;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7):hover{
-    background-color: #FFA900;
-    color: white;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1){
-    border: 1px solid #42B3DA;
-    color: #42B3DA;
-}
-.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(3){
-    border: 1px solid #DF3245;
-    color: #DF3245;
-}
-.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(5){
-    border: 1px solid #9A42DC;
-    color: #9A42DC;
-
-}
-.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7){
-    border: 1px solid #FFA900;
-    color: #FFA900;
-
-}
-.left-nav-producto .nav-producto .seco-cachorro, .left-nav-producto .nav-producto .snack-cachorro{
-    color: #42B3DA;
-}
-.left-nav-producto .nav-producto .seco-adulto, .left-nav-producto .nav-producto .snack-adulto {
-    color: #DF3245;
-}
-.left-nav-producto .nav-producto .seco-senior, .left-nav-producto .nav-producto .snack-senior {
-    color:  #9A42DC;
-}
-.left-nav-producto .nav-producto .seco-pequenas, .left-nav-producto .nav-producto .snack-pequenas{
-    color: #FFA900;
-}
-.left-nav-producto .nav-producto ul{
-    text-align: center;
-}
-.left-nav-producto .nav-producto ul li{
-    list-style-type: none;
-    padding: 4px;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-    cursor: pointer;
-}
-.left-nav-producto .nav-producto .seco-cachorro:hover:before, .left-nav-producto .nav-producto .snack-cachorro:hover:before{
+.humedo-cachorro-activo::before, .snack-cachorro-activo::before{
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
-      -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all  300ms ease;
+
+/*-hover del huesito de las sub categorias -li- SECOS Y SNACK -*/
+.left-nav-producto .nav-producto .seco-cachorro:hover:before, .left-nav-producto .nav-producto .snack-cachorro:hover:before, .left-nav-producto .nav-producto .humedo-cachorro:hover:before{
+    content: url(../img/iconos/icon-hueso-celeste.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
 }
-.left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before{
+
+.left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before, .left-nav-producto .nav-producto .humedo-adulto:hover:before{
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .snack-senior:hover:before{
+.left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .snack-senior:hover:before, .left-nav-producto .nav-producto .humedo-senior:hover:before{
     content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-
-
 /*Fin*/
 /*bottom tabla*/
 .box-tabla-certificado{
@@ -998,10 +911,487 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
     background-color:#3BB606;
 
 }
-
 /*-Fin-*/
 /*----------------FIN SECCION RUTA CANNES----------------*/
 
+/*--------------RICO SER PERRO---------------*/
+/*----RAZAS----*/
+/*Img-Background*/
+.rico-ser-perro .slide-img{
+    background-image: url(../img/img-background/slide-ricoserperro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rico-ser-perro h3{
+    padding: 20px 0px;
+    width: 440px;
+    font-size: 3.1em;
+    letter-spacing: 1px;
+    margin-top: 10%;
+}
+
+.box-h3-serperro{
+    color: white;
+    height: 330px;
+}
+
+.linea-separador-serperro{
+    margin-top: -25px;
+    width: 390px;
+    display: table-caption;
+    border: 1px solid white;
+}
+
+.box-h3-serperro p {
+    font-size: 1.4em;
+    width: 360px;
+    margin-top: -15px;
+}
+/*-Fin-*/
+
+/*-----navegacion de producto-----*/
+/*-genericos--*/
+.left-title-nav .nav-razas div{
+    list-style:none;
+    color: black;
+    text-align: center;
+}
+.left-title-nav .nav-razas ul{
+    text-align: center;
+}
+.left-title-nav .nav-razas ul li{
+    list-style-type: none;
+    padding: 4px;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    cursor: pointer;
+}
+.left-title-nav .nav-razas  .item_principal-nav-razas{
+    border: 1px solid black;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+
+.left-title-nav .nav-razas .link_subcategoria-razas li:hover{
+      -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 1000ms ease;
+}
+/*-hover de la categoria -ul--*/
+
+
+.left-title-nav .nav-razas  .item_principal-nav-razas:nth-child(1):hover{
+    background-color: #42B3DA;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-title-nav .nav-razas  .item_principal-nav-razas:nth-child(3):hover{
+    background-color: #DF3245;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-title-nav .nav-razas  .item_principal-nav-razas:nth-child(5):hover{
+    background-color: #9A42DC;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(7):hover{
+    background-color: #FFA900;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+/*-categoria activa -ul- -*/
+.left-title-nav .nav-razas  .item_principal-nav-razas-activo:nth-child(1){
+    background-color: #42B3DA;
+    border: #42B3DA;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+.left-title-nav .nav-razas  .item_principal-nav-razas-activo:nth-child(3){
+    background-color: #DF3245;
+    border: #b96c74;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+.left-title-nav .nav-razas  .item_principal-nav-razas-activo:nth-child(5){
+    background-color: #9A42DC;
+    border: #9A42DC;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(7){
+    background-color: #FFA900;
+    border: #FFA900;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
+/*-border de la categoria -ul- -*/
+
+.left-title-nav .nav-razas  .item_principal-nav-razas:nth-child(1){
+    border: 1px solid #42B3DA;
+    color: #42B3DA;
+}
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(3){
+    border: 1px solid #DF3245;
+    color: #DF3245;
+}
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(5){
+    border: 1px solid #9A42DC;
+    color: #9A42DC;
+
+}
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(7){
+    border: 1px solid #FFA900;
+    color: #FFA900;
+}
+
+
+/*-color letra sub categoria -li- -*/
+.left-title-nav .nav-razas .seco-cachorro, .left-title-nav .nav-razas .snack-cachorro {
+    color: #42B3DA;
+}
+.left-title-nav .nav-razas .seco-adulto, .left-title-nav .nav-razas .snack-adulto {
+    color: #DF3245;
+}
+.left-title-nav .nav-razas .seco-senior, .left-title-nav .nav-razas .snack-senior {
+    color:  #9A42DC;
+}
+.left-title-nav .nav-razas .humedo-cachorro, .left-title-nav .nav-razas .snack-cachorro {
+    color: #42B3DA;
+}
+.left-title-nav .nav-razas .humedo-adulto, .left-title-nav .nav-razas .snack-adulto {
+    color: #DF3245;
+}
+.left-title-nav .nav-razas .humedo-senior, .left-title-nav .nav-razas .snack-senior {
+    color:  #9A42DC;
+}
+
+
+.seco-cachorro-activo{
+  color: #42B3DA;
+}
+.seco-adulto-activo{
+  color: #DF3245;
+}
+.seco-senior-activo{
+  color: #9A42DC;
+}
+.humedo-cachorro-activo{
+  color: #42B3DA;
+}
+.humedo-adulto-activo{
+  color: #DF3245;
+}
+.humedo-senior-activo{
+  color: #9A42DC;
+}
+/*-ACTIVACION del huesito en sub categorias -li- SNACK Y SECO -*/
+.seco-adulto-activo::before, .snack-adulto-activo::before{
+    content: url(../img/iconos/icon-hueso-rojo.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+}
+.seco-senior-activo::before, .snack-senior-activo::before{
+    content: url(../img/iconos/icon-hueso-morado.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+}
+
+.seco-cachorro-activo::before, .snack-cachorro-activo::before{
+    content: url(../img/iconos/icon-hueso-celeste.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+}
+
+/*-ACTIVACION del huesito de las sub categorias -li- HUMEDO Y SNACK -*/
+.humedo-adulto-activo::before, .snack-adulto-activo::before{
+    content: url(../img/iconos/icon-hueso-rojo.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+}
+.humedo-senior-activo::before, .snack-senior-activo::before{
+    content: url(../img/iconos/icon-hueso-morado.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+}
+.humedo-cachorro-activo::before, .snack-cachorro-activo::before{
+    content: url(../img/iconos/icon-hueso-celeste.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+}
+
+/*-hover del huesito de las sub categorias -li- SECOS Y SNACK -*/
+.left-title-nav .nav-razas .seco-cachorro:hover:before, .left-title-nav .nav-razas .snack-cachorro:hover:before, .left-title-nav .nav-razas .humedo-cachorro:hover:before{
+    content: url(../img/iconos/icon-hueso-celeste.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+}
+
+.left-title-nav .nav-razas .seco-adulto:hover:before, .left-title-nav .nav-razas .snack-adulto:hover:before, .left-title-nav .nav-razas .humedo-adulto:hover:before{
+    content: url(../img/iconos/icon-hueso-rojo.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+}
+.left-title-nav .nav-razas .seco-senior:hover:before, .left-title-nav .nav-razas .snack-senior:hover:before, .left-title-nav .nav-razas .humedo-senior:hover:before{
+    content: url(../img/iconos/icon-hueso-morado.png);
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 2px;
+}
+/*Fin*/
+.linea-separador-raza{
+    color: #9A42DC;
+    margin-top: -5px;
+    width: 120px;
+    display: table-caption;
+    border: 1px solid #9A42DC;
+}
+.left-title-nav{
+    width: 17%;
+     float: left;
+}
+.left-title-nav .box-raza h3{
+    font-size: 3.5em;
+}
+.left-title-nav .box-raza{
+     color: #9A42DC;
+    width: 100%;
+    overflow: hidden;
+    font-family: "frutiger-LT-57-cond";
+}
+.left-title-nav .box-raza p {
+    font-family: "frutiger-LT-57-cond";
+    width: 200px;
+    margin-top: -10px;
+    font-size: 1.1em;
+}
+.left-title-nav .nav-razas{
+    width: 50%;
+    float: left;
+    margin-top: 60px;
+}
+.filtro-razas{
+    margin-top: 120px;
+    left: -43px;
+    top: 90px;
+    position: absolute;
+}
+.filtro-razas select{
+    background-color: #EB7E2B;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    margin: 5px 0px;
+    font-size: 0.8em;
+    width: 50%;
+}
+.filtro-razas{
+    text-align: center;
+}
+.center-razas-vistaprevia{
+    width: 67%;
+    float: left;
+    position: relative;
+}
+.center-razas-vistaprevia .contenido-raza{
+    background-color: #EB7E2B;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 18px 10px;
+    position: relative;
+    margin-top: 10px;
+}
+.center-razas-vistaprevia .box-raza-cont{
+    text-align: center;
+    margin-top: 40px;
+}
+.center-razas-vistaprevia .box-raza-cont img{
+    width: 35%;
+}
+.center-razas-vistaprevia .contenido-raza h3{
+    font-size: 1.5em;
+    font-family: "frutiger-LT-57-cond";
+}
+.center-razas-vistaprevia .contenido-raza p{
+    font-size: 1em;
+    font-weight: 100;
+    font-family: "frutiger-LT-57-cond";
+    line-height: 1.3;
+}
+.triangulo_naranjo{
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 80px solid #EB7E2B;
+    position: absolute;
+    top: -70px;
+    zoom: 30%;
+    left: 45%;
+    
+}
+.rigth-raza-nav-lista{
+    width: 16%;
+    color: black;
+    text-align: center;
+    float: left;
+    padding: 10px;
+}
+.rigth-raza-nav-lista ul li{
+    list-style-type: none;
+    font-size: 0.9em;
+}
+.margin-bottom-ricoperro{
+    margin-bottom: 50px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 50px;
+}
+/*---CONSEJOS----*/
+.biensano{
+    background-color: #42B3DA;
+    padding: 20px;
+    border-radius: 5px;
+}
+.left-title-nav .box-raza h3{
+    font-size: 3.5em;
+}
+
+.left-title-nav .box-raza p {
+    font-family: "frutiger-LT-57-cond";
+    width: 200px;
+    margin-top: -10px;
+    font-size: 1.1em;
+}
+.left-title-nav .box-consejos h3{
+    font-size: 3.5em;
+}
+.left-title-nav .box-consejos{
+     color:  #42B3DA;
+    width: 100%;
+    overflow: hidden;
+    font-family: "frutiger-LT-57-cond";
+}
+.left-title-nav .box-consejos p {
+    font-family: "frutiger-LT-57-cond";
+    width: 200px;
+    margin-top: -10px;
+    font-size: 1.1em;
+}
+.linea-separador-consejos{
+    
+    color: #42B3DA;
+    margin-top: -5px;
+    width: 200px;
+    display: table-caption;
+    border: 1px solid #42B3DA;
+
+}
+.biensano h4{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.biensano h3{
+    color: white;
+    font-size: 2.5em;
+    
+}
+.biensano img{
+    width: 100%;
+    
+}
+.center-consejos{
+    width: 60%;
+    float: left;
+}
+/*----------------FIN RICO SER PERRO----------------*/
 
 /*--------------MUNDO CACHORRO---------------*/
 .mundocachorro .slide-img{
@@ -1091,9 +1481,7 @@ left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):activ
 body{
     padding: 0px!important;
 }
-.video-inicio iframe{
-    
-}
+
 
 
 

@@ -240,7 +240,7 @@ $(document).on('click', '.comida', function(ev){
   $('.item_principal-nav-producto-activo').next().slideToggle();
   $('nav').find('.item_principal-nav-producto-activo').removeClass('item_principal-nav-producto-activo').addClass('item_principal-nav-producto');
   $("div[data-tipo-perro='"+id_perro+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
-  $("li[perro='"+id+"']").removeClass('humedo-'+perros[id-1]+'-activo').addClass('humedo-'+perros[id-1]);
+  $("li[perro='"+id_perro+"']").removeClass('humedo-'+perros[id_perro-1]+'-activo').addClass('humedo-'+perros[id_perro-1]);
   $("li[data-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]+'-activo').addClass('seco-'+perros[id_perro-1]);
   $("li[data-tipo-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]).addClass('seco-'+perros[id_perro-1]+'-activo');
   $('#carousel-snacks').css('display', 'none');
@@ -292,7 +292,7 @@ $(document).on('click', '.seco', function(ev){
   $('nav').find('.item_principal-nav-producto-activo').removeClass('item_principal-nav-producto-activo').addClass('item_principal-nav-producto');
   $("div[data-tipo-perro='"+id_perro+"']").removeClass('item_principal-nav-producto').addClass('item_principal-nav-producto-activo');
   $("li[data-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]+'-activo').addClass('seco-'+perros[id_perro-1]);
-  $("li[perro='"+id+"']").removeClass('humedo-'+perros[id-1]+'-activo').addClass('humedo-'+perros[id-1]);
+  $("li[perro='"+id_perro+"']").removeClass('humedo-'+perros[id_perro-1]+'-activo').addClass('humedo-'+perros[id_perro-1]);
   $("li[data-tipo-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]).addClass('seco-'+perros[id_perro-1]+'-activo');
   $('#carousel-snacks').css('display', 'none');
   $('#carousel-productos').css('display', 'block');
