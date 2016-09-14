@@ -1,4 +1,4 @@
-.carousel-control.left {
+.producto-contenido .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
@@ -6,7 +6,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
   background-repeat: repeat-x;
 }
-.carousel-control.right {
+.producto-contenido .carousel-control.right {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
@@ -15,13 +15,13 @@
   background-repeat: repeat-x;
 }
 
-.carousel{
+.producto-contenido .carousel{
     width: 100%;
     height: auto;
     overflow: hidden;
 }
 
-.carousel-inner{
+.producto-contenido .carousel-inner{
     position: relative;
   width: 100%;
     margin: auto;
@@ -29,23 +29,96 @@
     margin-bottom: 20px;
 }
 
-.carousel-indicators{
+.producto-contenido .carousel-indicators{
     bottom: 0px;
 }
-.carousel-indicators li{
+.producto-contenido .carousel-indicators li{
       border: 1px solid #479DC5;
 }
-.carousel-indicators .active{
+.producto-contenido .carousel-indicators .active{
     background-color: #479DC5;
 }
-.carousel-control .glyphicon-chevron-left, .carousel-control .icon-next{
+.producto-contenido .carousel-control .glyphicon-chevron-left, .producto-contenido .carousel-control .icon-next{
     color: #479DC5;
     font-size: 2em;
 }
-.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+.producto-contenido .carousel-control .glyphicon-chevron-right, .producto-contenido .carousel-control .icon-next{
     color: #479DC5;
     font-size: 2em;
 }
-.carousel-control{
+.producto-contenido .carousel-control{
     text-shadow: 0 1px 2px rgba(0,0,0,0);
+}
+/*CAROUSEL RAZAS*/
+.center-razas-vistaprevia .carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.center-razas-vistaprevia .carousel-control.right {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.center-razas-vistaprevia .carousel{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+.center-razas-vistaprevia .carousel-inner{
+    position: relative;
+  width: 70%;
+    margin: auto;
+  overflow: hidden;
+    margin-bottom: 20px;
+    height: 590px;
+}
+.center-razas-vistaprevia .carousel-indicators{
+    bottom: 0px;
+}
+.center-razas-vistaprevia .carousel-indicators li{
+      border: 1px solid #e46a44;
+}
+.center-razas-vistaprevia .carousel-indicators .active{
+    background-color: #e46a44;
+}
+.center-razas-vistaprevia .carousel-control .glyphicon-chevron-left, .center-razas-vistaprevia .carousel-control .icon-next{
+    color: #e46a44;
+    font-size: 2em;
+}
+.center-razas-vistaprevia .carousel-control .glyphicon-chevron-right, .center-razas-vistaprevia .carousel-control .icon-next{
+    color: #e46a44;
+    font-size: 2em;
+}
+.center-razas-vistaprevia .carousel-control{
+    text-shadow: 0 1px 2px rgba(0,0,0,0);
+}
+.center-razas-vistaprevia .carousel-control .glyphicon-chevron-left, .center-razas-vistaprevia .carousel-control .icon-next{
+    margin-left: -28px;
+}
+.center-razas-vistaprevia .carousel-control .glyphicon-chevron-left, .center-razas-vistaprevia .carousel-control .glyphicon-chevron-right, .center-razas-vistaprevia .carousel-control .icon-next, .center-razas-vistaprevia .carousel-control .icon-prev{
+    margin-top: -46px;
+}
+.center-razas-vistaprevia .carousel-control .glyphicon-chevron-right, .center-razas-vistaprevia .carousel-control .icon-next{
+    margin-right: -28px;
+}
+.center-razas-vistaprevia .carousel-inner > .item > img, .center-razas-vistaprevia .carousel-inner > .item > a > img{
+    width: 100%;
+}
+@media  (max-width: 1024px) {
+    .center-razas-vistaprevia .carousel-inner{
+    position: relative;
+  width: 70%;
+    margin: auto;
+  overflow: hidden;
+    margin-bottom: 20px;
+    height: 500px;
+}
 }

@@ -1283,7 +1283,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     border: 1px solid #9A42DC;
 }
 .left-title-nav{
-    width: 17%;
+    width: 20%;
      float: left;
 }
 .left-title-nav .box-raza h3{
@@ -1326,14 +1326,14 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     text-align: center;
 }
 .center-razas-vistaprevia{
-    width: 67%;
+    width: 55%;
     float: left;
     position: relative;
 }
 .center-razas-vistaprevia .contenido-raza{
     background-color: #EB7E2B;
     text-align: center;
-    width: 70%;
+    width: 95%;
     margin: auto;
     padding: 18px 10px;
     position: relative;
@@ -1369,7 +1369,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 
 }
 .rigth-raza-nav-lista{
-    width: 16%;
+    width: 25%;
     color: black;
     text-align: center;
     float: left;
@@ -1538,9 +1538,9 @@ body{
     padding: 0px!important;
 }
 
-.video-inicio{
-  margin-bottom: -6px;
-  margin-top: -120px;
+.video-inicio video{
+  margin-bottom: -143px;
+  margin-top: -138px;
 }
 
 
