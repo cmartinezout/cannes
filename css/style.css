@@ -262,7 +262,7 @@ slide-img{
     float: left;
     margin: 1%;
     cursor: pointer;
-     
+
 }
 .producto-categ figure img{
     width: 100%;
@@ -482,6 +482,38 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     content: url(../img/iconos/icon-lista-carbohidratos.png);
     display: inline-block;
     zoom:70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.detalle-producto .energia::before {
+    content: url(../img/iconos/icon-lista-energia.png);
+    display: inline-block;
+    zoom:19%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.detalle-producto .masticacion::before {
+    content: url(../img/iconos/icon-lista-masticacion.png);
+    display: inline-block;
+    zoom:19%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.detalle-producto .articulacion::before {
+    content: url(../img/iconos/icono-lista-articulaciones.png);
+    display: inline-block;
+    zoom:19%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.detalle-producto .pesa::before {
+    content: url(../img/iconos/icono-lista-pesa-1.png);
+    display: inline-block;
+    zoom:19%;
     padding-right: 10px;
     vertical-align: middle;
 }
@@ -1334,7 +1366,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     top: -70px;
     zoom: 30%;
     left: 45%;
-    
+
 }
 .rigth-raza-nav-lista{
     width: 16%;
@@ -1385,7 +1417,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-size: 1.1em;
 }
 .linea-separador-consejos{
-    
+
     color: #42B3DA;
     margin-top: -5px;
     width: 200px;
@@ -1400,16 +1432,16 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     display: inline-block;
     border-radius: 5px;
     overflow: hidden;
-    
+
 }
 .biensano h3{
     color: white;
     font-size: 2.5em;
-    
+
 }
 .biensano img{
     width: 100%;
-    
+
 }
 .center-consejos{
     width: 60%;

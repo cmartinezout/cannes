@@ -2,11 +2,11 @@
   "humedos": [
     {
       "id": "1",
-      "Desc": "Deliciosa Salsa Casera con Omega 3 y 6 encargada de proporcionar los siguientes beneficios:",
+      "Desc": "Deliciosa Salsa Casera con Omega 3 y 6 que agrega más sabor a la comida diaria de tu perro. Ésta entrega los siguientes beneficios:",
       "Nombre": "VARIEDADES: TOCINO Y ASADO DE TIRA",
       "Ingredientes": "<b>Ingredientes Variedad Sabor Asado de Tira</b></br> Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante asado de tira, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes </br><b>Ingredientes Variedad Sabor Tocino</b></br>Agua, higado de origen animal (ave y vacuno), glucosa, almidón, coseta de remolacha, saborizante tocino, sorbato de potasio, benzoato de sodio, aceite de pescado (fuente de ácidos grasos omega), antioxidantes.",
       "imagen": "img/productos/producto7.png",
-      "Caracteristicas": "<li class='text-black brillante'>Con Omega 3 y 6 • <span class='detalle-sizemas text-naranjo'>que mejora su pelaje y ayudan a su sistema inmune.</span></li><li class='text-black grasas'>Bajo en grasas y calorias • <span class='detalle-sizemas text-naranjo'>6.5 kcal por porcion</span></li><li class='text-black manzana'>Con los mejores ingredientes •</span><span class='detalle-sizemas text-naranjo'> naturales</span></li><li class='text-black perros-tamanos'>Aptas  para todo tipo de perro • <span class='text-naranjo detalle-sizemas'>adultos y cachorros </span></li>",
+      "Caracteristicas": "<li class='text-black brillante'>Con Omega 3 y 6 que mejora su pelaje y ayudan a su sistema inmune.</li><li class='text-black grasas'>Bajo en grasas y calorias (6.5 kcal por porción)</li><li class='text-black manzana'>Con los mejores ingredientes naturales</li><li class='text-black perros-tamanos'>Aptas  para todo tipo de perro: adultos y cachorros</li>",
       "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>2,0%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>3,0%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>0,5%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>80%</td></tr>",
       "Porciones": ["350 ml"],
       "Raciones": [{

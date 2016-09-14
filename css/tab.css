@@ -71,7 +71,7 @@
     font-weight: bold;
 }
 .nav-tabs>li>a:hover{
-    border-color: #E46A44 #E46A44 #ddd #ddd  
+    border-color: #E46A44 #E46A44 #ddd #ddd
 }
 .nav-tabs>li.active>.bo-right, .nav-tabs>li.active>.bo-right:focus, .nav-tabs>li.active>.bo-right:hover{
     border-right: 1px solid #E46A44;
@@ -216,17 +216,17 @@
 }
 .raciones-produc figure p{
     font-size: 0.8em;
- 
+
 }
 .tab-pane:nth-child(3) figure:nth-child(1) img{
     width: 60px;
     padding: 10px;
-    
+
 }
 .tab-pane:nth-child(3) figure:nth-child(2) img{
     width: 55px;
     padding: 10px;
-    
+
 }
 .tab-pane:nth-child(3) figure:nth-child(3) img{
     width: 65px;
@@ -240,12 +240,39 @@
 .tab-pane:nth-child(3) figure:nth-child(5) img{
     width: 75px;
     padding: 10px;
-    
+
 }.tab-pane:nth-child(3) figure:nth-child(5) img{
     width: 80px;
     padding: 10px;
-    
+
 }.tab-pane:nth-child(3) figure:nth-child(5) img{
     width: 85px;
+    padding: 10px;
+}
+
+.tab-pane:nth-child(4) img:nth-child(1){
+    width: 100px;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.tab-pane:nth-child(4) img:nth-child(2) {
+    width: 120px;
+    padding: 10px;
+    padding-top: 40px;
+}
+.tab-pane:nth-child(4) img:nth-child(3) {
+    width: 120px;
+    padding: 10px;
+    padding-top: 30px;
+}
+.tab-pane:nth-child(4) img:nth-child(4) {
+    width: 95px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.tab-pane:nth-child(4) img:nth-child(5) {
+    width: 100px;
     padding: 10px;
 }

@@ -178,7 +178,7 @@ $(function(){
             }
             $('.frutiger-LT-57-cond').text(data.tiposnaks[i].Nombre);
             for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
-              $('#formato').find('.tamanos-produc').append('<img style="width: 20%; float: left; margin-left: 20%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+              $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 12%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
             }
             for (var x = 0; x < data.tiposnaks[i].Raciones.length; x++) {
               if (x==0){
@@ -258,7 +258,7 @@ $(document).on('click', '.snack', function(ev){
             }
           }
         for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
-          $('#formato').find('.tamanos-produc').append('<img style="width: 20%; float: left; margin-left: 20%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 12%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
         }
       }else{
         $('.carousel-inner').append('<div data-id='+data.tiposnaks[i].id+' class="item"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
@@ -325,7 +325,7 @@ $(document).on('click', '.humedo', function(ev){
             }
           }
         for (var k = 0; k < data.humedos[i].Porciones.length; k++) {
-          $('#formato').find('.tamanos-produc').append('<img style="width: 20%; float: left; margin-left: 20%;" src='+data.humedos[i].imagen+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.humedos[i].Porciones[k]+'</h4>');
+          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 12%;" src='+data.humedos[i].imagen+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.humedos[i].Porciones[k]+'</h4>');
         }
       }else{
         $('.carousel-inner').append('<div data-id='+data.humedos[i].id+' class="item"><img src='+data.humedos[i].imagen+' alt="..."></div>');
