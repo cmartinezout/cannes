@@ -13,6 +13,8 @@ $(document).ready(function(){
     });
   });
 });
+//link-2
+
 
 $(document).on('click', '.figure-pruducto', function(ev){
   ev.preventDefault(); //PREVENT DEFAULT ACTION FOR THE DOM
