@@ -2,102 +2,142 @@
   "razas": [{
     "Nombre": "Afgano",
     "Descripcion": "¿Has visto un peinado con más estilo que este? El Afgano se caracteriza por su pelo largo y sedoso, además de ser muy ágil, veloz y de mucha fuerza.  Es muy fácil de reconocer por su cabeza alargada y cola terminada en anillo.",
-    "imagen": "img/razas/afgano.jpg"
+    "imagen": "img/razas/afgano.jpg",
+    "tamano": "grande",
+    "pelaje": "largo"
   },
   {
     "Nombre": "Akita",
     "Descripcion": "Muy peludo y de aspecto cariñoso, el Akita es una raza muy protectora, leal, cariñosa e integrada al núcleo familiar. Está dentro de una de las razas denominadas PPP (Perros Potencialmente Peligrosos) por lo que necesita ser socializado y adiestrado de temprana edad.",
-    "imagen": "img/razas/akita.jpg"
+    "imagen": "img/razas/akita.jpg",
+    "tamano": "grande",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Australian Silky Terrier",
     "Descripcion": "Estos pequeños y peludos amigos son una excelente compañía para grandes y chicos, viven en casas o departamentos, se llevan muy bien con las personas pero ¡jamás los molestes! Suelen tener el genio vivo.",
-    "imagen": "img/razas/australian-silky-terrier.jpg"
+    "imagen": "img/razas/australian-silky-terrier.jpg",
+    "tamano": "grande",
+    "pelaje": "largo"
   },
   {
     "Nombre": "Basset Hound",
     "Descripcion": "Este lindo sabueso se caracteriza por su baja estatura, cuerpo largo, patitas cortas y un olfato inigualable. Suele ser muy flojo y prefiere dormir o comer antes que ejercitarse, es por eso que necesitará tu ayuda en eso.",
-    "imagen": "img/razas/basset-hound.jpg"
+    "imagen": "img/razas/basset-hound.jpg",
+    "tamano": "pequeno",
+    "pelaje": "largo"
   },
   {
     "Nombre": "Beagle",
     "Descripcion": "Este simpático perrito se caracteriza por su alegría, afectuosidad y poca timidez.  Es una de las razas preferidas para los niños ya que es muy juguetón. Este amiguito necesita bastante actividad física y no le basta con sólo un paseo por la cuadra ¿Serás capaz de seguirle el ritmo? ",
-    "imagen": "img/razas/beagle.jpg"
+    "imagen": "img/razas/beagle.jpg",
+    "tamano": "mediano",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Bloodhound",
     "Descripcion": "Con un olfato agudo, gran tamaño y agilidad, este sabueso se caracteriza por sus arrugas en la cabeza, largas orejas y babear demasiado. Aunque no sea el más recomendado para tener de mascota, es muy cariñoso y leal con sus dueños. ",
-    "imagen": "img/razas/Bloodhound.jpg"
+    "imagen": "img/razas/Bloodhound.jpg",
+    "tamano": "grande",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Border Collie",
     "Descripcion": "Este encantador pastor es reconocido por su inteligencia, amabilidad, sociabilidad y capacidad de aprender. Es de talla mediana y tiene una gran concentración, algo poco común en los perros. ¡Si andabas buscando a tu mejor amigo, lo acabas de encontrar!",
-    "imagen": "img/razas/border-collie.jpg"
+    "imagen": "img/razas/border-collie.jpg",
+    "tamano": "mediano",
+    "pelaje": "largo"
   },
   {
     "Nombre": "Caniche (Poodle)",
     "Descripcion": "Tiernos y peludos, están dentro de las razas más inteligentes. Se caracterizan por sus extravagantes peinados y distintivas presentaciones en concursos y exposiciones. Existen tres tipos de Poodle: Grande, Mediano y Toy, pero sin duda cualquiera de ellos se convertirá en un gran amigo.",
-    "imagen": "img/razas/caniche-poodle.jpg"
+    "imagen": "img/razas/caniche-poodle.jpg",
+    "tamano": "mediano",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Chihuahua",
     "Descripcion": "Estos pequeños son apreciados por sus enormes ojos y personalidad. Usualmente viven 18 o más años y al ser pequeños se adaptan muy bien a todos los espacios. Suelen ser celosos y no les gusta las relaciones de su amo, por eso si te consideras fiel, eres el amo perfecto para el Chihuahua.",
-    "imagen": "img/razas/chihuahua.jpg"
+    "imagen": "img/razas/chihuahua.jpg",
+    "tamano": "pequeno",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Chow Chow",
     "Descripcion": "El encantador y muy peludo Chow Chow se caracteriza por su inusual lengua negra – azulada. No cambian de dueño de un día para otro ya que son muy fieles a sus amos. Suelen ser muy calmados y poco activos. ¡Te invitamos a sentir el privilegio de abrazar a un Chow Chow!",
-    "imagen": "img/razas/chow-chow.jpg"
+    "imagen": "img/razas/chow-chow.jpg",
+    "tamano": "mediano",
+    "pelaje": "largo"
   },
   {
     "Nombre": "Cocker Spaniel",
     "Descripcion": "La locura, simpatía e inteligencia del Cocker Spaniel es muy querida por toda la familia. Su lindo pelaje y su natural exuberancia son las características que definen a la raza.",
-    "imagen": "img/razas/cocker-spaniel.jpg"
+    "imagen": "img/razas/cocker-spaniel.jpg",
+    "tamano": "mediano",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Dálmata",
     "Descripcion": "¿Cómo no reconocer las manchitas y la simpatía de los Dálmatas? Son tiernos, de naturaleza muy juguetona y energética. Requieren de mucha actividad física y ejercicio, ¡imagínate si fueran 101!",
-    "imagen": "img/razas/dalmata.jpg"
+    "imagen": "img/razas/dalmata.jpg",
+    "tamano": "grande",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Doberman",
     "Descripcion": "Su pelaje negro y brillante es único, al igual que su singular forma de pararse y mantenerse firme. Son protectores y guardianes, estarás protegido en tu hogar con una gran mascota como esta. ",
-    "imagen": "img/razas/doberman.jpg"
+    "imagen": "img/razas/doberman.jpg",
+    "tamano": "grande",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Fox Terrier",
     "Descripcion": "Muy peludos y muy simpáticos, así es el Fox Terrier. Un perrito muy alerta y de movimientos rápidos, vivaz e intrépido. Este amistoso amiguito será un muy buen compañero. ",
-    "imagen": "img/razas/fox-terrier.jpg"
+    "imagen": "img/razas/fox-terrier.jpg",
+    "tamano": "mediano",
+    "pelaje": "largo"
   },
   {
     "Nombre": "Galgo Español",
     "Descripcion": "¡A ver si puedes alcanzarlo! Los Galgos son grandes corredores que pueden llegar a los 60km/h, así que necesitará mucha actividad física. Te deducirá con su delgadez, pecho voluminoso y el pelo corto, de un raza pura. ",
-    "imagen": "img/razas/galgo-espanol.jpg"
+    "imagen": "img/razas/galgo-espanol.jpg",
+    "tamano": "grande",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Gran Danés",
     "Descripcion": "La elegancia del Gran Danés es reconocible a distancia por su gran tamaño, llegando a medir 2,10 metros en dos patas. Aveces llega a intimidar pero no te preocupes, es la combinación perfecta entre los rasgos duros con el temperamento especial, cariñoso y único de la raza.",
-    "imagen": "img/razas/gran-danes.jpg"
+    "imagen": "img/razas/gran-danes.jpg",
+    "tamano": "gigante",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Husky Siberiano",
     "Descripcion": "¡Aaaaauuhhhhh! Cariñosos y amistosos, pueden llegar a ser parte de la familia fácilmente por su simpatía con adultos y niños. Pero no les des la tarea de proteger la casa, ya que raramente ladran, sólo aúllan.",
-    "imagen": "img/razas/husky-siberiano.jpg"
+    "imagen": "img/razas/husky-siberiano.jpg",
+    "tamano": "grande",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Labrador Retriever",
     "Descripcion": "Excepcional, afable, gentil, bondadosa y de gran inteligencia, así es el Labrador, una de las razas más populares del mundo ya que es uno de los perros más indicados para la familia. Tendrás que tener mucha energía para divertirlos porque son muy juguetones.",
-    "imagen": "img/razas/labrador-retriever.jpg"
+    "imagen": "img/razas/labrador-retriever.jpg",
+    "tamano": "grande",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Mastín",
     "Descripcion": "Guardianes por naturaleza, el Mastín es un perro grande, elegante y un poco desconfiado con los desconocidos. Tiene una atracción especial por los niños y es devoto a sus amos.",
-    "imagen": "img/razas/mastin.jpg"
+    "imagen": "img/razas/mastin.jpg",
+    "tamano": "gigante",
+    "pelaje": "corto"
   },
   {
     "Nombre": "Pastor Alemán",
     "Descripcion": "Querido y reconocido por todos, el Pastor Alemán es un perro guardián, guía de ciegos, animal de salvamento y perro policía. Es muy inteligente y de gran compañía, en poco tiempo se convertirá en tu mejor amigo.",
-    "imagen": "img/razas/pastor-aleman.jpg"
+    "imagen": "img/razas/pastor-aleman.jpg",
+    "tamano": "grande",
+    "pelaje": "corto"
   }
   ]
 }
