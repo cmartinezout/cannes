@@ -613,6 +613,23 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
+.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(1){
+    background-color: #42B3DA;
+    border: #42B3DA;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
 .left-nav-producto .nav-producto  .item_principal-nav-producto-activo:nth-child(3){
     background-color: #DF3245;
     border: #DF3245;

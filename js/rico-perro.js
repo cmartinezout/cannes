@@ -1,5 +1,6 @@
 $(document).on('click','.figure-rico' ,function(e){
   e.preventDefault();
+  $('.perro').next().hide();
   var id_tipo = parseInt($(this).attr('data-tipo-seccion'));
   $('.section-rico-perro').css('display', 'none');
   $('#myCarouselraza').find('.carousel-inner').empty();
@@ -11,25 +12,26 @@ $(document).on('click','.figure-rico' ,function(e){
   });
   if(id_tipo == 1){
     classToInput = 0;
-    $('.biensano').find('h4').empty();
-    $('.biensano').find('h3').empty();
-    $('.biensano').find('p').empty();
-    $('.biensano').find('img').empty();
+    $('.biensano').empty();
     $.getJSON('src/consejos.json', function(){
     }).done(function(data){
       for (var i = 0; i < data.tipoConsejo[0].consejos.length; i++) {
         if(i%10==0){
           if (i==0){
+            $('.biensano').append('<h4>#BIENESTAR Y CUIDADOS.</h4>');
+            $('.biensano').append('<h3>'+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+'</h3>');
+            $('.biensano').append('<p>'+data.tipoConsejo[0].consejos[i].cuerpo+'</p>');
+            $('.biensano').append('<img src='+data.tipoConsejo[0].consejos[i].imagen+' alt="">');
             $('.custom-carousel-inner').append("<div class='item active'><div class='row-fluid'><table><tbody class='"+(i+1)+"'></tbody></table></div></div>");
             classToInput = i+1;
-            $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[0].consejos[i].id+" class='small-thumbnail consejo-list'><h3 class='active'>"+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+"</h3></a></div></td></tr>");
+            $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[0].consejos[i].id+" data-tipo-categoria="+data.tipoConsejo[0].id+" class='small-thumbnail consejo-list'><h3 class='active'>"+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+"</h3></a></div></td></tr>");
           }else{
             $('.custom-carousel-inner').append("<div class='item'><div class='row-fluid'><table><tbody class='"+(i+1)+"'></tbody></table></div></div>");
             classToInput = i+1;
           }
         }
         if(i != 0){
-          $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[0].consejos[i].id+" class='small-thumbnail consejo-list'><h3>"+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+"</h3></a></div></td></tr>");
+          $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[0].consejos[i].id+" data-tipo-categoria="+data.tipoConsejo[0].id+" class='small-thumbnail consejo-list'><h3>"+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+"</h3></a></div></td></tr>");
         }
       }
     });
@@ -59,10 +61,12 @@ $(document).on('click','.figure-rico' ,function(e){
       }
     });
   }
+  $("div[data-tipo-seccion='"+id_tipo+"']").next().slideToggle();
 });
 
 $(document).on('click', '.perro' ,function(e){
   e.preventDefault();
+  $('.perro').next().hide();
   var id_tipo = parseInt($(this).attr('data-tipo-seccion'));
   $('.section-rico-perro').css('display', 'none');
   $('#myCarouselraza').find('.carousel-inner').empty();
@@ -72,6 +76,32 @@ $(document).on('click', '.perro' ,function(e){
     'scrollTop': $("section[tipo='"+id_tipo+"']").offset().top-100
   }, 900, 'swing', function () {
   });
+  if(id_tipo == 1){
+    classToInput = 0;
+    $('.biensano').empty();
+    $.getJSON('src/consejos.json', function(){
+    }).done(function(data){
+      for (var i = 0; i < data.tipoConsejo[0].consejos.length; i++) {
+        if(i%10==0){
+          if (i==0){
+            $('.biensano').append('<h4>#BIENESTAR Y CUIDADOS.</h4>');
+            $('.biensano').append('<h3>'+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+'</h3>');
+            $('.biensano').append('<p>'+data.tipoConsejo[0].consejos[i].cuerpo+'</p>');
+            $('.biensano').append('<img src='+data.tipoConsejo[0].consejos[i].imagen+' alt="">');
+            $('.custom-carousel-inner').append("<div class='item active'><div class='row-fluid'><table><tbody class='"+(i+1)+"'></tbody></table></div></div>");
+            classToInput = i+1;
+            $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[0].consejos[i].id+" data-tipo-categoria="+data.tipoConsejo[0].id+" class='small-thumbnail consejo-list'><h3 class='active'>"+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+"</h3></a></div></td></tr>");
+          }else{
+            $('.custom-carousel-inner').append("<div class='item'><div class='row-fluid'><table><tbody class='"+(i+1)+"'></tbody></table></div></div>");
+            classToInput = i+1;
+          }
+        }
+        if(i != 0){
+          $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[0].consejos[i].id+" data-tipo-categoria="+data.tipoConsejo[0].id+" class='small-thumbnail consejo-list'><h3>"+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+"</h3></a></div></td></tr>");
+        }
+      }
+    });
+  }
   if(id_tipo == 3) {
     cont= 0;
     $.getJSON('src/razas.json', function(){
@@ -96,7 +126,7 @@ $(document).on('click', '.perro' ,function(e){
       }
     });
   }
-  $(this).next().slideToggle();
+  $("div[data-tipo-seccion='"+id_tipo+"']").next().slideToggle();
 });
 
 $(function(){
@@ -234,5 +264,60 @@ $(document).on('change', '.filtro', function(e){
       }
     });
   }
+});
 
+$(document).on('click', '.consejo-list', function(e){
+  e.preventDefault();
+  var data_tipo = $(this).attr('data-tipo-categoria');
+  var id_nota = $(this).attr('data-id');
+  $('.biensano').empty();
+  $.getJSON('src/consejos.json', function(){
+  }).done(function(data){
+    for (var i = 0; i < data.tipoConsejo.length; i++) {
+      if (data_tipo == data.tipoConsejo[i].id){
+        for (var j = 0; j < data.tipoConsejo[i].consejos.length; j++) {
+          if(id_nota == data.tipoConsejo[i].consejos[j].id){
+            $('.biensano').append('<h4>#'+data.tipoConsejo[i].nombre.toUpperCase()+'.</h4>');
+            $('.biensano').append('<h3>'+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+'</h3>');
+            $('.biensano').append('<p>'+data.tipoConsejo[i].consejos[j].cuerpo+'</p>');
+            $('.biensano').append('<img src='+data.tipoConsejo[i].consejos[j].imagen+' alt="">');
+            break;
+          }
+        }
+      }
+    }
+  });
+});
+
+$(document).on('click', '.consejo', function(e){
+  e.preventDefault();
+  var id_nota = $(this).attr('data-id');
+  $('.biensano').empty();
+  $('.custom-carousel-inner').empty();
+  $.getJSON('src/consejos.json', function(){
+  }).done(function(data){
+    for (var i = 0; i < data.tipoConsejo.length; i++) {
+      if(data.tipoConsejo[i].id == id_nota){
+        for (var j = 0; j < data.tipoConsejo[i].consejos.length; j++) {
+            if(j%10==0){
+              if (j==0){
+                $('.biensano').append('<h4>#'+data.tipoConsejo[i].nombre.toUpperCase()+'.</h4>');
+                $('.biensano').append('<h3>'+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+'</h3>');
+                $('.biensano').append('<p>'+data.tipoConsejo[i].consejos[j].cuerpo+'</p>');
+                $('.biensano').append('<img src='+data.tipoConsejo[i].consejos[j].imagen+' alt="">');
+                $('.custom-carousel-inner').append("<div class='item active'><div class='row-fluid'><table><tbody class='"+(j+1)+"'></tbody></table></div></div>");
+                classToInput = j+1;
+                $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[i].consejos[j].id+" data-tipo-categoria="+data.tipoConsejo[j].id+" class='small-thumbnail consejo-list'><h3 class='active'>"+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+"</h3></a></div></td></tr>");
+              }else{
+                $('.custom-carousel-inner').append("<div class='item'><div class='row-fluid'><table><tbody class='"+(j+1)+"'></tbody></table></div></div>");
+                classToInput = j+1;
+              }
+            }
+            if(j != 0){
+              $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[i].consejos[j].id+" data-tipo-categoria="+data.tipoConsejo[i].id+" class='small-thumbnail consejo-list'><h3>"+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+"</h3></a></div></td></tr>");
+            }
+        }
+      }
+    }
+  });
 });

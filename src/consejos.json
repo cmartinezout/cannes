@@ -6,13 +6,13 @@
       "id": "1",
       "titulo": "UN PERRITO BIEN ALIMENTADO Y SANO",
       "cuerpo": "Lorem ipsum dolor sit amet, in tollit commune vix. Labore consequat at est. Meis autem forensibus sed ut, vis ei illud exerci putent. At primis eruditi sit. Cu vidisse fabulas eam, eos assum dicant ut. Nec evertitur ullamcorper et. Movet impedit mandamus nam ex. Erat euismod eum ut, sea rebum habemus nostrum cu. Ne cum agam elitr, ea ius idque molestie, ei posse postulant necessitatibus sit. Per id aeterno praesent eloquentiam. Ius no augue altera virtute, duo ea tempor dolorum molestie.",
-      "imagen": "img/consejos/imagen1.jpg"
+      "imagen": "img/img-background/img-consejos.png"
       },
       {
         "id": "2",
         "titulo": "UN PERRITO BIEN ALIMENTADO",
         "cuerpo": "Lorem ipsum dolor sit amet, in tollit commune vix. Labore consequat at est. Meis autem forensibus sed ut, vis ei illud exerci putent. At primis eruditi sit. Cu vidisse fabulas eam, eos assum dicant ut. Nec evertitur ullamcorper et. Movet impedit mandamus nam ex. Erat euismod eum ut, sea rebum habemus nostrum cu. Ne cum agam elitr, ea ius idque molestie, ei posse postulant necessitatibus sit. Per id aeterno praesent eloquentiam. Ius no augue altera virtute, duo ea tempor dolorum molestie.",
-        "imagen": "img/consejos/imagen1.jpg"
+        "imagen": "img/img-background/img-consejos.png"
         }]
     },
     {
@@ -22,7 +22,7 @@
         "id": "1",
         "titulo": "LOREM",
         "cuerpo": "Lorem ipsum dolor sit amet, in tollit commune vix. Labore consequat at est. Meis autem forensibus sed ut, vis ei illud exerci putent. At primis eruditi sit. Cu vidisse fabulas eam, eos assum dicant ut. Nec evertitur ullamcorper et. Movet impedit mandamus nam ex. Erat euismod eum ut, sea rebum habemus nostrum cu. Ne cum agam elitr, ea ius idque molestie, ei posse postulant necessitatibus sit. Per id aeterno praesent eloquentiam. Ius no augue altera virtute, duo ea tempor dolorum molestie.",
-        "imagen": "img/consejos/imagen1.jpg"
+        "imagen": "img/img-background/img-consejos.png"
         }]
       }]
 }
