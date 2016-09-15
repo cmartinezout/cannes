@@ -323,6 +323,8 @@ $(document).on('click', '.consejo-list', function(e){
   e.preventDefault();
   var data_tipo = $(this).attr('data-tipo-categoria');
   var id_nota = $(this).attr('data-id');
+  $('h3.active').removeClass('active');
+  $(this).find('h3').addClass('active');
   $('.biensano').empty();
   $.getJSON('src/consejos.json', function(){
   }).done(function(data){

@@ -1329,8 +1329,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     border: 1px solid #9A42DC;
 }
 .left-title-nav{
-    width: 20%;
-     float: left;
+    width: 22%;
+    float: left;
 }
 .left-title-nav .box-raza h3{
     font-size: 3.5em;
@@ -1501,7 +1501,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 
 }
 .center-consejos{
-    width: 60%;
+    width: 58%;
     float: left;
 }
 /*---NOMBRE----*/
@@ -1694,7 +1694,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 body{
     padding: 0px!important;
 }
-
+.car-main{
+  margin-top: -98px;
+  margin-bottom: -142px;
+}
 
 /*-------------MEDIAS QUERY-----------*/
 @media  (max-width: 1024px) {
@@ -1725,7 +1728,8 @@ body{
     top: -8px;
     left: 10px;
     }
-    .carousel-inner {
+    .car-main {
       margin-bottom: -80px;
+      margin-top: 10px;
     }
 }
