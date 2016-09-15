@@ -1,0 +1,107 @@
+{
+  "total": [{
+    "letra": "A",
+    "nombres":["Aaron","Abanero","Aire","Aitor","Aketz","Akira","Alai","Alaia","Alan","Aldo","Alex","Ada","Adi","Africa","Afrika","Aida","Aika","Aila","Aisa","Aisha"]
+  },
+  {
+      "letra": "B",
+    "nombres":["Baba", "Bala", "Bali", "Bambi", "Bandi", "Bay", "Beauty", "Beethoven", "Beky", "Babas", "Babou", "Babú", "Baco", "Badi", "Bady", "Baldoa", "Balí", "Balín", "Baloo", "Balti"]
+ },
+ {
+      "letra": "C",
+    "nombres":["Cacho","Caín","Can","Canelo","Canijo","Canito","Canuto","Capi","Capitá","Capone","Cala","Cali","Calispera","Camia","Camille","Candela","Candy","Canela","Cani","Canna"]
+  },
+  {
+      "letra": "D",
+    "nombres":["Dackie","Dacky","Daga","Daina","Daisy","Dakota","Dalí","Dama","Daniela","Dadi","Dado","Dakar","Dalton","Dana","Dandi","Dandy","Danger","Daniel","Danka","Danko"]
+  },
+   {
+      "letra": "E",
+    "nombres":["Ecoty","Eder","Edi","Edy","Egon","Elmer","Elur","Elvis","Ender","Enko","Enrique","Egan","Ekaitza","Elen","Elma","Elsa","Elur","Emma","Enya","Erin"]
+  },
+   {
+      "letra": "F",
+    "nombres":["Faldo","Federico","Felipe","Fermí","Fero","Figo","Film","Fity","Flay","Flequi","Fabi","Fanny","Fara","Femia","Fiona","Fivi","Flama","Fletxa","Flopy","Flor"]
+  },
+   {
+      "letra": "G",
+    "nombres":["Gaia","Gala","Galina","Gara","Genoveva","Gilda","Gina","Gitana","Godzilla","Gofi","Galtzerdi","Garbo","Gascón","Gaspar","Gaudí","Georgio","Germán","Ginés","Ginko","Gino"]
+  },
+   {
+      "letra": "H",
+    "nombres":["Hada","Haiya","Hanna","Hartza","Heno","Hera","Hidra","Hiena","Hierba","Higia","Happy","Harbey","Harold","Harpo","Harry","Hayki","Henko","Hercules","Hércules","Hiru"]
+  },
+   {
+      "letra": "I",
+    "nombres":["Ilargi","Ilma","Imori","India","Indiana","Indira","Inka","Ira","Irautsi","Iris","Icaro","Ice","Igor","Iker","Ilun","Indi","Inuk","Irai","Irk","Iru"]
+  },
+   {
+      "letra": "J",
+    "nombres":["Jackie","Jade","Jai","Jana","Jani","Janice","Janik","Jara","Java","Jaynie","Jabo","Jacko","Jacky","Jaki","Jako","Jaky","Janos","Jaque","Jara","Jarno"]
+  },
+   {
+      "letra": "K",
+    "nombres":["Kah","Kala","Kali","Kamar","Kamille","Kana","Kania","Kati","Kati-laika","Katy","Kaccin","Kaffi","Kai","Kaifas","Kaiku","Kaiser","Kaisser","Kalifa","Kamilo","Kan"]
+  },
+   {
+      "letra": "L",
+    "nombres":["La Chata","Labra","Lada","Lady","Lagun","Lai","Laica","Laika","Laila","Laky","Lacky","Lagun","Laki","Laky","Laky-Look","Landi","Lar","Larry","Laser","Layo"]
+  },
+   {
+      "letra": "M",
+    "nombres":["Mª dolores","Macarena","Mafalda","Mafi","Maggie","Maggy","Malú","Mamba","Mandi","Mac","Mafi","Magic","Maikel","Mais","Maki","Malek","Malik","Maltese","Mambo"]
+  },
+   {
+      "letra": "N",
+    "nombres":["Nadin","Naia","Nala","Nana","Nancy","Nani","Nanuk","Nara","Naria","Nasa","Nago","Nai","Nando","Nano","Nanu","Nanur","Narciso","Nay","Nees","Negrito"]
+  },
+   {
+      "letra": "O",
+    "nombres":["Oddie","Oddy","Olivia","Omara","Ona","Onka","Orejitas","Orhi","Otto","Obelix","Odei","Odey","Odín","Oker","Oliver","One","Orhi","Orisis"]
+  },
+   {
+      "letra": "P",
+    "nombres":["Paloma","Pancha","Panchita","Pancho","Pastor","Pat","Paula","Paulina","Peca","Pecas","Pablito","Paco","Paddy","Panchito","Pancho","Panxo","Papanduxo","Paquito","Patas","Patch"]
+  },
+   {
+      "letra": "Q",
+    "nombres":["Queca","Queen","Quesi","Quilla","Quira","Quake","Quanto","Queno","Quijote","Quito","Quixu"]
+  },
+     {
+      "letra": "R",
+    "nombres":["Ramona","Ras","Raya","Rebeca","Reina","Rhona","Rikis","Rily","Rinoa","Riseta","Rabi","Rabito","Rafle","Raik","Raiser","Ralgo","Rambo","Ramsés","Randy","Rasta"]
+  },
+     {
+      "letra": "S",
+    "nombres":["aba","Sabrina","Sacha","Sali","Sally","Samantha","Sami","Sampi","Sandy","Sanka","Sadeck","Sailor","Salva","Sam","Sambo","Samy","San","Sancho","Sandy","Sansón"]
+  },
+     {
+      "letra": "T",
+    "nombres":["Taca","Tais","Tami","Tana","Tani","Tania","Tara","Tari","Tasia","Tass","Taby","Tai","Taison","Takum","Tal","Talco","Tambor","Tango","Tania","Tano"]
+  },
+     {
+      "letra": "U",
+    "nombres":["Uma","Ulises","Ultra","Uman","Uno","Ur","Urco","Uri","Urkel","Urko","Urri","Ursus","Urtzi"]
+  },
+     {
+      "letra": "V",
+    "nombres":["Vania","Vara(mora)","Vega","Vela","Venus","Vera","Veva","Vicky","Vilma","Vinka","Valdo","Vandann","Verdi","Vicky","Vigo","Volky","Vuran"]
+  },
+     {
+      "letra": "W",
+    "nombres":["Wanda","Wendy","Wesly","Westi","Whichi","White","Whoopi","Wika","Wilma","Wini","Waldo","Way","Welsh","West","Wester","Westy","Whisky","White","Whyski","Wifi"]
+  },
+     {
+      "letra": "X",
+    "nombres":["Xana","Xena","Xenda","Xeni","Xera","Xerd","Xila","Xiquiteta","Xira","Xonxa","Xana","Xandro","Xena","Xénon","Xic","Ximo","Xinzo"]
+  },
+     {
+      "letra": "Y",
+    "nombres":["Yaisa","Yaki","Yakira","Yaky","Yanca","Yanis","Yara","Yarina","Yeni","Yeny","Yack","Yackie","Yacko","Yacky","Yaco","Yael","Yago","Yaki","Yako","Yaky"]
+  },
+     {
+      "letra": "Z",
+    "nombres":["Zaira","Zakira","Zambra","Zara","Zarpa","Zazu","Zimba","Zira","Zizu","Zoe","Zai","Zaintxo","Zar","Zarco","Zen","Zeus","Zhar","Zigor","Zikin","Zipi"]
+  }
+  ]
+}

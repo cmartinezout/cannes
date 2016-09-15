@@ -12,6 +12,7 @@ $(document).on('click','.figure-rico' ,function(e){
   });
   if(id_tipo == 1){
     classToInput = 0;
+    $('#link-sub-consejos').find("li[data-id='1']").removeClass('seco-cachorro').addClass('seco-cachorro-activo');
     $('.biensano').empty();
     $.getJSON('src/consejos.json', function(){
     }).done(function(data){
@@ -32,6 +33,30 @@ $(document).on('click','.figure-rico' ,function(e){
         }
         if(i != 0){
           $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[0].consejos[i].id+" data-tipo-categoria="+data.tipoConsejo[0].id+" class='small-thumbnail consejo-list'><h3>"+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+"</h3></a></div></td></tr>");
+        }
+      }
+    });
+  }
+  if(id_tipo == 2){
+    classToInput = 0;
+    patt = new RegExp("^A");
+    $('.items-lista-nombres').empty();
+    $.getJSON('src/nombres.json', function(){
+    }).done(function(data){
+      for (var i= 0; i<data.total.length; i++) {
+        if (patt.test(data.total[i].letra)){
+          if (data.total[i].nombres.length != 0){
+            for(var j=0; j<data.total[i].nombres.length; j++){
+              if (j % 5 == 0) {
+                classToInput = j+1
+                $('.items-lista-nombres').append('<div class="item-ul '+classToInput+'" ></div>');
+                $('.'+classToInput+'').append('<ul></ul>');
+                $('.'+classToInput+'').find('ul').append('<li>'+data.total[i].nombres[j]+'</li>');
+              }else{
+                $('.'+classToInput+'').find('ul').append('<li>'+data.total[i].nombres[j]+'</li>');
+              }
+            }
+          }
         }
       }
     });
@@ -61,7 +86,9 @@ $(document).on('click','.figure-rico' ,function(e){
       }
     });
   }
-  $("div[data-tipo-seccion='"+id_tipo+"']").next().slideToggle();
+  if(id_tipo != 2){
+    $("div[data-tipo-seccion='"+id_tipo+"']").next().slideToggle();
+  }
 });
 
 $(document).on('click', '.perro' ,function(e){
@@ -78,6 +105,8 @@ $(document).on('click', '.perro' ,function(e){
   });
   if(id_tipo == 1){
     classToInput = 0;
+    $('#link-sub-consejos').find("li").removeClass('seco-cachorro-activo').addClass('seco-cachorro');
+    $('#link-sub-consejos').find("li[data-id='1']").removeClass('seco-cachorro').addClass('seco-cachorro-activo');
     $('.biensano').empty();
     $.getJSON('src/consejos.json', function(){
     }).done(function(data){
@@ -98,6 +127,30 @@ $(document).on('click', '.perro' ,function(e){
         }
         if(i != 0){
           $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[0].consejos[i].id+" data-tipo-categoria="+data.tipoConsejo[0].id+" class='small-thumbnail consejo-list'><h3>"+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+"</h3></a></div></td></tr>");
+        }
+      }
+    });
+  }
+  if(id_tipo == 2){
+    classToInput = 0;
+    patt = new RegExp("^A");
+    $('.items-lista-nombres').empty();
+    $.getJSON('src/nombres.json', function(){
+    }).done(function(data){
+      for (var i= 0; i<data.total.length; i++) {
+        if (patt.test(data.total[i].letra)){
+          if (data.total[i].nombres.length != 0){
+            for(var j=0; j<data.total[i].nombres.length; j++){
+              if (j % 5 == 0) {
+                classToInput = j+1
+                $('.items-lista-nombres').append('<div class="item-ul '+classToInput+'" ></div>');
+                $('.'+classToInput+'').append('<ul></ul>');
+                $('.'+classToInput+'').find('ul').append('<li>'+data.total[i].nombres[j]+'</li>');
+              }else{
+                $('.'+classToInput+'').find('ul').append('<li>'+data.total[i].nombres[j]+'</li>');
+              }
+            }
+          }
         }
       }
     });
@@ -294,6 +347,8 @@ $(document).on('click', '.consejo', function(e){
   var id_nota = $(this).attr('data-id');
   $('.biensano').empty();
   $('.custom-carousel-inner').empty();
+  $('#link-sub-consejos').find("li").removeClass('seco-cachorro-activo').addClass('seco-cachorro');
+  $(this).removeClass('seco-cachorro').addClass('seco-cachorro-activo');
   $.getJSON('src/consejos.json', function(){
   }).done(function(data){
     for (var i = 0; i < data.tipoConsejo.length; i++) {
@@ -321,3 +376,31 @@ $(document).on('click', '.consejo', function(e){
     }
   });
 });
+
+$(document).on('click', '.letra-abc', function(e){
+  e.preventDefault();
+  var letra = $(this).attr('value');
+  $('.nav-lista-nombre').find('h3').text(letra);
+  classToInput = 0;
+  patt = new RegExp("^"+letra+"");
+  $('.items-lista-nombres').empty();
+  $.getJSON('src/nombres.json', function(){
+  }).done(function(data){
+    for (var i= 0; i<data.total.length; i++) {
+      if (patt.test(data.total[i].letra)){
+        if (data.total[i].nombres.length != 0){
+          for(var j=0; j<data.total[i].nombres.length; j++){
+            if (j % 5 == 0) {
+              classToInput = j+1
+              $('.items-lista-nombres').append('<div class="item-ul '+classToInput+'" ></div>');
+              $('.'+classToInput+'').append('<ul></ul>');
+              $('.'+classToInput+'').find('ul').append('<li>'+data.total[i].nombres[j]+'</li>');
+            }else{
+              $('.'+classToInput+'').find('ul').append('<li>'+data.total[i].nombres[j]+'</li>');
+            }
+          }
+        }
+      }
+    }
+  });
+})

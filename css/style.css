@@ -630,6 +630,23 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
+.left-title-nav .nav-razas  .item_principal-nav-razas-activo:nth-child(3){
+    background-color: #DF3245;
+    border: #DF3245;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
 .left-nav-producto .nav-producto  .item_principal-nav-producto-activo:nth-child(3){
     background-color: #DF3245;
     border: #DF3245;
@@ -1528,7 +1545,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     color: #DF3245;
     width: 55%;
     float: right;
-    
+
      font-family: "futura-bold";
 }
 .nav-lista-nombre h3{
@@ -1556,7 +1573,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 }
 .nav-lista-nombre>ul{
     float: none;
-    
+
 }
 .alfabeto{
     text-align: center;
@@ -1585,7 +1602,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
-    
+
 }
 /*----------------FIN RICO SER PERRO----------------*/
 
