@@ -71,6 +71,7 @@ section{
 .container-fluid{
     z-index: 99;
 }
+
 /*Navegacion*/
 @font-face {
   font-family: "frutiger-67-bold-cond";
@@ -216,7 +217,7 @@ transform: scale(1.4);
     background-repeat: no-repeat;
     background-size: cover;
 }
-slide-img{
+.slide-img{
     height: 330px;
 }
 
@@ -272,6 +273,7 @@ slide-img{
     padding: 23px;
     letter-spacing: 1px;
     font-size: 1.5em;
+      font-family: "frutiger-std-con";
 }
 /*---hover-
 .producto-categ figcaption:hover{
@@ -1589,36 +1591,49 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 }
 /*----------------FIN RICO SER PERRO----------------*/
 
-/*--------------MUNDO CACHORRO---------------*/
-.mundocachorro .slide-img{
-    background-image: url(../img/shutterstock_80773975.jpg);
-    background-position: top;
+
+/*----------MUNDO CACHORRO--------*/
+/*Img-Background*/
+.mundo-cachorro .slide-img{
+     background-image: url(../img/img-background/slide-mundo.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.box-h3-mundocachorro{
-    width: 60%;
-    padding: 20px;
-    padding-top: 50px;
+.slide-img{
+    height: 330px;
+}
 
+.box-h3-mundocachorro{
+    height: 330px;
+}
+.box-h3-mundocachorro h3{
+    padding: 20px 0px;
+    width: 340px;
+    font-size: 3.1em;
+    letter-spacing: 1px;
+    margin-top: 10%;
+}
+
+.box-h3-mundocachorro p {
+    font-size: 1.3em;
+    width: 260px;
+    margin-top: -15px;
 }
 .linea-separador-mundocachorro{
-    margin-top: -8px;
-    width: 180px;
+    width: 340px;
     display: table-caption;
     border-bottom: 1px solid white;
-}
-.mundo-cachorro figcaption{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.mundo-cachorro{
-    padding: 50px 0px;
+    margin-top:-25px;
 }
 .mundo-cachorro figure{
     width: 31.3%;
     float: left;
     margin: 1%
+}
+.mundo-cachorro figcaption{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .mundo-cachorro figure img{
     width: 100%;
@@ -1628,52 +1643,94 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     padding: 23px 2px;
     letter-spacing: 1px;
 }
-.mundocachorro figcaption{
-    background-color: #EB7E2B;
-}
-/*---*/
-/*MUNDO CACHORRO*/
-.mundocachorro .slide-img{
-    background-image: url(../img/shutterstock_80773975.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.box-h3-mundocachorro{
-    width: 60%;
-    padding: 20px;
-    padding-top: 50px;
-
-}
-.linea-separador-mundocachorro{
-    margin-top: -8px;
-    width: 180px;
-    display: table-caption;
-    border-bottom: 1px solid white;
-}
 .mundo-cachorro figcaption{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.mundo-cachorro{
-    padding: 50px 0px;
-}
-.mundo-cachorro figure{
-    width: 31.3%;
-    float: left;
-    margin: 1%
-}
-.mundo-cachorro figure img{
-    width: 100%;
-}
-.mundo-cachorro figcaption h4{
-    text-align: center;
-    padding: 23px 2px;
-    letter-spacing: 1px;
-}
-.mundocachorro figcaption{
     background-color: #EB7E2B;
 }
+
+/*-Fin-*/
+/*----CONTACTO----*/
+.formulario-contacto .col-left{
+       background-image: url(../img/img-background/contacto-perro1.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 650px;
+}
+.formulario-contacto .col-rigth{
+       background-image: url(../img/img-background/contacto-perro2.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 700px;
+}
+
+.formulario-contacto .col-left{
+    width: 50%;
+    float: left;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.formulario-contacto .col-rigth{
+    width: 50%;
+    float: left;
+    padding-top: 100px;
+    padding-bottom:200px;
+   
+}
+.formulario-contacto .form-control {
+    
+    border: 1px solid #EB7E2B;
+}
+.formulario-contacto .form-horizontal {
+    margin-right: 30px;
+}
+
+ .formulario-contacto input::-webkit-input-placeholder {
+   color: #e46a44;
+    font-weight: bold;
+     font-family: "frutiger-std-con";
+     font-size: 1.2em;
+}
+ .formulario-contacto input::-moz-placeholder {
+    color: #EB7E2B;
+    font-weight: bold;
+     font-family: "frutiger-std-con";
+     font-size: 1.2em;
+}
+.formulario-contacto select{
+    color: white;
+    font-weight: bold;
+    font-family: "frutiger-std-con";
+    font-size: 1.2em;
+    background-color: #EB7E2B;
+}
+.formulario-contacto .col-rigth .fa-circle{
+    color: #EB7E2B;
+}
+.formulario-contacto .col-rigth  .box-icon-h2{
+    padding: 0px 0px 100px 40px;
+    border-left: 2px solid #EB7E2B;
+    margin-left: 10px;
+    height: 300px;
+    color: #EB7E2B;
+    font-family: "futura-bold";
+}
+.formulario-contacto .col-rigth  .box-icon-h2 span, .formulario-contacto .col-rigth  .box-icon-h2 a{
+    float: left;
+}
+.formulario-contacto .col-rigth .icon-herramienta{
+    margin: 5px;
+    font-size: 3em;
+}
+.formulario-contacto .col-rigth a span {
+   font-size: 2em;
+}
+.formulario-contacto .col-rigth a{
+    color: #EB7E2B;
+    font-size: 1.9em;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+/**/
 body{
     padding: 0px!important;
 }
@@ -1715,4 +1772,26 @@ body{
     top: -8px;
     left: 10px;
     }
+    .formulario-contacto .col-left{
+        background-size: 400px;
+    }
+    .formulario-contacto .col-rigth{
+        background-size: 400px;
+    }
+    .formulario-contacto .col-rigth  .box-icon-h2{
+        height: 200px;
+    }
+    .formulario-contacto .col-rigth .icon-herramienta{
+    margin: 5px;
+    font-size: 2.5em;
+}
+.formulario-contacto .col-rigth  .box-icon-h2{
+    padding: 0px 0px 100px 20px;
+    }
+    
+.formulario-contacto .col-rigth a{
+    color: #EB7E2B;
+    font-size: 2em;
+    line-height: 0.8;
+}
 }
