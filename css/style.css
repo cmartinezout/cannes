@@ -1036,6 +1036,18 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
+.left-title-nav .nav-razas  .item_principal-nav-razas-activo{
+    background-color: #9A42DC;
+    color: white;
+    border: 1px solid black;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "frutiger-LT-57-cond";
+    font-size: 1.2em;
+}
 
 .left-title-nav .nav-razas .link_subcategoria-razas li:hover{
       -webkit-transition: all 800ms ease;
@@ -1376,6 +1388,17 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     padding: 10px;
 }
 .rigth-raza-nav-lista ul li{
+    list-style-type: none;
+    font-size: 0.9em;
+}
+.rigth-consejo-nav-lista{
+    width: 20%;
+    color: black;
+    text-align: center;
+    float: left;
+    padding: 10px;
+}
+.rigth-consejo-nav-lista ul li{
     list-style-type: none;
     font-size: 0.9em;
 }

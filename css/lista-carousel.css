@@ -7,7 +7,7 @@
  * Bootstrap Vertical Image Showcase v1.0
  * Create an Vertical Thumbnail Carousel For Twitter Bootstrap v3.0.3
  *
- * 
+ *
  * License: MIT License
  * http://opensource.org/licenses/MIT
  *
@@ -61,6 +61,7 @@
 .lista-carousel-raza .carousel {
     height:100%;
 	margin-bottom: 0;
+	width: 75%;
 	/*padding: 50px 40px 50px 0px;*/
 }
 
@@ -80,7 +81,7 @@
 	right: 50%;
 	top: auto;
 	bottom: 0px;
-	
+
 }
 
 .lista-carousel-raza .carousel-indicators-top li {
@@ -90,11 +91,11 @@
 .lista-carousel-raza .carousel-indicators-top .active {
 	background: #333333;
 }
- 
+
  /* vertical start*/
 
 .lista-carousel-raza .vertical .carousel-inner {
-	height: 450px;
+	height: 280px;
 	padding-top:0px;
     margin-top: 20px;
 }
@@ -165,7 +166,7 @@ text-align: center;
 	margin-left: 12px;
 }
 .lista-carousel-raza .carousel-control.left{
-     background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%); 
+     background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
     background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
     /* background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001))); */
     /* background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
@@ -173,7 +174,7 @@ text-align: center;
     /* background-repeat: repeat-x; */
 }
 .lista-carousel-raza .carousel-control.right{
-     background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%); 
+     background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
     background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
     /* background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001))); */
     /* background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
@@ -186,4 +187,9 @@ text-align: center;
 .small-thumbnail h3{
     font-size: 1em;
     color: black;
+}
+
+.small-thumbnail .active{
+    font-size: 1em;
+    color: #EB7E2B;
 }
