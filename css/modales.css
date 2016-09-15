@@ -37,7 +37,7 @@
 }
 .contenido-modal img{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 10px;
 
 }
@@ -65,8 +65,8 @@
     float: left;
     background-position: center;
     border-right: 8px solid #A40606;
-     border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .bd-modal-rojo .modal-header .close{
@@ -84,13 +84,16 @@
     font-weight: 100;
     letter-spacing: 1px;
     color: white;
+    border-radius: 10px;
 }
-
+.contenido-modal h3{
+  border-radius: 10px;
+}
 .bd-modal-rojo .contenido-modal .btn-modal-leer-mas{
     background-color: #A40606;
     border: none;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     padding: 5px;
     letter-spacing: 1px;
@@ -110,8 +113,8 @@
     float: left;
     background-position: center;
     border-right: 8px solid #FFA900;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .bd-modal-amarillo .modal-header .close{
@@ -135,7 +138,7 @@
     background-color: #FFA900;
     border: none;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     padding: 5px;
     letter-spacing: 1px;
@@ -155,8 +158,8 @@
     float: left;
     background-position: center;
     border-right: 8px solid #7474C3;
-     border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .bd-modal-lila .modal-header .close{
@@ -180,7 +183,7 @@
     background-color:#7474C3;
     border: none;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     padding: 5px;
     letter-spacing: 1px;
@@ -200,8 +203,8 @@
     float: left;
     background-position: center;
     border-right: 8px solid #9A42DC;
-     border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .bd-modal-morado .modal-header .close{
@@ -225,7 +228,7 @@
     background-color:#9A42DC;
     border: none;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     padding: 5px;
     letter-spacing: 1px;
@@ -245,8 +248,8 @@
     float: left;
     background-position: center;
     border-right: 8px solid #479DC5;
-     border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .bd-modal-celeste .modal-header .close{
@@ -270,7 +273,7 @@
     background-color:#479DC5;
     border: none;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     padding: 5px;
     letter-spacing: 1px;
@@ -290,8 +293,8 @@
     float: left;
     background-position: center;
     border-right: 8px solid #3BB606;
-     border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .bd-modal-verde .modal-header .close{
@@ -315,7 +318,7 @@
     background-color:#3BB606;
     border: none;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     padding: 5px;
     letter-spacing: 1px;

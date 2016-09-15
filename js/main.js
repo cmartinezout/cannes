@@ -21,7 +21,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
   $('.galleta').css('display', 'block');
   id = $(this).attr('data-tipo-perro');
   $('nav').find('.item_principal-nav-producto-activo').removeClass('item_principal-nav-producto-activo').addClass('item_principal-nav-producto');
-  $('.carousel-inner').empty();
+  $('.c-producto').empty();
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
@@ -45,7 +45,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
         $('.frutiger-bold-cond').text(data.tipoPerro[i].Nombre);
         for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
           if (j==0){
-            $('.carousel-inner').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
+            $('.c-producto').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('.desc').empty();
             $('.desc').text(data.tipoPerro[i].productos[j].Desc);
             $('#ingredientes').find('p').empty();
@@ -80,7 +80,7 @@ $(document).on('click', '.figure-pruducto', function(ev){
                 }
               }
           }else{
-            $('.carousel-inner').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
+            $('.c-producto').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+'></li>');
           }
         }
@@ -216,7 +216,7 @@ $(document).on('click', '.snack', function(ev){
   $("li[data-perro='"+id+"']").removeClass('seco-'+perros[id-1]).addClass('seco-'+perros[id-1]+'-activo');
   $('.frutiger-bold-cond').text('SNACKS')
   $('#ingredientes').find('p').empty();
-  $('.carousel-inner').empty();
+  $('.c-producto').empty();
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
@@ -229,7 +229,7 @@ $(document).on('click', '.snack', function(ev){
     for (var i = 0; i < data.tiposnaks.length; i++) {
       if(i == 0){
         $(".frutiger-bold-cond").text(data.tiposnaks[i].Tipo);
-        $('.carousel-inner').append('<div data-id='+data.tiposnaks[i].id+' class="item active"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
+        $('.c-producto').append('<div data-id='+data.tiposnaks[i].id+' class="item active"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
         $('#ingredientes').find('p').append(data.tiposnaks[i].Ingredientes);
         $('.info-nutricional').append(data.tiposnaks[i].Nutricion);
         $('.text-grande').empty();
@@ -261,7 +261,7 @@ $(document).on('click', '.snack', function(ev){
           $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 12%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
         }
       }else{
-        $('.carousel-inner').append('<div data-id='+data.tiposnaks[i].id+' class="item"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
+        $('.c-producto').append('<div data-id='+data.tiposnaks[i].id+' class="item"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+'></li>');
       }
     }
@@ -284,7 +284,7 @@ $(document).on('click', '.humedo', function(ev){
   $("li[data-perro='"+id+"']").removeClass('seco-'+perros[id-1]+'-activo').addClass('seco-'+perros[id-1]);
   $('.frutiger-bold-cond').text('SALSA')
   $('#ingredientes').find('p').empty();
-  $('.carousel-inner').empty();
+  $('.c-producto').empty();
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
@@ -295,7 +295,7 @@ $(document).on('click', '.humedo', function(ev){
   }).always(function(data){
     for (var i = 0; i < data.humedos.length; i++) {
       if(i == 0){
-        $('.carousel-inner').append('<div data-id='+data.humedos[i].id+' class="item active"><img src='+data.humedos[i].imagen+' alt="..."></div>');
+        $('.c-producto').append('<div data-id='+data.humedos[i].id+' class="item active"><img src='+data.humedos[i].imagen+' alt="..."></div>');
         $('#ingredientes').find('p').append(data.humedos[i].Ingredientes);
         $('.info-nutricional').append(data.humedos[i].Nutricion);
         $('.text-grande').empty();
@@ -328,7 +328,7 @@ $(document).on('click', '.humedo', function(ev){
           $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 12%;" src='+data.humedos[i].imagen+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.humedos[i].Porciones[k]+'</h4>');
         }
       }else{
-        $('.carousel-inner').append('<div data-id='+data.humedos[i].id+' class="item"><img src='+data.humedos[i].imagen+' alt="..."></div>');
+        $('.c-producto').append('<div data-id='+data.humedos[i].id+' class="item"><img src='+data.humedos[i].imagen+' alt="..."></div>');
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+'></li>');
       }
     }
@@ -348,7 +348,7 @@ $(document).on('click', '.comida', function(ev){
   $("li[data-tipo-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]).addClass('seco-'+perros[id_perro-1]+'-activo');
   $('#carousel-snacks').css('display', 'none');
   $('#carousel-productos').css('display', 'block');
-  $('.carousel-inner').empty();
+  $('.c-producto').empty();
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
@@ -362,7 +362,7 @@ $(document).on('click', '.comida', function(ev){
         $('.frutiger-bold-cond').text(data.tipoPerro[i].Nombre);
         for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
           if (j==0){
-            $('.carousel-inner').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
+            $('.c-producto').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('#ingredientes').find('p').empty();
             $('#ingredientes').find('p').append(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
@@ -397,7 +397,7 @@ $(document).on('click', '.comida', function(ev){
                 }
               }
           }else{
-            $('.carousel-inner').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
+            $('.c-producto').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+'></li>');
           }
         }
@@ -419,7 +419,7 @@ $(document).on('click', '.seco', function(ev){
   $("li[data-tipo-perro='"+id_perro+"']").removeClass('seco-'+perros[id_perro-1]).addClass('seco-'+perros[id_perro-1]+'-activo');
   $('#carousel-snacks').css('display', 'none');
   $('#carousel-productos').css('display', 'block');
-  $('.carousel-inner').empty();
+  $('.c-producto').empty();
   $('.carousel-indicators').empty();
   $('.frutiger-LT-57-cond').empty();
   $('.info-nutricional').empty();
@@ -433,7 +433,7 @@ $(document).on('click', '.seco', function(ev){
         $('.frutiger-bold-cond').text(data.tipoPerro[i].Nombre);
         for (var j = 0; j < data.tipoPerro[i].productos.length; j++) {
           if (j==0){
-            $('.carousel-inner').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
+            $('.c-producto').append('<div data-tipo-perro='+id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item active"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('#ingredientes').find('p').empty();
             $('#ingredientes').find('p').append(data.tipoPerro[i].productos[j].Ingredientes);
             $('.text-grande').empty();
@@ -468,7 +468,7 @@ $(document).on('click', '.seco', function(ev){
                 }
               }
           }else{
-            $('.carousel-inner').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
+            $('.c-producto').append('<div data-tipo-perro='+id+' data-tipo-producto='+data.tipoPerro[i].id+' data-id='+data.tipoPerro[i].productos[j].id+' class="item"><img src='+data.tipoPerro[i].productos[j].imagen+' alt="..."></div>');
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+'></li>');
           }
         }
