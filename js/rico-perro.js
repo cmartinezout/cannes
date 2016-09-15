@@ -11,6 +11,10 @@ $(document).on('click','.figure-rico' ,function(e){
   });
   if(id_tipo == 1){
     classToInput = 0;
+    $('.biensano').find('h4').empty();
+    $('.biensano').find('h3').empty();
+    $('.biensano').find('p').empty();
+    $('.biensano').find('img').empty();
     $.getJSON('src/consejos.json', function(){
     }).done(function(data){
       for (var i = 0; i < data.tipoConsejo[0].consejos.length; i++) {
