@@ -335,7 +335,78 @@
   width: 100%;
 }
 
+/*MODALES MUNDO CACHORRO*/
+.bd-modal-primerosdias .img-bg-modal {
+    background-image: url(../img/img-background/modal-primerosdias.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 608px;
+    width: 30%;
+    float: left;
+    background-position: center;
+    border-right: 8px solid  #EB7E2B;
+     border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.bd-modal-vacuna .img-bg-modal {
+    background-image: url(../img/img-background/modal-vacuna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 608px;
+    width: 30%;
+    float: left;
+    background-position: center;
+    border-right: 8px solid #EB7E2B;
+     border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.bd-modal-sobrecachorro .img-bg-modal {
+    background-image: url(../img/img-background/modal-sobrecachorro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 608px;
+    width: 30%;
+    float: left;
+    background-position: center;
+    border-right: 8px solid  #EB7E2B;
+     border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/*detalle de los modales*/
+/*modal primerosdias*/
+.modal-mundo .modal-header .close{
+    padding:  12px 19px 14px 19px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #EB7E2B;
+}
 
+.modal-mundo .contenido-modal h3{
+    background-color: #EB7E2B;
+    padding: 7px 5px;
+    text-align: center;
+    font-family: "frutiger-LT-57-cond";
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.modal-mundo .contenido-modal .btn-modal-leer-mas{
+    background-color:#EB7E2B;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.modal-mundos .contenido-modal .btn-modal-leer-mas:hover{
+    background-color:#EB7E2B;
+}
+.modal-mundo .contenido-modal .contenido-text{
+    height: 240px;
+}
 
 /*----*/
 @media (min-width: 768px){
