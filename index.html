@@ -13,7 +13,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Cannes - Lo rico de ser perro</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/carousel-producto.css">
@@ -46,39 +46,34 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <!--NAVEGACION PRINICPAL-->
+  <header class="container-fluid">
+
         <div class="container">
-            <!--LOGO/LINK INICIO-->
+
             <a href="#home" class="logo-h1 link">
                 <img src="img/iconos/logo.png" alt="logo">
             </a>
-            <!--Fin logo/link inicio-->
-            <!--NAV-->
-            <nav class="nav-principal">
-                <ul>
 
-                    <li class="item-nav padding-center-link"><a class="link" href="#producto-sec">PRODUCTOS</a></li>
-                    <li class=" item-nav padding-center-link"><a class="link" href="#ruta-cannes-sec">RUTAS CANNES</a></li>
-                    <li class="item-nav"><a class="link" href="#rico-ser-perro-sec">LO RICO DE SER PERRO</a></li>
-                    <li class="item-nav padding-center-link padding-top-hover"><a class="link" href="#mundo-cachorro-sec">MUNDO CACHORRO</a></li>
-                    <li class="item-nav padding-center-link"><a class="link" href="#contactanos">CONTÁCTANOS</a></li>
-
+            <nav class="navbar navbar-inverse navbar-fixed-top nav-principal">
+                <ul class="nav navbar-nav">
+                    <li class="item-nav padding-center-link"><a class="link page-scroll" href="#producto-sec">PRODUCTOS</a></li>
+                    <li class=" item-nav padding-center-link"><a class="link page-scroll" href="#ruta-cannes-sec">RUTAS CANNES</a></li>
+                    <li class="item-nav"><a class="link page-scroll" href="#rico-ser-perro-sec">LO RICO DE SER PERRO</a></li>
+                    <li class="item-nav padding-center-link padding-top-hover"><a class="link page-scroll" href="#mundo-cachorro-sec">MUNDO CACHORRO</a></li>
+                    <li class="item-nav padding-center-link"><a class="link page-scroll" href="#contactanos">CONTÁCTANOS</a></li>
                 </ul>
             </nav>
-            <!--Fin nav-->
-            <!--REDES SOCIALES-->
+
             <div class="redes-sociales">
-                <a href="">
+                <a href="https://www.facebook.com/CannesLoRicoDeSerPerro/" target="_blank">
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-circle fa-stack-2x"></i>
                       <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
             </div>
-            <!--Fin redes sociales-->
+
         </div>
-        <!-- FIN NAVEGACION PRINICPAL-->
     </header>
     <section class="video-inicio" id="home">
 
@@ -168,7 +163,7 @@
                     </figcaption>
                 </figure>
                </div>
-                
+
                 <!-- <figure class="r-pequena-bg figure-pruducto" data-tipo-perro="4">
                     <img src="img/producto-pequenas-fig.jpg" alt="perro pequeño">
                     <figcaption>
@@ -1077,7 +1072,7 @@
                 <figure data-toggle="modal" data-target=".bd-modal-vacuna" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <img src="img/img-background/seccion-mundo-vacuna-fig.jpg" alt="vacuna">
                     <figcaption>
-                        <h4>VACUNAS</h4>
+                        <h4>VACUNA</h4>
                     </figcaption>
                 </figure>
                 <figure data-toggle="modal" data-target=".bd-modal-sobrecachorro" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -1242,7 +1237,7 @@
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
                 </span>
-                <a href="http://iamsagro.trabajando.cl">Trabaja <br><span class="text-grande-contact">con nosotros</span></a>
+                <a href="http://iansagro.trabajando.cl/" target="_blank">Trabaja <br><span class="text-grande-contact">con nosotros</span></a>
             </div>
 
         </div>
@@ -1314,5 +1309,27 @@
         });
     });
 </script>
+<script type="text/javascript">
+// Freelancer Theme JavaScript
 
+(function($) {
+    "use strict"; // Start of use strict
+
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('.page-scroll a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 51
+    });
+
+})(jQuery); // End of use strict
+</script>
 </html>

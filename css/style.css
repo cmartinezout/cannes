@@ -194,7 +194,6 @@ header {
     content: url(../img/iconos/icon-hueso-blanco.png);
     vertical-align: middle;
     display: inline-block;
-    zoom: 50%;
     padding-right: 8px;
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -698,7 +697,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
-    
+
 }
 
 .left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(5):hover {
@@ -761,8 +760,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     cursor: pointer;
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
-    
-    
+
+
 }
 
 .left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(3) {
@@ -781,7 +780,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     cursor: pointer;
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
-  
+
 }
 
 .left-nav-producto .nav-producto .item_principal-nav-producto-activo:nth-child(3) {
@@ -2269,14 +2268,14 @@ body {
     }
     .box-tabla-certificado{
         background-image: none;
-    } 
+    }
     .producto-categ {
     padding: 20px 0px;
     }
     .mundo-cachorro figcaption {
     height: 80px;
     }
-    
+
 }
 @media (max-width: 320px) {
     .mundo-cachorro figcaption {

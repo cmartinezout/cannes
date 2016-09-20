@@ -5,7 +5,7 @@
     "productos": [{
       "id": "1",
       "Nombre": "CARNE Y LECHE",
-      "Desc": "Alimento completo para tu perro cachorro con Prebióticos, Omega 3 y 6.",
+      "Desc": "Alimento completo para tu perro cachorro con Prebióticos, Omega 3 y 6. Y entrega los siguientes beneficios:",
       "Ingredientes": "Harina de carne y hueso bovina, maíz, trigo, salvado de trigo, salvado de arroz, gluten de maíz, grasa animal estabilizada, leche en polvo, hidrolizado de hígado, vitaminas y minerales, pulpa de remolacha, cloruro de sodio, colorante natural caramelo, prebióticos, extracto de yucca shidigera, extracto de quillay, óxido de hierro amarillo, antioxidantes.",
       "imagen": "img/productos/producto2.png",
       "Caracteristicas": "<li class='text-black digestion'>Mejor digestión &#8226; </span> <span class='text-naranjo detalle-sizemas'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción de calcio &#8226; </span> <span class='text-naranjo detalle-sizemas'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más brillante &#8226; </span> <span class='text-naranjo detalle-sizemas'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más consistentes &#8226; </span> <span class='text-naranjo detalle-sizemas'>Menos volumen y olor.</span></li><li class='text-black defensas'>Defensas naturales &#8226; </span> <span class='text-naranjo detalle-sizemas'>Fortalecidas, más salud.</span></li>",
@@ -55,7 +55,7 @@
       "productos": [{
         "id": "1",
         "Nombre": "CARNE Y CEREALES",
-        "Desc": "Alimento completo para tu perro adulto con Prebióticos, Omega 3 y 6, encargado de entregar los siguientes beneficios:",
+        "Desc": "Alimento completo para tu perro adulto con Prebióticos, Omega 3 y 6, que le entrega los siguientes beneficios:",
         "Ingredientes": "Maíz, harina de carne y hueso bovina, salvado de trigo, salvado de arroz, harina de subproductos de ave, grasa animal estabilizada, soya, hidrolizado de hígado, trigo, arroz, gluten de maíz, carbonato de calcio, cloruro de sodio, semlla de linaza, pulpa de remolacha, levadura de cerveza, vitaminas y minerales, colorante natural caramelo, prebióticos, aceite de lino, óxido de hierro amarillo, extracto de yuca shidigera, extracto de quillay, dióxido de titanio, antioxidante.",
         "imagen": "img/productos/producto1.png",
         "Caracteristicas": "<li class='text-black digestion'>Mejor digestión &#8226; </span> <span class='text-naranjo detalle-sizemas'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción de calcio &#8226; </span> <span class='text-naranjo detalle-sizemas'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más brillante &#8226; </span> <span class='text-naranjo detalle-sizemas'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más consistentes &#8226; </span> <span class='text-naranjo detalle-sizemas'>Menos volumen y olor.</span></li><li class='text-black defensas'>Defensas naturales &#8226; </span> <span class='text-naranjo detalle-sizemas'>Fortalecidas, más salud.</span></li>",
@@ -101,7 +101,7 @@
         {
           "id": "2",
           "Nombre": "CARNE Y VEGETALES",
-          "Desc": "Alimento completo para tu perro adulto con Prebióticos, Omega 3 y 6, encargado de entregar los siguientes beneficios:",
+          "Desc": "Alimento completo para tu perro adulto con Prebióticos, Omega 3 y 6, que le entrega los siguientes beneficios:",
           "Ingredientes": "Maíz, harina de carne y hueso bovina, subproductos de trigo (salvado de trigo, harina de trigo), salvado de arroz, harina de subprodctos de ave, grasa animal estabilizada, hidrolizado de hígado, arroz, carbonato de calcio, semilla de linaza, pulpa de remolacha, levadura de cerveza, cloruro de sodio, vitaminas y minerales, zanahoria deshidratada, espinaca deshidratada, colorante natural caramelo, prebióticos, dióxido de titanio, aceite de lino, óxido de hierro amarillo, extracto de yucca shidigera, extracto de quillay, colorante verde, amarillo tartrazina, antioxidante",
           "imagen": "img/productos/producto9.png",
           "Caracteristicas": "<li class='text-black digestion'>Mejor digestión &#8226; </span> <span class='text-naranjo detalle-sizemas'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción de calcio &#8226; </span> <span class='text-naranjo detalle-sizemas'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más brillante &#8226; </span> <span class='text-naranjo detalle-sizemas'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más consistentes &#8226; </span> <span class='text-naranjo detalle-sizemas'>Menos volumen y olor.</span></li><li class='text-black defensas'>Defensas naturales &#8226; </span> <span class='text-naranjo detalle-sizemas'>Fortalecidas, más salud.</span></li>",
@@ -146,7 +146,7 @@
           },
         {
             "id": "3",
-            "Desc": "Alimento completo para tu perro adulto raza pequeña con Prebióticos, Omega 3 y 6, que entregar los siguientes beneficios:",
+            "Desc": "Alimento completo para tu perro adulto con Prebióticos, Omega 3 y 6, que le entrega los siguientes beneficios:",
             "Nombre": "CARNE, POLLO Y CEREALES",
             "Ingredientes": "Maíz y/o trigo, arroz, Harina de carne y hueso bovino, harina de subproductos de ave, subproductos de cereales, subproductos de leguminosas, hidrolizado de hígado, pulpa de remolacha, aceite de ave estabilizado, levadura de cerveza, semilla de lino, cloruro de sodio, zeolita, aceite de pescado desodorizado (fuente de ácidos grasos omega 3 y 6), extracto de Yuca shidigera, extracto de Quillay, colorantes, antioxidantes y antifúngicos autorizados.",
             "imagen": "img/productos/producto4.png",
@@ -190,7 +190,7 @@
           {
               "id": "4",
               "Nombre": "POLLO Y ARROZ",
-              "Desc": "Alimento completo para tu perro adulto con Prebióticos, Omega 3 y 6, encargado de entregar los siguientes beneficios:",
+              "Desc": "Alimento completo para tu perro adulto con Prebióticos, Omega 3 y 6, que le entrega los siguientes beneficios:",
               "Ingredientes": "Maíz y/o trigo, arroz, harina de carne y hueso bovino, harina de subproductos de ave, subproductos de cereales, subproductos de leguminosas, hidrolizado de hígado, pulpa de remolacha, aceite de ave estabilizado, levadura de cerveza, semilla de lino, cloruro de sodio, zeolita, aceite de pescado desodorizado (Fuente de ácidos grasos omega 3 y 6), extracto de Yuca shidigera, extracto de Quillay, colorantes, antioxidantes y antifúngicos autorizados.",
               "imagen": "img/productos/producto10.png",
               "Caracteristicas": "<li class='text-black digestion'>Mejor digestión &#8226; </span> <span class='text-naranjo detalle-sizemas'>Mejor asimilación de todos los nutrientes de la dieta.</span></li><li class='text-black calcio'>Más absorción de calcio &#8226; </span> <span class='text-naranjo detalle-sizemas'>Para huesos y dientes más robustos.</span></li><li class='text-black brillante'>Pelaje más brillante &#8226; </span> <span class='text-naranjo detalle-sizemas'>Reflejo de una mejor salud para su perro.</span></li><li class='text-black consistentes'>Heces más consistentes &#8226; </span> <span class='text-naranjo detalle-sizemas'>Menos volumen y olor.</span></li><li class='text-black defensas'>Defensas naturales &#8226; </span> <span class='text-naranjo detalle-sizemas'>Fortalecidas, más salud.</span></li>",

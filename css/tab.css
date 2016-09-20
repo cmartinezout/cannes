@@ -56,9 +56,7 @@
     border-left: 1px solid #E46A44;
 }
 */
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: #f9f9f9;
-}
+
 .tab-content {
     border-bottom: 1px solid #E46A44;
     border-right: 1px solid #E46A44;
@@ -107,16 +105,13 @@
 .padig-a{
     padding: 21.5px !important;
 }
-.nav>li>a{
-	padding: 12px 11px;
-}
 .nav-tabs>li{
     width: 25%;
     text-align: center;
     font-size: 1.1em;
 }
 .nav>li>a{
-	
+
 }
 .tab-pane {
     height: 200px;
