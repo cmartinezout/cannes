@@ -4,20 +4,20 @@
     "nombre": "Bienestar y Cuidados",
     "consejos": [{
       "id": "1",
-      "titulo": "UN PERRITO BIEN ALIMENTADO Y SANO",
-      "cuerpo": "Lorem ipsum dolor sit amet, in tollit commune vix. Labore consequat at est. Meis autem forensibus sed ut, vis ei illud exerci putent. At primis eruditi sit. Cu vidisse fabulas eam, eos assum dicant ut. Nec evertitur ullamcorper et. Movet impedit mandamus nam ex. Erat euismod eum ut, sea rebum habemus nostrum cu. Ne cum agam elitr, ea ius idque molestie, ei posse postulant necessitatibus sit. Per id aeterno praesent eloquentiam. Ius no augue altera virtute, duo ea tempor dolorum molestie.",
-      "imagen": "img/img-background/img-consejos.png"
+      "titulo": "UN PERRITO BIEN SANO",
+      "cuerpo": "<p>Te aconsejamos darle a tu mascota el alimento adecuado a su edad y necesidades. Las señales de que tu perro está comiendo el alimento indicado para él son: mucha energía, un pelo brillante y suave.</p><p>Puedes combinar la comida seca y húmeda, ya que el alimento húmedo es muy rico, y elseco, aparte de ser rico, es bueno para los dientes y encías.</p><p>Educa a tu mascota, que se acostumbre a comer en el mismo horario y lugar, respetando también sus espacios, creando hábitos con los que se sentirá feliz y contento.</p><p>Desarrollar las habilidades sociales de tu mascota es fundamental. No dejes solo mucho tiempo a tu perro o apartado sin contacto con la familia. Debe acostumbrarse a interactuar con personas y otros perros, para que así aprenda a reaccionar de manera adecuada frente a distintas situaciones.</p><p>Cuida a tu perrito de los parásitos intestinales, estos son peligrosos ya que pueden afectar su sistema digestivo, para esto debes comenzar con la desparasitación a partir de la 2da semana de vida y repetir cada 15 días hasta que cumpla 3 meses, desde ahí deberás repetir cada 3 meses por el resto de su vida.</p>",
+      "imagen": "img/img-background/img-consejos-cuidado.jpg"
       },
       {
         "id": "2",
-        "titulo": "UN PERRITO BIEN ALIMENTADO",
-        "cuerpo": "Lorem ipsum dolor sit amet, in tollit commune vix. Labore consequat at est. Meis autem forensibus sed ut, vis ei illud exerci putent. At primis eruditi sit. Cu vidisse fabulas eam, eos assum dicant ut. Nec evertitur ullamcorper et. Movet impedit mandamus nam ex. Erat euismod eum ut, sea rebum habemus nostrum cu. Ne cum agam elitr, ea ius idque molestie, ei posse postulant necessitatibus sit. Per id aeterno praesent eloquentiam. Ius no augue altera virtute, duo ea tempor dolorum molestie.",
-        "imagen": "img/img-background/img-consejos.png"
+        "titulo": "UN PERRITO BIEN ARREGLADO",
+        "cuerpo": "<p>Tu mascota disfrutará lo rico de ser perro al estar siempre bien cuidado y aseado. A continuación te entregamos los mejores consejos para la hora del baño.</p><p>Antes de comenzar a bañarlo cepíllalo para sacar el exceso de pelo. Luego protege sus oídos con algodón para evitar una otitis.</p><p>Báñalo con agua tibia usando shampoo hipoalergénico, aplícalo con cuidado y evita que le caiga agua en los ojos.</p> <p>Para que estés seguro de que ya está lo suficientemente limpio, fíjate en que el agua corra suave y libremente sobre su pelaje. Recuerda además, enjuagar muy bien a tu perro para que no le queden residuos de shampoo y esto no le provoque comezón, ni ardor.</p> <p>Al terminar déjalo que se sacuda, luego cubre su lomo con una toalla para terminar bien el secado.</p><p>La frecuencia de baño de nuestros perros depende de la raza y pelaje. Los perros con pelaje más sensible, como el Poodle, se recomienda bañarlo 1 vez al mes y los perros con pelaje más firme, como el Pastor Alemán, se recomienda hacerlo cada 2 ó 3 meses.</p><p>Si ya se acerca la temporada de primavera – verano, asegúrate de proteger a tu mascota a tiempo y prevenir el contagio de parásitos externos (estos viven en la piel o pelo de tu perro). Consulta con el veterinario el producto adecuado, puede ser en polvo o spray.</p>",
+        "imagen": "img/img-background/img-consejos-arreglado.jpg"
         },
            { "id": "3",
-        "titulo": "UN PERRITO BIEN ALIMENTADO",
-        "cuerpo": "Lorem ipsum dolor sit amet, in tollit commune vix. Labore consequat at est. Meis autem forensibus sed ut, vis ei illud exerci putent. At primis eruditi sit. Cu vidisse fabulas eam, eos assum dicant ut. Nec evertitur ullamcorper et. Movet impedit mandamus nam ex. Erat euismod eum ut, sea rebum habemus nostrum cu. Ne cum agam elitr, ea ius idque molestie, ei posse postulant necessitatibus sit. Per id aeterno praesent eloquentiam. Ius no augue altera virtute, duo ea tempor dolorum molestie.",
-        "imagen": "img/img-background/img-consejos.png"
+        "titulo": "UN PERRITO BIEN EJERCITADO",
+        "cuerpo": "<p>Como cuidar el estado físico de tu mascota y evitar la obesidad, para tener un perro lleno de energía y feliz.</p><p>Te recomendamos sacarlo a pasear, para que camine, corra, y juegue, así liberará tensiones y tendrá un carácter amistoso, además de sociabilizar.</p><p>Cuando son cachorros y al estar en pleno crecimiento, son muy movidos y necesitan quemar más energía, por eso es recomendable dar dos paseos diarios de 20 minutos cada uno.</p><p></p><p>Pasada la época de cachorro, lo recomendable aumentar el tiempo de sus paseos y que realice ejercicios, porque necesitará quemar más energías. Tu perrito puede correr, trotar e incluso nadar y tú lo puedes acompañar. Las razas más grandes requieren de paseos más largos que las razas más pequeñas.</p><p>No olvides darle agua fresca y limpia para que se mantenga hidratado y premia su buen comportamiento con sus snack favoritos, como Filetitos y Costillitas Cannes.</p>",
+        "imagen": "img/img-background/img-consejos-ejercitado.jpg"
         }]
     },
     {
@@ -25,9 +25,9 @@
       "nombre": "Nutrición",
       "consejos": [{
         "id": "1",
-        "titulo": "LOREM",
-        "cuerpo": "Lorem ipsum dolor sit amet, in tollit commune vix. Labore consequat at est. Meis autem forensibus sed ut, vis ei illud exerci putent. At primis eruditi sit. Cu vidisse fabulas eam, eos assum dicant ut. Nec evertitur ullamcorper et. Movet impedit mandamus nam ex. Erat euismod eum ut, sea rebum habemus nostrum cu. Ne cum agam elitr, ea ius idque molestie, ei posse postulant necessitatibus sit. Per id aeterno praesent eloquentiam. Ius no augue altera virtute, duo ea tempor dolorum molestie.",
-        "imagen": "img/img-background/img-consejos.png"
+        "titulo": "NUTRICIÓN",
+        "cuerpo": "<p>Es esencial que estés informado sobre cuál es el alimento adecuado para él. Esto depende de su raza, tamaño y edad.</p><p>Al momento de alimentarlo se recomienda distribuir sus raciones en 2 porciones diarias si es adulto y 3 porciones diarias si es cachorro.</p><p>La ingesta de proteínas es una parte esencial en la dieta de tu perro, ya que estas aportan los aminoácidos necesarios para la formación y crecimiento de huesos, músculos, pelo y el cuerpo en general.</p><p>De igual manera, la dieta debe ser rica en grasas, fibras, vitaminas y minerales, para asegurar subienestar y buena salud.</p><p>Recuerda que tu perro siempre debe tener agua a libre disposición, además esta debe ser renovada diariamente limpiando periódicamente su plato. De esta forma, es se refrescará y se mantendrá hidratado durante el día.</p>",
+        "imagen": "img/img-background/img-consejos-nutricion.jpg"
         }]
       }]
 }

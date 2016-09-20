@@ -1,122 +1,161 @@
-*{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.h4, .h5, .h6, h4, h5, h6{
-    margin: 0;
-}
-ol, ul{
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
+ol,
+ul {
+    margin: 0;
+}
+
+
 /*---estilos generico---*/
-body{
+
+body {
     margin: 0;
     padding: 0;
     color: white;
-
 }
 
-select{
+.link_subcategoria-razas select {
     color: #9A42DC;
     border: none;
+    display: block;
+    width: 100%;
 }
+
 table {
     width: 100%;
 }
 
-section{
+section,
+footer {
     float: left;
     overflow: hidden;
     width: 100%;
     height: auto;
 }
+
+
 /*tipografia*/
-.text-naranjo{
+
+.text-naranjo {
     color: #EB7E2B;
 }
-.text-black{
+
+.text-black {
     color: black;
 }
-.text-grey{
+
+.text-grey {
     color: #444444;
 }
-.detalle-sizemas{
-    font-size: 1.4em;
+
+.detalle-sizemas {
+    font-size: 1.2em;
 }
+
+
 /*---Fuentes---*/
+
 @font-face {
-  font-family: "futura-bold";
-  src: url("../fonts/fuente-extra/FuturaLTCondensedBold.ttf");
+    font-family: "futura-bold";
+    src: url("../fonts/fuente-extra/FuturaLTCondensedBold.ttf");
 }
-.futura-bold{
+
+.futura-bold {
     font-family: "futura-bold";
 }
+
 @font-face {
-  font-family: "frutiger-std-con";
-  src: url("../fonts/fuente-extra/FrutigerLTStd-Cn.otf");
+    font-family: "frutiger-std-con";
+    src: url("../fonts/fuente-extra/FrutigerLTStd-Cn.otf");
 }
-.frutiger-std-con{
+
+.frutiger-std-con {
     font-family: "frutiger-std-con";
 }
+
 @font-face {
-  font-family: "frutiger-bold-cond";
-  src: url("../fonts/fuente-extra/Frutiger-Bold-Condensed.ttf");
+    font-family: "frutiger-bold-cond";
+    src: url("../fonts/fuente-extra/Frutiger-Bold-Condensed.ttf");
 }
-.frutiger-bold-cond{
+
+.frutiger-bold-cond {
     font-family: "frutiger-bold-cond";
 }
+
 @font-face {
-  font-family: "frutiger-LT-57-cond";
-  src: url("../fonts/fuente-extra/Frutiger-LT-57-Condensed.ttf");
+    font-family: "frutiger-LT-57-cond";
+    src: url("../fonts/fuente-extra/Frutiger-LT-57-Condensed.ttf");
 }
-.frutiger-LT-57-cond{
+
+.frutiger-LT-57-cond {
     font-family: "frutiger-LT-57-cond";
 }
-.container-fluid{
+
+.container-fluid {
     z-index: 99;
 }
 
+
 /*Navegacion*/
+
 @font-face {
-  font-family: "frutiger-67-bold-cond";
-  src: url("../fonts/fuente-extra/Frutiger-Bold-Condensed.ttf");
+    font-family: "frutiger-67-bold-cond";
+    src: url("../fonts/fuente-extra/Frutiger-Bold-Condensed.ttf");
 }
-.frutiger-67-bold-cond{
+
+.frutiger-67-bold-cond {
     font-family: "frutiger-67-bold-cond";
 }
 
+
 /*---------------NAVEGACION------------*/
-header{
+
+header {
     width: 100%;
     background-color: black;
     position: fixed;
     z-index: 99;
 }
 
-.logo-h1{
+.logo-h1 {
     position: absolute;
     top: -8px;
 }
-.logo-h1 img{
+
+.logo-h1 img {
     width: 190px;
 }
-.nav-principal{
+
+.nav-principal {
     float: left;
     width: 74%;
     margin-left: 16%;
 }
-.nav-principal ul{
+
+.nav-principal ul {
     width: 100%;
     height: auto;
-    overflow:hidden;
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
-.nav-principal li{
+
+.nav-principal li {
     width: 20%;
     float: left;
     text-align: center;
@@ -125,7 +164,7 @@ header{
     font-family: "futura-bold";
 }
 
-.nav-principal li a{
+.nav-principal li a {
     color: white;
     font-size: 1em;
     text-decoration: none;
@@ -133,156 +172,184 @@ header{
     padding-bottom: 26px;
     display: block;
     padding-right: 1px;
-     -webkit-transition: all 600ms ease;
+    -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 300ms ease;
     height: 71px;
 }
-.nav-principal li a:hover{
+
+.nav-principal li a:hover {
     background-color: #E46A44;
     color: white;
-     -webkit-transition: all 600ms ease;
+    -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 300ms ease;
 }
-.nav-principal li a:hover:before{
+
+.nav-principal li a:hover:before {
     content: url(../img/iconos/icon-hueso-blanco.png);
     vertical-align: middle;
     display: inline-block;
     zoom: 50%;
     padding-right: 8px;
-     -webkit-transition: all 600ms ease;
+    -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 300ms ease;
 }
-.nav-principal li a:hover{
 
-}
-.redes-sociales{
-    float:left;
+.nav-principal li a:hover {}
+
+.redes-sociales {
+    float: left;
     width: 8%;
     padding: 20px 0px;
     text-align: center;
 }
+
 .redes-sociales .fa-stack-1x {
     color: black;
 }
-.redes-sociales .fa-circle{
- color: white;
-}
-.redes-sociales a{
-    font-size: 0.8em;
 
+.redes-sociales .fa-circle {
+    color: white;
 }
-.redes-sociales .fa-stack{
-     -webkit-transition: all 300ms ease;
+
+.redes-sociales a {
+    font-size: 0.8em;
+}
+
+.redes-sociales .fa-stack {
+    -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
     padding-left: 5px;
 }
+
 .redes-sociales .fa-stack:hover {
--moz-transform: scale(1.4);
--webkit-transform: scale(1.4);
--o-transform: scale(1.4);
--ms-transform: scale(1.4);
-transform: scale(1.4);
-     -webkit-transition: all 300ms ease;
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
-
 }
-.redes-sociales .fa-stack-1x:hover{
+
+.redes-sociales .fa-stack-1x:hover {
     padding-top: 0px;
 }
 
+
 /*---------------FIN NAVEGACION------------*/
 
-/*-------------SECCION VIDEO-------------*/
-.video-inicio iframe{
-    margin-top: -120px;
-    margin-bottom: -210px;
-    width: 100%;
+
+/*-------------SECCION VIDEO Y CAROUSEL-------------*/
+
+.video-inicio .carousel {
+    margin-top: -34px;
+    margin-bottom: -115px;
 }
+
+.video-inicio .margin-video-carousel {
+    margin-bottom: -4.5px;
+}
+
 
 /*---------------FINNAVEGACION------------*/
 
+
 /*-------------SECCION PRODUCTO------------*/
 
+
 /*Img-Background*/
-.producto .slide-img{
+
+.producto .slide-img {
     background-image: url(../img/img-background/slide-producto.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.slide-img{
+
+.slide-img {
     height: 330px;
 }
 
-.box-h3-producto{
+.box-h3-producto {
     height: 330px;
 }
-.producto h3{
+
+.producto h3 {
     padding: 20px 0px;
     width: 450px;
     font-size: 3em;
     letter-spacing: 1px;
     margin-top: 7%;
 }
+
 .box-h3-producto p {
     font-size: 1.3em;
     width: 400px;
     margin-top: -15px;
 }
-.linea-separador{
+
+.linea-separador {
     margin-top: -25px;
     width: 395px;
     display: table-caption;
     border-bottom: 1px solid white;
 }
+
+
 /*-Fin-*/
 
+
 /*Figure- Categoria productos*/
-.producto-categ figcaption{
+
+.producto-categ figcaption {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-     -webkit-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
     margin-top: -1px;
 }
-.producto-categ{
+
+.producto-categ {
     padding: 50px 0px;
 }
-.producto-categ figure{
-    width: 31%;
-    float: left;
-    margin: 1%;
-    cursor: pointer;
 
+.producto-categ figure {
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
 }
-.producto-categ figure img{
+
+.producto-categ figure img {
     width: 100%;
 }
-.producto-categ figcaption h4{
+
+.producto-categ figcaption h4 {
     text-align: center;
     padding: 23px;
     letter-spacing: 1px;
     font-size: 1.5em;
-      font-family: "frutiger-std-con";
+    font-family: "frutiger-std-con";
 }
+
+
 /*---hover-
 .producto-categ figcaption:hover{
     -webkit-box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
@@ -294,21 +361,27 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     transition: all 300ms ease;
 }
 --*/
-.cachorro-bg figcaption{
+
+.cachorro-bg figcaption {
     background-color: #42B3DA;
 }
-.adulto-bg figcaption{
+
+.adulto-bg figcaption {
     background-color: #DF3245;
 }
-.senior-bg figcaption{
+
+.senior-bg figcaption {
     background-color: #9A42DC;
 }
-.r-pequena-bg figcaption{
+
+.r-pequena-bg figcaption {
     background-color: #FFA900;
 }
+
 .producto-categ figcaption {
     position: relative;
 }
+
 .triangulo_celeste {
     width: 0;
     height: 0;
@@ -319,8 +392,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     top: -70px;
     zoom: 30%;
     left: 45%;
-
 }
+
 .triangulo_rojo {
     width: 0;
     height: 0;
@@ -332,6 +405,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     zoom: 30%;
     left: 45%;
 }
+
 .triangulo_morado {
     width: 0;
     height: 0;
@@ -343,62 +417,75 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     zoom: 30%;
     left: 45%;
 }
+
+
 /*-Fin-*/
 
+
 /*contenedores del contenido de producto navegacion/carousel/contenido*/
-.left-nav-producto{
-    width: 10%;
-    display: table-cell;
-    vertical-align: middle;
+
+.left-nav-producto {
+    margin-top: 180px;
 }
-.center-carousel-producto{
-    width: 25%;
-    display: table-cell;
-    vertical-align: middle;
+
+.center-carousel-producto {
+    margin-top: 160px;
 }
-.right-contenido-producto{
-    width: 65%;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 10px;
-}
-.producto-alin-table{
+
+.right-contenido-producto {}
+
+.producto-alin-table {
     display: table;
     padding: 10px 0;
 }
-.botton-tabla-producto{
+
+.botton-tabla-producto {
     width: 100%;
     height: 300px;
 }
 
+
 /*fin*/
+
+
 /*-detalle de contenido de producto-*/
-.detalle-producto h2{
+
+
+/*.detalle-producto{
+	height: 700px;
+}*/
+
+.detalle-producto h2 {
     width: 280px;
     font-size: 2.5em;
     font-family: "frutiger-LT-57-cond";
 }
-.detalle-producto .hr-cachorro{
+
+.detalle-producto .hr-cachorro {
     border-bottom: 2px solid #EB7E2B;
     color: #EB7E2B;
-     margin-top: -10px;
+    margin-top: -10px;
     border-top: none;
     margin-bottom: 10px;
     width: 250px;
 }
-.detalle-producto h4{
+
+.detalle-producto h4 {
     font-family: "frutiger-LT-57-cond";
     font-weight: 100;
     font-size: 1.1em;
 }
-.producto-contenido{
-  margin-bottom: 3%;
+
+.producto-contenido {
+    margin-bottom: 3%;
 }
-.detalle-producto h3{
+
+.detalle-producto h3 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.detalle-producto li{
+
+.detalle-producto li {
     display: table;
     margin-top: 10px;
     font-size: 1em;
@@ -407,91 +494,103 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .detalle-producto .digestion::before {
     content: url(../img/iconos/icon-lista-digestion.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .calcio::before {
     content: url(../img/iconos/icon-lista-hueso.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .brillante::before {
     content: url(../img/iconos/icon-lista-brillante.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .consistentes::before {
     content: url(../img/iconos/icon-lista-heces.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .corazon::before {
     content: url(../img/iconos/icon-lista-corazon.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .ojo::before {
     content: url(../img/iconos/icon-lista-ojo.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .perros-tamanos::before {
     content: url(../img/iconos/icon-lista-perros-tamanos.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .proteinas::before {
     content: url(../img/iconos/icon-lista-proteina.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .fibra::before {
     content: url(../img/iconos/icon-lista-fibra.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .defensas::before {
     content: url(../img/iconos/icon-lista-defensas.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .manzana::before {
     content: url(../img/iconos/icon-lista-manzana.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .grasas::before {
     content: url(../img/iconos/icon-lista-grasa.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
 .detalle-producto .carbohidratos::before {
     content: url(../img/iconos/icon-lista-carbohidratos.png);
     display: inline-block;
-    zoom:70%;
+    zoom: 70%;
     padding-right: 10px;
     vertical-align: middle;
 }
@@ -499,7 +598,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .detalle-producto .energia::before {
     content: url(../img/iconos/icon-lista-energia.png);
     display: inline-block;
-    zoom:19%;
+    zoom: 19%;
     padding-right: 10px;
     vertical-align: middle;
 }
@@ -507,7 +606,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .detalle-producto .masticacion::before {
     content: url(../img/iconos/icon-lista-masticacion.png);
     display: inline-block;
-    zoom:19%;
+    zoom: 19%;
     padding-right: 10px;
     vertical-align: middle;
 }
@@ -515,7 +614,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .detalle-producto .articulacion::before {
     content: url(../img/iconos/icono-lista-articulaciones.png);
     display: inline-block;
-    zoom:19%;
+    zoom: 19%;
     padding-right: 10px;
     vertical-align: middle;
 }
@@ -523,22 +622,31 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .detalle-producto .pesa::before {
     content: url(../img/iconos/icono-lista-pesa-1.png);
     display: inline-block;
-    zoom:19%;
+    zoom: 19%;
     padding-right: 10px;
     vertical-align: middle;
 }
+
+
 /*-Fin-*/
+
+
 /*-----navegacion de producto-----*/
+
+
 /*-genericos--*/
-.left-nav-producto .nav-producto div{
-    list-style:none;
+
+.left-nav-producto .nav-producto div {
+    list-style: none;
     color: black;
     text-align: center;
 }
-.left-nav-producto .nav-producto ul{
+
+.left-nav-producto .nav-producto ul {
     text-align: center;
 }
-.left-nav-producto .nav-producto ul li{
+
+.left-nav-producto .nav-producto ul li {
     list-style-type: none;
     padding: 4px;
     -webkit-transition: all 600ms ease;
@@ -548,7 +656,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     transition: all 600ms ease;
     cursor: pointer;
 }
-.left-nav-producto .nav-producto  .item_principal-nav-producto{
+
+.left-nav-producto .nav-producto .item_principal-nav-producto {
     border: 1px solid black;
     width: 150px;
     margin: 5px;
@@ -557,18 +666,21 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     cursor: pointer;
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
+    margin-bottom: 5px!important;
 }
 
-.left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover{
-      -webkit-transition: all 800ms ease;
+.left-nav-producto .nav-producto .link_subcategoria-prodcuto li:hover {
+    -webkit-transition: all 800ms ease;
     -moz-transition: all 800ms ease;
     -ms-transition: all 800ms ease;
     -o-transition: all 800ms ease;
     transition: all 1000ms ease;
 }
+
+
 /*-hover de la categoria -ul--*/
 
-.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1):hover{
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(1):hover {
     background-color: #42B3DA;
     color: white;
     -webkit-transition: all 600ms ease;
@@ -577,7 +689,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
 }
-.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(3):hover{
+
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(3):hover {
     background-color: #DF3245;
     color: white;
     -webkit-transition: all 600ms ease;
@@ -585,8 +698,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
+    
 }
-.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(5):hover{
+
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(5):hover {
     background-color: #9A42DC;
     color: white;
     -webkit-transition: all 600ms ease;
@@ -594,8 +709,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
+    margin: auto;
 }
-.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7):hover{
+/*
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7):hover {
     background-color: #FFA900;
     color: white;
     -webkit-transition: all 600ms ease;
@@ -604,9 +721,12 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
 }
+*/
+
 
 /*-categoria activa -ul- -*/
-.left-nav-producto .nav-producto  .item_principal-nav-producto-activo:nth-child(1){
+
+.left-nav-producto .nav-producto .item_principal-nav-producto-activo:nth-child(1) {
     background-color: #42B3DA;
     border: #42B3DA;
     color: white;
@@ -622,8 +742,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     cursor: pointer;
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
+    margin: auto;
 }
-.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(1){
+
+.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(1) {
     background-color: #42B3DA;
     border: #42B3DA;
     color: white;
@@ -639,8 +761,11 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     cursor: pointer;
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
+    
+    
 }
-.left-title-nav .nav-razas  .item_principal-nav-razas-activo:nth-child(3){
+
+.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(3) {
     background-color: #DF3245;
     border: #DF3245;
     color: white;
@@ -656,8 +781,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     cursor: pointer;
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
+  
 }
-.left-nav-producto .nav-producto  .item_principal-nav-producto-activo:nth-child(3){
+
+.left-nav-producto .nav-producto .item_principal-nav-producto-activo:nth-child(3) {
     background-color: #DF3245;
     border: #DF3245;
     color: white;
@@ -673,8 +800,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     cursor: pointer;
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
+    margin: auto;
 }
-.left-nav-producto .nav-producto  .item_principal-nav-producto-activo:nth-child(5){
+
+.left-nav-producto .nav-producto .item_principal-nav-producto-activo:nth-child(5) {
     background-color: #9A42DC;
     border: #9A42DC;
     color: white;
@@ -690,8 +819,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     cursor: pointer;
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
+    margin: auto;
 }
-.left-nav-producto .nav-producto .item_principal-nav-producto-activo:nth-child(7){
+/*
+.left-nav-producto .nav-producto .item_principal-nav-producto-activo:nth-child(7) {
     background-color: #FFA900;
     border: #FFA900;
     color: white;
@@ -708,160 +839,213 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
+*/
+
 /*-border de la categoria -ul- -*/
 
-.left-nav-producto .nav-producto  .item_principal-nav-producto:nth-child(1){
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(1) {
     border: 1px solid #42B3DA;
     color: #42B3DA;
+    margin: auto;
 }
-.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(3){
+
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(3) {
     border: 1px solid #DF3245;
     color: #DF3245;
+    margin: auto;
 }
-.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(5){
+
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(5) {
     border: 1px solid #9A42DC;
     color: #9A42DC;
-
+    margin: auto;
 }
-.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7){
+/*
+.left-nav-producto .nav-producto .item_principal-nav-producto:nth-child(7) {
     border: 1px solid #FFA900;
     color: #FFA900;
 }
 
 
 /*-color letra sub categoria -li- -*/
-.left-nav-producto .nav-producto .seco-cachorro, .left-nav-producto .nav-producto .snack-cachorro {
+
+.left-nav-producto .nav-producto .seco-cachorro,
+.left-nav-producto .nav-producto .snack-cachorro {
     color: #42B3DA;
 }
-.left-nav-producto .nav-producto .seco-adulto, .left-nav-producto .nav-producto .snack-adulto {
+
+.left-nav-producto .nav-producto .seco-adulto,
+.left-nav-producto .nav-producto .snack-adulto {
     color: #DF3245;
 }
-.left-nav-producto .nav-producto .seco-senior, .left-nav-producto .nav-producto .snack-senior {
-    color:  #9A42DC;
+
+.left-nav-producto .nav-producto .seco-senior,
+.left-nav-producto .nav-producto .snack-senior {
+    color: #9A42DC;
 }
-.left-nav-producto .nav-producto .humedo-cachorro, .left-nav-producto .nav-producto .snack-cachorro {
+
+.left-nav-producto .nav-producto .humedo-cachorro,
+.left-nav-producto .nav-producto .snack-cachorro {
     color: #42B3DA;
 }
-.left-nav-producto .nav-producto .humedo-adulto, .left-nav-producto .nav-producto .snack-adulto {
+
+.left-nav-producto .nav-producto .humedo-adulto,
+.left-nav-producto .nav-producto .snack-adulto {
     color: #DF3245;
 }
-.left-nav-producto .nav-producto .humedo-senior, .left-nav-producto .nav-producto .snack-senior {
-    color:  #9A42DC;
+
+.left-nav-producto .nav-producto .humedo-senior,
+.left-nav-producto .nav-producto .snack-senior {
+    color: #9A42DC;
+}
+
+.seco-cachorro-activo {
+    color: #42B3DA;
+}
+
+.seco-adulto-activo {
+    color: #DF3245;
+}
+
+.seco-senior-activo {
+    color: #9A42DC;
+}
+
+.humedo-cachorro-activo {
+    color: #42B3DA;
+}
+
+.humedo-adulto-activo {
+    color: #DF3245;
+}
+
+.humedo-senior-activo {
+    color: #9A42DC;
 }
 
 
-.seco-cachorro-activo{
-  color: #42B3DA;
-}
-.seco-adulto-activo{
-  color: #DF3245;
-}
-.seco-senior-activo{
-  color: #9A42DC;
-}
-.humedo-cachorro-activo{
-  color: #42B3DA;
-}
-.humedo-adulto-activo{
-  color: #DF3245;
-}
-.humedo-senior-activo{
-  color: #9A42DC;
-}
 /*-ACTIVACION del huesito en sub categorias -li- SNACK Y SECO -*/
-.seco-adulto-activo::before, .snack-adulto-activo::before{
+
+.seco-adulto-activo::before,
+.snack-adulto-activo::before {
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.seco-senior-activo::before, .snack-senior-activo::before{
+
+.seco-senior-activo::before,
+.snack-senior-activo::before {
     content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
 
-.seco-cachorro-activo::before, .snack-cachorro-activo::before{
+.seco-cachorro-activo::before,
+.snack-cachorro-activo::before {
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
+
 
 /*-ACTIVACION del huesito de las sub categorias -li- HUMEDO Y SNACK -*/
-.humedo-adulto-activo::before, .snack-adulto-activo::before{
+
+.humedo-adulto-activo::before,
+.snack-adulto-activo::before {
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.humedo-senior-activo::before, .snack-senior-activo::before{
+
+.humedo-senior-activo::before,
+.snack-senior-activo::before {
     content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.humedo-cachorro-activo::before, .snack-cachorro-activo::before{
+
+.humedo-cachorro-activo::before,
+.snack-cachorro-activo::before {
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
 
-
-.left-nav-producto .nav-producto .seco-cachorro, .left-nav-producto .nav-producto .snack-cachorro{
+.left-nav-producto .nav-producto .seco-cachorro,
+.left-nav-producto .nav-producto .snack-cachorro {
     color: #42B3DA;
 }
-.left-nav-producto .nav-producto .seco-adulto, .left-nav-producto .nav-producto .snack-adulto {
+
+.left-nav-producto .nav-producto .seco-adulto,
+.left-nav-producto .nav-producto .snack-adulto {
     color: #DF3245;
 }
-.left-nav-producto .nav-producto .seco-senior, .left-nav-producto .nav-producto .snack-senior {
-    color:  #9A42DC;
+
+.left-nav-producto .nav-producto .seco-senior,
+.left-nav-producto .nav-producto .snack-senior {
+    color: #9A42DC;
 }
-.left-nav-producto .nav-producto .seco-pequenas, .left-nav-producto .nav-producto .snack-pequenas{
+
+.left-nav-producto .nav-producto .seco-pequenas,
+.left-nav-producto .nav-producto .snack-pequenas {
     color: #FFA900;
 }
-.left-nav-producto .nav-producto ul{
+
+.left-nav-producto .nav-producto ul {
     text-align: center;
+    margin: auto;
 }
 
 
 /*-hover del huesito de las sub categorias -li- SECOS Y SNACK -*/
-.left-nav-producto .nav-producto .seco-cachorro:hover:before, .left-nav-producto .nav-producto .snack-cachorro:hover:before, .left-nav-producto .nav-producto .humedo-cachorro:hover:before{
 
+.left-nav-producto .nav-producto .seco-cachorro:hover:before,
+.left-nav-producto .nav-producto .snack-cachorro:hover:before,
+.left-nav-producto .nav-producto .humedo-cachorro:hover:before {
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
 
-
-
-.left-nav-producto .nav-producto .seco-adulto:hover:before, .left-nav-producto .nav-producto .snack-adulto:hover:before, .left-nav-producto .nav-producto .humedo-adulto:hover:before{
-
+.left-nav-producto .nav-producto .seco-adulto:hover:before,
+.left-nav-producto .nav-producto .snack-adulto:hover:before,
+.left-nav-producto .nav-producto .humedo-adulto:hover:before {
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
 
-.left-nav-producto .nav-producto .seco-senior:hover:before, .left-nav-producto .nav-producto .humedo-senior:hover:before,.left-nav-producto .nav-producto .snack-senior:hover:before{
-
+.left-nav-producto .nav-producto .seco-senior:hover:before,
+.left-nav-producto .nav-producto .humedo-senior:hover:before,
+.left-nav-producto .nav-producto .snack-senior:hover:before {
     content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
+
+
 /*Fin*/
+
+
 /*bottom tabla*/
-.box-tabla-certificado{
-   background-image: url(../img/img-background/perrito-tabla.png);
-   background-repeat: no-repeat;
-   background-size: 30%;
-   background-position: left bottom;
+
+.box-tabla-certificado {
+    background-image: url(../img/img-background/perrito-tabla.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: left bottom;
 }
-.img-dog-tabla{
+
+.img-dog-tabla {
     background-image: url(../img/img-background/perrito-tabla.png);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -870,62 +1054,76 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     width: 35%;
     height: 500px;
 }
-.box-tabla-certificado{
+
+.box-tabla-certificado {
     float: left;
     width: 100%;
 }
-.certificado-img .galleta{
+
+.certificado-img .galleta {
     width: 60%;
 }
-.certificado-img{
-    width: 65%;
-    float: right;
-}
-.certificado-img .favet{
+
+.certificado-img {}
+
+.certificado-img .favet {
     width: 95px;
-    margin-left: 30px;
 }
-.certificado-img .certi{
+
+.certificado-img .certi {
     width: 260px;
     margin: 10px 15px;
 }
-.botton-tabla-producto table{
+
+.botton-tabla-producto table {
     width: 50%;
     float: left;
     margin-left: 20px;
 }
-.margin-top-table{
+
+.margin-top-table {
     padding-top: 30px;
     height: auto;
     overflow: hidden;
 }
-.icon-tabla-nutri{
+
+.icon-tabla-nutri {
     padding: 20px;
     width: 45%;
     float: left;
 }
-.icon-tabla-nutri img{
+
+.icon-tabla-nutri img {
     width: 23%;
     float: left;
     margin: 1%
 }
-.botton-tabla-producto{
+
+.botton-tabla-producto {
     width: 100%;
     height: 300px;
 }
 
+
 /*-Fin-*/
+
+
 /*---------------FIN SECCION PRODUCTO------------*/
 
+
 /*----------------SECCION RUTA CANNES----------------*/
+
+
 /*Img-Background*/
-.ruta .slide-img{
+
+.ruta .slide-img {
     background-image: url(../img/img-background/slide-ruta.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.box-h3-ruta h3{
+
+.box-h3-ruta h3 {
     padding: 20px 0px;
     width: 340px;
     font-size: 3.1em;
@@ -933,12 +1131,12 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     margin-top: 10%;
 }
 
-.box-h3-ruta{
+.box-h3-ruta {
     color: black;
     height: 330px;
 }
 
-.linea-separador-ruta{
+.linea-separador-ruta {
     margin-top: -25px;
     width: 250px;
     display: table-caption;
@@ -950,34 +1148,40 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     width: 260px;
     margin-top: -15px;
 }
+
+
 /*-Fin-*/
 
+
 /*Figure-Categoria rutas*/
-.ruta-cannes-categ figcaption{
+
+.ruta-cannes-categ figcaption {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.ruta-cannes-categ{
+
+.ruta-cannes-categ {
     padding: 50px 0px;
 }
 
-.ruta-cannes-categ figure{
-    width: 31.3%;
-    float: left;
-    margin: 1%;
+.ruta-cannes-categ figure {
+   margin-top: 15px;
     text-align: center;
     cursor: pointer;
 }
-.ruta-cannes-categ figure img{
+
+.ruta-cannes-categ figure img {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.ruta-cannes-categ figcaption{
+
+.ruta-cannes-categ figcaption {
     padding: 10px;
     height: 90px;
 }
-.ruta-cannes-categ figcaption h4{
+
+.ruta-cannes-categ figcaption h4 {
     font-size: 1.4em;
     font-weight: 100;
     letter-spacing: 1px;
@@ -985,45 +1189,58 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     margin-bottom: 8px;
     font-family: "frutiger-LT-57-cond";
 }
-.ruta-cannes-categ figcaption p{
+
+.ruta-cannes-categ figcaption p {
     font-size: 0.9em;
 }
-.ruta-cannes-categ figure:nth-child(1) figcaption{
-    background-color: #A40606 ;
-}
-.ruta-cannes-categ figure:nth-child(2) figcaption{
-    background-color:#FFA900 ;
 
+.ruta-cannes-categ figure:nth-child(1) figcaption {
+    background-color: #A40606;
 }
-.ruta-cannes-categ figure:nth-child(3) figcaption{
-    background-color:#7474C3;
 
+.ruta-cannes-categ figure:nth-child(2) figcaption {
+    background-color: #FFA900;
 }
-.ruta-cannes-categ figure:nth-child(4) figcaption{
-    background-color:#9A42DC;
 
+.ruta-cannes-categ figure:nth-child(3) figcaption {
+    background-color: #7474C3;
 }
-.ruta-cannes-categ figure:nth-child(5) figcaption{
-    background-color:#479DC5;
 
+.ruta-cannes-categ figure:nth-child(4) figcaption {
+    background-color: #9A42DC;
 }
-.ruta-cannes-categ figure:nth-child(6) figcaption{
-    background-color:#3BB606;
 
+.ruta-cannes-categ figure:nth-child(5) figcaption {
+    background-color: #479DC5;
 }
+
+.ruta-cannes-categ figure:nth-child(6) figcaption {
+    background-color: #3BB606;
+}
+
+
 /*-Fin-*/
+
+
 /*----------------FIN SECCION RUTA CANNES----------------*/
 
+
 /*--------------RICO SER PERRO---------------*/
+
+
 /*----RAZAS----*/
+
+
 /*Img-Background*/
-.rico-ser-perro .slide-img{
+
+.rico-ser-perro .slide-img {
     background-image: url(../img/img-background/slide-ricoserperro.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.rico-ser-perro h3{
+
+.rico-ser-perro h3 {
     padding: 20px 0px;
     width: 440px;
     font-size: 3.1em;
@@ -1031,12 +1248,12 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     margin-top: 10%;
 }
 
-.box-h3-serperro{
+.box-h3-serperro {
     color: white;
     height: 330px;
 }
 
-.linea-separador-serperro{
+.linea-separador-serperro {
     margin-top: -25px;
     width: 390px;
     display: table-caption;
@@ -1048,19 +1265,27 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     width: 360px;
     margin-top: -15px;
 }
+
+
 /*-Fin-*/
 
+
 /*-----navegacion de producto-----*/
+
+
 /*-genericos--*/
-.left-title-nav .nav-razas div{
-    list-style:none;
+
+.left-title-nav .nav-razas div {
+    list-style: none;
     color: black;
     text-align: center;
 }
-.left-title-nav .nav-razas ul{
+
+.left-title-nav .nav-razas ul {
     text-align: center;
 }
-.left-title-nav .nav-razas ul li{
+
+.left-title-nav .nav-razas ul li {
     list-style-type: none;
     padding: 4px;
     -webkit-transition: all 600ms ease;
@@ -1070,7 +1295,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     transition: all 600ms ease;
     cursor: pointer;
 }
-.left-title-nav .nav-razas  .item_principal-nav-razas{
+
+.left-title-nav .nav-razas .item_principal-nav-razas {
     border: 1px solid black;
     width: 150px;
     margin: 5px;
@@ -1080,7 +1306,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
-.left-title-nav .nav-razas  .item_principal-nav-razas-activo{
+
+.left-title-nav .nav-razas .item_principal-nav-razas-activo {
     background-color: #9A42DC;
     color: white;
     border: 1px solid black;
@@ -1093,17 +1320,18 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-size: 1.2em;
 }
 
-.left-title-nav .nav-razas .link_subcategoria-razas li:hover{
-      -webkit-transition: all 800ms ease;
+.left-title-nav .nav-razas .link_subcategoria-razas li:hover {
+    -webkit-transition: all 800ms ease;
     -moz-transition: all 800ms ease;
     -ms-transition: all 800ms ease;
     -o-transition: all 800ms ease;
     transition: all 1000ms ease;
 }
+
+
 /*-hover de la categoria -ul--*/
 
-
-.left-title-nav .nav-razas  .item_principal-nav-razas:nth-child(1):hover{
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(1):hover {
     background-color: #42B3DA;
     color: white;
     -webkit-transition: all 600ms ease;
@@ -1112,7 +1340,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
 }
-.left-title-nav .nav-razas  .item_principal-nav-razas:nth-child(3):hover{
+
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(3):hover {
     background-color: #DF3245;
     color: white;
     -webkit-transition: all 600ms ease;
@@ -1121,7 +1350,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
 }
-.left-title-nav .nav-razas  .item_principal-nav-razas:nth-child(5):hover{
+
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(5):hover {
     background-color: #9A42DC;
     color: white;
     -webkit-transition: all 600ms ease;
@@ -1130,7 +1360,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
 }
-.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(7):hover{
+
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(7):hover {
     background-color: #FFA900;
     color: white;
     -webkit-transition: all 600ms ease;
@@ -1140,8 +1371,10 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     transition: all 600ms ease;
 }
 
+
 /*-categoria activa -ul- -*/
-.left-title-nav .nav-razas  .item_principal-nav-razas-activo:nth-child(1){
+
+.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(1) {
     background-color: #42B3DA;
     border: #42B3DA;
     color: white;
@@ -1158,7 +1391,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
-.left-title-nav .nav-razas  .item_principal-nav-razas-activo:nth-child(3){
+
+.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(3) {
     background-color: #DF3245;
     border: #b96c74;
     color: white;
@@ -1175,7 +1409,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
-.left-title-nav .nav-razas  .item_principal-nav-razas-activo:nth-child(5){
+
+.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(5) {
     background-color: #9A42DC;
     border: #9A42DC;
     color: white;
@@ -1192,7 +1427,8 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
-.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(7){
+
+.left-title-nav .nav-razas .item_principal-nav-razas-activo:nth-child(7) {
     background-color: #FFA900;
     border: #FFA900;
     color: white;
@@ -1209,166 +1445,215 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-LT-57-cond";
     font-size: 1.2em;
 }
+
+
 /*-border de la categoria -ul- -*/
 
-.left-title-nav .nav-razas  .item_principal-nav-razas:nth-child(1){
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(1) {
     border: 1px solid #42B3DA;
     color: #42B3DA;
 }
-.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(3){
+
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(3) {
     border: 1px solid #DF3245;
     color: #DF3245;
 }
-.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(5){
+
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(5) {
     border: 1px solid #9A42DC;
     color: #9A42DC;
-
 }
-.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(7){
+
+.left-title-nav .nav-razas .item_principal-nav-razas:nth-child(7) {
     border: 1px solid #FFA900;
     color: #FFA900;
 }
 
 
 /*-color letra sub categoria -li- -*/
-.left-title-nav .nav-razas .seco-cachorro, .left-title-nav .nav-razas .snack-cachorro {
+
+.left-title-nav .nav-razas .seco-cachorro,
+.left-title-nav .nav-razas .snack-cachorro {
     color: #42B3DA;
 }
-.left-title-nav .nav-razas .seco-adulto, .left-title-nav .nav-razas .snack-adulto {
+
+.left-title-nav .nav-razas .seco-adulto,
+.left-title-nav .nav-razas .snack-adulto {
     color: #DF3245;
 }
-.left-title-nav .nav-razas .seco-senior, .left-title-nav .nav-razas .snack-senior {
-    color:  #9A42DC;
+
+.left-title-nav .nav-razas .seco-senior,
+.left-title-nav .nav-razas .snack-senior {
+    color: #9A42DC;
 }
-.left-title-nav .nav-razas .humedo-cachorro, .left-title-nav .nav-razas .snack-cachorro {
+
+.left-title-nav .nav-razas .humedo-cachorro,
+.left-title-nav .nav-razas .snack-cachorro {
     color: #42B3DA;
 }
-.left-title-nav .nav-razas .humedo-adulto, .left-title-nav .nav-razas .snack-adulto {
+
+.left-title-nav .nav-razas .humedo-adulto,
+.left-title-nav .nav-razas .snack-adulto {
     color: #DF3245;
 }
-.left-title-nav .nav-razas .humedo-senior, .left-title-nav .nav-razas .snack-senior {
-    color:  #9A42DC;
+
+.left-title-nav .nav-razas .humedo-senior,
+.left-title-nav .nav-razas .snack-senior {
+    color: #9A42DC;
+}
+
+.seco-cachorro-activo {
+    color: #42B3DA;
+}
+
+.seco-adulto-activo {
+    color: #DF3245;
+}
+
+.seco-senior-activo {
+    color: #9A42DC;
+}
+
+.humedo-cachorro-activo {
+    color: #42B3DA;
+}
+
+.humedo-adulto-activo {
+    color: #DF3245;
+}
+
+.humedo-senior-activo {
+    color: #9A42DC;
 }
 
 
-.seco-cachorro-activo{
-  color: #42B3DA;
-}
-.seco-adulto-activo{
-  color: #DF3245;
-}
-.seco-senior-activo{
-  color: #9A42DC;
-}
-.humedo-cachorro-activo{
-  color: #42B3DA;
-}
-.humedo-adulto-activo{
-  color: #DF3245;
-}
-.humedo-senior-activo{
-  color: #9A42DC;
-}
 /*-ACTIVACION del huesito en sub categorias -li- SNACK Y SECO -*/
-.seco-adulto-activo::before, .snack-adulto-activo::before{
+
+.seco-adulto-activo::before,
+.snack-adulto-activo::before {
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.seco-senior-activo::before, .snack-senior-activo::before{
+
+.seco-senior-activo::before,
+.snack-senior-activo::before {
     content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
 
-.seco-cachorro-activo::before, .snack-cachorro-activo::before{
+.seco-cachorro-activo::before,
+.snack-cachorro-activo::before {
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
+
 
 /*-ACTIVACION del huesito de las sub categorias -li- HUMEDO Y SNACK -*/
-.humedo-adulto-activo::before, .snack-adulto-activo::before{
+
+.humedo-adulto-activo::before,
+.snack-adulto-activo::before {
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.humedo-senior-activo::before, .snack-senior-activo::before{
+
+.humedo-senior-activo::before,
+.snack-senior-activo::before {
     content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.humedo-cachorro-activo::before, .snack-cachorro-activo::before{
+
+.humedo-cachorro-activo::before,
+.snack-cachorro-activo::before {
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
+
 
 /*-hover del huesito de las sub categorias -li- SECOS Y SNACK -*/
-.left-title-nav .nav-razas .seco-cachorro:hover:before, .left-title-nav .nav-razas .snack-cachorro:hover:before, .left-title-nav .nav-razas .humedo-cachorro:hover:before{
+
+.left-title-nav .nav-razas .seco-cachorro:hover:before,
+.left-title-nav .nav-razas .snack-cachorro:hover:before,
+.left-title-nav .nav-razas .humedo-cachorro:hover:before {
     content: url(../img/iconos/icon-hueso-celeste.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
 
-.left-title-nav .nav-razas .seco-adulto:hover:before, .left-title-nav .nav-razas .snack-adulto:hover:before, .left-title-nav .nav-razas .humedo-adulto:hover:before{
+.left-title-nav .nav-razas .seco-adulto:hover:before,
+.left-title-nav .nav-razas .snack-adulto:hover:before,
+.left-title-nav .nav-razas .humedo-adulto:hover:before {
     content: url(../img/iconos/icon-hueso-rojo.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
-.left-title-nav .nav-razas .seco-senior:hover:before, .left-title-nav .nav-razas .snack-senior:hover:before, .left-title-nav .nav-razas .humedo-senior:hover:before{
+
+.left-title-nav .nav-razas .seco-senior:hover:before,
+.left-title-nav .nav-razas .snack-senior:hover:before,
+.left-title-nav .nav-razas .humedo-senior:hover:before {
     content: url(../img/iconos/icon-hueso-morado.png);
     vertical-align: middle;
     display: inline-block;
     padding-right: 2px;
 }
+
+
 /*Fin*/
-.linea-separador-raza{
+
+.linea-separador-raza {
     color: #9A42DC;
     margin-top: -5px;
     width: 120px;
     display: table-caption;
     border: 1px solid #9A42DC;
 }
-.left-title-nav{
-    width: 20%;
-    float: left;
-}
-.left-title-nav .box-raza h3{
+
+.left-title-nav {}
+
+.left-title-nav .box-raza h3 {
     font-size: 3.5em;
 }
-.left-title-nav .box-raza{
-     color: #9A42DC;
+
+.left-title-nav .box-raza {
+    color: #9A42DC;
     width: 100%;
     overflow: hidden;
     font-family: "frutiger-LT-57-cond";
 }
+
 .left-title-nav .box-raza p {
     font-family: "frutiger-LT-57-cond";
     width: 200px;
     margin-top: -10px;
     font-size: 1.1em;
 }
-.left-title-nav .nav-razas{
-    width: 50%;
+
+.left-title-nav .nav-razas {
     float: left;
     margin-top: 60px;
 }
-.filtro-razas{
+
+.filtro-razas {
     margin-top: 120px;
     left: -43px;
     top: 90px;
     position: absolute;
 }
-.filtro-razas select{
+
+.filtro-razas select {
     background-color: #EB7E2B;
     border: none;
     padding: 5px;
@@ -1378,15 +1663,16 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-size: 0.8em;
     width: 50%;
 }
-.filtro-razas{
+
+.filtro-razas {
     text-align: center;
 }
-.center-razas-vistaprevia{
-    width: 55%;
-    float: left;
+
+.center-razas-vistaprevia {
     position: relative;
 }
-.center-razas-vistaprevia .contenido-raza{
+
+.center-razas-vistaprevia .contenido-raza {
     background-color: #EB7E2B;
     text-align: center;
     width: 95%;
@@ -1395,24 +1681,29 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     position: relative;
     margin-top: 10px;
 }
-.center-razas-vistaprevia .box-raza-cont{
+
+.center-razas-vistaprevia .box-raza-cont {
     text-align: center;
     margin-top: 40px;
 }
-.center-razas-vistaprevia .box-raza-cont img{
+
+.center-razas-vistaprevia .box-raza-cont img {
     width: 35%;
 }
-.center-razas-vistaprevia .contenido-raza h3{
+
+.center-razas-vistaprevia .contenido-raza h3 {
     font-size: 1.5em;
     font-family: "frutiger-LT-57-cond";
 }
-.center-razas-vistaprevia .contenido-raza p{
+
+.center-razas-vistaprevia .contenido-raza p {
     font-size: 1em;
     font-weight: 100;
     font-family: "frutiger-LT-57-cond";
     line-height: 1.3;
 }
-.triangulo_naranjo{
+
+.triangulo_naranjo {
     width: 0;
     height: 0;
     border-left: 70px solid transparent;
@@ -1422,43 +1713,55 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     top: -70px;
     zoom: 30%;
     left: 45%;
+}
 
-}
-.rigth-raza-nav-lista{
-    width: 25%;
+.rigth-raza-nav-lista {
     color: black;
     text-align: center;
-    float: left;
     padding: 10px;
 }
-.rigth-raza-nav-lista ul li{
+
+.rigth-raza-nav-lista ul li {
     list-style-type: none;
     font-size: 0.9em;
 }
-.rigth-consejo-nav-lista{
-    width: 20%;
+
+.rigth-consejo-nav-lista {
     color: black;
     text-align: center;
-    float: left;
     padding: 10px;
 }
-.rigth-consejo-nav-lista ul li{
+
+.rigth-consejo-nav-lista ul li {
     list-style-type: none;
     font-size: 0.9em;
 }
-.margin-bottom-ricoperro{
+
+.margin-bottom-ricoperro {
     margin-bottom: 50px;
     height: auto;
     overflow: hidden;
     margin-top: 50px;
 }
+
+
 /*---CONSEJOS----*/
-.biensano{
+
+.biensano {
     background-color: #42B3DA;
     padding: 20px;
     border-radius: 5px;
+    height: 560px;
 }
-.left-title-nav .box-raza h3{
+
+.height-box-biensano {
+    height: 200px;
+    overflow-y: visible;
+    overflow-x: hidden;
+    margin-right: 15px;
+}
+
+.left-title-nav .box-raza h3 {
     font-size: 3.5em;
 }
 
@@ -1468,59 +1771,67 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     margin-top: -10px;
     font-size: 1.1em;
 }
-.left-title-nav .box-consejos h3{
+
+.left-title-nav .box-consejos h3 {
     font-size: 3.5em;
 }
-.left-title-nav .box-consejos{
-     color:  #42B3DA;
+
+.left-title-nav .box-consejos {
+    color: #42B3DA;
     width: 100%;
     overflow: hidden;
     font-family: "frutiger-LT-57-cond";
 }
+
 .left-title-nav .box-consejos p {
     font-family: "frutiger-LT-57-cond";
     width: 200px;
     margin-top: -10px;
     font-size: 1.1em;
 }
-.linea-separador-consejos{
 
+.linea-separador-consejos {
     color: #42B3DA;
     margin-top: -5px;
     width: 200px;
     display: table-caption;
     border: 1px solid #42B3DA;
-
 }
-.biensano h4{
+
+.biensano h4 {
     color: black;
     background-color: white;
     padding: 5px;
     display: inline-block;
     border-radius: 5px;
     overflow: hidden;
-
 }
-.biensano h3{
+
+.biensano h3 {
     color: white;
     font-size: 2.5em;
-
+    padding-top: 10px;
 }
-.biensano img{
+
+.biensano img {
     width: 100%;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 20px;
+}
 
-}
-.center-consejos{
-    width: 60%;
-    float: left;
-}
+.center-consejos {}
+
+
 /*---NOMBRE----*/
-.biensano{
+
+.biensano {
     background-color: #42B3DA;
     padding: 20px;
     border-radius: 5px;
 }
-.left-title-nav .box-nombre h3{
+
+.left-title-nav .box-nombre h3 {
     font-size: 3.5em;
 }
 
@@ -1531,65 +1842,83 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-size: 1.1em;
 }
 
-.left-title-nav .box-nombre{
-     color:  #DF3245;
+.left-title-nav .box-nombre {
+    color: #DF3245;
     width: 100%;
     overflow: hidden;
     font-family: "frutiger-LT-57-cond";
 }
 
-.linea-separador-nombre{
-
+.linea-separador-nombre {
     color: #DF3245;
     margin-top: -5px;
     width: 180px;
     display: table-caption;
     border: 1px solid #DF3245;
+}
 
+.margin-bottom-ricoperro {
+    position: relative;
 }
-.rigth-nombre{
-    float: left;
-    width: 80%;
+
+.rigth-nombre {
+    /* background-image: url(../img/img-background/img-bg-nombre.jpg);
+	 background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 550px;*/
 }
-.nav-lista-nombre{
+
+.img-nombre-bg {
+    position: absolute;
+    bottom: 100px;
+    left: 180px;
+    width: 550px;
+}
+
+.nav-lista-nombre {
     color: #DF3245;
     width: 55%;
     float: right;
-
-     font-family: "futura-bold";
+    font-family: "futura-bold";
 }
-.nav-lista-nombre h3{
+
+.nav-lista-nombre h3 {
     font-size: 3.5em;
     padding-left: 30px
 }
-.items-lista-nombres{
+
+.items-lista-nombres {
     border-top: 3px solid #DF3245;
     border-bottom: 3px solid #DF3245;
     padding: 20px;
     height: auto;
     overflow: hidden;
 }
-.items-lista-nombres ul{
+
+.items-lista-nombres ul {
     list-style-type: none;
     width: 25%;
     float: left;
     text-align: center;
 }
-.items-lista-nombres li{
+
+.items-lista-nombres li {
     font-size: 1.5em;
     padding: 10px;
-     font-family: "futura-bold";
+    font-family: "futura-bold";
     letter-spacing: 0.5px;
 }
-.nav-lista-nombre>ul{
-    float: none;
 
+.nav-lista-nombre>ul {
+    float: none;
 }
-.alfabeto{
+
+.alfabeto {
     text-align: center;
     margin: 10px 0px;
 }
-.alfabeto a{
+
+.alfabeto a {
     padding: 4px;
     color: #141414;
     font-size: 1em;
@@ -1600,8 +1929,9 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
 }
-.alfabeto a:hover{
-        background-color: #DF3245;
+
+.alfabeto a:hover {
+    background-color: #DF3245;
     color: white;
     font-weight: 100;
     padding: 4px;
@@ -1612,27 +1942,33 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
-
 }
+
+
 /*----------------FIN RICO SER PERRO----------------*/
 
 
 /*----------MUNDO CACHORRO--------*/
+
+
 /*Img-Background*/
-.mundo-cachorro .slide-img{
-     background-image: url(../img/img-background/slide-mundo.jpg);
+
+.mundo-cachorro .slide-img {
+    background-image: url(../img/img-background/slide-mundo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.slide-img{
+
+.slide-img {
     height: 330px;
 }
 
-.box-h3-mundocachorro{
+.box-h3-mundocachorro {
     height: 330px;
 }
-.box-h3-mundocachorro h3{
+
+.box-h3-mundocachorro h3 {
     padding: 20px 0px;
     width: 340px;
     font-size: 3.1em;
@@ -1645,92 +1981,108 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     width: 260px;
     margin-top: -15px;
 }
-.linea-separador-mundocachorro{
+
+.linea-separador-mundocachorro {
     width: 340px;
     display: table-caption;
     border-bottom: 1px solid white;
-    margin-top:-25px;
+    margin-top: -25px;
 }
-.mundo-cachorro figure{
-    width: 31.3%;
-    float: left;
-    margin: 1%
+
+.mundo-cachorro figure {
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
 }
-.mundo-cachorro figcaption{
+
+.mundo-cachorro figcaption {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.mundo-cachorro figure img{
+
+.mundo-cachorro figure img {
     width: 100%;
 }
-.mundo-cachorro figcaption h4{
+
+.mundo-cachorro figcaption h4 {
     text-align: center;
     padding: 23px 2px;
     letter-spacing: 1px;
 }
-.mundo-cachorro figcaption{
+
+.mundo-cachorro figcaption {
     background-color: #EB7E2B;
 }
 
+
 /*-Fin-*/
+
+
 /*----CONTACTO----*/
-.formulario-contacto .col-left{
-       background-image: url(../img/img-background/contacto-perro1.png);
+
+.formulario-contacto .col-left {
+    background-image: url(../img/img-background/contacto-perro1.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: 650px;
 }
-.formulario-contacto .col-rigth{
-       background-image: url(../img/img-background/contacto-perro2.png);
+
+.formulario-contacto .col-rigth {
+    background-image: url(../img/img-background/contacto-perro2.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 700px;
 }
 
-.formulario-contacto .col-left{
+.formulario-contacto .col-left {
     width: 50%;
     float: left;
     padding-top: 100px;
     padding-bottom: 200px;
 }
-.formulario-contacto .col-rigth{
+
+.formulario-contacto .col-rigth {
     width: 50%;
     float: left;
     padding-top: 100px;
-    padding-bottom:200px;
-   
+    padding-bottom: 200px;
 }
+
 .formulario-contacto .form-control {
-    
     border: 1px solid #EB7E2B;
 }
+
 .formulario-contacto .form-horizontal {
     margin-right: 30px;
 }
 
- .formulario-contacto input::-webkit-input-placeholder {
-   color: #e46a44;
+.formulario-contacto input::-webkit-input-placeholder {
+    color: #e46a44;
     font-weight: bold;
-     font-family: "frutiger-std-con";
-     font-size: 1.2em;
+    font-family: "frutiger-std-con";
+    font-size: 1.2em;
 }
- .formulario-contacto input::-moz-placeholder {
+
+.formulario-contacto input::-moz-placeholder {
     color: #EB7E2B;
     font-weight: bold;
-     font-family: "frutiger-std-con";
-     font-size: 1.2em;
+    font-family: "frutiger-std-con";
+    font-size: 1.2em;
 }
-.formulario-contacto select{
+
+.formulario-contacto select {
     color: white;
     font-weight: bold;
     font-family: "frutiger-std-con";
     font-size: 1.2em;
     background-color: #EB7E2B;
 }
-.formulario-contacto .col-rigth .fa-circle{
+
+.formulario-contacto .col-rigth .fa-circle {
     color: #EB7E2B;
 }
-.formulario-contacto .col-rigth  .box-icon-h2{
+
+.formulario-contacto .col-rigth .box-icon-h2 {
     padding: 0px 0px 100px 40px;
     border-left: 2px solid #EB7E2B;
     margin-left: 10px;
@@ -1738,95 +2090,196 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     color: #EB7E2B;
     font-family: "futura-bold";
 }
-.formulario-contacto .col-rigth  .box-icon-h2 span, .formulario-contacto .col-rigth  .box-icon-h2 a{
+
+.formulario-contacto .col-rigth .box-icon-h2 span,
+.formulario-contacto .col-rigth .box-icon-h2 a {
     float: left;
 }
-.formulario-contacto .col-rigth .icon-herramienta{
+
+.formulario-contacto .col-rigth .icon-herramienta {
     margin: 5px;
     font-size: 3em;
 }
+
 .formulario-contacto .col-rigth a span {
-   font-size: 2em;
+    font-size: 2em;
 }
-.formulario-contacto .col-rigth a{
+
+.formulario-contacto .col-rigth a {
     color: #EB7E2B;
     font-size: 1.9em;
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
 }
-.formulario-contacto button{
+
+.formulario-contacto button {
     color: white;
     background-color: #EB7E2B;
     border-color: #EB7E2B;
     width: 100%;
 }
-    
-/**/
-body{
+
+
+/*------CAMBIOS RACIONES-----*/
+
+.raciones-ajustes-fig-perro {
+    width: 25%!important;
+}
+
+.raciones-ajustes-div-col-1 {
+    width: 75%!important;
+    margin-top: 48px;
+}
+
+.raciones-ajustes-fig-text {
+    width: 30%!important;
+}
+
+.formato-ajuste-fig {
+    width: 100%!important;
+}
+
+
+/*-----*/
+
+footer {
+    background-color: black;
+    display: table;
+}
+
+footer img,
+footer p {
+    vertical-align: middle;
+    display: -webkit-inline-box;
+}
+
+footer .cannes-img-fo {
+    width: 15%;
+}
+
+footer .iansa-img-fo {
+    width: 15%;
+}
+
+footer .p-fo {
+    width: 20%;
+    margin: 3%;
+}
+
+footer .favet-img-fo {
+    width: 15%;
+}
+
+footer .cert-img-fo {
+    width: 25%;
+}
+
+
+/*------*/
+
+body {
     padding: 0px!important;
 }
-.car-main{
-  margin-top: -98px;
-  margin-bottom: -142px;
+
+.caja-relleno-offset-sm-2{
+    display: none;
 }
 
 /*-------------MEDIAS QUERY-----------*/
-@media  (max-width: 1024px) {
+
+@media (max-width: 1024px) {
+    .video-inicio .carousel {
+        margin-top: 12px;
+        margin-bottom: -105px;
+    }
+    .video-inicio .margin-video-carousel {
+        margin-bottom: -4.5px;
+    }
     .nav-principal li a {
         height: 85px;
     }
-    .padding-center-link a{
+    .padding-center-link a {
         padding-top: 30px!important;
     }
-    .padding-top-hover a:hover{
+    .padding-top-hover a:hover {
         padding-top: 25px!important;
     }
-    .redes-sociales{
-    padding: 25px 0px;
+    .redes-sociales {
+        padding: 25px 0px;
     }
-    .producto h3{
-    font-size: 2.5em;
+    .producto h3 {
+        font-size: 2.5em;
     }
     .box-h3-producto p {
-    font-size: 1.3em;
-    width: 330px;
+        font-size: 1.3em;
+        width: 330px;
     }
-    .linea-separador{
-    width: 320px;
+    .linea-separador {
+        width: 320px;
     }
-    .logo-h1{
-    position: absolute;
-    top: -8px;
-    left: 10px;
+    .logo-h1 {
+        position: absolute;
+        top: -8px;
+        left: 10px;
     }
-
-    .car-main {
-      margin-bottom: -80px;
-      margin-top: 10px;
-    }
-
-    .formulario-contacto .col-left{
+    .formulario-contacto .col-left {
         background-size: 400px;
     }
-    .formulario-contacto .col-rigth{
+    .formulario-contacto .col-rigth {
         background-size: 400px;
     }
-    .formulario-contacto .col-rigth  .box-icon-h2{
+    .formulario-contacto .col-rigth .box-icon-h2 {
         height: 200px;
     }
-    .formulario-contacto .col-rigth .icon-herramienta{
-    margin: 5px;
-    font-size: 2.5em;
+    .formulario-contacto .col-rigth .icon-herramienta {
+        margin: 5px;
+        font-size: 2.5em;
+    }
+    .formulario-contacto .col-rigth .box-icon-h2 {
+        padding: 0px 0px 100px 20px;
+    }
+    .formulario-contacto .col-rigth a {
+        color: #EB7E2B;
+        font-size: 2em;
+        line-height: 0.8;
+    }
+    .img-nombre-bg {
+        position: absolute;
+        bottom: 100px;
+        left: 200px;
+        width: 400px;
+    }
 }
-.formulario-contacto .col-rigth  .box-icon-h2{
-    padding: 0px 0px 100px 20px;
+@media (max-width: 768px) {
+    .left-nav-producto{
+        margin-top: 30px;
+    }
+    .center-carousel-producto{
+        margin-top: 30px;
+    }
+    .caja-relleno-offset-sm-2{
+    display: block;
+    }
+    .left-nav-producto .nav-producto>div{
+        width: 80%;
+    }
+    .right-contenido-producto {
+    padding-left: 5%;
+    }
+    .box-tabla-certificado{
+        background-image: none;
+    } 
+    .producto-categ {
+    padding: 20px 0px;
+    }
+    .mundo-cachorro figcaption {
+    height: 80px;
     }
     
-.formulario-contacto .col-rigth a{
-    color: #EB7E2B;
-    font-size: 2em;
-    line-height: 0.8;
 }
-
+@media (max-width: 320px) {
+    .mundo-cachorro figcaption {
+    height: auto;
+    }
 }

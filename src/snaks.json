@@ -8,7 +8,7 @@
     "imagen": "img/productos/producto6.png",
     "Caracteristicas": "<li class='text-black brillante'>Mejora el estado de la piel y el pelaje manteniéndolo firme y brillante</li><li class='text-black defensas'>Favorece el funcionamiento del sistema inmune.</li><li class='text-black corazon'>Favorece el funcionamiento del corazón y sistema circulatorio</li><li class='text-black ojo'>Ayudan al normal funcionamiento del cerebro y la retina.</li><li class='text-black perros-tamanos'>Aptas para todo tipo de perros: adultos y cachorros.</li>",
     "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>17%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>10%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>4%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>10%</td></tr>",
-    "Porciones": ["200 gr", "450 gr"],
+    "Porciones": ["200 gr"],
     "Img_porcion": "img/productos/snack-solo.png",
     "Raciones": [{
       "kilo": "Hasta 5 kilos",

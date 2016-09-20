@@ -126,7 +126,7 @@ $(function(){
                   $('.frutiger-LT-57-cond').text(data.tipoPerro[i].productos[j].Nombre);
                   for (var x = 0; x < data.tipoPerro[i].productos[j].Raciones.length; x++) {
                     if (x==0){
-                      $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+                      $('.raciones-produc').append('<figure class="primer-fig  "><img src="img/iconos/perro-icon.png" alt=""></figure>');
                       $('.primer-fig').append('<h3>'+data.tipoPerro[i].productos[j].Raciones[0].kilo+'</h3><p>'+data.tipoPerro[i].productos[j].Raciones[0].gramos+'</p>');
                     }
                     else if(x==1 || x<5){
@@ -174,11 +174,11 @@ $(function(){
             $("a[href='#tabla-nutri']").click();
             $('.raciones-produc').empty();
             if (data.tiposnaks[i].Raciones.length > 0){
-              $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+              $('.raciones-produc').append('<figure class="primer-fig raciones-ajustes-fig-perro"><img src="img/iconos/perro-icon.png" alt=""></figure>');
             }
             $('.frutiger-LT-57-cond').text(data.tiposnaks[i].Nombre);
             for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
-              $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 12%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+              $('#formato').find('.tamanos-produc').append('<img style="float: left; width: 30%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 20%; width: 50%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
             }
             for (var x = 0; x < data.tiposnaks[i].Raciones.length; x++) {
               if (x==0){
@@ -186,9 +186,9 @@ $(function(){
               }
               else if(x==1 || x<5){
                 if(x==1){
-                  $('.raciones-produc').append('<div class="col-1"></div>');
+                  $('.raciones-produc').append('<div class="col-1 raciones-ajustes-div-col-1"></div>');
                 }
-                  $('.col-1').append('<figure><h3>'+data.tiposnaks[i].Raciones[x].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[x].gramos+'</p></figure>');
+                  $('.col-1').append('<figure class="raciones-ajustes-fig-text"><h3>'+data.tiposnaks[i].Raciones[x].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[x].gramos+'</p></figure>');
               }else if (x>=5){
                 if(x==5){
                   $('.raciones-produc').append('<div class="col-1 2"></div>');
@@ -242,14 +242,14 @@ $(document).on('click', '.snack', function(ev){
         $('.raciones-produc').empty();
         for (var x = 0; x < data.tiposnaks[i].Raciones.length; x++) {
           if (x==0){
-            $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+            $('.raciones-produc').append('<figure class="primer-fig raciones-ajustes-fig-perro"><img src="img/iconos/perro-icon.png" alt=""></figure>');
             $('.primer-fig').append('<h3>'+data.tiposnaks[i].Raciones[0].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[0].gramos+'</p>');
           }
           else if(x==1 || x<5){
             if(x==1){
-              $('.raciones-produc').append('<div class="col-1"></div>');
+              $('.raciones-produc').append('<div class="col-1 raciones-ajustes-div-col-1"></div>');
             }
-              $('.col-1').append('<figure><h3>'+data.tiposnaks[i].Raciones[x].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[x].gramos+'</p></figure>');
+              $('.col-1').append('<figure class="raciones-ajustes-fig-text"><h3>'+data.tiposnaks[i].Raciones[x].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[x].gramos+'</p></figure>');
           }else if (x>=5){
             if(x==5){
               $('.raciones-produc').append('<div class="col-1 2"></div>');
@@ -258,7 +258,7 @@ $(document).on('click', '.snack', function(ev){
             }
           }
         for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
-          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 12%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 10%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 10%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
         }
       }else{
         $('.c-producto').append('<div data-id='+data.tiposnaks[i].id+' class="item"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
@@ -309,7 +309,7 @@ $(document).on('click', '.humedo', function(ev){
         $('#raciones').find('.date').text('PORCIÓN: 1 CUCHARADA (9 ML)');
         for (var x = 0; x < data.humedos[i].Raciones.length; x++) {
           if (x==0){
-            $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
+            $('.raciones-produc').append('<figure class="primer-fig formato-ajuste-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
             $('.primer-fig').append('<h3>'+data.humedos[i].Raciones[0].kilo+'</h3><p>'+data.humedos[i].Raciones[0].gramos+'</p>');
           }
           else if(x==1 || x<5){
@@ -325,7 +325,7 @@ $(document).on('click', '.humedo', function(ev){
             }
           }
         for (var k = 0; k < data.humedos[i].Porciones.length; k++) {
-          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 12%;" src='+data.humedos[i].imagen+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.humedos[i].Porciones[k]+'</h4>');
+          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 10%;" src='+data.humedos[i].imagen+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.humedos[i].Porciones[k]+'</h4>');
         }
       }else{
         $('.c-producto').append('<div data-id='+data.humedos[i].id+' class="item"><img src='+data.humedos[i].imagen+' alt="..."></div>');

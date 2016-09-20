@@ -407,8 +407,9 @@
 .modal-mundo .contenido-modal .contenido-text{
     height: 240px;
 }
-
-/*----*/
+.modal-mundo .contenido-modal .height-2-cont-text{
+	height:  216px
+}/*----*/
 @media (min-width: 768px){
     .modal-dialog{
         margin: 150px auto;

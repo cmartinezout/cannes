@@ -12,7 +12,8 @@ $(document).on('click','.figure-rico' ,function(e){
   });
   if(id_tipo == 1){
     classToInput = 0;
-    $('#link-sub-consejos').find("li[data-id='1']").removeClass('seco-cachorro').addClass('seco-cachorro-activo');
+    $('#link-sub-consejos').find("li[data-id='2']").removeClass('seco-cachorro-activo').addClass('seco-cachorro');
+	  $('#link-sub-consejos').find("li[data-id='1']").removeClass('seco-cachorro').addClass('seco-cachorro-activo');
     $('.biensano').empty();
     $.getJSON('src/consejos.json', function(){
     }).done(function(data){
@@ -21,7 +22,7 @@ $(document).on('click','.figure-rico' ,function(e){
           if (i==0){
             $('.biensano').append('<h4>#BIENESTAR Y CUIDADOS.</h4>');
             $('.biensano').append('<h3>'+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+'</h3>');
-            $('.biensano').append('<p>'+data.tipoConsejo[0].consejos[i].cuerpo+'</p>');
+            $('.biensano').append("<div class='height-box-biensano'><p>"+data.tipoConsejo[0].consejos[i].cuerpo+"</p><div>");
             $('.biensano').append('<img src='+data.tipoConsejo[0].consejos[i].imagen+' alt="">');
             $('.custom-carousel-inner').append("<div class='item active'><div class='row-fluid'><table><tbody class='"+(i+1)+"'></tbody></table></div></div>");
             classToInput = i+1;
@@ -115,7 +116,7 @@ $(document).on('click', '.perro' ,function(e){
           if (i==0){
             $('.biensano').append('<h4>#BIENESTAR Y CUIDADOS.</h4>');
             $('.biensano').append('<h3>'+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+'</h3>');
-            $('.biensano').append('<p>'+data.tipoConsejo[0].consejos[i].cuerpo+'</p>');
+            $('.biensano').append("<div class='height-box-biensano'><p>"+data.tipoConsejo[0].consejos[i].cuerpo+"</p><div>");
             $('.biensano').append('<img src='+data.tipoConsejo[0].consejos[i].imagen+' alt="">');
             $('.custom-carousel-inner').append("<div class='item active'><div class='row-fluid'><table><tbody class='"+(i+1)+"'></tbody></table></div></div>");
             classToInput = i+1;
@@ -334,7 +335,7 @@ $(document).on('click', '.consejo-list', function(e){
           if(id_nota == data.tipoConsejo[i].consejos[j].id){
             $('.biensano').append('<h4>#'+data.tipoConsejo[i].nombre.toUpperCase()+'.</h4>');
             $('.biensano').append('<h3>'+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+'</h3>');
-            $('.biensano').append('<p>'+data.tipoConsejo[i].consejos[j].cuerpo+'</p>');
+            $('.biensano').append("<div class='height-box-biensano'><p>"+data.tipoConsejo[i].consejos[j].cuerpo+"</p><div>");
             $('.biensano').append('<img src='+data.tipoConsejo[i].consejos[j].imagen+' alt="">');
             break;
           }
@@ -360,11 +361,11 @@ $(document).on('click', '.consejo', function(e){
               if (j==0){
                 $('.biensano').append('<h4>#'+data.tipoConsejo[i].nombre.toUpperCase()+'.</h4>');
                 $('.biensano').append('<h3>'+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+'</h3>');
-                $('.biensano').append('<p>'+data.tipoConsejo[i].consejos[j].cuerpo+'</p>');
+                $('.biensano').append("<div class='height-box-biensano'><p>"+data.tipoConsejo[i].consejos[j].cuerpo+"</p><div>");
                 $('.biensano').append('<img src='+data.tipoConsejo[i].consejos[j].imagen+' alt="">');
                 $('.custom-carousel-inner').append("<div class='item active'><div class='row-fluid'><table><tbody class='"+(j+1)+"'></tbody></table></div></div>");
                 classToInput = j+1;
-                $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[i].consejos[j].id+" data-tipo-categoria="+data.tipoConsejo[j].id+" class='small-thumbnail consejo-list'><h3 class='active'>"+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+"</h3></a></div></td></tr>");
+                $('.'+classToInput+'').append("<tr><td><div class='span3'><a href='#x' data-id="+data.tipoConsejo[i].consejos[j].id+" data-tipo-categoria="+data.tipoConsejo[i].id+" class='small-thumbnail consejo-list'><h3 class='active'>"+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+"</h3></a></div></td></tr>");
               }else{
                 $('.custom-carousel-inner').append("<div class='item'><div class='row-fluid'><table><tbody class='"+(j+1)+"'></tbody></table></div></div>");
                 classToInput = j+1;

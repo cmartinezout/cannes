@@ -62,6 +62,7 @@
     height:100%;
 	margin-bottom: 0;
 	width: 75%;
+	margin-top: 100px;
 	/*padding: 50px 40px 50px 0px;*/
 }
 
@@ -95,7 +96,7 @@
  /* vertical start*/
 
 .lista-carousel-raza .vertical .carousel-inner {
-	height: 280px;
+
 	padding-top:0px;
     margin-top: 20px;
 }
@@ -154,7 +155,7 @@
 	overflow: hidden;
     position: relative;
 text-align: center;
-    height:158px;
+
 }
 .lista-carousel-raza .single-container{
 	margin-top: 50px;
@@ -187,9 +188,18 @@ text-align: center;
 .small-thumbnail h3{
     font-size: 1em;
     color: black;
+	cursor: pointer;
 }
 
 .small-thumbnail .active{
     font-size: 1em;
     color: #EB7E2B;
+}
+.consejo-list{
+	text-decoration: none;
+	cursor: pointer;
+}
+a:focus, a:hover{
+	text-decoration: none;
+		
 }

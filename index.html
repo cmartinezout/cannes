@@ -61,8 +61,8 @@
                     <li class="item-nav padding-center-link"><a class="link" href="#producto-sec">PRODUCTOS</a></li>
                     <li class=" item-nav padding-center-link"><a class="link" href="#ruta-cannes-sec">RUTAS CANNES</a></li>
                     <li class="item-nav"><a class="link" href="#rico-ser-perro-sec">LO RICO DE SER PERRO</a></li>
-                    <li class="item-nav padding-center-link padding-top-hover"><a class="link" href="">MUNDO CACHORRO</a></li>
-                    <li class="item-nav padding-center-link"><a class="link" href="">CONTÁCTANOS</a></li>
+                    <li class="item-nav padding-center-link padding-top-hover"><a class="link" href="#mundo-cachorro-sec">MUNDO CACHORRO</a></li>
+                    <li class="item-nav padding-center-link"><a class="link" href="#contactanos">CONTÁCTANOS</a></li>
 
                 </ul>
             </nav>
@@ -86,39 +86,39 @@
             <source src="img/VIDEO-WEB-CANNES.mov" type="video/ogg">
         </video> -->
 
-        <div id="carouselMain" class="carousel slide" data-ride="carousel" >
-  <!-- Indicators -->
+        <div id="carouselMain" class="carousel slide" data-ride="carousel" data-interval="9000">
+            <!-- Indicators -->
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner car-main" role="listbox">
-          <div class="item active">
-            <video autoplay loop style="width: 100%;">
-                <source src="img/VIDEO-WEB-CANNES.mov" type="video/ogg">
-            </video>
-          </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner car-main" role="listbox">
+                <div class="item active margin-video-carousel">
+                    <video autoplay loop style="width: 100%;">
+                        <source src="img/VIDEO-WEB-CANNES.mov" type="video/ogg">
+                    </video>
+                </div>
 
-          <div class="item">
-            <img style="width: 100%;" src="img/carousel-1.jpg" alt="Chania">
-          </div>
+                <div class="item">
+                    <img style="width: 100%;" src="img/carousel-1.jpg" alt="Chania">
+                </div>
 
-          <div class="item">
-            <img style="width: 100%;" src="img/carousel-2.gif" alt="Flower">
-          </div>
+                <div class="item">
+                    <img style="width: 100%;" src="img/carousel-2.gif" alt="Flower">
+                </div>
 
-          <div class="item">
-            <img style="width: 100%;" src="img/carousel-3.jpg" alt="Flower">
-          </div>
+                <div class="item">
+                    <img style="width: 100%;" src="img/carousel-3.jpg" alt="Flower">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carouselMain" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carouselMain" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!-- Left and right controls -->
         </div>
-        <a class="left carousel-control" href="#carouselMain" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carouselMain" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-  <!-- Left and right controls -->
-</div>
         <!-- PRUE VIDEO
         <iframe width="1800" height="1013" src="https://www.youtube.com/embed/6lAeDYbkRJ4?autoplay=1&loop=1&playlist=6lAeDYbkRJ4&rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -145,27 +145,30 @@
         </div>
         <div class="producto-categ">
             <div class="container">
-                <figure class="cachorro-bg figure-pruducto" data-tipo-perro="1">
+               <div class="row">
+                   <figure class="cachorro-bg figure-pruducto col-lg-4 col-md-4 col-sm-4 col-xs-12" data-tipo-perro="1">
                     <img src="img/producto-cachorro-fig.jpg" alt="perro cachorro">
                     <figcaption>
                         <h4 class="frutiger-std-con">CACHORRO</h4>
                         <div class="triangulo_celeste"></div>
                     </figcaption>
                 </figure>
-                <figure class="adulto-bg figure-pruducto" data-tipo-perro="2">
+                <figure class="adulto-bg figure-pruducto col-lg-4 col-md-4 col-sm-4 col-xs-12" data-tipo-perro="2">
                     <img src="img/producto-adulto-fig.jpg" alt="perro adulto">
                     <figcaption>
                         <h4 class="frutiger-std-con">ADULTO</h4>
                         <div class="triangulo_rojo"></div>
                     </figcaption>
                 </figure>
-                <figure class="senior-bg figure-pruducto" data-tipo-perro="3">
+                <figure class="senior-bg figure-pruducto col-lg-4 col-md-4 col-sm-4 col-xs-12" data-tipo-perro="3">
                     <img src="img/producto-senior-fig.jpg" alt="perro senior">
                     <figcaption>
                         <h4 class="frutiger-std-con">SENIOR</h4>
                         <div class="triangulo_morado"></div>
                     </figcaption>
                 </figure>
+               </div>
+                
                 <!-- <figure class="r-pequena-bg figure-pruducto" data-tipo-perro="4">
                     <img src="img/producto-pequenas-fig.jpg" alt="perro pequeño">
                     <figcaption>
@@ -180,110 +183,112 @@
     <!---SEGUNDA SECCION PRODUCTOS DETALLE---->
     <section class="producto-contenido container-producto" style="display:none">
         <div class="container margin-top-productos">
-            <div class="left-nav-producto">
-                <nav class="nav-producto">
+            <div class="row">
+                <div class="caja-relleno-offset-sm-2 col-sm-2"></div>
+                <div class="left-nav-producto col-lg-2 col-md-2 col-sm-4  col-xs-12">
+                    <nav class="nav-producto">
 
-                    <div id="cachorro-item" class="comida item_principal-nav-producto" data-tipo-perro="1">CACHORRO</div>
-                    <ul class="link_subcategoria-prodcuto" id="link-sub-cachorro" style="display: none;">
-                        <li class="seco seco-cachorro" data-tipo-perro="1">Seco</li>
-                        <li class="snack snack-cachorro" data-perro="1" data-custom="1">Snack</li>
-                        <li class="humedo humedo-cachorro" perro="1">Húmedo</li>
-                    </ul>
-                    <div id="adulto-item" class="comida item_principal-nav-producto" data-tipo-perro="2">ADULTO</div>
+                        <div id="cachorro-item" class="comida item_principal-nav-producto" data-tipo-perro="1">CACHORRO</div>
+                        <ul class="link_subcategoria-prodcuto" id="link-sub-cachorro" style="display: none;">
+                            <li class="seco seco-cachorro" data-tipo-perro="1">Seco</li>
+                            <li class="snack snack-cachorro" data-perro="1" data-custom="1">Snack</li>
+                            <li class="humedo humedo-cachorro" perro="1">Húmedo</li>
+                        </ul>
+                        <div id="adulto-item" class="comida item_principal-nav-producto" data-tipo-perro="2">ADULTO</div>
 
-                    <ul class="link_subcategoria-prodcuto" id="link-sub-adulto" style="display: none;">
-                        <li class="seco seco-adulto" data-tipo-perro="2">Seco</li>
-                        <li class="snack snack-adulto" data-perro="2" data-custom="1">Snack</li>
-                        <li class="humedo humedo-adulto" perro="2">Húmedo</li>
-                    </ul>
-                    <div id="senior-item" class="comida item_principal-nav-producto" data-tipo-perro="3">SENIOR</div>
+                        <ul class="link_subcategoria-prodcuto" id="link-sub-adulto" style="display: none;">
+                            <li class="seco seco-adulto" data-tipo-perro="2">Seco</li>
+                            <li class="snack snack-adulto" data-perro="2" data-custom="1">Snack</li>
+                            <li class="humedo humedo-adulto" perro="2">Húmedo</li>
+                        </ul>
+                        <div id="senior-item" class="comida item_principal-nav-producto" data-tipo-perro="3">SENIOR</div>
 
-                    <ul class="link_subcategoria-prodcuto" id="link-sub-senior" style="display: none;">
-                        <li class="seco seco-senior" data-tipo-perro="3">Seco</li>
-                        <li class="snack snack-senior" data-perro="3" data-custom="1">Snack</li>
-                        <li class="humedo humedo-senior" perro="3">Húmedo</li>
-                    </ul>
-                    <!-- <div id="pequenas-item" class="comida item_principal-nav-producto 4" data-tipo-perro="4">RAZAS PEQUEÑAS</div>
+                        <ul class="link_subcategoria-prodcuto" id="link-sub-senior" style="display: none;">
+                            <li class="seco seco-senior" data-tipo-perro="3">Seco</li>
+                            <li class="snack snack-senior" data-perro="3" data-custom="1">Snack</li>
+                            <li class="humedo humedo-senior" perro="3">Húmedo</li>
+                        </ul>
+                        <!-- <div id="pequenas-item" class="comida item_principal-nav-producto 4" data-tipo-perro="4">RAZAS PEQUEÑAS</div>
                             <ul class="link_subcategoria-prodcuto" id="link-sub-pequenas" style="display: none;">
                                 <li class="seco seco-pequenas" data-tipo-perro="4">Seco</li>
                                 <li class="snack snack-pequenas" data-perro="4" data-custom="1">Snack</li>
                             </ul> -->
-                </nav>
-            </div>
-            <div class="center-carousel-producto">
-                <div id="carousel-productos" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner c-producto" role="listbox">
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-productos" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left fa fa-angle-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-productos" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    </nav>
                 </div>
-                <div id="carousel-snacks" style="display: none;" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner  c-producto" role="listbox">
+                <div class="center-carousel-producto col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div id="carousel-productos" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner c-producto" role="listbox">
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-productos" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left fa fa-angle-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-productos" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-snacks" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left fa fa-angle-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-snacks" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div id="carousel-humedo" style="display: none;" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
+                    <div id="carousel-snacks" style="display: none;" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner  c-producto" role="listbox">
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-snacks" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left fa fa-angle-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-snacks" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-snacks" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left fa fa-angle-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-snacks" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div id="carousel-humedo" style="display: none;" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-snacks" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left fa fa-angle-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-snacks" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="right-contenido-producto text-naranjo">
-                <div class="detalle-producto">
-                    <h2 class="frutiger-bold-cond">CACHORRO</h2>
-                    <hr class="hr-cachorro">
-                    <h4 class="frutiger-LT-57-cond">CARNE Y LECHE</h4>
-                    <h3 class="frutiger-std-con desc">Alimento completo para tu perro cachorro con Prebióticos, Omega 3 y 6.</h3>
-                    <div class="text-grande">
+                <div class="right-contenido-producto text-naranjo col-lg-7 col-md-7 col-sm-11 col-xs-12">
+                    <div class="detalle-producto">
+                        <h2 class="frutiger-bold-cond">CACHORRO</h2>
+                        <hr class="hr-cachorro">
+                        <h4 class="frutiger-LT-57-cond">CARNE Y LECHE</h4>
+                        <h3 class="frutiger-std-con desc">Alimento completo para tu perro cachorro con Prebióticos, Omega 3 y 6.</h3>
+                        <div class="text-grande">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="botton-tabla-producto">
             <div class="container">
-                <div class="box-tabla-certificado">
-                    <div class="certificado-img">
+                <div class="box-tabla-certificado row">
+                    <div class="certificado-img col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-12">
                         <img src="img/iconos/galleta-frase.png" alt="" class="galleta">
                         <img src="img/iconos/favet2.png" alt="" class="favet">
                         <img src="img/iconos/icon-cerfiticacion.png" alt="" class="certi">
                     </div>
-                    <div class="tabla-nutri">
+                    <div class="tabla-nutri col-md-7 col-md-offset-5 col-sm-12">
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#tabla-nutri" aria-controls="home" role="tab" data-toggle="tab" class="bo-right">TABLA <br>NUTRICIONAL</a></li>
                             <li role="presentation"><a href="#ingredientes" aria-controls="profile" role="tab" data-toggle="tab" class="padig-a bo-right">INGREDIENTES</a></li>
@@ -411,53 +416,55 @@
 
         <div class="ruta-cannes-categ">
             <div class="container">
-                <figure data-toggle="modal" data-target=".bd-modal-rojo">
+               <div class="row">
+                <figure data-toggle="modal" data-target=".bd-modal-rojo" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <img src="img/ruta-rojo-fig.png" alt="ruta playa">
                     <figcaption>
                         <h4>DESCANSA JUNTO A TU PERRO</h4>
                         <p>Para que ninguno de la familia se quede en casa estas vacaciones.</p>
                     </figcaption>
                 </figure>
-                <figure data-toggle="modal" data-target=".bd-modal-amarillo">
+                <figure data-toggle="modal" data-target=".bd-modal-amarillo" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <img src="img/ruta-amarillo-fig.png" alt="perro adulto">
                     <figcaption>
                         <h4>¡UN DULCE PASEO! </h4>
-                        <p>Para que disfruten lo mejor de Cafetería Daniels.</p>
+                        <p>Para que disfruten lo mejor de Cafetería Daniel's.</p>
                     </figcaption>
                 </figure>
-                <figure data-toggle="modal" data-target=".bd-modal-lila">
+                <figure data-toggle="modal" data-target=".bd-modal-lila" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <img src="img/ruta-lila-fig.png" alt="perro senior">
                     <figcaption>
                         <h4>CANNES A TODO TERRENO</h4>
                         <p>Vive una aventura canina en Camping el Sauce.</p>
                     </figcaption>
                 </figure>
-                <figure data-toggle="modal" data-target=".bd-modal-morado">
+                <figure data-toggle="modal" data-target=".bd-modal-morado" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <img src="img/ruta-morado-fig.png">
                     <figcaption>
                         <h4>UNA NOCHE CANINA</h4>
                         <p>Vive una linda velada en el restaurante Papparazzo. </p>
                     </figcaption>
                 </figure>
-                <figure data-toggle="modal" data-target=".bd-modal-celeste">
+                <figure data-toggle="modal" data-target=".bd-modal-celeste" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <img src="img/ruta-celeste-fig.png" alt="perro adulto">
                     <figcaption>
                         <h4>TU PERRO TAMBIÉN ENTRENA</h4>
                         <p>Disfruta de una tarde deportiva en Parque Bicentenario.</p>
                     </figcaption>
                 </figure>
-                <figure data-toggle="modal" data-target=".bd-modal-verde">
+                <figure data-toggle="modal" data-target=".bd-modal-verde" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <img src="img/ruta-verde-fig.png" alt="perro senior">
                     <figcaption>
                         <h4>A LA LUZ DE LAS VELAS</h4>
                         <p>Una linda noche en Roberta Restobar.</p>
                     </figcaption>
                 </figure>
+                </div>
             </div>
         </div>
         <div class="modales">
             <!-- Large modal -->
-            <div class="modal fade bd-modal-rojo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-modal-rojo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -534,14 +541,14 @@
                             <h3>CANNES A TODO TERRENO</h3>
                             <img src="img/img-background/img-cont-modal-lila.png" alt="">
                             <div class="contenido-text">
-                              <div style="width: 98%;">
-                                <p>Empieza a mejorar el clima, se acerca el verano y las ganas de salir de la ciudad.
-                                </p>
-                                <p>Planea un entretenido camping junto a toda tu familia y ¡sin que se quede nadie en casa! Camping el Sauce, ubicado en San José de Maipo, recibe mascotas en sus dependencias para que la familia entera pueda disfrutar de un entretenido fin de semana..</p>
-                                <p>Podrás realizar diferentes y divertidas actividades, siempre con la responsabilidad y atención que tu perro necesita.</p>
-                                <p>Correr, pasear, bañarse, explorar y disfrutar de hermosos paisajes está dentro de este panorama natural y a todo terreno.</p>
-                                <p>Encuentra este entretenido panorama en San José de Maipo, Santiago Metropolitana Región +5698348781 / www.campingelsauce.cl</p>
-                              </div>
+                                <div style="width: 98%;">
+                                    <p>Empieza a mejorar el clima, se acerca el verano y las ganas de salir de la ciudad.
+                                    </p>
+                                    <p>Planea un entretenido camping junto a toda tu familia y ¡sin que se quede nadie en casa! Camping el Sauce, ubicado en San José de Maipo, recibe mascotas en sus dependencias para que la familia entera pueda disfrutar de un entretenido fin de semana..</p>
+                                    <p>Podrás realizar diferentes y divertidas actividades, siempre con la responsabilidad y atención que tu perro necesita.</p>
+                                    <p>Correr, pasear, bañarse, explorar y disfrutar de hermosos paisajes está dentro de este panorama natural y a todo terreno.</p>
+                                    <p>Encuentra este entretenido panorama en San José de Maipo, Santiago Metropolitana Región +5698348781 / www.campingelsauce.cl</p>
+                                </div>
                             </div>
                             <div class="btn-modal-leer-mas">LEER MÁS <i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -587,15 +594,15 @@
                         <h3>TU PERRO TAMBIÉN ENTRENA</h3>
                         <img src="img/img-background/img-cont-modal-celeste.png" alt="">
                         <div class="contenido-text">
-                          <div style="width: 98%;">
-                            <p>Es muy necesario el entrenamiento y buen estado físico en los perros, en algunas razas más que otras, además de ser un buen y entretenido pasatiempo que pueden realizar juntos.
-                            </p>
-                            <p>El Parque Bicentenario inauguró un parque recreativo canino para que puedas realizar distintas actividades junto a tu mascota. Ubicado en Vitacura, este lugar de 920 m2 cuenta con juegos “Agility” como plataforma de adiestramiento, muro, ruedas para saltos y un túnel de desplazamiento.
+                            <div style="width: 98%;">
+                                <p>Es muy necesario el entrenamiento y buen estado físico en los perros, en algunas razas más que otras, además de ser un buen y entretenido pasatiempo que pueden realizar juntos.
+                                </p>
+                                <p>El Parque Bicentenario inauguró un parque recreativo canino para que puedas realizar distintas actividades junto a tu mascota. Ubicado en Vitacura, este lugar de 920 m2 cuenta con juegos “Agility” como plataforma de adiestramiento, muro, ruedas para saltos y un túnel de desplazamiento.
 
-                            </p>
-                            <p>Este parque canino cuenta también con una zona de adopción canina una vez a la semana, para que vecinos del sector puedan darle un hogar a perritos desaparecidos.</p>
-                            <p>No esperes más tener una divertida y sana tarde con tu mascota..</p>
-                          </div>
+                                </p>
+                                <p>Este parque canino cuenta también con una zona de adopción canina una vez a la semana, para que vecinos del sector puedan darle un hogar a perritos desaparecidos.</p>
+                                <p>No esperes más tener una divertida y sana tarde con tu mascota..</p>
+                            </div>
                         </div>
                         <div class="btn-modal-leer-mas">LEER MÁS<i class="fa fa-plus" aria-hidden="true"></i></div>
                     </div>
@@ -647,27 +654,29 @@
         </div>
         <div class="producto-categ">
             <div class="container">
-                <figure class="cachorro-bg figure-rico" data-tipo-seccion="1">
+               <div class="row">
+                <figure class="cachorro-bg figure-rico col-lg-4 col-md-4 col-sm-4 col-xs-12" data-tipo-seccion="1">
                     <img src="img/img-background/seccion-ricoserperro-consejos-fig.jpg" alt="perro cachorro">
                     <figcaption>
                         <h4 class="frutiger-std-con">CONSEJOS</h4>
                         <div class="triangulo_celeste"></div>
                     </figcaption>
                 </figure>
-                <figure class="adulto-bg figure-rico" data-tipo-seccion="2">
+                <figure class="adulto-bg figure-rico col-lg-4 col-md-4 col-sm-4 col-xs-12" data-tipo-seccion="2">
                     <img src="img/img-background/seccion-ricoserperro-nomnbre-fig.jpg" alt="perro adulto">
                     <figcaption>
                         <h4 class="frutiger-std-con">NOMBRES</h4>
                         <div class="triangulo_rojo"></div>
                     </figcaption>
                 </figure>
-                <figure class="senior-bg figure-rico" data-tipo-seccion="3">
+                <figure class="senior-bg figure-rico col-lg-4 col-md-4 col-sm-4 col-xs-12" data-tipo-seccion="3">
                     <img src="img/img-background/seccion-ricoserperro-raza-fig.jpg" alt="perro senior">
                     <figcaption>
                         <h4 class="frutiger-std-con">RAZAS</h4>
                         <div class="triangulo_morado"></div>
                     </figcaption>
                 </figure>
+                </div>
             </div>
         </div>
     </section>
@@ -675,7 +684,7 @@
     <!----CONSEJOS----->
     <section tipo="1" style="display: none;" class="consejos section-rico-perro">
         <div class="container margin-bottom-ricoperro">
-            <div class="left-title-nav">
+            <div class="left-title-nav col-md-3">
                 <div class="box-consejos">
                     <h3 class="futura-bold">
                        CONSEJOS
@@ -708,15 +717,17 @@
                 </nav>
 
             </div>
-            <div class="center-consejos">
+            <div class="center-consejos col-md-6">
                 <div class="biensano">
                     <h4>#BIENESTAR Y CUIDADOS.</h4>
                     <h3>UN PERRITO BIEN ALIMENTADO Y SANO:</h3>
-                    <p>Asegúrate de darle a tu mascota un alimento de calidad que le entregue todos los nutrientes que necesita. Algunos alimentos pueden producir alguna reacción alérgica en tu mascota por lo que debes estar siempre atento al cambiar sus productos. Mucha energía, un pelo brillante y suave, son las señales de que está consumiendo el alimento adecuado.</p>
-                    <img src="img/img-background/img-consejos.png" alt="">
+                    <div class="height-box-biensano">
+                        <p>Asegúrate de darle a tu mascota un alimento de calidad que le entregue todos los nutrientes que necesita. Algunos alimentos pueden producir alguna reacción alérgica en tu mascota por lo que debes estar siempre atento al cambiar sus productos. Mucha energía, un pelo brillante y suave, son las señales de que está consumiendo el alimento adecuado.</p>
+                    </div>
+                    <img src="img/img-background/img-consejos-cuidado.jpg" alt="">
                 </div>
             </div>
-            <div class="rigth-consejo-nav-lista">
+            <div class="rigth-consejo-nav-lista col-md-3">
                 <div class="lista-carousel-raza">
                     <div id="myCarouselConsejo" data-interval="false" class="carousel vertical slide pull-left">
                         <a class="left carousel-control" href="#myCarouselConsejo" data-slide="prev">
@@ -792,9 +803,9 @@
     <!----NOMBRES----->
 
     <section tipo="2" class="nombre section-rico-perro" style="display: none;">
-            <div class="container margin-bottom-ricoperro">
+        <div class="container margin-bottom-ricoperro">
 
-            <div class="left-title-nav">
+            <div class="left-title-nav col-md-3">
                 <div class="box-nombre">
                     <h3 class="futura-bold">
                       NOMBRES
@@ -826,7 +837,8 @@
                 </nav>
 
             </div>
-            <div class="rigth-nombre">
+
+            <div class="rigth-nombre col-md-9">
                 <div class="nav-lista-nombre">
                     <h3>A</h3>
                     <div class="items-lista-nombres">
@@ -895,15 +907,17 @@
                         <a value="Y" class="letra-abc" href="">Y</a>
                         <a value="Z" class="letra-abc" href="">Z</a>
                     </div>
-                </div>
-            </div>
 
+                </div>
+
+            </div>
+            <img class="img-nombre-bg" src="img/img-background/img-bg-nombre.png" alt="">
         </div>
     </section>
     <!----RAZAS----->
     <section class="razas section-rico-perro" tipo="3" style="display: none;">
         <div class="container margin-bottom-ricoperro">
-            <div class="left-title-nav">
+            <div class="left-title-nav col-md-3">
                 <div class="box-raza">
                     <h3 class="futura-bold">
                        RAZAS
@@ -944,7 +958,7 @@
                 </nav>
 
             </div>
-            <div class="center-razas-vistaprevia">
+            <div class="center-razas-vistaprevia col-md-6">
                 <div id="myCarouselraza" data-interval="false" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
 
@@ -965,7 +979,7 @@
                     </a>
                 </div>
             </div>
-            <div class="rigth-raza-nav-lista">
+            <div class="rigth-raza-nav-lista col-md-3">
                 <div class="lista-carousel-raza">
                     <div id="myCarousel" data-interval="false" class="carousel vertical slide pull-left">
                         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -1038,7 +1052,9 @@
             </div>
         </div>
     </section>
+ <!---FIN LO RICO DE SER PERRO---->
 
+    <!---MUNDO CACHORRO---->
     <section class="mundo-cachorro" id="mundo-cachorro-sec">
         <div class="slide-img">
             <div class="box-h3-mundocachorro container">
@@ -1046,25 +1062,25 @@
                   MUNDO CACHORRO
                </h3>
                 <hr class="linea-separador-mundocachorro">
-                <p class="frutiger-std-con">Como disfrutar al más pequeño </p>
+                <p class="frutiger-std-con">Como disfrutar al más pequeño.</p>
             </div>
         </div>
 
         <div class="producto-categ">
             <div class="container">
-                <figure data-toggle="modal" data-target=".bd-modal-primerosdias">
+                <figure data-toggle="modal" data-target=".bd-modal-primerosdias" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <img src="img/img-background/seccion-mundo-primerdia-fig.jpg" alt="primeros dias">
                     <figcaption>
-                        <h4>PRIMEROS DIAS</h4>
+                        <h4>PRIMEROS DÍAS</h4>
                     </figcaption>
                 </figure>
-                <figure data-toggle="modal" data-target=".bd-modal-vacuna">
+                <figure data-toggle="modal" data-target=".bd-modal-vacuna" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <img src="img/img-background/seccion-mundo-vacuna-fig.jpg" alt="vacuna">
                     <figcaption>
-                        <h4>VACUNA</h4>
+                        <h4>VACUNAS</h4>
                     </figcaption>
                 </figure>
-                <figure data-toggle="modal" data-target=".bd-modal-sobrecachorro">
+                <figure data-toggle="modal" data-target=".bd-modal-sobrecachorro" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <img src="img/img-background/seccion-mundo-sobre-cachorro-fig.jpg" alt="todo sobre tu cachorro">
                     <figcaption>
                         <h4>TODO SOBRE TU CACHORRO</h4>
@@ -1083,18 +1099,22 @@
                                 </div>
                                 <div class="img-bg-modal"></div>
                                 <div class="contenido-modal">
-                                    <h3>DESCANSA JUNTO A TU PERRO</h3>
-                                    <img src="img/img-background/img-cont-vacuna.jpg" alt="">
-                                    <div class="contenido-text" style="overflow-y: hidden;">
+                                    <h3>PRIMEROS DÍAS: ¡UN NUEVO INTEGRANTE DE LA FAMILIA!.</h3>
+                                    <img src="img/img-background/img-cont-primerosdias.jpg" alt="">
+                                    <div class="contenido-text height-2-cont-text" style="overflow-y: hidden;">
 
-
-                                        <p>Hay veces en que no sabemos con quién dejar a nuestras mascotas al momento de salir de vacaciones, pero ¿no sería fantástico que pudiéramos ir con ellas? De eso se preocupó Cabañas Choshuenco en Panguipulli, región de los Ríos. Inserta en el tranquilo pueblo de Choshuenco, a 1 Km del balneario y a 15 Km del Salto Huilo Huilo, es una de las pocas cabañas que aceptan la estadía de mascotas. Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.
+                                        <p>No hay nada más emocionante que ver nacer a nuestros cachorritos o verlos llegar por primera vez a casa, pero recuerda que debes tener los cuidados y las condiciones necesarias para recibirlos.
                                         </p>
-                                        <p>Un lugar único donde podrás relajarte en familia junto a tu mascota y realizar distintas actividades como la pesca con Mosca, Rafting, Trekking, Canopy, Ascenso al Volcán Choshuenco, Mountain Bike y mucho más...</p>
-                                        <p>Para más información contáctate al +5622584 0133 o en www.cabañaschoshuenco.com</p>
-                                        <p>Son cabañas equipadas con capacidad para 2, 4 ó 5 personas. Cuentan con servicio de internet wifi, televisión, bicicletas y coordinación con rent a car.</p>
+                                        <p>A continuación te damos los consejos más útiles para que tengas en cuenta cuando nazcan tus cachorros o lleguen por primera vez a tu casa:</p>
+                                        <p>1. Prepárate para el nacimiento de los cachorritos, te recomendamos pedir asesoría a un veterinario para que estés preparado para auxiliar en caso necesario.</p>
+                                        <p>2. Encuentra el lugar perfecto para el nido, que pueda ser fácil de limpiar, sin cambios de temperatura.</p>
 
-                                        <p>¿Qué esperan para disfrutar de sus próximas vacaciones con sus mascotas?</p>
+                                        <p>3. Si vas a recibir un perrito en tu casa, asegúrate de que se sienta en confianza. Déjalo oler y explorar por la casa.</p>
+                                        <p>4. Lleva al veterinario al cachorro en caso de presentar diarrea, vomito, tos, estornudos, secreción nasal, deje de comer, presente depresión, pierda peso o cualquier otro signo de enfermedad, la atención inmediata en cachorros es crucial para tener un mejor pronóstico.</p>
+                                        <p>5. Es muy importante completar el calendario de vacunación en las fechas que le sean indicadas y así tu mascota podrá prevenir enfermedades y crecerá saludable.</p>
+                                        <p>6. No saques a tu cachorro a la calle ni en brazos.</p>
+                                        <p>7. Evita que tu cachorro enfrente cambios de temperatura por lo que te recomendamos nos sacarlos durante sus primeros días. Además no es recomendable bañarlo ni que tenga contacto con otros perros durante los primeros meses.</p>
+
                                     </div>
                                     <div class="btn-modal-leer-mas">LEER MÁS <i class="fa fa-plus" aria-hidden="true"></i></div>
                                 </div>
@@ -1115,16 +1135,28 @@
                                 </div>
                                 <div class="img-bg-modal"></div>
                                 <div class="contenido-modal">
-                                    <h3>¡UN DULCE PASEO!</h3>
+                                    <h3>VACUNAS: LO RICO DE ESTAR SANO.</h3>
                                     <img src="img/img-background/img-cont-vacuna.jpg" alt="">
                                     <div class="contenido-text">
-                                        <p>Nada como una tarde de paseo y terminar con un delicioso café, en Cafetería Daniel's puedes hacerlo junto a tu mascota, este lugar ubicado en Ñuñoa es 100% amante de los perros y nos espera con ricos capuccinos espumosos o deliciosos chocolates calientes con marshmallows mientras tu compañero peludo disfruta de unas ricas galletitas.
+                                        <p>Mantener sano y protegido a tu mascota es parte de lo rico de ser perro, es por eso que te damos las recomendaciones necesarias para que tu cachorro crezca fuerte y sano. Las vacunas son algo importante en el crecimiento de tu perro y no son opcionales ya que protegen de enfermedades causadas por virus que se encuentran en el medio ambiente.
                                         </p>
-                                        <p>Juntos podrán disfrutar de música en vivo y una exquisita terraza #ConMascota.</p>
-                                        <p>Ubicado en Celerino Pereira 1530, Ñuñoa. Región Metropolitana. Contáctate al +5622226 5679 o en daniels.cl</p>
+                                        <p>A continuación te entregamos un práctico calendario de vacunas, para que a tu perro no le falte ninguna:</p>
+                                        <p>• 1 ½ - 2 meses: Vacuna séxtuple u óctuple. Según la ley, a los dos meses se debe poner la primera vacuna antirrábica.</p>
+                                        <p>• 3 meses: Vacuna séxtuple u óctuple</p>
 
-
+                                        <p>• 4 meses: Vacuna séxtuple u óctuple</p>
+                                        <p>• 6 meses: Vacuna antirrábica</p>
+                                        <p>• 12 meses: Vacuna séxtuple u óctuple y antirrábica</p>
+                                        <p>• Cada un año por el resto de su vida: Vacuna séxtuple u óctuple y antirrábica.</p>
+                                        <p>¡Ya lo sabes! Protege y cuida a tu mascota en sus primeros meses de vida.</p>
+                                        <p>Fuentes:</p>
+                                        <a href=" http://mascotadictos.com/2014/04/08/calendario-de-vacunas-para-perros-y-gatos/" target="_blank"> http://mascotadictos.com/2014/04/08/calendario-de-vacunas-para-perros-y-gatos/</a>
+                                        <a href="http://www.veterinariacafati.cl/index.php/categorias-del-blog/blog-categoria-consejos-y-cuidados/134-calendario-de-vacunacion-para-perros-y-gatos-veterinaria-a-domicilio-santiago" target="_blank"></a>
+                                        <a href="http://www.veterinariacafati.cl/index.php/categorias-del-blog/blog-categoria-consejos-y-cuidados/134-calendario-de-vacunacion-para-perros-y-gatos-veterinaria-a-domicilio-santiago" target="_blank"></a>
+                                        <a href="http://agrupet.cl/component/content/article?id=57:salud-de-tu-mascota" target="_blank">http://agrupet.cl/component/content/article?id=57:salud-de-tu-mascota</a>
+                                        <a href="https://mascotas600.wordpress.com/3-teoria/" target="_blank">https://mascotas600.wordpress.com/3-teoria/</a>
                                     </div>
+                                    <div class="btn-modal-leer-mas">LEER MÁS <i class="fa fa-plus" aria-hidden="true"></i></div>
                                 </div>
 
                             </div>
@@ -1143,19 +1175,27 @@
                                 </div>
                                 <div class="img-bg-modal"></div>
                                 <div class="contenido-modal">
-                                    <h3>CANNES A TODO TERRENO</h3>
-                                    <img src="img/img-background/img-cont-vacuna.jpg" alt="">
+                                    <h3>TODO SOBRE TU CACHORRO</h3>
+                                    <img src="img/img-background/img-cont-sobreperro.jpg" alt="">
                                     <div class="contenido-text">
-                                        <p>Empieza a mejorar el clima, se acerca el verano y las ganas de salir de la ciudad.
+                                        <p>Que rico es tener un nuevo integrante en la familia, con quien jugar, salir a pasear, hacer deporte y que sea tu compañero por un largo tiempo. Antes de eso debes cuidar a este cachorrito para que pueda crecer sano, fuerte y feliz.
                                         </p>
-                                        <p>Planea un entretenido camping junto a toda tu familia y ¡sin que se quede nadie en casa! Camping el Sauce, ubicado en San José de Maipo, recibe mascotas en sus dependencias para que la familia entera pueda disfrutar de un entretenido fin de semana..</p>
-                                        <p>Podrás realizar diferentes y divertidas actividades, siempre con la responsabilidad y atención que tu perro necesita.</p>
-                                        <p>Correr, pasear, bañarse, explorar y disfrutar de hermosos paisajes está dentro de este panorama natural y a todo terreno.</p>
-                                        <p>Encuentra este entretenido panorama en San José de Maipo, Santiago Metropolitana Región +5698348781 / www.campingelsauce.cl</p>
+                                        <p>A continuación te entregamos el equipo básico para cuidar a tu cachorrito:</p>
+                                        <p>• Una rica y cálida cama, un lugar especialmente para que él pueda descansar.</p>
+                                        <p>• Su propio comedero y bebedero, un lugar tranquilo donde pueda alimentarse diariamente.</p>
+
+                                        <p>• Sus juguetes, para que muerda y se divierta.</p>
+                                        <p>• Cuando lo bañes por primera vez procura tener cuidado, ser delicado y no dejarlo solo. </p>
+                                        <p>• Cepillo o peine, para mantener su pelo limpio y desenredado. Así será más fácil su aseo e higiene.</p>
+                                        <p>• El uso de collar y correa permitirá no perderlo de vista y evitar peleas entre perros.</p>
+                                        <p>• Observa a tu mascota los primeros 45 días de vida, para poder diagnosticar de forma temprana cualquier problema de conducta que pueda desarrollar o alguna malformación que se pudo haber desarrollado en la gestación.</p>
+                                        <p>• Tu perro dejará de ser cachorro si es de raza pequeña alrededor de los 9 a 12 meses, si es de raza mediana a partir de los 12 hasta los 15 meses, si es raza grande desde los 15 hasta los 18 meses y si es de raza gigante entre los 18 hasta los 24 meses.</p>
+
                                     </div>
-                                    <!--
+
                                     <div class="btn-modal-leer-mas">LEER MÁS <i class="fa fa-plus" aria-hidden="true"></i></div>
-                                    -->
+
+
                                 </div>
                             </div>
                         </div>
@@ -1163,53 +1203,59 @@
                 </div>
             </div>
     </section>
-    <section class="formulario-contacto">
-        
-            <div class="col-1-contact col-left">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <div class="col-lg-4 col-lg-offset-8 col-md-6 col-md-offset-6">
-                            <select class="form-control" id="contCel">
-                                <option>CONSULTA</option>
-                            </select>
-                        </div>
+    <section class="formulario-contacto" id="contactanos">
+
+        <div class="col-1-contact col-left">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6">
+                        <select class="form-control" id="contCel">
+                            <option>CONSULTA</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <div class="col-lg-4 col-lg-offset-8 col-md-6 col-md-offset-6">
-                            <input type="text" class="form-control" id="contNombre" placeholder="NOMBRE">
-                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6">
+                        <input type="text" class="form-control" id="contNombre" placeholder="NOMBRE">
                     </div>
-                    <div class="form-group">
-                        <div class="col-lg-4 col-lg-offset-8 col-md-6 col-md-offset-6">
-                            <input type="text" class="form-control" placeholder="E-MAIL" id="contEmail">
-                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6">
+                        <input type="text" class="form-control" placeholder="E-MAIL" id="contEmail">
                     </div>
-                    <div class="form-group">
-                     <div class="col-lg-4 col-lg-offset-8 col-md-6 col-md-offset-6">
-                    <textarea id="contComentario" class="form-control" rows="7"></textarea>
-                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6">
+                        <textarea id="contComentario" class="form-control" rows="7"></textarea>
                     </div>
-                   <div class="form-group">
-                    <div class="col-lg-4 col-lg-offset-8 col-md-6 col-md-offset-6">
-                      <button type="submit" class="btn btn-default" id="btn_enviar">ENVIAR</button>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6">
+                        <button type="submit" class="btn btn-default" id="btn_enviar">ENVIAR</button>
                     </div>
-                  </div>
-                </form>
-            </div>
-            <div class="col-1-contact col-rigth">
-             <div class="box-icon-h2">
-                 <span class="fa-stack fa-lg icon-herramienta">
+                </div>
+            </form>
+        </div>
+        <div class="col-1-contact col-rigth">
+            <div class="box-icon-h2">
+                <span class="fa-stack fa-lg icon-herramienta">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
                 </span>
                 <a href="http://iamsagro.trabajando.cl">Trabaja <br><span class="text-grande-contact">con nosotros</span></a>
-             </div>
-              
             </div>
-        
+
+        </div>
+
     </section>
-    <footer>
-        
+    <footer id="footer">
+        <div class="container-fluid">
+            <img src="img/fo-cannes.png" class="cannes-img-fo" alt="">
+            <img src="img/fo-iansa.png" class="iansa-img-fo" alt="">
+            <p class="p-fo">Rosario Norte 615, Piso 23. Las Condes Santiago - Chile</p>
+            <img src="img/fo-favet.png" class="favet-img-fo" alt="">
+            <img src="img/fo-certificado.png" class="cert-img-fo" alt="">
+        </div>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
