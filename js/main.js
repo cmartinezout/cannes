@@ -61,7 +61,19 @@ $(document).on('click', '.figure-pruducto', function(ev){
             $('.raciones-produc').append('<figure class="primer-fig"><img src="img/iconos/perro-icon.png" alt=""></figure>');
             $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
-              $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                 if(id == 3){
+                    //SENIOR
+                    //FIRST FORMAT
+                    if (k==0){
+                                                          $('#formato').find('.tamanos-produc').append('<figure style="    padding-left: 40px; width: 40%;"><img style="width:90px; padding-top: 45px;" src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                    }else{
+                        //SECOND
+                                                          $('#formato').find('.tamanos-produc').append('<figure style="    padding-left: 40px; width: 40%;"><img style="width:115px; padding-top: 5px;" src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                    }
+                }else{
+                    //ANOTHER
+                                  $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                }
             }
             for (var x = 0; x < data.tipoPerro[i].productos[j].Raciones.length; x++) {
               if (x==0){
@@ -178,7 +190,22 @@ $(function(){
             }
             $('.frutiger-LT-57-cond').text(data.tiposnaks[i].Nombre);
             for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
-              $('#formato').find('.tamanos-produc').append('<img style="float: left; width: 30%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 20%; width: 50%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+            if(data.tiposnaks[i].id == 1){
+                //GALLETA
+                if(k==0){
+                    //PRIMER
+                                              $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 2%; width: 29%; padding-top: 25px;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left; margin-top: 17%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+                }else{
+                    //SEGUNDO
+                                              $('#formato').find('.tamanos-produc').append('<img style="    float: left; margin-left: 10%; width: 33%; padding-top: 0px;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left; margin-top: 17%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+                }
+            }else if(data.tiposnaks[i].id == 2){
+                //SNACK
+                          $('#formato').find('.tamanos-produc').append('<img style="    float: left; margin-left: 20%; width: 32%; padding-top: 10px;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left; margin-top: 10%; padding-top: 31px;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+            }else{
+                //BARRITA
+                          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 10%; width: 50%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 10%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+            }
             }
             for (var x = 0; x < data.tiposnaks[i].Raciones.length; x++) {
               if (x==0){
@@ -257,9 +284,23 @@ $(document).on('click', '.snack', function(ev){
               $('.2').append('<figure><h3>'+data.tiposnaks[i].Raciones[x].kilo+'</h3><p>'+data.tiposnaks[i].Raciones[x].gramos+'</p></figure>');
             }
           }
-        for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) {
-          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 10%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 10%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
-        }
+        for (var k = 0; k < data.tiposnaks[i].Porciones.length; k++) 
+            if(data.tiposnaks[i].id == 1){
+                //GALLETA
+                if(k==0){
+                    //PRIMER
+                                              $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 2%; width: 29%; padding-top: 25px;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left; margin-top: 17%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+                }else{
+                    //SEGUNDO
+                                              $('#formato').find('.tamanos-produc').append('<img style="    float: left; margin-left: 10%; width: 33%; padding-top: 0px;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left; margin-top: 17%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+                }
+            }else if(data.tiposnaks[i].id == 2){
+                //SNACK
+                          $('#formato').find('.tamanos-produc').append('<img style="    float: left; margin-left: 20%; width: 32%; padding-top: 10px;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left; margin-top: 10%; padding-top: 31px;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+            }else{
+                //BARRITA
+                          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 10%; width: 50%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 10%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+            }
       }else{
         $('.c-producto').append('<div data-id='+data.tiposnaks[i].id+' class="item"><img src='+data.tiposnaks[i].imagen+' alt="..."></div>');
         $('.carousel-indicators').append('<li data-target="#carousel-snacks" data-slide-to='+i+'></li>');
@@ -325,7 +366,7 @@ $(document).on('click', '.humedo', function(ev){
             }
           }
         for (var k = 0; k < data.humedos[i].Porciones.length; k++) {
-          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 10%;" src='+data.humedos[i].imagen+' alt=""><h4 style="float: left;margin-top: 13%;">'+data.humedos[i].Porciones[k]+'</h4>');
+          $('#formato').find('.tamanos-produc').append('<img style="    float: left;width: 29%; margin-left: 25%;margin-top: -12px;padding-top: 0px;" src='+data.humedos[i].imagen+' alt=""><h4 style="float: left;margin-top: 16%;">'+data.humedos[i].Porciones[k]+'</h4>');
         }
       }else{
         $('.c-producto').append('<div data-id='+data.humedos[i].id+' class="item"><img src='+data.humedos[i].imagen+' alt="..."></div>');
@@ -377,7 +418,19 @@ $(document).on('click', '.comida', function(ev){
             $('.raciones-produc').empty();
             $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
-              $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                if(id_perro == 3){
+                    //SENIOR
+                    //FIRST FORMAT
+                    if (k==0){
+                                                          $('#formato').find('.tamanos-produc').append('<figure style="    padding-left: 40px; width: 40%;"><img style="width:90px; padding-top: 45px;" src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                    }else{
+                        //SECOND
+                                                          $('#formato').find('.tamanos-produc').append('<figure style="    padding-left: 40px; width: 40%;"><img style="width:115px; padding-top: 5px;" src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                    }
+                }else{
+                    //ANOTHER
+                                  $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                }
             }
             for (var x = 0; x < data.tipoPerro[i].productos[j].Raciones.length; x++) {
               if (x==0){
@@ -451,7 +504,19 @@ $(document).on('click', '.seco', function(ev){
             $('.raciones-produc').empty();
             $('#raciones').find('.date').text("1 TAZA DE 200 ML= 95 GRAMOS DE ALIMENTO CANNES "+data.tipoPerro[i].productos[j].Nombre);
             for (var k = 0; k < data.tipoPerro[i].productos[j].Porciones.length; k++) {
-              $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+            if(id_perro == 3){
+                    //SENIOR
+                    //FIRST FORMAT
+                    if (k==0){
+                                                          $('#formato').find('.tamanos-produc').append('<figure style="    padding-left: 40px; width: 40%;"><img style="width:90px; padding-top: 45px;" src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                    }else{
+                        //SECOND
+                                                          $('#formato').find('.tamanos-produc').append('<figure style="    padding-left: 40px; width: 40%;"><img style="width:115px; padding-top: 5px;" src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                    }
+                }else{
+                    //ANOTHER
+                                  $('#formato').find('.tamanos-produc').append('<figure><img src='+data.tipoPerro[i].productos[j].imagen+' alt=""><h3>'+data.tipoPerro[i].productos[j].Porciones[k]+'</h3></figure>');
+                }
             }
             for (var x = 0; x < data.tipoPerro[i].productos[j].Raciones.length; x++) {
               if (x==0){

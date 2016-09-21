@@ -256,8 +256,8 @@ header {
 /*-------------SECCION VIDEO Y CAROUSEL-------------*/
 
 .video-inicio .carousel {
-    margin-top: -34px;
-    margin-bottom: -115px;
+        margin-top: -34px;
+    margin-bottom: -126px;
 }
 
 .video-inicio .margin-video-carousel {
@@ -273,6 +273,9 @@ header {
 
 /*Img-Background*/
 
+.producto {
+    margin-top: -2px;
+}
 .producto .slide-img {
     background-image: url(../img/img-background/slide-producto.jpg);
     background-position: top;
@@ -429,7 +432,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 }
 
 .center-carousel-producto {
-    margin-top: 160px;
+    
 }
 
 .right-contenido-producto {}
@@ -454,177 +457,129 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 /*.detalle-producto{
 	height: 700px;
 }*/
+.producto-title {
+       margin-bottom: 59px;
 
-.detalle-producto h2 {
+    margin-left: 41px;
+}
+
+.producto-title h2 {
     width: 280px;
     font-size: 2.5em;
     font-family: "frutiger-LT-57-cond";
+    color: #EB7E2B;
 }
 
-.detalle-producto .hr-cachorro {
+.producto-title .hr-cachorro {
     border-bottom: 2px solid #EB7E2B;
     color: #EB7E2B;
     margin-top: -10px;
     border-top: none;
     margin-bottom: 10px;
-    width: 250px;
+    width: 200px;
 }
 
-.detalle-producto h4 {
+.producto-title h4 {
     font-family: "frutiger-LT-57-cond";
     font-weight: 100;
     font-size: 1.1em;
+    color: #EB7E2B;
 }
 
 .producto-contenido {
     margin-bottom: 3%;
 }
 
-.detalle-producto h3 {
-    margin-top: 30px;
+.detalle-producto-beneficios h3 {
     margin-bottom: 30px;
 }
 
-.detalle-producto li {
+.detalle-producto-beneficios li {
     display: table;
     margin-top: 10px;
     font-size: 1em;
 }
 
-.detalle-producto .digestion::before {
+.detalle-producto-beneficios .digestion::before, .detalle-producto-beneficios .calcio::before, .detalle-producto-beneficios .brillante::before, .detalle-producto-beneficios .consistentes::before, .detalle-producto-beneficios .corazon::before, .detalle-producto-beneficios .ojo::before, .detalle-producto-beneficios .perros-tamanos::before, .detalle-producto-beneficios .proteinas::before, .detalle-producto-beneficios .fibra::before, .detalle-producto-beneficios .defensas::before, .detalle-producto-beneficios .manzana::before, .detalle-producto-beneficios .grasas::before, .detalle-producto-beneficios .carbohidratos::before, .detalle-producto-beneficios .articulacion::before, .detalle-producto-beneficios .pesa::before {
+    display: inline-block;
+    zoom: 70%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto-beneficios .energia::before, .detalle-producto-beneficios .masticacion::before, .detalle-producto-beneficios .articulacion::before, .detalle-producto-beneficios .pesa::before {
+     display: inline-block;
+    zoom: 19%;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.detalle-producto-beneficios .digestion::before  {
     content: url(../img/iconos/icon-lista-digestion.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .calcio::before {
+.detalle-producto-beneficios .calcio::before {
     content: url(../img/iconos/icon-lista-hueso.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .brillante::before {
+.detalle-producto-beneficios .brillante::before {
     content: url(../img/iconos/icon-lista-brillante.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .consistentes::before {
+.detalle-producto-beneficios .consistentes::before {
     content: url(../img/iconos/icon-lista-heces.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .corazon::before {
+.detalle-producto-beneficios .corazon::before {
     content: url(../img/iconos/icon-lista-corazon.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .ojo::before {
+.detalle-producto-beneficios .ojo::before {
     content: url(../img/iconos/icon-lista-ojo.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .perros-tamanos::before {
+.detalle-producto-beneficios .perros-tamanos::before {
     content: url(../img/iconos/icon-lista-perros-tamanos.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .proteinas::before {
+.detalle-producto-beneficios .proteinas::before {
     content: url(../img/iconos/icon-lista-proteina.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .fibra::before {
+.detalle-producto-beneficios .fibra::before {
     content: url(../img/iconos/icon-lista-fibra.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .defensas::before {
+.detalle-producto-beneficios .defensas::before {
     content: url(../img/iconos/icon-lista-defensas.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .manzana::before {
+.detalle-producto-beneficios .manzana::before {
     content: url(../img/iconos/icon-lista-manzana.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .grasas::before {
+.detalle-producto-beneficios .grasas::before {
     content: url(../img/iconos/icon-lista-grasa.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .carbohidratos::before {
+.detalle-producto-beneficios .carbohidratos::before {
     content: url(../img/iconos/icon-lista-carbohidratos.png);
-    display: inline-block;
-    zoom: 70%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .energia::before {
+.detalle-producto-beneficios .energia::before {
     content: url(../img/iconos/icon-lista-energia.png);
-    display: inline-block;
-    zoom: 19%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .masticacion::before {
+.detalle-producto-beneficios .masticacion::before {
     content: url(../img/iconos/icon-lista-masticacion.png);
-    display: inline-block;
-    zoom: 19%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
-
-.detalle-producto .articulacion::before {
+.detalle-producto-beneficios .articulacion::before, .detalle-producto-beneficios .pesa::before{
+    
+}
+.detalle-producto-beneficios .articulacion::before {
     content: url(../img/iconos/icono-lista-articulaciones.png);
-    display: inline-block;
-    zoom: 19%;
-    padding-right: 10px;
-    vertical-align: middle;
 }
 
-.detalle-producto .pesa::before {
-    content: url(../img/iconos/icono-lista-pesa-1.png);
-    display: inline-block;
-    zoom: 19%;
-    padding-right: 10px;
-    vertical-align: middle;
+.detalle-producto-beneficios .pesa::before {
+    content: url(../img/iconos/icono-lista-pesa-2.png);
 }
 
 
@@ -1750,8 +1705,9 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .biensano {
     background-color: #42B3DA;
     padding: 20px;
-    border-radius: 5px;
-    height: 560px;
+    border-radius: 15px;
+    height: auto;
+    overflow: hidden;
 }
 
 .height-box-biensano {
@@ -1760,6 +1716,13 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     overflow-x: hidden;
     margin-right: 15px;
 }
+.height-box-biensano p{
+    line-height: 15px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+}
+
 
 .left-title-nav .box-raza h3 {
     font-size: 3.5em;
@@ -1809,15 +1772,16 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 
 .biensano h3 {
     color: white;
-    font-size: 2.5em;
+    font-size: 2.3em;
     padding-top: 10px;
+   
 }
 
 .biensano img {
     width: 100%;
     border-radius: 10px;
     border: 2px solid white;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .center-consejos {}
@@ -1825,11 +1789,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 
 /*---NOMBRE----*/
 
-.biensano {
-    background-color: #42B3DA;
-    padding: 20px;
-    border-radius: 5px;
-}
+
 
 .left-title-nav .box-nombre h3 {
     font-size: 3.5em;
@@ -2057,7 +2017,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 }
 
 .formulario-contacto input::-webkit-input-placeholder {
-    color: #e46a44;
+    color: #EB7E2B;
     font-weight: bold;
     font-family: "frutiger-std-con";
     font-size: 1.2em;
@@ -2069,14 +2029,27 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     font-family: "frutiger-std-con";
     font-size: 1.2em;
 }
+.formulario-contacto .textarea-color .form-control {
+    color: #EB7E2B;
+    font-weight: bold;
+    font-family: "frutiger-std-con";
+    font-size: 1.2em;
+}
 
-.formulario-contacto select {
+.formulario-contacto .form-control {
+    border: 1px solid #EB7E2B;
+}
+
+.formulario-contacto h3 {
     color: white;
     font-weight: bold;
     font-family: "frutiger-std-con";
     font-size: 1.2em;
     background-color: #EB7E2B;
+    padding: 10px;
+    border-radius: 5px;
 }
+
 
 .formulario-contacto .col-rigth .fa-circle {
     color: #EB7E2B;
