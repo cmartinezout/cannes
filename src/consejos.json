@@ -25,7 +25,7 @@
       "nombre": "Nutrición",
       "consejos": [{
         "id": "1",
-        "titulo": "NUTRICIÓN",
+        "titulo": "ALIMENTACIÓN ADECUADA",
         "cuerpo": "<p>Es esencial que estés informado sobre cuál es el alimento adecuado para él. Esto depende de su raza, tamaño y edad.</p><p>Al momento de alimentarlo se recomienda distribuir sus raciones en 2 porciones diarias si es adulto y 3 porciones diarias si es cachorro.</p><p>La ingesta de proteínas es una parte esencial en la dieta de tu perro, ya que estas aportan los aminoácidos necesarios para la formación y crecimiento de huesos, músculos, pelo y el cuerpo en general.</p><p>De igual manera, la dieta debe ser rica en grasas, fibras, vitaminas y minerales, para asegurar subienestar y buena salud.</p><p>Recuerda que tu perro siempre debe tener agua a libre disposición, además esta debe ser renovada diariamente limpiando periódicamente su plato. De esta forma, es se refrescará y se mantendrá hidratado durante el día.</p>",
         "imagen": "img/img-background/img-consejos-nutricion.jpg"
         }]
