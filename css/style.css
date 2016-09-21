@@ -1134,6 +1134,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 .ruta-cannes-categ figcaption {
     padding: 10px;
     height: 90px;
+        margin-top: -2px;
 }
 
 .ruta-cannes-categ figcaption h4 {

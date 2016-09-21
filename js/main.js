@@ -204,7 +204,7 @@ $(function(){
                           $('#formato').find('.tamanos-produc').append('<img style="    float: left; margin-left: 20%; width: 32%; padding-top: 10px;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left; margin-top: 10%; padding-top: 31px;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
             }else{
                 //BARRITA
-                          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 10%; width: 50%;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;margin-top: 10%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
+                          $('#formato').find('.tamanos-produc').append('<img style="float: left; margin-left: 10%; width: 50%; padding-top: 21px;" src='+data.tiposnaks[i].Img_porcion+' alt=""><h4 style="float: left;    margin-top: 16%; width:37%;">'+data.tiposnaks[i].Porciones[k]+'</h4>');
             }
             }
             for (var x = 0; x < data.tiposnaks[i].Raciones.length; x++) {
