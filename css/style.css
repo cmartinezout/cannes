@@ -255,10 +255,10 @@ header {
 
 /*-------------SECCION VIDEO Y CAROUSEL-------------*/
 
-.video-inicio .carousel {
+/*.video-inicio .carousel {
         margin-top: -34px;
     margin-bottom: -126px;
-}
+}*/
 
 .video-inicio .margin-video-carousel {
     margin-bottom: -4.5px;
@@ -432,7 +432,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 }
 
 .center-carousel-producto {
-    
+
 }
 
 .right-contenido-producto {}
@@ -572,7 +572,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     content: url(../img/iconos/icon-lista-masticacion.png);
 }
 .detalle-producto-beneficios .articulacion::before, .detalle-producto-beneficios .pesa::before{
-    
+
 }
 .detalle-producto-beneficios .articulacion::before {
     content: url(../img/iconos/icono-lista-articulaciones.png);
@@ -1775,7 +1775,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
     color: white;
     font-size: 2.3em;
     padding-top: 10px;
-   
+
 }
 
 .biensano img {
