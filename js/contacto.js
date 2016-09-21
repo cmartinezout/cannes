@@ -36,7 +36,7 @@ Comentario  = $("#contComentario").val();
       dataType: "html",
       type: 'POST',
       success: function(data) {
-        alert("Tus datos han sido enviados con éxito.");
+        alert("Gracias por contactarnos, te responderemos a la brevedad.");
 $Nombre     = $("#contNombre").val();
 $Email      = $("#contEmail").val();
 $Comentario  = $("#contComentario").val();

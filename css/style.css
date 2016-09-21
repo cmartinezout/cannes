@@ -2155,11 +2155,11 @@ footer p {
 }
 
 footer .cannes-img-fo {
-    width: 15%;
+    width: 20%;
 }
 
 footer .iansa-img-fo {
-    width: 15%;
+    width: 10%;
 }
 
 footer .p-fo {
@@ -2277,6 +2277,21 @@ body {
     height: 80px;
     }
 
+}
+
+/* SALTAR VIDEO BUTTON*/
+.margin-video-carousel> div
+{
+  right: 3%;
+  margin: -64px 0 0 -64px;
+  position: absolute;
+  top: 80%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 7px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid;
 }
 @media (max-width: 320px) {
     .mundo-cachorro figcaption {
