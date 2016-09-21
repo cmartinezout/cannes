@@ -12,6 +12,7 @@
 /*estilo genericos*/
 .modal-content{
     height: 610px;
+    margin-top: -6%;
 }
 .close{
     line-height: none;

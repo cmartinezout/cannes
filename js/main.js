@@ -401,7 +401,10 @@ $(document).on('click', '.comida', function(ev){
             $('.carousel-indicators').append('<li data-target="#carousel-productos" data-slide-to='+j+'></li>');
           }
         }
-        $('.container-producto').css('display', 'block');
+        $('html, body').stop().animate({
+          'scrollTop': $('.container-producto').offset().top-100
+        }, 900, 'swing', function () {
+        });
       }
     }
   });

@@ -3,7 +3,6 @@ require 'class.phpmailer.php';
 include("class.smtp.php");
 if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
 //Si Existe Accion
-$Cel      = $_POST["Cel"];
 $Nombre     = $_POST["Nombre"];
 $Email      = $_POST["Email"];
 $Comentario  = $_POST["Comentario"];
@@ -28,7 +27,6 @@ $message .= '<tr>';
 $message .= '<td width="100%" style="font-size: 13px; color: rgb(119, 119, 119); text-align:justify; font-family: Arial, Helvetica, sans-serif; line-height: 24px; vertical-align: top; ">';
 $message .= '<table width="100%" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; color: #111111; font-family: Arial, Myriad Pro, Helvetica, sans-serif; font-size: 12px;">';
 $message .= '<tr><th scope="row">Visita:</th><td>'.$fecha.'</td></tr>';
-$message .= '<tr><th scope="row">Tipo Contacto:</th><td>'.$Cel.'</td></tr>';
 $message .= '<tr><th scope="row">Nombre:</th><td>'.$Nombre.'</td></tr>';
 $message .= '<tr><th scope="row">Email:</th><td>'.$Email.'</td></tr>';
 $message .= '<tr><th scope="row">Comentario:</th><td>'.$Comentario.'</td></tr>';
@@ -81,13 +79,13 @@ $mail->WordWrap = 150;
 if(!$mail->Send()) {
 
 
-  
+
 
       $log = "Fecha: ".$fecha." Nombre: ".$Nombre." Correo:".$Email." Tipo Contacto: ".$Cel."  Comentario ".$Comentario."\n";
          $myFile = "../errorlog.txt";
         $fh = fopen($myFile, 'a') or die("can't open file");
         fwrite($fh, $log);
-        fclose($fh);   
+        fclose($fh);
 die ("NO FUNCIONA!");
 }else{
     $log = "Fecha: ".$fecha." Nombre: ".$Nombre." Correo:".$Email." Tipo Contacto: ".$Cel."  Comentario ".$Comentario."\n";
@@ -100,7 +98,7 @@ die ("SI FUNCIONA!");
 }
 }
 else{
-  
+
       $log = "Fecha: ".$fecha." Nombre: ".$Nombre." Correo:".$Email." Tipo Contacto: ".$Cel."  Comentario ".$Comentario."\n";
         $myFile = "../error_log.txt";
         $fh = fopen($myFile, 'a') or die("can't open file");

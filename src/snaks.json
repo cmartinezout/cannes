@@ -6,7 +6,7 @@
     "Nombre": "2 VARIEDADES: CARNE Y LECHE",
     "Ingredientes": "Harina de trigo, Materia grasa vegetal, Harina de soya, Suero lácteo, Sustituto de huevo en polvo, Jarabe de maíz, Aceite de pescado desodorizado (Fuente de ácidos grasos omega 3), Cloruro de sodio, Colorante caramelo, Saborizante, Bicarbonato de amonio, bicarbonato de sodio.",
     "imagen": "img/productos/producto6.png",
-    "Caracteristicas": "<li class='text-black brillante'>Mejora el estado de la piel y el pelaje manteniéndolo firme y brillante</li><li class='text-black defensas'>Favorece el funcionamiento del sistema inmune.</li><li class='text-black corazon'>Favorece el funcionamiento del corazón y sistema circulatorio</li><li class='text-black ojo'>Ayudan al normal funcionamiento del cerebro y la retina.</li><li class='text-black perros-tamanos'>Aptas para todo tipo de perros: adultos y cachorros.</li>",
+    "Caracteristicas": "<li class='text-black brillante'>Mejora el estado de la piel y el pelaje manteniéndolo firme y brillante.</li><li class='text-black defensas'>Favorece el funcionamiento del sistema inmune.</li><li class='text-black corazon'>Favorece el funcionamiento del corazón y sistema circulatorio.</li><li class='text-black ojo'>Ayudan al normal funcionamiento del cerebro y la retina.</li><li class='text-black perros-tamanos'>Aptas para todo tipo de perros: adultos y cachorros.</li>",
     "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>17%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>10%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>4%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>10%</td></tr>",
     "Porciones": ["200 gr"],
     "Img_porcion": "img/productos/snack-solo.png",
@@ -59,7 +59,7 @@
           "Ingredientes": "<b>Ingredientes Carne Mechada</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes.</br><b>Ingredientes Asado deTira</b></br>Cuero de cerdo, maíz extruido, punta de arroz, propilenglicol, pulpa de remolacha (fuente de fibra prebiótica), sal, antifúngicos, colorantes y saborizantes autorizados.",
           "imagen": "img/productos/producto13.png",
           "Img_porcion": "img/productos/producto8.png",
-          "Caracteristicas": "<li class='text-black proteinas'>Fuente de proteína</li><li class='text-black fibra'>Fuente de fibra prebiótica.</li><li class='text-black carbohidratos'>Fuente de carbohidratos.</li><li class='text-black perros-tamanos'>Aptas para todo tipo de perros:adultos y cachorros.</li>",
+          "Caracteristicas": "<li class='text-black proteinas'>Fuente de proteína.</li><li class='text-black fibra'>Fuente de fibra prebiótica.</li><li class='text-black carbohidratos'>Fuente de carbohidratos.</li><li class='text-black perros-tamanos'>Aptas para todo tipo de perros:adultos y cachorros.</li>",
           "Nutricion": " <tr><td>Proteínas</td><td>Mínimo</td><td>13%</td></tr><tr><td>Materia Grasa</td><td>Mínimo</td><td>6%</td></tr><tr><td>Fibra</td><td>Máximo</td><td>7%</td></tr><tr><td>Humedad</td><td>Máximo</td><td>15%</td></tr>",
           "Porciones": ["18 gr cada barrita (5 unidades por caja)"],
           "Raciones": []

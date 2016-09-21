@@ -20,7 +20,7 @@ $(document).on('click','.figure-rico' ,function(e){
       for (var i = 0; i < data.tipoConsejo[0].consejos.length; i++) {
         if(i%10==0){
           if (i==0){
-            $('.biensano').append('<h4>#BIENESTAR Y CUIDADOS.</h4>');
+            $('.biensano').append('<h4>BIENESTAR Y CUIDADOS.</h4>');
             $('.biensano').append('<h3>'+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+'</h3>');
             $('.biensano').append("<div class='height-box-biensano'><p>"+data.tipoConsejo[0].consejos[i].cuerpo+"</p><div>");
             $('.biensano').append('<img src='+data.tipoConsejo[0].consejos[i].imagen+' alt="">');
@@ -114,7 +114,7 @@ $(document).on('click', '.perro' ,function(e){
       for (var i = 0; i < data.tipoConsejo[0].consejos.length; i++) {
         if(i%10==0){
           if (i==0){
-            $('.biensano').append('<h4>#BIENESTAR Y CUIDADOS.</h4>');
+            $('.biensano').append('<h4>BIENESTAR Y CUIDADOS.</h4>');
             $('.biensano').append('<h3>'+data.tipoConsejo[0].consejos[i].titulo.toUpperCase()+'</h3>');
             $('.biensano').append("<div class='height-box-biensano'><p>"+data.tipoConsejo[0].consejos[i].cuerpo+"</p><div>");
             $('.biensano').append('<img src='+data.tipoConsejo[0].consejos[i].imagen+' alt="">');
@@ -333,7 +333,7 @@ $(document).on('click', '.consejo-list', function(e){
       if (data_tipo == data.tipoConsejo[i].id){
         for (var j = 0; j < data.tipoConsejo[i].consejos.length; j++) {
           if(id_nota == data.tipoConsejo[i].consejos[j].id){
-            $('.biensano').append('<h4>#'+data.tipoConsejo[i].nombre.toUpperCase()+'.</h4>');
+            $('.biensano').append('<h4>'+data.tipoConsejo[i].nombre.toUpperCase()+'.</h4>');
             $('.biensano').append('<h3>'+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+'</h3>');
             $('.biensano').append("<div class='height-box-biensano'><p>"+data.tipoConsejo[i].consejos[j].cuerpo+"</p><div>");
             $('.biensano').append('<img src='+data.tipoConsejo[i].consejos[j].imagen+' alt="">');
@@ -359,7 +359,7 @@ $(document).on('click', '.consejo', function(e){
         for (var j = 0; j < data.tipoConsejo[i].consejos.length; j++) {
             if(j%10==0){
               if (j==0){
-                $('.biensano').append('<h4>#'+data.tipoConsejo[i].nombre.toUpperCase()+'.</h4>');
+                $('.biensano').append('<h4>'+data.tipoConsejo[i].nombre.toUpperCase()+'.</h4>');
                 $('.biensano').append('<h3>'+data.tipoConsejo[i].consejos[j].titulo.toUpperCase()+'</h3>');
                 $('.biensano').append("<div class='height-box-biensano'><p>"+data.tipoConsejo[i].consejos[j].cuerpo+"</p><div>");
                 $('.biensano').append('<img src='+data.tipoConsejo[i].consejos[j].imagen+' alt="">');

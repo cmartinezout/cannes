@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+
 $("#btn_enviar").click(function (e) {
   e.preventDefault();
 
@@ -14,7 +14,7 @@ $("#btn_enviar").click(function (e) {
     if($("#contEmail").val().indexOf('@', 0) == -1 || $("#contEmail").val().indexOf('.', 0) == -1) {
     alert("La dirección es incorrecta");
     return false;
-  
+
  }
    if($("#contComentario").val().length < 1) {
     alert("El comentario es obligatorio");
@@ -24,7 +24,6 @@ $("#btn_enviar").click(function (e) {
 
     $("#btn_enviar").attr("disabled","disabled");
 
-Cel      = $("#contCel").val();
 Nombre     = $("#contNombre").val();
 Email      = $("#contEmail").val();
 Comentario  = $("#contComentario").val();
@@ -38,11 +37,10 @@ Comentario  = $("#contComentario").val();
       type: 'POST',
       success: function(data) {
         alert("Tus datos han sido enviados con éxito.");
-$Cel      = $("#contCel").val();
 $Nombre     = $("#contNombre").val();
 $Email      = $("#contEmail").val();
 $Comentario  = $("#contComentario").val();
-   
+
       },
       error: function(jqXHR, textStatus, errorThrown) {
         alert("Error al enviar mensaje de contacto");

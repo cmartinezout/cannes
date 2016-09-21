@@ -327,7 +327,8 @@ header {
 }
 
 .producto-categ {
-    padding: 50px 0px;
+    padding: 20px 0px;
+    margin-bottom: 20px
 }
 
 .producto-categ figure {
@@ -1160,7 +1161,7 @@ box-shadow:inset 1px 1px 20px 1px rgba(33, 33, 33, 0.21);
 }
 
 .ruta-cannes-categ {
-    padding: 50px 0px;
+    padding: 10px 0px;
 }
 
 .ruta-cannes-categ figure {
